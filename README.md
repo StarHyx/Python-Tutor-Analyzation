@@ -22,7 +22,11 @@ npm start
 ## 项目结构
 
 `bottle_server.py` 用bottle框架起一个web服务
-live-programming-mode下
+
+live-programming-mode下:
+
 处理请求：`LIVE_exec_py3`
+
 `pg_logger` 执行python代码的核心
+
 在`generate_json_trace.py`中设置options.usercode值即可编译出所需json轨迹,交给前端渲染
