@@ -6,7 +6,6 @@
   "repository": "https://github.com/StarHyx/Python-Tutor-Analyzation",
   "license": "MIT",
   "scripts": {
-    "prepare": "pip3 install bottle;npm install;tsd install",
     "server": "cd server && python3 bottle_server.py",
     "dev": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"

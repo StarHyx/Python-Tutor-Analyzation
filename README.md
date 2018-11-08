@@ -31,7 +31,9 @@ npm install tsd -g
 ```shell
 git clone https://github.com/StarHyx/Python-Tutor-Analyzation.git
 cd Python-Tutor-Analyzation
-npm run preinstall # 安装所需依赖项
+pip3 install bottle # 安装bottle框架
+npm install # 安装所需依赖
+tsd install # 安装ts声明文件
 npm run server # 启动后端服务
 ```
 
@@ -75,6 +77,7 @@ npm run build # 生产环境，打包速度慢，体积小
 - [ ] 后端python代码精简优化，对外暴露compile方法，返回结果
 - [ ] 后端服务单独部署
 - [ ] 前端所有渲染工作集成为一个render函数，对外暴露，方便导出
+- [ ] Ts文件精简（tsd.json中的ts声明未被完全使用）
 - [ ] To be Continued…
 
 ## 更多建议：
