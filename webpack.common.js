@@ -1,6 +1,7 @@
-var webpack = require("webpack");
-var $ = require("jquery");
-var jquery = require('jquery');
+const webpack = require("webpack");
+const $ = require("jquery");
+const jquery = require("jquery");
+const path = require('path');
 
 module.exports = {
 	plugins: [
@@ -24,15 +25,15 @@ module.exports = {
 	},
 
 	output: {
-		path: __dirname + "/build/",
+		path: path.resolve(__dirname, "dist"),
 		filename: "[name].bundle.js",
 		sourceMapFilename: "[file].map"
 	},
 	module: {
-		loaders: [
-			{ test: /\.css$/, loader: "style-loader!css-loader" }, // CSS
-			{ test: /\.(png|jpg)$/, loader: "url-loader" }, // images
-			{ test: /\.ts$/, loader: "ts-loader" } // TypeScript
+		rules: [
+			{ test: /\.css$/, use: ["style-loader", "css-loader"] }, // CSS
+			{ test: /\.(png|jpg)$/, use: "url-loader" }, // images
+			{ test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ } // TypeScript
 		]
 	}
 };
