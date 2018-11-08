@@ -4,8 +4,9 @@
   "description": "Analysis for Python Tutor v5-unity code",
   "main": "debugger.html",
   "repository": "https://github.com/StarHyx/Python-Tutor-Analyzation",
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "scripts": {
+    "preinstall": "pip3 install bottle && npm install && tsd install",
     "server": "cd server && python3 bottle_server.py",
     "dev": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
