@@ -5,15 +5,6 @@
 import {OptFrontendSharedSessions,TogetherJS} from './opt-shared-sessions';
 import {assert,htmlspecialchars} from './pytutor';
 import {OptTestcases,redSadFace,yellowHappyFace} from './opt-testcases';
-import {pythonExamplesHtml,PY2_EXAMPLES,PY3_EXAMPLES,
-        javaExamplesHtml,JAVA_EXAMPLES,
-        jsExamplesHtml,JS_EXAMPLES,
-        tsExamplesHtml,TS_EXAMPLES,
-        rubyExamplesHtml,RUBY_EXAMPLES,
-        cExamplesHtml,C_EXAMPLES,
-        cppExamplesHtml,CPP_EXAMPLES,
-        exampleHeaderHtml} from './example-links';
-import {footerHtml} from './footer-html';
 import {eureka_survey,eureka_prompt,eureka_survey_version} from './surveys';
 
 require('./lib/jquery-3.0.0.min.js');
@@ -680,48 +671,8 @@ export class OptFrontendWithTestcases extends OptFrontendSharedSessions {
 
 $(document).ready(function() {
   // initialize all HTML elements before creating optFrontend object
-  $("#exampleSnippets")
-    .append(exampleHeaderHtml);
 
   var params = {};
-  var optOverride = (window as any).optOverride;
-  // super hacky!
-  if (optOverride) {
-    (params as any).disableLocalStorageToggles = true;
-
-    if (optOverride.frontendLang === 'java') {
-      $("#exampleSnippets").append(javaExamplesHtml);
-    } else if (optOverride.frontendLang === 'js') {
-      $("#exampleSnippets").append(jsExamplesHtml);
-    } else if (optOverride.frontendLang === 'ts') {
-      $("#exampleSnippets").append(tsExamplesHtml);
-    } else if (optOverride.frontendLang === 'ruby') {
-      $("#exampleSnippets").append(rubyExamplesHtml);
-    } else if (optOverride.frontendLang === 'c') {
-      $("#exampleSnippets").append(cExamplesHtml);
-    } else if (optOverride.frontendLang === 'cpp') {
-      $("#exampleSnippets").append(cppExamplesHtml);
-    }
-  } else {
-    $("#exampleSnippets")
-      .append(pythonExamplesHtml)
-      .append(javaExamplesHtml)
-      .append(jsExamplesHtml)
-      .append(tsExamplesHtml)
-      .append(rubyExamplesHtml)
-      .append(cExamplesHtml)
-      .append(cppExamplesHtml);
-  }
-  $("#footer").append(footerHtml);
-
-  // insert a toggle for examples after #exampleSnippets, then hide it
-  $("#exampleSnippets").after('<a href="#" id="showExampleLink" style="font-size: 11pt;">Show example code and courses</a>');
-  $("#showExampleLink").click(() => {
-    $("#exampleSnippets").show();
-    $("#showExampleLink").hide();
-    return false; // don't follow the href link
-  });
-  $("#exampleSnippets").hide();
 
   var optFrontend = new OptFrontendWithTestcases(params);
   optFrontend.setSurveyHTML();
@@ -729,67 +680,6 @@ $(document).ready(function() {
   (window as any).optFrontend = optFrontend; // purposely leak to globals to ease debugging!!!
 
   // canned examples
-  $(".exampleLink").click(function() {
-    var myId = $(this).attr('id');
-    var exFile;
-    var lang;
-    if (JS_EXAMPLES[myId] !== undefined) {
-      exFile = JS_EXAMPLES[myId];
-      lang = 'js';
-    } else if (TS_EXAMPLES[myId] !== undefined) {
-      exFile = TS_EXAMPLES[myId];
-      lang = 'ts';
-    } else if (JAVA_EXAMPLES[myId] !== undefined) {
-      exFile = JAVA_EXAMPLES[myId];
-      lang = 'java';
-    } else if (RUBY_EXAMPLES[myId] !== undefined) {
-      exFile = RUBY_EXAMPLES[myId];
-      lang = 'ruby';
-    } else if (C_EXAMPLES[myId] !== undefined) {
-      exFile = C_EXAMPLES[myId];
-      lang = 'c';
-    } else if (CPP_EXAMPLES[myId] !== undefined) {
-      exFile = CPP_EXAMPLES[myId];
-      lang = 'cpp';
-    } else if (PY2_EXAMPLES[myId] !== undefined) {
-      exFile = PY2_EXAMPLES[myId];
-      if ($('#pythonVersionSelector').val() === '3') {
-        lang = '3';
-      } else {
-        lang = '2';
-      }
-    } else {
-      exFile = PY3_EXAMPLES[myId];
-      assert(exFile !== undefined);
-      lang = '3';
-    }
-    assert(lang);
-    $('#pythonVersionSelector').val(lang);
-
-    if (lang === '2' || lang === '3' || lang === 'py3anaconda') {
-      exFile = 'example-code/python/' + exFile;
-    } else {
-      exFile = 'example-code/' + lang + '/' + exFile;
-    }
-
-    $.get(exFile, function(dat) {
-      optFrontend.pyInputSetValue(dat);
-      optFrontend.setAceMode();
-
-      // very subtle! for TogetherJS to sync #pythonVersionSelector
-      // properly, we must manually send a sync request event:
-      if (TogetherJS && TogetherJS.running) {
-        var myVisualizer = optFrontend.myVisualizer;
-        TogetherJS.send({type: "syncAppState",
-                         myAppState: optFrontend.getAppState(),
-                         codeInputScrollTop: optFrontend.pyInputGetScrollTop(),
-                         pyCodeOutputDivScrollTop: myVisualizer ?
-                                                   myVisualizer.domRoot.find('#pyCodeOutputDiv').scrollTop() :
-                                                   undefined});
-      }
-    }, 'text' /* data type - set to text or else jQuery tries to EXECUTE the JS example code, haha, eeek! */);
-    return false; // prevent an HTML 'a' element click from going to a link
-  });
   $('#pythonVersionSelector').change(optFrontend.setAceMode.bind(optFrontend));
   optFrontend.setAceMode();
 

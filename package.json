@@ -1,20 +1,19 @@
 {
-  "name": "v5-unity",
-  "version": "1.0.0",
-  "description": "OPT v5",
+  "name": "python-tutor-analyzation",
+  "version": "0.1.0",
+  "description": "Analysis for Python Tutor v5-unity code",
   "main": "bundle.js",
-  "repository": "https://github.com/pgbovine/OnlinePythonTutor",
+  "repository": "https://github.com/StarHyx/Python-Tutor-Analyzation",
   "license": "BSD-3-Clause",
   "scripts": {
     "start": "python3 bottle_server.py",
     "webpack": "webpack --devtool sourcemap --progress --colors --watch",
-    "production-build": "rm -f build/* && webpack && python add_cache_busting_query_strings.py"
+    "build": "rm -f build/* && webpack"
   },
   "dependencies": {
     "css-loader": "",
     "fs-extra": "^6.0.1",
     "json-stable-stringify": "^1.0.1",
-    "on-build-webpack": "^0.1.0",
     "pixelmatch": "^4.0.2",
     "puppeteer": "^1.10.0",
     "script-loader": "",
