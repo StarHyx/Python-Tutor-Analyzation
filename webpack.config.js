@@ -20,7 +20,7 @@ module.exports = {
     },
 
     entry: {
-        'opt-live': "./src/opt-live.ts",
+        'debugger': "./src/opt-live.ts",
     },
 
     output: {

@@ -2,7 +2,7 @@
   "name": "python-tutor-analyzation",
   "version": "0.1.0",
   "description": "Analysis for Python Tutor v5-unity code",
-  "main": "bundle.js",
+  "main": "debugger.html",
   "repository": "https://github.com/StarHyx/Python-Tutor-Analyzation",
   "license": "BSD-3-Clause",
   "scripts": {
@@ -11,18 +11,16 @@
     "build": "rm -f build/* && webpack"
   },
   "dependencies": {
-    "css-loader": "",
     "fs-extra": "^6.0.1",
     "json-stable-stringify": "^1.0.1",
-    "pixelmatch": "^4.0.2",
-    "puppeteer": "^1.10.0",
-    "script-loader": "",
-    "style-loader": "",
+    "script-loader": "^0.7.2",
     "ts-loader": "^3.5.0",
-    "typescript": "^3.1.6",
-    "url-loader": ""
+    "typescript": "^3.1.6"
   },
   "devDependencies": {
+    "css-loader": "^1.0.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^3.11.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
