@@ -101,9 +101,8 @@ longer-term notes:
 
 import {OptFrontendSharedSessions,TogetherJS} from './opt-shared-sessions';
 import {assert} from './pytutor';
-import {footerHtml} from './footer-html';
-import {eureka_survey,eureka_prompt,eureka_survey_version} from './surveys';
-import {OptDemoVideo} from './demovideo';
+// import {eureka_survey,eureka_prompt,eureka_survey_version} from './surveys';
+// import {OptDemoVideo} from './demovideo';
 
 require('./lib/jquery-3.0.0.min.js');
 require('./lib/jquery.qtip.js');
@@ -137,7 +136,7 @@ function encode64(buffer) {
     var vendors = ['ms', 'moz', 'webkit', 'o'];
     for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
         (window as any).requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
-        (window as any).cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
+        (window as any).cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
                                    || window[vendors[x]+'CancelRequestAnimationFrame'];
     }
 
@@ -145,7 +144,7 @@ function encode64(buffer) {
         (window as any).requestAnimationFrame = function(callback, element) {
             var currTime = new Date().getTime();
             var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-            var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
               timeToCall);
             lastTime = currTime + timeToCall;
             return id;
@@ -193,8 +192,8 @@ export class OptDemoRecorder extends OptFrontendSharedSessions {
       </button>`;
     $("td#headerTdLeft").html(recordReplayDiv); // clobber the existing contents
 
-    $("#recordBtn").click(this.recordButtonClicked.bind(this));
-    $("#playbackBtn").click(this.startPlayback.bind(this));
+    // $("#recordBtn").click(this.recordButtonClicked.bind(this));
+    // $("#playbackBtn").click(this.startPlayback.bind(this));
 
 
     // TODO: move up to opt-shared-sessions.ts when you're ready
@@ -304,27 +303,27 @@ export class OptDemoRecorder extends OptFrontendSharedSessions {
   // override from superclasses to be NOPs to cancel default superclass behavior
   takeFullCodeSnapshot() {return;}
 
-  recordButtonClicked() {
-    if ($("#recordBtn").data('status') === 'recording') {
-      // issue this event right before stopping the recording
-      // (if you do this after calling TogetherJS(), then the event
-      // won't be properly logged)
-      TogetherJS.send({type: "stopRecordingDemo"});
+  // recordButtonClicked() {
+  //   if ($("#recordBtn").data('status') === 'recording') {
+  //     // issue this event right before stopping the recording
+  //     // (if you do this after calling TogetherJS(), then the event
+  //     // won't be properly logged)
+  //     TogetherJS.send({type: "stopRecordingDemo"});
 
-      TogetherJS(); // this will stop recording
-      $("#recordBtn").data('status', 'stopped');
-      $("#recordBtn").html("Record demo");
-    } else {
-      $("#ssDiv,#surveyHeader").hide(); // hide ASAP!
-      $("#togetherjsStatus").html("Recording now ...");
+  //     TogetherJS(); // this will stop recording
+  //     $("#recordBtn").data('status', 'stopped');
+  //     $("#recordBtn").html("Record demo");
+  //   } else {
+  //     $("#ssDiv,#surveyHeader").hide(); // hide ASAP!
+  //     $("#togetherjsStatus").html("Recording now ...");
 
-      this.demoVideo = new OptDemoVideo(this);
-      this.demoVideo.startRecording();
+  //     this.demoVideo = new OptDemoVideo(this);
+  //     this.demoVideo.startRecording();
 
-      $("#recordBtn").data('status', 'recording');
-      $("#recordBtn").html("Stop recording");
-    }
-  }
+  //     $("#recordBtn").data('status', 'recording');
+  //     $("#recordBtn").html("Stop recording");
+  //   }
+  // }
 
   finishSuccessfulExecution() {
     assert (this.myVisualizer);
@@ -379,9 +378,6 @@ export class OptDemoRecorder extends OptFrontendSharedSessions {
 
 
 $(document).ready(function() {
-  // initialize all HTML elements before creating optFrontend object
-  $("#footer").append(footerHtml);
-
   var params = {};
   var optFrontend = new OptDemoRecorder(params);
 

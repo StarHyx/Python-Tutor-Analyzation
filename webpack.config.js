@@ -13,14 +13,14 @@ module.exports = {
         extensions: ['.ts', '.js', '.css'],
 
         alias: {
-            "jquery": __dirname + "/js/lib/jquery-3.0.0.min.js",
-            "$": __dirname + "/js/lib/jquery-3.0.0.min.js",
-            "$.bbq": __dirname + "/js/lib/jquery.ba-bbq.js",
+            "jquery": __dirname + "/src/lib/jquery-3.0.0.min.js",
+            "$": __dirname + "/src/lib/jquery-3.0.0.min.js",
+            "$.bbq": __dirname + "/src/lib/jquery.ba-bbq.js",
         }
     },
 
     entry: {
-        'opt-live': "./js/opt-live.ts",
+        'opt-live': "./src/opt-live.ts",
     },
 
     output: {
@@ -28,7 +28,6 @@ module.exports = {
         filename: "[name].bundle.js",
         sourceMapFilename: "[file].map",
     },
-
     module: {
         loaders: [
             { test: /\.css$/, loader: "style-loader!css-loader" }, // CSS

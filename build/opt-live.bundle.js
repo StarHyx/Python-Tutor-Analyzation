@@ -7716,9 +7716,7 @@ __webpack_require__(22);
 // need to directly import the class for type checking to work
 var opt_shared_sessions_1 = __webpack_require__(8);
 var pytutor_1 = __webpack_require__(4);
-var surveys_1 = __webpack_require__(68);
 var opt_frontend_1 = __webpack_require__(10);
-var footer_html_1 = __webpack_require__(69);
 // just punt and use global script dependencies
 __webpack_require__(11);
 __webpack_require__(12);
@@ -7789,27 +7787,8 @@ var OptLiveFrontend = /** @class */ (function (_super) {
                 _this.myVisualizer.stepForward();
             }
         });
-        // put eureka_survey into #eurekaSurveyPane so that it's highly visible
-        $("#eurekaSurveyPane").append(surveys_1.eureka_survey);
-        var that = _this;
-        $('.surveyBtnBig').click(function (e) {
-            var myArgs = that.getAppState();
-            var buttonPrompt = $(this).html();
-            var res = prompt(surveys_1.eureka_prompt);
-            // don't do ajax call when Cancel button is pressed
-            // (note that if OK button is pressed with no response, then an
-            // empty string will still be sent to the server)
-            if (res !== null) {
-                myArgs.surveyVersion = surveys_1.eureka_survey_version;
-                myArgs.surveyQuestion = buttonPrompt;
-                myArgs.surveyResponse = res;
-                myArgs.opt_uuid = that.userUUID;
-                myArgs.session_uuid = that.sessionUUID;
-                $.get('eureka_survey.py', myArgs, function (dat) { });
-            }
-        });
-        $("#footer").append(footer_html_1.privacyAndEndingHTML);
         return _this;
+        // // put eureka_survey into #eurekaSurveyPane so that it's highly visib
     }
     OptLiveFrontend.prototype.demoModeChanged = function () {
         _super.prototype.demoModeChanged.call(this); // call first
@@ -7820,12 +7799,11 @@ var OptLiveFrontend = /** @class */ (function (_super) {
     // override verison in opt-frontend.ts
     OptLiveFrontend.prototype.setAceMode = function () {
         var v = $('#pythonVersionSelector').val();
-        if (v !== 'js' && v !== '2' && v !== '3') {
-            // we don't support live mode for this value of v, so set it to
-            // python 2 by default
+        if (v !== '2' && v !== '3') {
+            // 默认使用python2模式
             $('#pythonVersionSelector').val('2');
         }
-        _super.prototype.setAceMode.call(this); // delegate!
+        _super.prototype.setAceMode.call(this);
     };
     OptLiveFrontend.prototype.toggleSyntaxError = function (x) {
         if (x) {
@@ -27272,46 +27250,6 @@ var OptDemoVideo = /** @class */ (function () {
 exports.OptDemoVideo = OptDemoVideo;
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-// deployed on 2017-05-15:
-var eureka_survey_v1 = "\n  <div id=\"eureka_survey\" style=\"text-align: center; margin-top: 10px; margin-bottom: 15px;\">\n    <div style=\"margin-bottom: 6px;\">Support our research by clicking below whenever you learn something:</div>\n    <button class=\"surveyBtnBig\" type=\"button\">I just cleared up a misunderstanding!</button>\n    <button class=\"surveyBtnBig\" type=\"button\" style=\"margin-left: 12px;\">I just fixed a bug in my code!</button>\n  </div>\n";
-var eureka_prompt_v1 = "What was your misunderstanding or error? (Press 'OK' to submit)";
-// deployed on 2017-05-20:
-/*
-var eureka_survey_v2 = `
-  <div id="eureka_survey" style="text-align: center; margin-top: 10px; margin-bottom: 15px;">
-    <div style="margin-bottom: 6px;">Help us improve this tool by clicking below whenever you learn something:</div>
-    <button class="surveyBtnBig" type="button">I just cleared up a misunderstanding!</button>
-    <button class="surveyBtnBig" type="button" style="margin-left: 8px;">I just fixed a bug in my code!</button>
-  </div>
-`;
-*/
-// a SMALLER variant of eureka_survey_v2, deployed on 2018-03-15
-var eureka_survey_v2 = "\n  <div id=\"eureka_survey\" style=\"text-align: center; margin-top: 10px; margin-bottom: 15px;\">\n    <div style=\"margin-bottom: 6px;\">Help improve this tool by clicking whenever you learn something:</div>\n    <button class=\"smallBtn\" type=\"button\">I just cleared up a misunderstanding!</button>\n    <button class=\"smallBtn\" type=\"button\" style=\"margin-left: 8px;\">I just fixed a bug in my code!</button>\n  </div>\n";
-var eureka_prompt_v2 = "What was your misunderstanding or error? (Press 'OK' to submit)";
-// adjust as versions increase ...
-exports.eureka_survey_version = 'v2';
-exports.eureka_survey = eureka_survey_v2;
-exports.eureka_prompt = eureka_prompt_v2;
-
-
-/***/ }),
-/* 69 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.privacyAndEndingHTML = "\n\n<p style=\"margin-top: 30px;\">Privacy Policy: By using Python Tutor, your\nvisualized code, options, user interactions, text chats, and IP address\nare logged on our server and may be analyzed for research purposes.\nNearly all web services collect this basic information from users in\ntheir server logs. However, Python Tutor does not collect any personally\nidentifiable information from its users. It uses Google Analytics for\nwebsite analytics.</p>\n\n<p>Terms of Service: The Python Tutor service is provided for free on an\nas-is basis. Use this service at your own risk. Do not use it to share\nconfidential information. The developers of Python Tutor are not\nresponsible for the chat messages or behaviors of any of the users on\nthis website. We are also not responsible for any damages caused by\nusing this website. Finally, it is your responsibility to follow\nappropriate academic integrity standards.</p>\n\n<p style=\"margin-top: 25px;\">\nCopyright &copy; <a href=\"http://www.pgbovine.net/\">Philip Guo</a>.  All rights reserved.\n</p>";
-exports.footerHtml = "\n<p>\n  <button id=\"genUrlBtn\" class=\"smallBtn\" type=\"button\">Generate permanent link</button> <input type=\"text\" id=\"urlOutput\" size=\"70\"/>\n</p>\n<p>\n  <button id=\"genUrlShortenedBtn\" class=\"smallBtn\" type=\"button\">Generate shortened link</button> <input type=\"text\" id=\"urlOutputShortened\" size=\"25\"/>\n</p>\n\n<p>Click above to create a permanent link to your\nvisualization (<a href=\"https://www.youtube.com/watch?v=h4q3UKdEFKE\" target=\"_blank\">video demo</a>). To report bugs, paste the link along with an error\ndescription in an email to philip@pgbovine.net</p>\n\n<div id=\"embedLinkDiv\">\n<p>\n  <button id=\"genEmbedBtn\" class=\"smallBtn\" type=\"button\">Generate embed code</button> <input type=\"text\" id=\"embedCodeOutput\" size=\"70\"/>\n</p>\n\n<p>To embed this visualization in your webpage, click the 'Generate\nembed code' button above and paste the resulting HTML code into your\nwebpage. Adjust the height and width parameters and\nchange the link to <b>https://</b> if needed.</p>\n</div>\n\n<p style=\"margin-top: 25px;\">\n<a href=\"http://pythontutor.com/\">Python Tutor</a> (<a href=\"https://github.com/pgbovine/OnlinePythonTutor\">code on GitHub</a>) supports seven\nlanguages (despite its name!):</p>\n\n<p>1. Python <a href=\"https://docs.python.org/2.7/\">2.7</a> and <a\nhref=\"https://docs.python.org/3.6/\">3.6</a> with these limited module\nimports:\n\n__future__, abc, array, bisect, calendar,\ncmath, collections, copy, datetime, decimal,\ndoctest, fractions, functools, hashlib, heapq,\nio, itertools, json, locale, math,\noperator, pickle, pprint, random, re,\nstring, time, types, unittest, StringIO (Python 2), typing (Python 3).\n\n(There is also an experimental version of Python 3.6 with <a\nhref=\"https://docs.anaconda.com/anaconda/\">Anaconda</a>, which lets\nyou import many more modules.)\n\n<a\nhref=\"https://github.com/pgbovine/OnlinePythonTutor/tree/master/v5-unity\">Backend source code</a>.\n</p>\n\n<p>2. Java using Oracle's Java 8. The original <a\nhref=\"http://cscircles.cemc.uwaterloo.ca/java_visualize/\">Java\nvisualizer</a> was created by <a href=\"https://github.com/daveagp\">David Pritchard</a> and Will Gwozdz.\nIt supports\n<code><a href=\"http://introcs.cs.princeton.edu/java/stdlib/javadoc/StdIn.html\">StdIn</a></code>, \n<code><a href=\"http://introcs.cs.princeton.edu/java/stdlib/javadoc/StdOut.html\">StdOut</a></code>, \nmost other <a href=\"http://introcs.cs.princeton.edu/java/stdlib\"><tt>stdlib</tt> libraries</a>,\n<a href=\"http://introcs.cs.princeton.edu/java/43stack/Stack.java.html\"><tt>Stack</tt></a>,\n<a href=\"http://introcs.cs.princeton.edu/java/43stack/Queue.java.html\"><tt>Queue</tt></a>,\nand <a href=\"http://introcs.cs.princeton.edu/java/44st/ST.java.html\"><tt>ST</tt></a>.\n(To access Java's built-in <tt>Stack</tt>/<tt>Queue</tt> classes, write\n<tt>import java.util.Stack;</tt> &mdash; note, <tt>import\njava.util.*;</tt> won't work.)\n<a\nhref=\"https://github.com/pgbovine/OnlinePythonTutor/tree/master/v4-cokapi/backends/java\">Backend\nsource code</a>.</p>\n\n<p>3. JavaScript ES6 running in Node.js v6.0.0. <a\nhref=\"https://github.com/pgbovine/OnlinePythonTutor/tree/master/v4-cokapi/backends/javascript\">Backend\nsource code</a>.</p>\n\n<p>4. <a href=\"http://www.typescriptlang.org\">TypeScript</a> 1.4.1 running in Node.js v6.0.0. <a\nhref=\"https://github.com/pgbovine/OnlinePythonTutor/tree/master/v4-cokapi/backends/javascript\">Backend\nsource code</a>.</p>\n\n<p>5. Ruby 2 using MRI 2.2.2. <a\nhref=\"https://github.com/pgbovine/OnlinePythonTutor/tree/master/v4-cokapi/backends/ruby\">Backend\nsource code</a>.</p>\n\n<p>6. C using gcc 4.8, C11, and Valgrind Memcheck.\n<a href=\"https://github.com/pgbovine/opt-cpp-backend\">Backend source code</a>.</p>\n\n<p>7. C++ using gcc 4.8, C++11, and Valgrind Memcheck.\n<a href=\"https://github.com/pgbovine/opt-cpp-backend\">Backend source code</a>.</p>\n" + exports.privacyAndEndingHTML;
-
 
 /***/ })
 /******/ ]);
