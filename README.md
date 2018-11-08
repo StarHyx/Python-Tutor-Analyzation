@@ -67,7 +67,7 @@ npm run build # 生产环境，打包速度慢，体积小
 
 + `lib` ：无法用npm管理的一些老旧的js库，未来将逐渐移除
 + `opt-live.ts`：前端入口
-+ `visualize.ts`：渲染部门核心
++ `visualize.ts`：渲染部分核心
 
 ## Todo
 
