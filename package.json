@@ -6,7 +6,7 @@
   "repository": "https://github.com/StarHyx/Python-Tutor-Analyzation",
   "license": "BSD-3-Clause",
   "scripts": {
-    "start": "python3 bottle_server.py",
+    "start": "python3 server/bottle_server.py",
     "webpack": "webpack --devtool sourcemap --progress --colors --watch",
     "build": "rm -f build/* && webpack"
   },

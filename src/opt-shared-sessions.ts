@@ -36,7 +36,7 @@ export var TogetherJS = (window as any).TogetherJS;
 
 import {supports_html5_storage} from './opt-frontend-common';
 import {OptFrontend} from './opt-frontend';
-import {OptDemoVideo} from './demovideo';
+// import {OptDemoVideo} from './demovideo';
 import {assert,htmlspecialchars} from './pytutor';
 
 
@@ -352,7 +352,7 @@ export class OptFrontendSharedSessions extends OptFrontend {
   // we use it at parts (yeah, abstraction violation, but oh wells,
   // it's too troublesome to clean up at this point ...)
   isPlayingDemo = false;
-  demoVideo: OptDemoVideo;
+  // demoVideo: OptDemoVideo;
 
   Range; // reference to imported Ace Range() object -- ergh
 
@@ -515,27 +515,6 @@ Get live help!
       $("td#headerTdLeft,td#headerTdRight").show();
       this.disableSharedSessions = false;
     }
-  }
-
-  loadCodcastFile() {
-    assert(this.codcastFile);
-    console.log('loadCodcastFile', this.codcastFile);
-
-    this.disableSharedSessions = true;
-    this.activateSyntaxErrorSurvey = false;
-    this.activateRuntimeErrorSurvey = false;
-    this.activateEurekaSurvey = false;
-    // TODO: also disable undo/redo feature since that can get annoying
-    // when replaying demo "videos"
-
-    $("td#headerTdLeft").html(''); // clobber the existing contents
-
-    $.get(this.codcastFile, {}, (dat) => {
-      // create an OptDemoVideo object from the serialized JSON data contained
-      // in that file
-      this.demoVideo = new OptDemoVideo(this, dat);
-      this.startPlayback();
-    }, 'text' /* grab data as plain text */);
   }
 
   // for A/B testing -- store this information PER USER in localStorage,
@@ -1496,7 +1475,7 @@ Get live help!
   // TogetherJS is ready to rock and roll, so do real initiatlization all here:
   TogetherjsReadyHandler() {
     if (this.isPlayingDemo) {
-      this.demoVideo.playbackTogetherJsReady();
+      // this.demoVideo.playbackTogetherJsReady();
       TogetherJS.send({type: "startPlayingDemo"}); // so that we can tell in the TogetherJS logs which sessions are demo plays; we can filter those out later
       return; // GET OUT EARLY!!! don't do the rest if you're playing a demo
     }
@@ -1587,7 +1566,7 @@ Get live help!
     this.iMadeAPublicHelpRequest = false; // explicitly reset it
 
     if (this.isPlayingDemo) {
-      this.demoVideo.stopPlayback();
+      // this.demoVideo.stopPlayback();
       assert(!this.isPlayingDemo);
     }
   }
@@ -2049,108 +2028,5 @@ Get live help!
   }
 
 
-  // for codcasts:
-  setPlayPauseButton(state) {
-    assert(this.demoVideo);
-    var me = $("#demoPlayBtn");
-    if (state == 'playing') {
-      me.data('status', 'playing')
-      me.html('Pause');
-      this.demoVideo.playFromCurrentFrame();
-    } else {
-      assert(state == 'paused');
-      me.data('status', 'paused')
-      me.html('Play');
-      this.demoVideo.pause();
-    }
-  }
-
-  startPlayback() {
-    $("#ssDiv,#surveyHeader").hide(); // hide ASAP!
-
-    $("#togetherjsStatus").html(`<div><button id="demoPlayBtn">Play</button></div>
-                                  <div style="margin-top: 10px;" id="timeSlider"/>`);
-
-    assert(this.demoVideo);
-
-    $("#demoPlayBtn").data('status', 'paused');
-    $("#demoPlayBtn").click(() => {
-      var me = $("#demoPlayBtn");
-      if (me.data('status') == 'paused') {
-        this.setPlayPauseButton('playing');
-      } else {
-        assert(me.data('status') == 'playing');
-        this.setPlayPauseButton('paused');
-      }
-    });
-
-    var timeSliderDiv = $('#timeSlider');
-    timeSliderDiv.css('width', '700px');
-
-    var interruptedPlaying = false; // did we yank the slider while the video was playing?
-
-    var totalNumFrames = this.demoVideo.getTotalNumFrames();
-
-    timeSliderDiv.slider({
-      min: 0,
-      max: totalNumFrames,
-      step: 1,
-
-      // triggers only when the user *manually* slides, *not* when the
-      // value has been changed programmatically
-      slide: (evt, ui) => {
-        if (this.demoVideo.rafTimerId) {
-          // emulate YouTube by 'jumping' to the given frame and
-          // pausing, then resuming playback when you let go (see
-          // 'change' event handler)
-          this.demoVideo.pause();
-          interruptedPlaying = true;
-        }
-        this.demoVideo.jumpToFrame(ui.value);
-      },
-
-      // triggers both when user manually finishes sliding, and also
-      // when the slider's value is set programmatically
-      change: (evt, ui) => {
-        // this is SUPER subtle. if this value was changed programmatically,
-        // then evt.originalEvent will be undefined. however, if this value
-        // was changed by a user-initiated event, then this code should be
-        // executed ...
-        if ((evt as any).originalEvent) {
-          // slider value was changed by a user interaction; only do
-          // something special if interruptedPlaying is on, in which
-          // case resume playback. this happens AFTER a user-initiated
-          // 'slide' event is done:
-          if (interruptedPlaying) {
-            // literally an edge case -- if we've slid to the VERY END,
-            // don't resume playing since that will wrap back around to
-            // the beginning
-            if (ui.value < totalNumFrames) {
-              this.demoVideo.playFromCurrentFrame();
-            } else {
-              // if we've slide the slider to the very end, pause it!
-              this.setPlayPauseButton('paused');
-            }
-            interruptedPlaying = false;
-          }
-        } else {
-          // slider value was changed programmatically, so we're
-          // assuming that requestAnimationFrame has been used to schedule
-          // periodic changes to the slider
-          this.demoVideo.jumpToFrame(ui.value);
-        }
-      }
-    });
-
-    // disable keyboard actions on the slider itself (to prevent double-firing
-    // of events), and make skinnier and taller
-    timeSliderDiv
-      .find(".ui-slider-handle")
-      .unbind('keydown')
-      .css('width', '0.6em')
-      .css('height', '1.5em');
-
-    this.demoVideo.startPlayback(); // do this last
-  }
 
 } // END class OptFrontendSharedSessions

@@ -13,8 +13,6 @@
 
 // for TypeScript
 declare var diff_match_patch: any;
-declare var codeopticonUsername: string; // FIX later when porting Codeopticon
-declare var codeopticonSession: string;  // FIX later when porting Codeopticon
 
 require('./lib/diff_match_patch.js');
 require('./lib/jquery.ba-dotimeout.min.js');
@@ -204,8 +202,6 @@ export abstract class AbstractBaseFrontend {
   getAppState() {return {};} // NOP -- subclasses need to override
 
   setFronendError(lines, ignoreLog=false) {
-    $("#frontendErrorOutput").html(lines.map(htmlspecialchars).join('<br/>') +
-                                   (ignoreLog ? '' : '<p/>Here is a list of <a target="_blank" href="https://github.com/pgbovine/OnlinePythonTutor/blob/master/unsupported-features.md">UNSUPPORTED FEATURES</a>'));
 
     // log it to the server as well (unless ignoreLog is on)
     if (!ignoreLog) {

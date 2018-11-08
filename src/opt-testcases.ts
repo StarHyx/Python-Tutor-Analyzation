@@ -2,8 +2,8 @@
 // Copyright (C) Philip Guo (philip@pgbovine.net)
 // LICENSE: https://github.com/pgbovine/OnlinePythonTutor/blob/master/LICENSE.txt
 
-export const redSadFace = require('./images/red-sad-face.jpg');
-export const yellowHappyFace = require('./images/yellow-happy-face.jpg');
+export const redSadFace = require('../public/images/red-sad-face.jpg');
+export const yellowHappyFace = require('../public/images/yellow-happy-face.jpg');
 
 
 const testcasesPaneHtml = '\

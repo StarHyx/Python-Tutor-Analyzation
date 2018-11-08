@@ -1,45 +1,5 @@
-// Python Tutor: https://github.com/pgbovine/OnlinePythonTutor/
-// Copyright (C) Philip Guo (philip@pgbovine.net)
-// LICENSE: https://github.com/pgbovine/OnlinePythonTutor/blob/master/LICENSE.txt
-
-
-// OPT live programming prototype started on 2016-05-30
-// first launched as a "Live Programming Mode" button on main OPT site
-// on 2016-06-08, working for Python 2/3 and JavaScript for starters
-//
-// ... inspired by my explorations with IPython shell + OPT for REPL
-// visualizations in August 2013 (opt-ipy.py), and Irene Chen's holistic
-// visualizations (2013-2014 UROP), inspired by Bret Victor's stuff
-
-/* TODOs:
-
-- use a backup execution server for JS (via backupHttpServerRoot) just
-  like we do in opt-frontend-common.ts
-
-- abstract out components within pytutor.js to prevent ugly code
-  duplication with stuff in this file
-
-- if these Ace enhancements look good, then I can also use them for
-  Codeopticon as well!
-
-- [later] add a codeopticon-style history slider of the user's past
-  edits (but that might be confusing)
-  - NB: now we kind of already have this if you're in a shared session
-    with 'undo' and 'redo' buttons
-
-- [later] detect exact position of syntax error and put a squiggly line below
-  it with something like:
-
-  File "<string>", line 1
-    x~=1
-     ^
-
-  (do this for the OPT classic editor too. and for other language backends)
-
-*/
-
-require('../css/opt-frontend.css');
-require('../css/opt-live.css');
+require('../public/css/opt-frontend.css');
+require('../public/css/opt-live.css');
 
 // need to directly import the class for type checking to work
 import {OptFrontendSharedSessions,TogetherJS} from './opt-shared-sessions';
@@ -86,8 +46,8 @@ export class OptLiveFrontend extends OptFrontendSharedSessions {
     super(params);
 
     $('#legendDiv')
-      .append('<svg id="prevLegendArrowSVG"/> line that has just executed')
-      .append('<p style="margin-top: 4px"><svg id="curLegendArrowSVG"/> next line to execute</p>');
+      .append('<svg id="prevLegendArrowSVG"/> 执行完成')
+      .append('<p style="margin-top: 4px"><svg id="curLegendArrowSVG"/> 即将执行</p>');
 
     d3.select('svg#prevLegendArrowSVG')
         .append('polygon')
@@ -126,13 +86,6 @@ export class OptLiveFrontend extends OptFrontendSharedSessions {
       if (this.myVisualizer) {this.myVisualizer.stepForward();}
     });
     // // put eureka_survey into #eurekaSurveyPane so that it's highly visib
-  }
-
-  demoModeChanged() {
-    super.demoModeChanged(); // call first
-    if (this.demoMode) {
-      $("#eurekaSurveyPane,#surveyPane,#liveModeHeader").hide();
-    }
   }
 
   // override verison in opt-frontend.ts
@@ -190,10 +143,11 @@ export class OptLiveFrontend extends OptFrontendSharedSessions {
       } else if (myVisualizer.instrLimitReached) {
         $("#curInstr").html("Instruction limit reached");
       } else {
-        $("#curInstr").html("Done running (" + String(totalInstrs-1) + " steps)");
+        $("#curInstr").html("运行结束 共" + String(totalInstrs-1) + "步");
       }
     } else {
-      $("#curInstr").html("Step " + String(myVisualizer.curInstr + 1) + " of " + String(totalInstrs-1));
+      $("#curInstr").html(`第 ${String(myVisualizer.curInstr)} 步，共 ${String(totalInstrs - 1)}步`);
+      // $("#curInstr").html("Step " + String(myVisualizer.curInstr + 1) + " of " + String(totalInstrs-1));
     }
 
     // handle raw user input
@@ -456,7 +410,11 @@ export class OptLiveFrontend extends OptFrontendSharedSessions {
 
     this.pyInputAceEditor.setHighlightGutterLine(false); // to avoid gray highlight over gutter of active line
     this.pyInputAceEditor.setDisplayIndentGuides(false); // to avoid annoying gray vertical lines
-
+    this.pyInputAceEditor.setOptions({
+      enableBasicAutocompletion: true,
+      enableSnippets: true,
+      enableLiveAutocompletion: true,
+    });
     this.pyInputAceEditor.$blockScrolling = Infinity; // kludgy to shut up weird warnings
 
     $("#pyInputPane,#codeInputPane")
@@ -668,18 +626,6 @@ export class OptLiveFrontend extends OptFrontendSharedSessions {
     (ret as any).hideCode = true;
     (ret as any).jumpToEnd = true;
     return ret;
-  }
-
-
-  // for shared sessions
-  TogetherjsReadyHandler() {
-    $("#liveModeHeader").hide();
-    super.TogetherjsReadyHandler();
-  }
-
-  TogetherjsCloseHandler() {
-    $("#liveModeHeader").show();
-    super.TogetherjsCloseHandler();
   }
 
   updateOutputTogetherJsHandler(msg) {

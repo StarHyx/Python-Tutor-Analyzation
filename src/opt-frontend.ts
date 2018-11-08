@@ -39,8 +39,8 @@ require('script-loader!./lib/socket.io-client/socket.io.js');
 import {AbstractBaseFrontend, generateUUID, supports_html5_storage} from './opt-frontend-common';
 import {ExecutionVisualizer, assert, htmlspecialchars} from './pytutor';
 
-require('../css/opt-frontend.css');
-require('../css/opt-testcases.css');
+require('../public/css/opt-frontend.css');
+require('../public/css/opt-testcases.css');
 
 export const allTabsRE = new RegExp('\t', 'g');
 

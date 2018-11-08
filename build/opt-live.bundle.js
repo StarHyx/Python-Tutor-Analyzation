@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 18);
+/******/ 	return __webpack_require__(__webpack_require__.s = 17);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -70,7 +70,7 @@
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! jQuery v3.0.0 | (c) jQuery Foundation | jquery.org/license */
 !function(a,b){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){"use strict";var c=[],d=a.document,e=Object.getPrototypeOf,f=c.slice,g=c.concat,h=c.push,i=c.indexOf,j={},k=j.toString,l=j.hasOwnProperty,m=l.toString,n=m.call(Object),o={};function p(a,b){b=b||d;var c=b.createElement("script");c.text=a,b.head.appendChild(c).parentNode.removeChild(c)}var q="3.0.0",r=function(a,b){return new r.fn.init(a,b)},s=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,t=/^-ms-/,u=/-([a-z])/g,v=function(a,b){return b.toUpperCase()};r.fn=r.prototype={jquery:q,constructor:r,length:0,toArray:function(){return f.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:f.call(this)},pushStack:function(a){var b=r.merge(this.constructor(),a);return b.prevObject=this,b},each:function(a){return r.each(this,a)},map:function(a){return this.pushStack(r.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(f.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor()},push:h,sort:c.sort,splice:c.splice},r.extend=r.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||r.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(a=arguments[h]))for(b in a)c=g[b],d=a[b],g!==d&&(j&&d&&(r.isPlainObject(d)||(e=r.isArray(d)))?(e?(e=!1,f=c&&r.isArray(c)?c:[]):f=c&&r.isPlainObject(c)?c:{},g[b]=r.extend(j,f,d)):void 0!==d&&(g[b]=d));return g},r.extend({expando:"jQuery"+(q+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===r.type(a)},isArray:Array.isArray,isWindow:function(a){return null!=a&&a===a.window},isNumeric:function(a){var b=r.type(a);return("number"===b||"string"===b)&&!isNaN(a-parseFloat(a))},isPlainObject:function(a){var b,c;return a&&"[object Object]"===k.call(a)?(b=e(a))?(c=l.call(b,"constructor")&&b.constructor,"function"==typeof c&&m.call(c)===n):!0:!1},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?j[k.call(a)]||"object":typeof a},globalEval:function(a){p(a)},camelCase:function(a){return a.replace(t,"ms-").replace(u,v)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b){var c,d=0;if(w(a)){for(c=a.length;c>d;d++)if(b.call(a[d],d,a[d])===!1)break}else for(d in a)if(b.call(a[d],d,a[d])===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(s,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(w(Object(a))?r.merge(c,"string"==typeof a?[a]:a):h.call(c,a)),c},inArray:function(a,b,c){return null==b?-1:i.call(b,a,c)},merge:function(a,b){for(var c=+b.length,d=0,e=a.length;c>d;d++)a[e++]=b[d];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,e,f=0,h=[];if(w(a))for(d=a.length;d>f;f++)e=b(a[f],f,c),null!=e&&h.push(e);else for(f in a)e=b(a[f],f,c),null!=e&&h.push(e);return g.apply([],h)},guid:1,proxy:function(a,b){var c,d,e;return"string"==typeof b&&(c=a[b],b=a,a=c),r.isFunction(a)?(d=f.call(arguments,2),e=function(){return a.apply(b||this,d.concat(f.call(arguments)))},e.guid=a.guid=a.guid||r.guid++,e):void 0},now:Date.now,support:o}),"function"==typeof Symbol&&(r.fn[Symbol.iterator]=c[Symbol.iterator]),r.each("Boolean Number String Function Array Date RegExp Object Error Symbol".split(" "),function(a,b){j["[object "+b+"]"]=b.toLowerCase()});function w(a){var b=!!a&&"length"in a&&a.length,c=r.type(a);return"function"===c||r.isWindow(a)?!1:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var x=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C={}.hasOwnProperty,D=[],E=D.pop,F=D.push,G=D.push,H=D.slice,I=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},J="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",K="[\\x20\\t\\r\\n\\f]",L="(?:\\\\.|[\\w-]|[^\x00-\\xa0])+",M="\\["+K+"*("+L+")(?:"+K+"*([*^$|!~]?=)"+K+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+L+"))|)"+K+"*\\]",N=":("+L+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+M+")*)|.*)\\)|)",O=new RegExp(K+"+","g"),P=new RegExp("^"+K+"+|((?:^|[^\\\\])(?:\\\\.)*)"+K+"+$","g"),Q=new RegExp("^"+K+"*,"+K+"*"),R=new RegExp("^"+K+"*([>+~]|"+K+")"+K+"*"),S=new RegExp("="+K+"*([^\\]'\"]*?)"+K+"*\\]","g"),T=new RegExp(N),U=new RegExp("^"+L+"$"),V={ID:new RegExp("^#("+L+")"),CLASS:new RegExp("^\\.("+L+")"),TAG:new RegExp("^("+L+"|[*])"),ATTR:new RegExp("^"+M),PSEUDO:new RegExp("^"+N),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+K+"*(even|odd|(([+-]|)(\\d*)n|)"+K+"*(?:([+-]|)"+K+"*(\\d+)|))"+K+"*\\)|)","i"),bool:new RegExp("^(?:"+J+")$","i"),needsContext:new RegExp("^"+K+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+K+"*((?:-\\d)?\\d*)"+K+"*\\)|)(?=[^-]|$)","i")},W=/^(?:input|select|textarea|button)$/i,X=/^h\d$/i,Y=/^[^{]+\{\s*\[native \w/,Z=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,$=/[+~]/,_=new RegExp("\\\\([\\da-f]{1,6}"+K+"?|("+K+")|.)","ig"),aa=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ba=/([\0-\x1f\x7f]|^-?\d)|^-$|[^\x80-\uFFFF\w-]/g,ca=function(a,b){return b?"\x00"===a?"\ufffd":a.slice(0,-1)+"\\"+a.charCodeAt(a.length-1).toString(16)+" ":"\\"+a},da=function(){m()},ea=ta(function(a){return a.disabled===!0},{dir:"parentNode",next:"legend"});try{G.apply(D=H.call(v.childNodes),v.childNodes),D[v.childNodes.length].nodeType}catch(fa){G={apply:D.length?function(a,b){F.apply(a,H.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s=b&&b.ownerDocument,w=b?b.nodeType:9;if(d=d||[],"string"!=typeof a||!a||1!==w&&9!==w&&11!==w)return d;if(!e&&((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,p)){if(11!==w&&(l=Z.exec(a)))if(f=l[1]){if(9===w){if(!(j=b.getElementById(f)))return d;if(j.id===f)return d.push(j),d}else if(s&&(j=s.getElementById(f))&&t(b,j)&&j.id===f)return d.push(j),d}else{if(l[2])return G.apply(d,b.getElementsByTagName(a)),d;if((f=l[3])&&c.getElementsByClassName&&b.getElementsByClassName)return G.apply(d,b.getElementsByClassName(f)),d}if(c.qsa&&!A[a+" "]&&(!q||!q.test(a))){if(1!==w)s=b,r=a;else if("object"!==b.nodeName.toLowerCase()){(k=b.getAttribute("id"))?k=k.replace(ba,ca):b.setAttribute("id",k=u),o=g(a),h=o.length;while(h--)o[h]="#"+k+" "+sa(o[h]);r=o.join(","),s=$.test(a)&&qa(b.parentNode)||b}if(r)try{return G.apply(d,s.querySelectorAll(r)),d}catch(x){}finally{k===u&&b.removeAttribute("id")}}}return i(a.replace(P,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("fieldset");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=c.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&a.sourceIndex-b.sourceIndex;if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return function(b){return"label"in b&&b.disabled===a||"form"in b&&b.disabled===a||"form"in b&&b.disabled===!1&&(b.isDisabled===a||b.isDisabled!==!a&&("label"in b||!ea(b))!==a)}}function pa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function qa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=n.documentElement,p=!f(n),v!==n&&(e=n.defaultView)&&e.top!==e&&(e.addEventListener?e.addEventListener("unload",da,!1):e.attachEvent&&e.attachEvent("onunload",da)),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(n.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=Y.test(n.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!n.getElementsByName||!n.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c?[c]:[]}},d.filter.ID=function(a){var b=a.replace(_,aa);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(_,aa);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return"undefined"!=typeof b.getElementsByClassName&&p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=Y.test(n.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\r\\' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+K+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+K+"*(?:value|"+J+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){a.innerHTML="<a href='' disabled='disabled'></a><select disabled='disabled'><option/></select>";var b=n.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+K+"*[*^$|!~]?="),2!==a.querySelectorAll(":enabled").length&&q.push(":enabled",":disabled"),o.appendChild(a).disabled=!0,2!==a.querySelectorAll(":disabled").length&&q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=Y.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"*"),s.call(a,"[s!='']:x"),r.push("!=",N)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=Y.test(o.compareDocumentPosition),t=b||Y.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===n||a.ownerDocument===v&&t(v,a)?-1:b===n||b.ownerDocument===v&&t(v,b)?1:k?I(k,a)-I(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,g=[a],h=[b];if(!e||!f)return a===n?-1:b===n?1:e?-1:f?1:k?I(k,a)-I(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)g.unshift(c);c=b;while(c=c.parentNode)h.unshift(c);while(g[d]===h[d])d++;return d?la(g[d],h[d]):g[d]===v?-1:h[d]===v?1:0},n):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(S,"='$1']"),c.matchesSelector&&p&&!A[b+" "]&&(!r||!r.test(b))&&(!q||!q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&C.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.escape=function(a){return(a+"").replace(ba,ca)},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:V,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(_,aa),a[3]=(a[3]||a[4]||a[5]||"").replace(_,aa),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return V.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&T.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(_,aa).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+K+")"+a+"("+K+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(O," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h,t=!1;if(q){if(f){while(p){m=b;while(m=m[p])if(h?m.nodeName.toLowerCase()===r:1===m.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){m=q,l=m[u]||(m[u]={}),k=l[m.uniqueID]||(l[m.uniqueID]={}),j=k[a]||[],n=j[0]===w&&j[1],t=n&&j[2],m=n&&q.childNodes[n];while(m=++n&&m&&m[p]||(t=n=0)||o.pop())if(1===m.nodeType&&++t&&m===b){k[a]=[w,n,t];break}}else if(s&&(m=b,l=m[u]||(m[u]={}),k=l[m.uniqueID]||(l[m.uniqueID]={}),j=k[a]||[],n=j[0]===w&&j[1],t=n),t===!1)while(m=++n&&m&&m[p]||(t=n=0)||o.pop())if((h?m.nodeName.toLowerCase()===r:1===m.nodeType)&&++t&&(s&&(l=m[u]||(m[u]={}),k=l[m.uniqueID]||(l[m.uniqueID]={}),k[a]=[w,t]),m===b))break;return t-=e,t===d||t%d===0&&t/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=I(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(P,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(_,aa),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return U.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(_,aa).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:oa(!1),disabled:oa(!0),checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return X.test(a.nodeName)},input:function(a){return W.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:pa(function(){return[0]}),last:pa(function(a,b){return[b-1]}),eq:pa(function(a,b,c){return[0>c?c+b:c]}),even:pa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:pa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:pa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:pa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function ra(){}ra.prototype=d.filters=d.pseudos,d.setFilters=new ra,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){c&&!(e=Q.exec(h))||(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=R.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(P," ")}),h=h.slice(c.length));for(g in d.filter)!(e=V[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function sa(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function ta(a,b,c){var d=b.dir,e=b.next,f=e||d,g=c&&"parentNode"===f,h=x++;return b.first?function(b,c,e){while(b=b[d])if(1===b.nodeType||g)return a(b,c,e)}:function(b,c,i){var j,k,l,m=[w,h];if(i){while(b=b[d])if((1===b.nodeType||g)&&a(b,c,i))return!0}else while(b=b[d])if(1===b.nodeType||g)if(l=b[u]||(b[u]={}),k=l[b.uniqueID]||(l[b.uniqueID]={}),e&&e===b.nodeName.toLowerCase())b=b[d]||b;else{if((j=k[f])&&j[0]===w&&j[1]===h)return m[2]=j[2];if(k[f]=m,m[2]=a(b,c,i))return!0}}}function ua(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function va(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function wa(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(c&&!c(f,d,e)||(g.push(f),j&&b.push(h)));return g}function xa(a,b,c,d,e,f){return d&&!d[u]&&(d=xa(d)),e&&!e[u]&&(e=xa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||va(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:wa(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=wa(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?I(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=wa(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):G.apply(g,r)})}function ya(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=ta(function(a){return a===b},h,!0),l=ta(function(a){return I(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[ta(ua(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return xa(i>1&&ua(m),i>1&&sa(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(P,"$1"),c,e>i&&ya(a.slice(i,e)),f>e&&ya(a=a.slice(e)),f>e&&sa(a))}m.push(c)}return ua(m)}function za(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,o,q,r=0,s="0",t=f&&[],u=[],v=j,x=f||e&&d.find.TAG("*",k),y=w+=null==v?1:Math.random()||.1,z=x.length;for(k&&(j=g===n||g||k);s!==z&&null!=(l=x[s]);s++){if(e&&l){o=0,g||l.ownerDocument===n||(m(l),h=!p);while(q=a[o++])if(q(l,g||n,h)){i.push(l);break}k&&(w=y)}c&&((l=!q&&l)&&r--,f&&t.push(l))}if(r+=s,c&&s!==r){o=0;while(q=b[o++])q(t,u,g,h);if(f){if(r>0)while(s--)t[s]||u[s]||(u[s]=E.call(i));u=wa(u)}G.apply(i,u),k&&!f&&u.length>0&&r+b.length>1&&ga.uniqueSort(i)}return k&&(w=y,j=v),t};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=ya(b[c]),f[u]?d.push(f):e.push(f);f=A(a,za(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(_,aa),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=V.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(_,aa),$.test(j[0].type)&&qa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&sa(j),!a)return G.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,!b||$.test(a)&&qa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("fieldset"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(J,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);r.find=x,r.expr=x.selectors,r.expr[":"]=r.expr.pseudos,r.uniqueSort=r.unique=x.uniqueSort,r.text=x.getText,r.isXMLDoc=x.isXML,r.contains=x.contains,r.escapeSelector=x.escape;var y=function(a,b,c){var d=[],e=void 0!==c;while((a=a[b])&&9!==a.nodeType)if(1===a.nodeType){if(e&&r(a).is(c))break;d.push(a)}return d},z=function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c},A=r.expr.match.needsContext,B=/^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i,C=/^.[^:#\[\.,]*$/;function D(a,b,c){if(r.isFunction(b))return r.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return r.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(C.test(b))return r.filter(b,a,c);b=r.filter(b,a)}return r.grep(a,function(a){return i.call(b,a)>-1!==c&&1===a.nodeType})}r.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?r.find.matchesSelector(d,a)?[d]:[]:r.find.matches(a,r.grep(b,function(a){return 1===a.nodeType}))},r.fn.extend({find:function(a){var b,c,d=this.length,e=this;if("string"!=typeof a)return this.pushStack(r(a).filter(function(){for(b=0;d>b;b++)if(r.contains(e[b],this))return!0}));for(c=this.pushStack([]),b=0;d>b;b++)r.find(a,e[b],c);return d>1?r.uniqueSort(c):c},filter:function(a){return this.pushStack(D(this,a||[],!1))},not:function(a){return this.pushStack(D(this,a||[],!0))},is:function(a){return!!D(this,"string"==typeof a&&A.test(a)?r(a):a||[],!1).length}});var E,F=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]+))$/,G=r.fn.init=function(a,b,c){var e,f;if(!a)return this;if(c=c||E,"string"==typeof a){if(e="<"===a[0]&&">"===a[a.length-1]&&a.length>=3?[null,a,null]:F.exec(a),!e||!e[1]&&b)return!b||b.jquery?(b||c).find(a):this.constructor(b).find(a);if(e[1]){if(b=b instanceof r?b[0]:b,r.merge(this,r.parseHTML(e[1],b&&b.nodeType?b.ownerDocument||b:d,!0)),B.test(e[1])&&r.isPlainObject(b))for(e in b)r.isFunction(this[e])?this[e](b[e]):this.attr(e,b[e]);return this}return f=d.getElementById(e[2]),f&&(this[0]=f,this.length=1),this}return a.nodeType?(this[0]=a,this.length=1,this):r.isFunction(a)?void 0!==c.ready?c.ready(a):a(r):r.makeArray(a,this)};G.prototype=r.fn,E=r(d);var H=/^(?:parents|prev(?:Until|All))/,I={children:!0,contents:!0,next:!0,prev:!0};r.fn.extend({has:function(a){var b=r(a,this),c=b.length;return this.filter(function(){for(var a=0;c>a;a++)if(r.contains(this,b[a]))return!0})},closest:function(a,b){var c,d=0,e=this.length,f=[],g="string"!=typeof a&&r(a);if(!A.test(a))for(;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&r.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?r.uniqueSort(f):f)},index:function(a){return a?"string"==typeof a?i.call(r(a),this[0]):i.call(this,a.jquery?a[0]:a):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(r.uniqueSort(r.merge(this.get(),r(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function J(a,b){while((a=a[b])&&1!==a.nodeType);return a}r.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return y(a,"parentNode")},parentsUntil:function(a,b,c){return y(a,"parentNode",c)},next:function(a){return J(a,"nextSibling")},prev:function(a){return J(a,"previousSibling")},nextAll:function(a){return y(a,"nextSibling")},prevAll:function(a){return y(a,"previousSibling")},nextUntil:function(a,b,c){return y(a,"nextSibling",c)},prevUntil:function(a,b,c){return y(a,"previousSibling",c)},siblings:function(a){return z((a.parentNode||{}).firstChild,a)},children:function(a){return z(a.firstChild)},contents:function(a){return a.contentDocument||r.merge([],a.childNodes)}},function(a,b){r.fn[a]=function(c,d){var e=r.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=r.filter(d,e)),this.length>1&&(I[a]||r.uniqueSort(e),H.test(a)&&e.reverse()),this.pushStack(e)}});var K=/\S+/g;function L(a){var b={};return r.each(a.match(K)||[],function(a,c){b[c]=!0}),b}r.Callbacks=function(a){a="string"==typeof a?L(a):r.extend({},a);var b,c,d,e,f=[],g=[],h=-1,i=function(){for(e=a.once,d=b=!0;g.length;h=-1){c=g.shift();while(++h<f.length)f[h].apply(c[0],c[1])===!1&&a.stopOnFalse&&(h=f.length,c=!1)}a.memory||(c=!1),b=!1,e&&(f=c?[]:"")},j={add:function(){return f&&(c&&!b&&(h=f.length-1,g.push(c)),function d(b){r.each(b,function(b,c){r.isFunction(c)?a.unique&&j.has(c)||f.push(c):c&&c.length&&"string"!==r.type(c)&&d(c)})}(arguments),c&&!b&&i()),this},remove:function(){return r.each(arguments,function(a,b){var c;while((c=r.inArray(b,f,c))>-1)f.splice(c,1),h>=c&&h--}),this},has:function(a){return a?r.inArray(a,f)>-1:f.length>0},empty:function(){return f&&(f=[]),this},disable:function(){return e=g=[],f=c="",this},disabled:function(){return!f},lock:function(){return e=g=[],c||b||(f=c=""),this},locked:function(){return!!e},fireWith:function(a,c){return e||(c=c||[],c=[a,c.slice?c.slice():c],g.push(c),b||i()),this},fire:function(){return j.fireWith(this,arguments),this},fired:function(){return!!d}};return j};function M(a){return a}function N(a){throw a}function O(a,b,c){var d;try{a&&r.isFunction(d=a.promise)?d.call(a).done(b).fail(c):a&&r.isFunction(d=a.then)?d.call(a,b,c):b.call(void 0,a)}catch(a){c.call(void 0,a)}}r.extend({Deferred:function(b){var c=[["notify","progress",r.Callbacks("memory"),r.Callbacks("memory"),2],["resolve","done",r.Callbacks("once memory"),r.Callbacks("once memory"),0,"resolved"],["reject","fail",r.Callbacks("once memory"),r.Callbacks("once memory"),1,"rejected"]],d="pending",e={state:function(){return d},always:function(){return f.done(arguments).fail(arguments),this},"catch":function(a){return e.then(null,a)},pipe:function(){var a=arguments;return r.Deferred(function(b){r.each(c,function(c,d){var e=r.isFunction(a[d[4]])&&a[d[4]];f[d[1]](function(){var a=e&&e.apply(this,arguments);a&&r.isFunction(a.promise)?a.promise().progress(b.notify).done(b.resolve).fail(b.reject):b[d[0]+"With"](this,e?[a]:arguments)})}),a=null}).promise()},then:function(b,d,e){var f=0;function g(b,c,d,e){return function(){var h=this,i=arguments,j=function(){var a,j;if(!(f>b)){if(a=d.apply(h,i),a===c.promise())throw new TypeError("Thenable self-resolution");j=a&&("object"==typeof a||"function"==typeof a)&&a.then,r.isFunction(j)?e?j.call(a,g(f,c,M,e),g(f,c,N,e)):(f++,j.call(a,g(f,c,M,e),g(f,c,N,e),g(f,c,M,c.notifyWith))):(d!==M&&(h=void 0,i=[a]),(e||c.resolveWith)(h,i))}},k=e?j:function(){try{j()}catch(a){r.Deferred.exceptionHook&&r.Deferred.exceptionHook(a,k.stackTrace),b+1>=f&&(d!==N&&(h=void 0,i=[a]),c.rejectWith(h,i))}};b?k():(r.Deferred.getStackHook&&(k.stackTrace=r.Deferred.getStackHook()),a.setTimeout(k))}}return r.Deferred(function(a){c[0][3].add(g(0,a,r.isFunction(e)?e:M,a.notifyWith)),c[1][3].add(g(0,a,r.isFunction(b)?b:M)),c[2][3].add(g(0,a,r.isFunction(d)?d:N))}).promise()},promise:function(a){return null!=a?r.extend(a,e):e}},f={};return r.each(c,function(a,b){var g=b[2],h=b[5];e[b[1]]=g.add,h&&g.add(function(){d=h},c[3-a][2].disable,c[0][2].lock),g.add(b[3].fire),f[b[0]]=function(){return f[b[0]+"With"](this===f?void 0:this,arguments),this},f[b[0]+"With"]=g.fireWith}),e.promise(f),b&&b.call(f,f),f},when:function(a){var b=arguments.length,c=b,d=Array(c),e=f.call(arguments),g=r.Deferred(),h=function(a){return function(c){d[a]=this,e[a]=arguments.length>1?f.call(arguments):c,--b||g.resolveWith(d,e)}};if(1>=b&&(O(a,g.done(h(c)).resolve,g.reject),"pending"===g.state()||r.isFunction(e[c]&&e[c].then)))return g.then();while(c--)O(e[c],h(c),g.reject);return g.promise()}});var P=/^(Eval|Internal|Range|Reference|Syntax|Type|URI)Error$/;r.Deferred.exceptionHook=function(b,c){a.console&&a.console.warn&&b&&P.test(b.name)&&a.console.warn("jQuery.Deferred exception: "+b.message,b.stack,c)};var Q=r.Deferred();r.fn.ready=function(a){return Q.then(a),this},r.extend({isReady:!1,readyWait:1,holdReady:function(a){a?r.readyWait++:r.ready(!0)},ready:function(a){(a===!0?--r.readyWait:r.isReady)||(r.isReady=!0,a!==!0&&--r.readyWait>0||Q.resolveWith(d,[r]))}}),r.ready.then=Q.then;function R(){d.removeEventListener("DOMContentLoaded",R),a.removeEventListener("load",R),r.ready()}"complete"===d.readyState||"loading"!==d.readyState&&!d.documentElement.doScroll?a.setTimeout(r.ready):(d.addEventListener("DOMContentLoaded",R),a.addEventListener("load",R));var S=function(a,b,c,d,e,f,g){var h=0,i=a.length,j=null==c;if("object"===r.type(c)){e=!0;for(h in c)S(a,b,h,c[h],!0,f,g)}else if(void 0!==d&&(e=!0,r.isFunction(d)||(g=!0),j&&(g?(b.call(a,d),b=null):(j=b,b=function(a,b,c){
 return j.call(r(a),c)})),b))for(;i>h;h++)b(a[h],c,g?d:d.call(a[h],h,b(a[h],c)));return e?a:j?b.call(a):i?b(a[0],c):f},T=function(a){return 1===a.nodeType||9===a.nodeType||!+a.nodeType};function U(){this.expando=r.expando+U.uid++}U.uid=1,U.prototype={cache:function(a){var b=a[this.expando];return b||(b={},T(a)&&(a.nodeType?a[this.expando]=b:Object.defineProperty(a,this.expando,{value:b,configurable:!0}))),b},set:function(a,b,c){var d,e=this.cache(a);if("string"==typeof b)e[r.camelCase(b)]=c;else for(d in b)e[r.camelCase(d)]=b[d];return e},get:function(a,b){return void 0===b?this.cache(a):a[this.expando]&&a[this.expando][r.camelCase(b)]},access:function(a,b,c){return void 0===b||b&&"string"==typeof b&&void 0===c?this.get(a,b):(this.set(a,b,c),void 0!==c?c:b)},remove:function(a,b){var c,d=a[this.expando];if(void 0!==d){if(void 0!==b){r.isArray(b)?b=b.map(r.camelCase):(b=r.camelCase(b),b=b in d?[b]:b.match(K)||[]),c=b.length;while(c--)delete d[b[c]]}(void 0===b||r.isEmptyObject(d))&&(a.nodeType?a[this.expando]=void 0:delete a[this.expando])}},hasData:function(a){var b=a[this.expando];return void 0!==b&&!r.isEmptyObject(b)}};var V=new U,W=new U,X=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,Y=/[A-Z]/g;function Z(a,b,c){var d;if(void 0===c&&1===a.nodeType)if(d="data-"+b.replace(Y,"-$&").toLowerCase(),c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:X.test(c)?JSON.parse(c):c}catch(e){}W.set(a,b,c)}else c=void 0;return c}r.extend({hasData:function(a){return W.hasData(a)||V.hasData(a)},data:function(a,b,c){return W.access(a,b,c)},removeData:function(a,b){W.remove(a,b)},_data:function(a,b,c){return V.access(a,b,c)},_removeData:function(a,b){V.remove(a,b)}}),r.fn.extend({data:function(a,b){var c,d,e,f=this[0],g=f&&f.attributes;if(void 0===a){if(this.length&&(e=W.get(f),1===f.nodeType&&!V.get(f,"hasDataAttrs"))){c=g.length;while(c--)g[c]&&(d=g[c].name,0===d.indexOf("data-")&&(d=r.camelCase(d.slice(5)),Z(f,d,e[d])));V.set(f,"hasDataAttrs",!0)}return e}return"object"==typeof a?this.each(function(){W.set(this,a)}):S(this,function(b){var c;if(f&&void 0===b){if(c=W.get(f,a),void 0!==c)return c;if(c=Z(f,a),void 0!==c)return c}else this.each(function(){W.set(this,a,b)})},null,b,arguments.length>1,null,!0)},removeData:function(a){return this.each(function(){W.remove(this,a)})}}),r.extend({queue:function(a,b,c){var d;return a?(b=(b||"fx")+"queue",d=V.get(a,b),c&&(!d||r.isArray(c)?d=V.access(a,b,r.makeArray(c)):d.push(c)),d||[]):void 0},dequeue:function(a,b){b=b||"fx";var c=r.queue(a,b),d=c.length,e=c.shift(),f=r._queueHooks(a,b),g=function(){r.dequeue(a,b)};"inprogress"===e&&(e=c.shift(),d--),e&&("fx"===b&&c.unshift("inprogress"),delete f.stop,e.call(a,g,f)),!d&&f&&f.empty.fire()},_queueHooks:function(a,b){var c=b+"queueHooks";return V.get(a,c)||V.access(a,c,{empty:r.Callbacks("once memory").add(function(){V.remove(a,[b+"queue",c])})})}}),r.fn.extend({queue:function(a,b){var c=2;return"string"!=typeof a&&(b=a,a="fx",c--),arguments.length<c?r.queue(this[0],a):void 0===b?this:this.each(function(){var c=r.queue(this,a,b);r._queueHooks(this,a),"fx"===a&&"inprogress"!==c[0]&&r.dequeue(this,a)})},dequeue:function(a){return this.each(function(){r.dequeue(this,a)})},clearQueue:function(a){return this.queue(a||"fx",[])},promise:function(a,b){var c,d=1,e=r.Deferred(),f=this,g=this.length,h=function(){--d||e.resolveWith(f,[f])};"string"!=typeof a&&(b=a,a=void 0),a=a||"fx";while(g--)c=V.get(f[g],a+"queueHooks"),c&&c.empty&&(d++,c.empty.add(h));return h(),e.promise(b)}});var $=/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,_=new RegExp("^(?:([+-])=|)("+$+")([a-z%]*)$","i"),aa=["Top","Right","Bottom","Left"],ba=function(a,b){return a=b||a,"none"===a.style.display||""===a.style.display&&r.contains(a.ownerDocument,a)&&"none"===r.css(a,"display")},ca=function(a,b,c,d){var e,f,g={};for(f in b)g[f]=a.style[f],a.style[f]=b[f];e=c.apply(a,d||[]);for(f in b)a.style[f]=g[f];return e};function da(a,b,c,d){var e,f=1,g=20,h=d?function(){return d.cur()}:function(){return r.css(a,b,"")},i=h(),j=c&&c[3]||(r.cssNumber[b]?"":"px"),k=(r.cssNumber[b]||"px"!==j&&+i)&&_.exec(r.css(a,b));if(k&&k[3]!==j){j=j||k[3],c=c||[],k=+i||1;do f=f||".5",k/=f,r.style(a,b,k+j);while(f!==(f=h()/i)&&1!==f&&--g)}return c&&(k=+k||+i||0,e=c[1]?k+(c[1]+1)*c[2]:+c[2],d&&(d.unit=j,d.start=k,d.end=e)),e}var ea={};function fa(a){var b,c=a.ownerDocument,d=a.nodeName,e=ea[d];return e?e:(b=c.body.appendChild(c.createElement(d)),e=r.css(b,"display"),b.parentNode.removeChild(b),"none"===e&&(e="block"),ea[d]=e,e)}function ga(a,b){for(var c,d,e=[],f=0,g=a.length;g>f;f++)d=a[f],d.style&&(c=d.style.display,b?("none"===c&&(e[f]=V.get(d,"display")||null,e[f]||(d.style.display="")),""===d.style.display&&ba(d)&&(e[f]=fa(d))):"none"!==c&&(e[f]="none",V.set(d,"display",c)));for(f=0;g>f;f++)null!=e[f]&&(a[f].style.display=e[f]);return a}r.fn.extend({show:function(){return ga(this,!0)},hide:function(){return ga(this)},toggle:function(a){return"boolean"==typeof a?a?this.show():this.hide():this.each(function(){ba(this)?r(this).show():r(this).hide()})}});var ha=/^(?:checkbox|radio)$/i,ia=/<([a-z][^\/\0>\x20\t\r\n\f]+)/i,ja=/^$|\/(?:java|ecma)script/i,ka={option:[1,"<select multiple='multiple'>","</select>"],thead:[1,"<table>","</table>"],col:[2,"<table><colgroup>","</colgroup></table>"],tr:[2,"<table><tbody>","</tbody></table>"],td:[3,"<table><tbody><tr>","</tr></tbody></table>"],_default:[0,"",""]};ka.optgroup=ka.option,ka.tbody=ka.tfoot=ka.colgroup=ka.caption=ka.thead,ka.th=ka.td;function la(a,b){var c="undefined"!=typeof a.getElementsByTagName?a.getElementsByTagName(b||"*"):"undefined"!=typeof a.querySelectorAll?a.querySelectorAll(b||"*"):[];return void 0===b||b&&r.nodeName(a,b)?r.merge([a],c):c}function ma(a,b){for(var c=0,d=a.length;d>c;c++)V.set(a[c],"globalEval",!b||V.get(b[c],"globalEval"))}var na=/<|&#?\w+;/;function oa(a,b,c,d,e){for(var f,g,h,i,j,k,l=b.createDocumentFragment(),m=[],n=0,o=a.length;o>n;n++)if(f=a[n],f||0===f)if("object"===r.type(f))r.merge(m,f.nodeType?[f]:f);else if(na.test(f)){g=g||l.appendChild(b.createElement("div")),h=(ia.exec(f)||["",""])[1].toLowerCase(),i=ka[h]||ka._default,g.innerHTML=i[1]+r.htmlPrefilter(f)+i[2],k=i[0];while(k--)g=g.lastChild;r.merge(m,g.childNodes),g=l.firstChild,g.textContent=""}else m.push(b.createTextNode(f));l.textContent="",n=0;while(f=m[n++])if(d&&r.inArray(f,d)>-1)e&&e.push(f);else if(j=r.contains(f.ownerDocument,f),g=la(l.appendChild(f),"script"),j&&ma(g),c){k=0;while(f=g[k++])ja.test(f.type||"")&&c.push(f)}return l}!function(){var a=d.createDocumentFragment(),b=a.appendChild(d.createElement("div")),c=d.createElement("input");c.setAttribute("type","radio"),c.setAttribute("checked","checked"),c.setAttribute("name","t"),b.appendChild(c),o.checkClone=b.cloneNode(!0).cloneNode(!0).lastChild.checked,b.innerHTML="<textarea>x</textarea>",o.noCloneChecked=!!b.cloneNode(!0).lastChild.defaultValue}();var pa=d.documentElement,qa=/^key/,ra=/^(?:mouse|pointer|contextmenu|drag|drop)|click/,sa=/^([^.]*)(?:\.(.+)|)/;function ta(){return!0}function ua(){return!1}function va(){try{return d.activeElement}catch(a){}}function wa(a,b,c,d,e,f){var g,h;if("object"==typeof b){"string"!=typeof c&&(d=d||c,c=void 0);for(h in b)wa(a,h,c,d,b[h],f);return a}if(null==d&&null==e?(e=c,d=c=void 0):null==e&&("string"==typeof c?(e=d,d=void 0):(e=d,d=c,c=void 0)),e===!1)e=ua;else if(!e)return a;return 1===f&&(g=e,e=function(a){return r().off(a),g.apply(this,arguments)},e.guid=g.guid||(g.guid=r.guid++)),a.each(function(){r.event.add(this,b,e,d,c)})}r.event={global:{},add:function(a,b,c,d,e){var f,g,h,i,j,k,l,m,n,o,p,q=V.get(a);if(q){c.handler&&(f=c,c=f.handler,e=f.selector),e&&r.find.matchesSelector(pa,e),c.guid||(c.guid=r.guid++),(i=q.events)||(i=q.events={}),(g=q.handle)||(g=q.handle=function(b){return"undefined"!=typeof r&&r.event.triggered!==b.type?r.event.dispatch.apply(a,arguments):void 0}),b=(b||"").match(K)||[""],j=b.length;while(j--)h=sa.exec(b[j])||[],n=p=h[1],o=(h[2]||"").split(".").sort(),n&&(l=r.event.special[n]||{},n=(e?l.delegateType:l.bindType)||n,l=r.event.special[n]||{},k=r.extend({type:n,origType:p,data:d,handler:c,guid:c.guid,selector:e,needsContext:e&&r.expr.match.needsContext.test(e),namespace:o.join(".")},f),(m=i[n])||(m=i[n]=[],m.delegateCount=0,l.setup&&l.setup.call(a,d,o,g)!==!1||a.addEventListener&&a.addEventListener(n,g)),l.add&&(l.add.call(a,k),k.handler.guid||(k.handler.guid=c.guid)),e?m.splice(m.delegateCount++,0,k):m.push(k),r.event.global[n]=!0)}},remove:function(a,b,c,d,e){var f,g,h,i,j,k,l,m,n,o,p,q=V.hasData(a)&&V.get(a);if(q&&(i=q.events)){b=(b||"").match(K)||[""],j=b.length;while(j--)if(h=sa.exec(b[j])||[],n=p=h[1],o=(h[2]||"").split(".").sort(),n){l=r.event.special[n]||{},n=(d?l.delegateType:l.bindType)||n,m=i[n]||[],h=h[2]&&new RegExp("(^|\\.)"+o.join("\\.(?:.*\\.|)")+"(\\.|$)"),g=f=m.length;while(f--)k=m[f],!e&&p!==k.origType||c&&c.guid!==k.guid||h&&!h.test(k.namespace)||d&&d!==k.selector&&("**"!==d||!k.selector)||(m.splice(f,1),k.selector&&m.delegateCount--,l.remove&&l.remove.call(a,k));g&&!m.length&&(l.teardown&&l.teardown.call(a,o,q.handle)!==!1||r.removeEvent(a,n,q.handle),delete i[n])}else for(n in i)r.event.remove(a,n+b[j],c,d,!0);r.isEmptyObject(i)&&V.remove(a,"handle events")}},dispatch:function(a){var b=r.event.fix(a),c,d,e,f,g,h,i=new Array(arguments.length),j=(V.get(this,"events")||{})[b.type]||[],k=r.event.special[b.type]||{};for(i[0]=b,c=1;c<arguments.length;c++)i[c]=arguments[c];if(b.delegateTarget=this,!k.preDispatch||k.preDispatch.call(this,b)!==!1){h=r.event.handlers.call(this,b,j),c=0;while((f=h[c++])&&!b.isPropagationStopped()){b.currentTarget=f.elem,d=0;while((g=f.handlers[d++])&&!b.isImmediatePropagationStopped())b.rnamespace&&!b.rnamespace.test(g.namespace)||(b.handleObj=g,b.data=g.data,e=((r.event.special[g.origType]||{}).handle||g.handler).apply(f.elem,i),void 0!==e&&(b.result=e)===!1&&(b.preventDefault(),b.stopPropagation()))}return k.postDispatch&&k.postDispatch.call(this,b),b.result}},handlers:function(a,b){var c,d,e,f,g=[],h=b.delegateCount,i=a.target;if(h&&i.nodeType&&("click"!==a.type||isNaN(a.button)||a.button<1))for(;i!==this;i=i.parentNode||this)if(1===i.nodeType&&(i.disabled!==!0||"click"!==a.type)){for(d=[],c=0;h>c;c++)f=b[c],e=f.selector+" ",void 0===d[e]&&(d[e]=f.needsContext?r(e,this).index(i)>-1:r.find(e,this,null,[i]).length),d[e]&&d.push(f);d.length&&g.push({elem:i,handlers:d})}return h<b.length&&g.push({elem:this,handlers:b.slice(h)}),g},addProp:function(a,b){Object.defineProperty(r.Event.prototype,a,{enumerable:!0,configurable:!0,get:r.isFunction(b)?function(){return this.originalEvent?b(this.originalEvent):void 0}:function(){return this.originalEvent?this.originalEvent[a]:void 0},set:function(b){Object.defineProperty(this,a,{enumerable:!0,configurable:!0,writable:!0,value:b})}})},fix:function(a){return a[r.expando]?a:new r.Event(a)},special:{load:{noBubble:!0},focus:{trigger:function(){return this!==va()&&this.focus?(this.focus(),!1):void 0},delegateType:"focusin"},blur:{trigger:function(){return this===va()&&this.blur?(this.blur(),!1):void 0},delegateType:"focusout"},click:{trigger:function(){return"checkbox"===this.type&&this.click&&r.nodeName(this,"input")?(this.click(),!1):void 0},_default:function(a){return r.nodeName(a.target,"a")}},beforeunload:{postDispatch:function(a){void 0!==a.result&&a.originalEvent&&(a.originalEvent.returnValue=a.result)}}}},r.removeEvent=function(a,b,c){a.removeEventListener&&a.removeEventListener(b,c)},r.Event=function(a,b){return this instanceof r.Event?(a&&a.type?(this.originalEvent=a,this.type=a.type,this.isDefaultPrevented=a.defaultPrevented||void 0===a.defaultPrevented&&a.returnValue===!1?ta:ua,this.target=a.target&&3===a.target.nodeType?a.target.parentNode:a.target,this.currentTarget=a.currentTarget,this.relatedTarget=a.relatedTarget):this.type=a,b&&r.extend(this,b),this.timeStamp=a&&a.timeStamp||r.now(),void(this[r.expando]=!0)):new r.Event(a,b)},r.Event.prototype={constructor:r.Event,isDefaultPrevented:ua,isPropagationStopped:ua,isImmediatePropagationStopped:ua,isSimulated:!1,preventDefault:function(){var a=this.originalEvent;this.isDefaultPrevented=ta,a&&!this.isSimulated&&a.preventDefault()},stopPropagation:function(){var a=this.originalEvent;this.isPropagationStopped=ta,a&&!this.isSimulated&&a.stopPropagation()},stopImmediatePropagation:function(){var a=this.originalEvent;this.isImmediatePropagationStopped=ta,a&&!this.isSimulated&&a.stopImmediatePropagation(),this.stopPropagation()}},r.each({altKey:!0,bubbles:!0,cancelable:!0,changedTouches:!0,ctrlKey:!0,detail:!0,eventPhase:!0,metaKey:!0,pageX:!0,pageY:!0,shiftKey:!0,view:!0,"char":!0,charCode:!0,key:!0,keyCode:!0,button:!0,buttons:!0,clientX:!0,clientY:!0,offsetX:!0,offsetY:!0,pointerId:!0,pointerType:!0,screenX:!0,screenY:!0,targetTouches:!0,toElement:!0,touches:!0,which:function(a){var b=a.button;return null==a.which&&qa.test(a.type)?null!=a.charCode?a.charCode:a.keyCode:!a.which&&void 0!==b&&ra.test(a.type)?1&b?1:2&b?3:4&b?2:0:a.which}},r.event.addProp),r.each({mouseenter:"mouseover",mouseleave:"mouseout",pointerenter:"pointerover",pointerleave:"pointerout"},function(a,b){r.event.special[a]={delegateType:b,bindType:b,handle:function(a){var c,d=this,e=a.relatedTarget,f=a.handleObj;return e&&(e===d||r.contains(d,e))||(a.type=f.origType,c=f.handler.apply(this,arguments),a.type=b),c}}}),r.fn.extend({on:function(a,b,c,d){return wa(this,a,b,c,d)},one:function(a,b,c,d){return wa(this,a,b,c,d,1)},off:function(a,b,c){var d,e;if(a&&a.preventDefault&&a.handleObj)return d=a.handleObj,r(a.delegateTarget).off(d.namespace?d.origType+"."+d.namespace:d.origType,d.selector,d.handler),this;if("object"==typeof a){for(e in a)this.off(e,b,a[e]);return this}return b!==!1&&"function"!=typeof b||(c=b,b=void 0),c===!1&&(c=ua),this.each(function(){r.event.remove(this,a,c,b)})}});var xa=/<(?!area|br|col|embed|hr|img|input|link|meta|param)(([a-z][^\/\0>\x20\t\r\n\f]*)[^>]*)\/>/gi,ya=/<script|<style|<link/i,za=/checked\s*(?:[^=]|=\s*.checked.)/i,Aa=/^true\/(.*)/,Ba=/^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g;function Ca(a,b){return r.nodeName(a,"table")&&r.nodeName(11!==b.nodeType?b:b.firstChild,"tr")?a.getElementsByTagName("tbody")[0]||a:a}function Da(a){return a.type=(null!==a.getAttribute("type"))+"/"+a.type,a}function Ea(a){var b=Aa.exec(a.type);return b?a.type=b[1]:a.removeAttribute("type"),a}function Fa(a,b){var c,d,e,f,g,h,i,j;if(1===b.nodeType){if(V.hasData(a)&&(f=V.access(a),g=V.set(b,f),j=f.events)){delete g.handle,g.events={};for(e in j)for(c=0,d=j[e].length;d>c;c++)r.event.add(b,e,j[e][c])}W.hasData(a)&&(h=W.access(a),i=r.extend({},h),W.set(b,i))}}function Ga(a,b){var c=b.nodeName.toLowerCase();"input"===c&&ha.test(a.type)?b.checked=a.checked:"input"!==c&&"textarea"!==c||(b.defaultValue=a.defaultValue)}function Ha(a,b,c,d){b=g.apply([],b);var e,f,h,i,j,k,l=0,m=a.length,n=m-1,q=b[0],s=r.isFunction(q);if(s||m>1&&"string"==typeof q&&!o.checkClone&&za.test(q))return a.each(function(e){var f=a.eq(e);s&&(b[0]=q.call(this,e,f.html())),Ha(f,b,c,d)});if(m&&(e=oa(b,a[0].ownerDocument,!1,a,d),f=e.firstChild,1===e.childNodes.length&&(e=f),f||d)){for(h=r.map(la(e,"script"),Da),i=h.length;m>l;l++)j=e,l!==n&&(j=r.clone(j,!0,!0),i&&r.merge(h,la(j,"script"))),c.call(a[l],j,l);if(i)for(k=h[h.length-1].ownerDocument,r.map(h,Ea),l=0;i>l;l++)j=h[l],ja.test(j.type||"")&&!V.access(j,"globalEval")&&r.contains(k,j)&&(j.src?r._evalUrl&&r._evalUrl(j.src):p(j.textContent.replace(Ba,""),k))}return a}function Ia(a,b,c){for(var d,e=b?r.filter(b,a):a,f=0;null!=(d=e[f]);f++)c||1!==d.nodeType||r.cleanData(la(d)),d.parentNode&&(c&&r.contains(d.ownerDocument,d)&&ma(la(d,"script")),d.parentNode.removeChild(d));return a}r.extend({htmlPrefilter:function(a){return a.replace(xa,"<$1></$2>")},clone:function(a,b,c){var d,e,f,g,h=a.cloneNode(!0),i=r.contains(a.ownerDocument,a);if(!(o.noCloneChecked||1!==a.nodeType&&11!==a.nodeType||r.isXMLDoc(a)))for(g=la(h),f=la(a),d=0,e=f.length;e>d;d++)Ga(f[d],g[d]);if(b)if(c)for(f=f||la(a),g=g||la(h),d=0,e=f.length;e>d;d++)Fa(f[d],g[d]);else Fa(a,h);return g=la(h,"script"),g.length>0&&ma(g,!i&&la(a,"script")),h},cleanData:function(a){for(var b,c,d,e=r.event.special,f=0;void 0!==(c=a[f]);f++)if(T(c)){if(b=c[V.expando]){if(b.events)for(d in b.events)e[d]?r.event.remove(c,d):r.removeEvent(c,d,b.handle);c[V.expando]=void 0}c[W.expando]&&(c[W.expando]=void 0)}}}),r.fn.extend({detach:function(a){return Ia(this,a,!0)},remove:function(a){return Ia(this,a)},text:function(a){return S(this,function(a){return void 0===a?r.text(this):this.empty().each(function(){1!==this.nodeType&&11!==this.nodeType&&9!==this.nodeType||(this.textContent=a)})},null,a,arguments.length)},append:function(){return Ha(this,arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=Ca(this,a);b.appendChild(a)}})},prepend:function(){return Ha(this,arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=Ca(this,a);b.insertBefore(a,b.firstChild)}})},before:function(){return Ha(this,arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this)})},after:function(){return Ha(this,arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this.nextSibling)})},empty:function(){for(var a,b=0;null!=(a=this[b]);b++)1===a.nodeType&&(r.cleanData(la(a,!1)),a.textContent="");return this},clone:function(a,b){return a=null==a?!1:a,b=null==b?a:b,this.map(function(){return r.clone(this,a,b)})},html:function(a){return S(this,function(a){var b=this[0]||{},c=0,d=this.length;if(void 0===a&&1===b.nodeType)return b.innerHTML;if("string"==typeof a&&!ya.test(a)&&!ka[(ia.exec(a)||["",""])[1].toLowerCase()]){a=r.htmlPrefilter(a);try{for(;d>c;c++)b=this[c]||{},1===b.nodeType&&(r.cleanData(la(b,!1)),b.innerHTML=a);b=0}catch(e){}}b&&this.empty().append(a)},null,a,arguments.length)},replaceWith:function(){var a=[];return Ha(this,arguments,function(b){var c=this.parentNode;r.inArray(this,a)<0&&(r.cleanData(la(this)),c&&c.replaceChild(b,this))},a)}}),r.each({appendTo:"append",prependTo:"prepend",insertBefore:"before",insertAfter:"after",replaceAll:"replaceWith"},function(a,b){r.fn[a]=function(a){for(var c,d=[],e=r(a),f=e.length-1,g=0;f>=g;g++)c=g===f?this:this.clone(!0),r(e[g])[b](c),h.apply(d,c.get());return this.pushStack(d)}});var Ja=/^margin/,Ka=new RegExp("^("+$+")(?!px)[a-z%]+$","i"),La=function(b){var c=b.ownerDocument.defaultView;return c&&c.opener||(c=a),c.getComputedStyle(b)};!function(){function b(){if(i){i.style.cssText="box-sizing:border-box;position:relative;display:block;margin:auto;border:1px;padding:1px;top:1%;width:50%",i.innerHTML="",pa.appendChild(h);var b=a.getComputedStyle(i);c="1%"!==b.top,g="2px"===b.marginLeft,e="4px"===b.width,i.style.marginRight="50%",f="4px"===b.marginRight,pa.removeChild(h),i=null}}var c,e,f,g,h=d.createElement("div"),i=d.createElement("div");i.style&&(i.style.backgroundClip="content-box",i.cloneNode(!0).style.backgroundClip="",o.clearCloneStyle="content-box"===i.style.backgroundClip,h.style.cssText="border:0;width:8px;height:0;top:0;left:-9999px;padding:0;margin-top:1px;position:absolute",h.appendChild(i),r.extend(o,{pixelPosition:function(){return b(),c},boxSizingReliable:function(){return b(),e},pixelMarginRight:function(){return b(),f},reliableMarginLeft:function(){return b(),g}}))}();function Ma(a,b,c){var d,e,f,g,h=a.style;return c=c||La(a),c&&(g=c.getPropertyValue(b)||c[b],""!==g||r.contains(a.ownerDocument,a)||(g=r.style(a,b)),!o.pixelMarginRight()&&Ka.test(g)&&Ja.test(b)&&(d=h.width,e=h.minWidth,f=h.maxWidth,h.minWidth=h.maxWidth=h.width=g,g=c.width,h.width=d,h.minWidth=e,h.maxWidth=f)),void 0!==g?g+"":g}function Na(a,b){return{get:function(){return a()?void delete this.get:(this.get=b).apply(this,arguments)}}}var Oa=/^(none|table(?!-c[ea]).+)/,Pa={position:"absolute",visibility:"hidden",display:"block"},Qa={letterSpacing:"0",fontWeight:"400"},Ra=["Webkit","Moz","ms"],Sa=d.createElement("div").style;function Ta(a){if(a in Sa)return a;var b=a[0].toUpperCase()+a.slice(1),c=Ra.length;while(c--)if(a=Ra[c]+b,a in Sa)return a}function Ua(a,b,c){var d=_.exec(b);return d?Math.max(0,d[2]-(c||0))+(d[3]||"px"):b}function Va(a,b,c,d,e){for(var f=c===(d?"border":"content")?4:"width"===b?1:0,g=0;4>f;f+=2)"margin"===c&&(g+=r.css(a,c+aa[f],!0,e)),d?("content"===c&&(g-=r.css(a,"padding"+aa[f],!0,e)),"margin"!==c&&(g-=r.css(a,"border"+aa[f]+"Width",!0,e))):(g+=r.css(a,"padding"+aa[f],!0,e),"padding"!==c&&(g+=r.css(a,"border"+aa[f]+"Width",!0,e)));return g}function Wa(a,b,c){var d,e=!0,f=La(a),g="border-box"===r.css(a,"boxSizing",!1,f);if(a.getClientRects().length&&(d=a.getBoundingClientRect()[b]),0>=d||null==d){if(d=Ma(a,b,f),(0>d||null==d)&&(d=a.style[b]),Ka.test(d))return d;e=g&&(o.boxSizingReliable()||d===a.style[b]),d=parseFloat(d)||0}return d+Va(a,b,c||(g?"border":"content"),e,f)+"px"}r.extend({cssHooks:{opacity:{get:function(a,b){if(b){var c=Ma(a,"opacity");return""===c?"1":c}}}},cssNumber:{animationIterationCount:!0,columnCount:!0,fillOpacity:!0,flexGrow:!0,flexShrink:!0,fontWeight:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,widows:!0,zIndex:!0,zoom:!0},cssProps:{"float":"cssFloat"},style:function(a,b,c,d){if(a&&3!==a.nodeType&&8!==a.nodeType&&a.style){var e,f,g,h=r.camelCase(b),i=a.style;return b=r.cssProps[h]||(r.cssProps[h]=Ta(h)||h),g=r.cssHooks[b]||r.cssHooks[h],void 0===c?g&&"get"in g&&void 0!==(e=g.get(a,!1,d))?e:i[b]:(f=typeof c,"string"===f&&(e=_.exec(c))&&e[1]&&(c=da(a,b,e),f="number"),null!=c&&c===c&&("number"===f&&(c+=e&&e[3]||(r.cssNumber[h]?"":"px")),o.clearCloneStyle||""!==c||0!==b.indexOf("background")||(i[b]="inherit"),g&&"set"in g&&void 0===(c=g.set(a,c,d))||(i[b]=c)),void 0)}},css:function(a,b,c,d){var e,f,g,h=r.camelCase(b);return b=r.cssProps[h]||(r.cssProps[h]=Ta(h)||h),g=r.cssHooks[b]||r.cssHooks[h],g&&"get"in g&&(e=g.get(a,!0,c)),void 0===e&&(e=Ma(a,b,d)),"normal"===e&&b in Qa&&(e=Qa[b]),""===c||c?(f=parseFloat(e),c===!0||isFinite(f)?f||0:e):e}}),r.each(["height","width"],function(a,b){r.cssHooks[b]={get:function(a,c,d){return c?!Oa.test(r.css(a,"display"))||a.getClientRects().length&&a.getBoundingClientRect().width?Wa(a,b,d):ca(a,Pa,function(){return Wa(a,b,d)}):void 0},set:function(a,c,d){var e,f=d&&La(a),g=d&&Va(a,b,d,"border-box"===r.css(a,"boxSizing",!1,f),f);return g&&(e=_.exec(c))&&"px"!==(e[3]||"px")&&(a.style[b]=c,c=r.css(a,b)),Ua(a,c,g)}}}),r.cssHooks.marginLeft=Na(o.reliableMarginLeft,function(a,b){return b?(parseFloat(Ma(a,"marginLeft"))||a.getBoundingClientRect().left-ca(a,{marginLeft:0},function(){return a.getBoundingClientRect().left}))+"px":void 0}),r.each({margin:"",padding:"",border:"Width"},function(a,b){r.cssHooks[a+b]={expand:function(c){for(var d=0,e={},f="string"==typeof c?c.split(" "):[c];4>d;d++)e[a+aa[d]+b]=f[d]||f[d-2]||f[0];return e}},Ja.test(a)||(r.cssHooks[a+b].set=Ua)}),r.fn.extend({css:function(a,b){return S(this,function(a,b,c){var d,e,f={},g=0;if(r.isArray(b)){for(d=La(a),e=b.length;e>g;g++)f[b[g]]=r.css(a,b[g],!1,d);return f}return void 0!==c?r.style(a,b,c):r.css(a,b)},a,b,arguments.length>1)}});function Xa(a,b,c,d,e){return new Xa.prototype.init(a,b,c,d,e)}r.Tween=Xa,Xa.prototype={constructor:Xa,init:function(a,b,c,d,e,f){this.elem=a,this.prop=c,this.easing=e||r.easing._default,this.options=b,this.start=this.now=this.cur(),this.end=d,this.unit=f||(r.cssNumber[c]?"":"px")},cur:function(){var a=Xa.propHooks[this.prop];return a&&a.get?a.get(this):Xa.propHooks._default.get(this)},run:function(a){var b,c=Xa.propHooks[this.prop];return this.options.duration?this.pos=b=r.easing[this.easing](a,this.options.duration*a,0,1,this.options.duration):this.pos=b=a,this.now=(this.end-this.start)*b+this.start,this.options.step&&this.options.step.call(this.elem,this.now,this),c&&c.set?c.set(this):Xa.propHooks._default.set(this),this}},Xa.prototype.init.prototype=Xa.prototype,Xa.propHooks={_default:{get:function(a){var b;return 1!==a.elem.nodeType||null!=a.elem[a.prop]&&null==a.elem.style[a.prop]?a.elem[a.prop]:(b=r.css(a.elem,a.prop,""),b&&"auto"!==b?b:0)},set:function(a){r.fx.step[a.prop]?r.fx.step[a.prop](a):1!==a.elem.nodeType||null==a.elem.style[r.cssProps[a.prop]]&&!r.cssHooks[a.prop]?a.elem[a.prop]=a.now:r.style(a.elem,a.prop,a.now+a.unit)}}},Xa.propHooks.scrollTop=Xa.propHooks.scrollLeft={set:function(a){a.elem.nodeType&&a.elem.parentNode&&(a.elem[a.prop]=a.now)}},r.easing={linear:function(a){return a},swing:function(a){return.5-Math.cos(a*Math.PI)/2},_default:"swing"},r.fx=Xa.prototype.init,r.fx.step={};var Ya,Za,$a=/^(?:toggle|show|hide)$/,_a=/queueHooks$/;function ab(){Za&&(a.requestAnimationFrame(ab),r.fx.tick())}function bb(){return a.setTimeout(function(){Ya=void 0}),Ya=r.now()}function cb(a,b){var c,d=0,e={height:a};for(b=b?1:0;4>d;d+=2-b)c=aa[d],e["margin"+c]=e["padding"+c]=a;return b&&(e.opacity=e.width=a),e}function db(a,b,c){for(var d,e=(gb.tweeners[b]||[]).concat(gb.tweeners["*"]),f=0,g=e.length;g>f;f++)if(d=e[f].call(c,b,a))return d}function eb(a,b,c){var d,e,f,g,h,i,j,k,l="width"in b||"height"in b,m=this,n={},o=a.style,p=a.nodeType&&ba(a),q=V.get(a,"fxshow");c.queue||(g=r._queueHooks(a,"fx"),null==g.unqueued&&(g.unqueued=0,h=g.empty.fire,g.empty.fire=function(){g.unqueued||h()}),g.unqueued++,m.always(function(){m.always(function(){g.unqueued--,r.queue(a,"fx").length||g.empty.fire()})}));for(d in b)if(e=b[d],$a.test(e)){if(delete b[d],f=f||"toggle"===e,e===(p?"hide":"show")){if("show"!==e||!q||void 0===q[d])continue;p=!0}n[d]=q&&q[d]||r.style(a,d)}if(i=!r.isEmptyObject(b),i||!r.isEmptyObject(n)){l&&1===a.nodeType&&(c.overflow=[o.overflow,o.overflowX,o.overflowY],j=q&&q.display,null==j&&(j=V.get(a,"display")),k=r.css(a,"display"),"none"===k&&(j?k=j:(ga([a],!0),j=a.style.display||j,k=r.css(a,"display"),ga([a]))),("inline"===k||"inline-block"===k&&null!=j)&&"none"===r.css(a,"float")&&(i||(m.done(function(){o.display=j}),null==j&&(k=o.display,j="none"===k?"":k)),o.display="inline-block")),c.overflow&&(o.overflow="hidden",m.always(function(){o.overflow=c.overflow[0],o.overflowX=c.overflow[1],o.overflowY=c.overflow[2]})),i=!1;for(d in n)i||(q?"hidden"in q&&(p=q.hidden):q=V.access(a,"fxshow",{display:j}),f&&(q.hidden=!p),p&&ga([a],!0),m.done(function(){p||ga([a]),V.remove(a,"fxshow");for(d in n)r.style(a,d,n[d])})),i=db(p?q[d]:0,d,m),d in q||(q[d]=i.start,p&&(i.end=i.start,i.start=0))}}function fb(a,b){var c,d,e,f,g;for(c in a)if(d=r.camelCase(c),e=b[d],f=a[c],r.isArray(f)&&(e=f[1],f=a[c]=f[0]),c!==d&&(a[d]=f,delete a[c]),g=r.cssHooks[d],g&&"expand"in g){f=g.expand(f),delete a[d];for(c in f)c in a||(a[c]=f[c],b[c]=e)}else b[d]=e}function gb(a,b,c){var d,e,f=0,g=gb.prefilters.length,h=r.Deferred().always(function(){delete i.elem}),i=function(){if(e)return!1;for(var b=Ya||bb(),c=Math.max(0,j.startTime+j.duration-b),d=c/j.duration||0,f=1-d,g=0,i=j.tweens.length;i>g;g++)j.tweens[g].run(f);return h.notifyWith(a,[j,f,c]),1>f&&i?c:(h.resolveWith(a,[j]),!1)},j=h.promise({elem:a,props:r.extend({},b),opts:r.extend(!0,{specialEasing:{},easing:r.easing._default},c),originalProperties:b,originalOptions:c,startTime:Ya||bb(),duration:c.duration,tweens:[],createTween:function(b,c){var d=r.Tween(a,j.opts,b,c,j.opts.specialEasing[b]||j.opts.easing);return j.tweens.push(d),d},stop:function(b){var c=0,d=b?j.tweens.length:0;if(e)return this;for(e=!0;d>c;c++)j.tweens[c].run(1);return b?(h.notifyWith(a,[j,1,0]),h.resolveWith(a,[j,b])):h.rejectWith(a,[j,b]),this}}),k=j.props;for(fb(k,j.opts.specialEasing);g>f;f++)if(d=gb.prefilters[f].call(j,a,k,j.opts))return r.isFunction(d.stop)&&(r._queueHooks(j.elem,j.opts.queue).stop=r.proxy(d.stop,d)),d;return r.map(k,db,j),r.isFunction(j.opts.start)&&j.opts.start.call(a,j),r.fx.timer(r.extend(i,{elem:a,anim:j,queue:j.opts.queue})),j.progress(j.opts.progress).done(j.opts.done,j.opts.complete).fail(j.opts.fail).always(j.opts.always)}r.Animation=r.extend(gb,{tweeners:{"*":[function(a,b){var c=this.createTween(a,b);return da(c.elem,a,_.exec(b),c),c}]},tweener:function(a,b){r.isFunction(a)?(b=a,a=["*"]):a=a.match(K);for(var c,d=0,e=a.length;e>d;d++)c=a[d],gb.tweeners[c]=gb.tweeners[c]||[],gb.tweeners[c].unshift(b)},prefilters:[eb],prefilter:function(a,b){b?gb.prefilters.unshift(a):gb.prefilters.push(a)}}),r.speed=function(a,b,c){var e=a&&"object"==typeof a?r.extend({},a):{complete:c||!c&&b||r.isFunction(a)&&a,duration:a,easing:c&&b||b&&!r.isFunction(b)&&b};return r.fx.off||d.hidden?e.duration=0:e.duration="number"==typeof e.duration?e.duration:e.duration in r.fx.speeds?r.fx.speeds[e.duration]:r.fx.speeds._default,null!=e.queue&&e.queue!==!0||(e.queue="fx"),e.old=e.complete,e.complete=function(){r.isFunction(e.old)&&e.old.call(this),e.queue&&r.dequeue(this,e.queue)},e},r.fn.extend({fadeTo:function(a,b,c,d){return this.filter(ba).css("opacity",0).show().end().animate({opacity:b},a,c,d)},animate:function(a,b,c,d){var e=r.isEmptyObject(a),f=r.speed(b,c,d),g=function(){var b=gb(this,r.extend({},a),f);(e||V.get(this,"finish"))&&b.stop(!0)};return g.finish=g,e||f.queue===!1?this.each(g):this.queue(f.queue,g)},stop:function(a,b,c){var d=function(a){var b=a.stop;delete a.stop,b(c)};return"string"!=typeof a&&(c=b,b=a,a=void 0),b&&a!==!1&&this.queue(a||"fx",[]),this.each(function(){var b=!0,e=null!=a&&a+"queueHooks",f=r.timers,g=V.get(this);if(e)g[e]&&g[e].stop&&d(g[e]);else for(e in g)g[e]&&g[e].stop&&_a.test(e)&&d(g[e]);for(e=f.length;e--;)f[e].elem!==this||null!=a&&f[e].queue!==a||(f[e].anim.stop(c),b=!1,f.splice(e,1));!b&&c||r.dequeue(this,a)})},finish:function(a){return a!==!1&&(a=a||"fx"),this.each(function(){var b,c=V.get(this),d=c[a+"queue"],e=c[a+"queueHooks"],f=r.timers,g=d?d.length:0;for(c.finish=!0,r.queue(this,a,[]),e&&e.stop&&e.stop.call(this,!0),b=f.length;b--;)f[b].elem===this&&f[b].queue===a&&(f[b].anim.stop(!0),f.splice(b,1));for(b=0;g>b;b++)d[b]&&d[b].finish&&d[b].finish.call(this);delete c.finish})}}),r.each(["toggle","show","hide"],function(a,b){var c=r.fn[b];r.fn[b]=function(a,d,e){return null==a||"boolean"==typeof a?c.apply(this,arguments):this.animate(cb(b,!0),a,d,e)}}),r.each({slideDown:cb("show"),slideUp:cb("hide"),slideToggle:cb("toggle"),fadeIn:{opacity:"show"},fadeOut:{opacity:"hide"},fadeToggle:{opacity:"toggle"}},function(a,b){r.fn[a]=function(a,c,d){return this.animate(b,a,c,d)}}),r.timers=[],r.fx.tick=function(){var a,b=0,c=r.timers;for(Ya=r.now();b<c.length;b++)a=c[b],a()||c[b]!==a||c.splice(b--,1);c.length||r.fx.stop(),Ya=void 0},r.fx.timer=function(a){r.timers.push(a),a()?r.fx.start():r.timers.pop()},r.fx.interval=13,r.fx.start=function(){Za||(Za=a.requestAnimationFrame?a.requestAnimationFrame(ab):a.setInterval(r.fx.tick,r.fx.interval))},r.fx.stop=function(){a.cancelAnimationFrame?a.cancelAnimationFrame(Za):a.clearInterval(Za),Za=null},r.fx.speeds={slow:600,fast:200,_default:400},r.fn.delay=function(b,c){return b=r.fx?r.fx.speeds[b]||b:b,c=c||"fx",this.queue(c,function(c,d){var e=a.setTimeout(c,b);d.stop=function(){a.clearTimeout(e)}})},function(){var a=d.createElement("input"),b=d.createElement("select"),c=b.appendChild(d.createElement("option"));a.type="checkbox",o.checkOn=""!==a.value,o.optSelected=c.selected,a=d.createElement("input"),a.value="t",a.type="radio",o.radioValue="t"===a.value}();var hb,ib=r.expr.attrHandle;r.fn.extend({attr:function(a,b){return S(this,r.attr,a,b,arguments.length>1)},removeAttr:function(a){return this.each(function(){r.removeAttr(this,a)})}}),r.extend({attr:function(a,b,c){var d,e,f=a.nodeType;if(3!==f&&8!==f&&2!==f)return"undefined"==typeof a.getAttribute?r.prop(a,b,c):(1===f&&r.isXMLDoc(a)||(e=r.attrHooks[b.toLowerCase()]||(r.expr.match.bool.test(b)?hb:void 0)),void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:(a.setAttribute(b,c+""),c):e&&"get"in e&&null!==(d=e.get(a,b))?d:(d=r.find.attr(a,b),null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"===b&&r.nodeName(a,"input")){var c=a.value;return a.setAttribute("type",b),c&&(a.value=c),b}}}},removeAttr:function(a,b){var c,d=0,e=b&&b.match(K);if(e&&1===a.nodeType)while(c=e[d++])a.removeAttribute(c);
-}}),hb={set:function(a,b,c){return b===!1?r.removeAttr(a,c):a.setAttribute(c,c),c}},r.each(r.expr.match.bool.source.match(/\w+/g),function(a,b){var c=ib[b]||r.find.attr;ib[b]=function(a,b,d){var e,f,g=b.toLowerCase();return d||(f=ib[g],ib[g]=e,e=null!=c(a,b,d)?g:null,ib[g]=f),e}});var jb=/^(?:input|select|textarea|button)$/i,kb=/^(?:a|area)$/i;r.fn.extend({prop:function(a,b){return S(this,r.prop,a,b,arguments.length>1)},removeProp:function(a){return this.each(function(){delete this[r.propFix[a]||a]})}}),r.extend({prop:function(a,b,c){var d,e,f=a.nodeType;if(3!==f&&8!==f&&2!==f)return 1===f&&r.isXMLDoc(a)||(b=r.propFix[b]||b,e=r.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!==(d=e.get(a,b))?d:a[b]},propHooks:{tabIndex:{get:function(a){var b=r.find.attr(a,"tabindex");return b?parseInt(b,10):jb.test(a.nodeName)||kb.test(a.nodeName)&&a.href?0:-1}}},propFix:{"for":"htmlFor","class":"className"}}),o.optSelected||(r.propHooks.selected={get:function(a){var b=a.parentNode;return b&&b.parentNode&&b.parentNode.selectedIndex,null},set:function(a){var b=a.parentNode;b&&(b.selectedIndex,b.parentNode&&b.parentNode.selectedIndex)}}),r.each(["tabIndex","readOnly","maxLength","cellSpacing","cellPadding","rowSpan","colSpan","useMap","frameBorder","contentEditable"],function(){r.propFix[this.toLowerCase()]=this});var lb=/[\t\r\n\f]/g;function mb(a){return a.getAttribute&&a.getAttribute("class")||""}r.fn.extend({addClass:function(a){var b,c,d,e,f,g,h,i=0;if(r.isFunction(a))return this.each(function(b){r(this).addClass(a.call(this,b,mb(this)))});if("string"==typeof a&&a){b=a.match(K)||[];while(c=this[i++])if(e=mb(c),d=1===c.nodeType&&(" "+e+" ").replace(lb," ")){g=0;while(f=b[g++])d.indexOf(" "+f+" ")<0&&(d+=f+" ");h=r.trim(d),e!==h&&c.setAttribute("class",h)}}return this},removeClass:function(a){var b,c,d,e,f,g,h,i=0;if(r.isFunction(a))return this.each(function(b){r(this).removeClass(a.call(this,b,mb(this)))});if(!arguments.length)return this.attr("class","");if("string"==typeof a&&a){b=a.match(K)||[];while(c=this[i++])if(e=mb(c),d=1===c.nodeType&&(" "+e+" ").replace(lb," ")){g=0;while(f=b[g++])while(d.indexOf(" "+f+" ")>-1)d=d.replace(" "+f+" "," ");h=r.trim(d),e!==h&&c.setAttribute("class",h)}}return this},toggleClass:function(a,b){var c=typeof a;return"boolean"==typeof b&&"string"===c?b?this.addClass(a):this.removeClass(a):r.isFunction(a)?this.each(function(c){r(this).toggleClass(a.call(this,c,mb(this),b),b)}):this.each(function(){var b,d,e,f;if("string"===c){d=0,e=r(this),f=a.match(K)||[];while(b=f[d++])e.hasClass(b)?e.removeClass(b):e.addClass(b)}else void 0!==a&&"boolean"!==c||(b=mb(this),b&&V.set(this,"__className__",b),this.setAttribute&&this.setAttribute("class",b||a===!1?"":V.get(this,"__className__")||""))})},hasClass:function(a){var b,c,d=0;b=" "+a+" ";while(c=this[d++])if(1===c.nodeType&&(" "+mb(c)+" ").replace(lb," ").indexOf(b)>-1)return!0;return!1}});var nb=/\r/g,ob=/[\x20\t\r\n\f]+/g;r.fn.extend({val:function(a){var b,c,d,e=this[0];{if(arguments.length)return d=r.isFunction(a),this.each(function(c){var e;1===this.nodeType&&(e=d?a.call(this,c,r(this).val()):a,null==e?e="":"number"==typeof e?e+="":r.isArray(e)&&(e=r.map(e,function(a){return null==a?"":a+""})),b=r.valHooks[this.type]||r.valHooks[this.nodeName.toLowerCase()],b&&"set"in b&&void 0!==b.set(this,e,"value")||(this.value=e))});if(e)return b=r.valHooks[e.type]||r.valHooks[e.nodeName.toLowerCase()],b&&"get"in b&&void 0!==(c=b.get(e,"value"))?c:(c=e.value,"string"==typeof c?c.replace(nb,""):null==c?"":c)}}}),r.extend({valHooks:{option:{get:function(a){var b=r.find.attr(a,"value");return null!=b?b:r.trim(r.text(a)).replace(ob," ")}},select:{get:function(a){for(var b,c,d=a.options,e=a.selectedIndex,f="select-one"===a.type,g=f?null:[],h=f?e+1:d.length,i=0>e?h:f?e:0;h>i;i++)if(c=d[i],(c.selected||i===e)&&!c.disabled&&(!c.parentNode.disabled||!r.nodeName(c.parentNode,"optgroup"))){if(b=r(c).val(),f)return b;g.push(b)}return g},set:function(a,b){var c,d,e=a.options,f=r.makeArray(b),g=e.length;while(g--)d=e[g],(d.selected=r.inArray(r.valHooks.option.get(d),f)>-1)&&(c=!0);return c||(a.selectedIndex=-1),f}}}}),r.each(["radio","checkbox"],function(){r.valHooks[this]={set:function(a,b){return r.isArray(b)?a.checked=r.inArray(r(a).val(),b)>-1:void 0}},o.checkOn||(r.valHooks[this].get=function(a){return null===a.getAttribute("value")?"on":a.value})});var pb=/^(?:focusinfocus|focusoutblur)$/;r.extend(r.event,{trigger:function(b,c,e,f){var g,h,i,j,k,m,n,o=[e||d],p=l.call(b,"type")?b.type:b,q=l.call(b,"namespace")?b.namespace.split("."):[];if(h=i=e=e||d,3!==e.nodeType&&8!==e.nodeType&&!pb.test(p+r.event.triggered)&&(p.indexOf(".")>-1&&(q=p.split("."),p=q.shift(),q.sort()),k=p.indexOf(":")<0&&"on"+p,b=b[r.expando]?b:new r.Event(p,"object"==typeof b&&b),b.isTrigger=f?2:3,b.namespace=q.join("."),b.rnamespace=b.namespace?new RegExp("(^|\\.)"+q.join("\\.(?:.*\\.|)")+"(\\.|$)"):null,b.result=void 0,b.target||(b.target=e),c=null==c?[b]:r.makeArray(c,[b]),n=r.event.special[p]||{},f||!n.trigger||n.trigger.apply(e,c)!==!1)){if(!f&&!n.noBubble&&!r.isWindow(e)){for(j=n.delegateType||p,pb.test(j+p)||(h=h.parentNode);h;h=h.parentNode)o.push(h),i=h;i===(e.ownerDocument||d)&&o.push(i.defaultView||i.parentWindow||a)}g=0;while((h=o[g++])&&!b.isPropagationStopped())b.type=g>1?j:n.bindType||p,m=(V.get(h,"events")||{})[b.type]&&V.get(h,"handle"),m&&m.apply(h,c),m=k&&h[k],m&&m.apply&&T(h)&&(b.result=m.apply(h,c),b.result===!1&&b.preventDefault());return b.type=p,f||b.isDefaultPrevented()||n._default&&n._default.apply(o.pop(),c)!==!1||!T(e)||k&&r.isFunction(e[p])&&!r.isWindow(e)&&(i=e[k],i&&(e[k]=null),r.event.triggered=p,e[p](),r.event.triggered=void 0,i&&(e[k]=i)),b.result}},simulate:function(a,b,c){var d=r.extend(new r.Event,c,{type:a,isSimulated:!0});r.event.trigger(d,null,b)}}),r.fn.extend({trigger:function(a,b){return this.each(function(){r.event.trigger(a,b,this)})},triggerHandler:function(a,b){var c=this[0];return c?r.event.trigger(a,b,c,!0):void 0}}),r.each("blur focus focusin focusout resize scroll click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup contextmenu".split(" "),function(a,b){r.fn[b]=function(a,c){return arguments.length>0?this.on(b,null,a,c):this.trigger(b)}}),r.fn.extend({hover:function(a,b){return this.mouseenter(a).mouseleave(b||a)}}),o.focusin="onfocusin"in a,o.focusin||r.each({focus:"focusin",blur:"focusout"},function(a,b){var c=function(a){r.event.simulate(b,a.target,r.event.fix(a))};r.event.special[b]={setup:function(){var d=this.ownerDocument||this,e=V.access(d,b);e||d.addEventListener(a,c,!0),V.access(d,b,(e||0)+1)},teardown:function(){var d=this.ownerDocument||this,e=V.access(d,b)-1;e?V.access(d,b,e):(d.removeEventListener(a,c,!0),V.remove(d,b))}}});var qb=a.location,rb=r.now(),sb=/\?/;r.parseXML=function(b){var c;if(!b||"string"!=typeof b)return null;try{c=(new a.DOMParser).parseFromString(b,"text/xml")}catch(d){c=void 0}return c&&!c.getElementsByTagName("parsererror").length||r.error("Invalid XML: "+b),c};var tb=/\[\]$/,ub=/\r?\n/g,vb=/^(?:submit|button|image|reset|file)$/i,wb=/^(?:input|select|textarea|keygen)/i;function xb(a,b,c,d){var e;if(r.isArray(b))r.each(b,function(b,e){c||tb.test(a)?d(a,e):xb(a+"["+("object"==typeof e&&null!=e?b:"")+"]",e,c,d)});else if(c||"object"!==r.type(b))d(a,b);else for(e in b)xb(a+"["+e+"]",b[e],c,d)}r.param=function(a,b){var c,d=[],e=function(a,b){var c=r.isFunction(b)?b():b;d[d.length]=encodeURIComponent(a)+"="+encodeURIComponent(null==c?"":c)};if(r.isArray(a)||a.jquery&&!r.isPlainObject(a))r.each(a,function(){e(this.name,this.value)});else for(c in a)xb(c,a[c],b,e);return d.join("&")},r.fn.extend({serialize:function(){return r.param(this.serializeArray())},serializeArray:function(){return this.map(function(){var a=r.prop(this,"elements");return a?r.makeArray(a):this}).filter(function(){var a=this.type;return this.name&&!r(this).is(":disabled")&&wb.test(this.nodeName)&&!vb.test(a)&&(this.checked||!ha.test(a))}).map(function(a,b){var c=r(this).val();return null==c?null:r.isArray(c)?r.map(c,function(a){return{name:b.name,value:a.replace(ub,"\r\n")}}):{name:b.name,value:c.replace(ub,"\r\n")}}).get()}});var yb=/%20/g,zb=/#.*$/,Ab=/([?&])_=[^&]*/,Bb=/^(.*?):[ \t]*([^\r\n]*)$/gm,Cb=/^(?:about|app|app-storage|.+-extension|file|res|widget):$/,Db=/^(?:GET|HEAD)$/,Eb=/^\/\//,Fb={},Gb={},Hb="*/".concat("*"),Ib=d.createElement("a");Ib.href=qb.href;function Jb(a){return function(b,c){"string"!=typeof b&&(c=b,b="*");var d,e=0,f=b.toLowerCase().match(K)||[];if(r.isFunction(c))while(d=f[e++])"+"===d[0]?(d=d.slice(1)||"*",(a[d]=a[d]||[]).unshift(c)):(a[d]=a[d]||[]).push(c)}}function Kb(a,b,c,d){var e={},f=a===Gb;function g(h){var i;return e[h]=!0,r.each(a[h]||[],function(a,h){var j=h(b,c,d);return"string"!=typeof j||f||e[j]?f?!(i=j):void 0:(b.dataTypes.unshift(j),g(j),!1)}),i}return g(b.dataTypes[0])||!e["*"]&&g("*")}function Lb(a,b){var c,d,e=r.ajaxSettings.flatOptions||{};for(c in b)void 0!==b[c]&&((e[c]?a:d||(d={}))[c]=b[c]);return d&&r.extend(!0,a,d),a}function Mb(a,b,c){var d,e,f,g,h=a.contents,i=a.dataTypes;while("*"===i[0])i.shift(),void 0===d&&(d=a.mimeType||b.getResponseHeader("Content-Type"));if(d)for(e in h)if(h[e]&&h[e].test(d)){i.unshift(e);break}if(i[0]in c)f=i[0];else{for(e in c){if(!i[0]||a.converters[e+" "+i[0]]){f=e;break}g||(g=e)}f=f||g}return f?(f!==i[0]&&i.unshift(f),c[f]):void 0}function Nb(a,b,c,d){var e,f,g,h,i,j={},k=a.dataTypes.slice();if(k[1])for(g in a.converters)j[g.toLowerCase()]=a.converters[g];f=k.shift();while(f)if(a.responseFields[f]&&(c[a.responseFields[f]]=b),!i&&d&&a.dataFilter&&(b=a.dataFilter(b,a.dataType)),i=f,f=k.shift())if("*"===f)f=i;else if("*"!==i&&i!==f){if(g=j[i+" "+f]||j["* "+f],!g)for(e in j)if(h=e.split(" "),h[1]===f&&(g=j[i+" "+h[0]]||j["* "+h[0]])){g===!0?g=j[e]:j[e]!==!0&&(f=h[0],k.unshift(h[1]));break}if(g!==!0)if(g&&a["throws"])b=g(b);else try{b=g(b)}catch(l){return{state:"parsererror",error:g?l:"No conversion from "+i+" to "+f}}}return{state:"success",data:b}}r.extend({active:0,lastModified:{},etag:{},ajaxSettings:{url:qb.href,type:"GET",isLocal:Cb.test(qb.protocol),global:!0,processData:!0,async:!0,contentType:"application/x-www-form-urlencoded; charset=UTF-8",accepts:{"*":Hb,text:"text/plain",html:"text/html",xml:"application/xml, text/xml",json:"application/json, text/javascript"},contents:{xml:/\bxml\b/,html:/\bhtml/,json:/\bjson\b/},responseFields:{xml:"responseXML",text:"responseText",json:"responseJSON"},converters:{"* text":String,"text html":!0,"text json":JSON.parse,"text xml":r.parseXML},flatOptions:{url:!0,context:!0}},ajaxSetup:function(a,b){return b?Lb(Lb(a,r.ajaxSettings),b):Lb(r.ajaxSettings,a)},ajaxPrefilter:Jb(Fb),ajaxTransport:Jb(Gb),ajax:function(b,c){"object"==typeof b&&(c=b,b=void 0),c=c||{};var e,f,g,h,i,j,k,l,m,n,o=r.ajaxSetup({},c),p=o.context||o,q=o.context&&(p.nodeType||p.jquery)?r(p):r.event,s=r.Deferred(),t=r.Callbacks("once memory"),u=o.statusCode||{},v={},w={},x="canceled",y={readyState:0,getResponseHeader:function(a){var b;if(k){if(!h){h={};while(b=Bb.exec(g))h[b[1].toLowerCase()]=b[2]}b=h[a.toLowerCase()]}return null==b?null:b},getAllResponseHeaders:function(){return k?g:null},setRequestHeader:function(a,b){return null==k&&(a=w[a.toLowerCase()]=w[a.toLowerCase()]||a,v[a]=b),this},overrideMimeType:function(a){return null==k&&(o.mimeType=a),this},statusCode:function(a){var b;if(a)if(k)y.always(a[y.status]);else for(b in a)u[b]=[u[b],a[b]];return this},abort:function(a){var b=a||x;return e&&e.abort(b),A(0,b),this}};if(s.promise(y),o.url=((b||o.url||qb.href)+"").replace(Eb,qb.protocol+"//"),o.type=c.method||c.type||o.method||o.type,o.dataTypes=(o.dataType||"*").toLowerCase().match(K)||[""],null==o.crossDomain){j=d.createElement("a");try{j.href=o.url,j.href=j.href,o.crossDomain=Ib.protocol+"//"+Ib.host!=j.protocol+"//"+j.host}catch(z){o.crossDomain=!0}}if(o.data&&o.processData&&"string"!=typeof o.data&&(o.data=r.param(o.data,o.traditional)),Kb(Fb,o,c,y),k)return y;l=r.event&&o.global,l&&0===r.active++&&r.event.trigger("ajaxStart"),o.type=o.type.toUpperCase(),o.hasContent=!Db.test(o.type),f=o.url.replace(zb,""),o.hasContent?o.data&&o.processData&&0===(o.contentType||"").indexOf("application/x-www-form-urlencoded")&&(o.data=o.data.replace(yb,"+")):(n=o.url.slice(f.length),o.data&&(f+=(sb.test(f)?"&":"?")+o.data,delete o.data),o.cache===!1&&(f=f.replace(Ab,""),n=(sb.test(f)?"&":"?")+"_="+rb++ +n),o.url=f+n),o.ifModified&&(r.lastModified[f]&&y.setRequestHeader("If-Modified-Since",r.lastModified[f]),r.etag[f]&&y.setRequestHeader("If-None-Match",r.etag[f])),(o.data&&o.hasContent&&o.contentType!==!1||c.contentType)&&y.setRequestHeader("Content-Type",o.contentType),y.setRequestHeader("Accept",o.dataTypes[0]&&o.accepts[o.dataTypes[0]]?o.accepts[o.dataTypes[0]]+("*"!==o.dataTypes[0]?", "+Hb+"; q=0.01":""):o.accepts["*"]);for(m in o.headers)y.setRequestHeader(m,o.headers[m]);if(o.beforeSend&&(o.beforeSend.call(p,y,o)===!1||k))return y.abort();if(x="abort",t.add(o.complete),y.done(o.success),y.fail(o.error),e=Kb(Gb,o,c,y)){if(y.readyState=1,l&&q.trigger("ajaxSend",[y,o]),k)return y;o.async&&o.timeout>0&&(i=a.setTimeout(function(){y.abort("timeout")},o.timeout));try{k=!1,e.send(v,A)}catch(z){if(k)throw z;A(-1,z)}}else A(-1,"No Transport");function A(b,c,d,h){var j,m,n,v,w,x=c;k||(k=!0,i&&a.clearTimeout(i),e=void 0,g=h||"",y.readyState=b>0?4:0,j=b>=200&&300>b||304===b,d&&(v=Mb(o,y,d)),v=Nb(o,v,y,j),j?(o.ifModified&&(w=y.getResponseHeader("Last-Modified"),w&&(r.lastModified[f]=w),w=y.getResponseHeader("etag"),w&&(r.etag[f]=w)),204===b||"HEAD"===o.type?x="nocontent":304===b?x="notmodified":(x=v.state,m=v.data,n=v.error,j=!n)):(n=x,!b&&x||(x="error",0>b&&(b=0))),y.status=b,y.statusText=(c||x)+"",j?s.resolveWith(p,[m,x,y]):s.rejectWith(p,[y,x,n]),y.statusCode(u),u=void 0,l&&q.trigger(j?"ajaxSuccess":"ajaxError",[y,o,j?m:n]),t.fireWith(p,[y,x]),l&&(q.trigger("ajaxComplete",[y,o]),--r.active||r.event.trigger("ajaxStop")))}return y},getJSON:function(a,b,c){return r.get(a,b,c,"json")},getScript:function(a,b){return r.get(a,void 0,b,"script")}}),r.each(["get","post"],function(a,b){r[b]=function(a,c,d,e){return r.isFunction(c)&&(e=e||d,d=c,c=void 0),r.ajax(r.extend({url:a,type:b,dataType:e,data:c,success:d},r.isPlainObject(a)&&a))}}),r._evalUrl=function(a){return r.ajax({url:a,type:"GET",dataType:"script",cache:!0,async:!1,global:!1,"throws":!0})},r.fn.extend({wrapAll:function(a){var b;return this[0]&&(r.isFunction(a)&&(a=a.call(this[0])),b=r(a,this[0].ownerDocument).eq(0).clone(!0),this[0].parentNode&&b.insertBefore(this[0]),b.map(function(){var a=this;while(a.firstElementChild)a=a.firstElementChild;return a}).append(this)),this},wrapInner:function(a){return r.isFunction(a)?this.each(function(b){r(this).wrapInner(a.call(this,b))}):this.each(function(){var b=r(this),c=b.contents();c.length?c.wrapAll(a):b.append(a)})},wrap:function(a){var b=r.isFunction(a);return this.each(function(c){r(this).wrapAll(b?a.call(this,c):a)})},unwrap:function(a){return this.parent(a).not("body").each(function(){r(this).replaceWith(this.childNodes)}),this}}),r.expr.pseudos.hidden=function(a){return!r.expr.pseudos.visible(a)},r.expr.pseudos.visible=function(a){return!!(a.offsetWidth||a.offsetHeight||a.getClientRects().length)},r.ajaxSettings.xhr=function(){try{return new a.XMLHttpRequest}catch(b){}};var Ob={0:200,1223:204},Pb=r.ajaxSettings.xhr();o.cors=!!Pb&&"withCredentials"in Pb,o.ajax=Pb=!!Pb,r.ajaxTransport(function(b){var c,d;return o.cors||Pb&&!b.crossDomain?{send:function(e,f){var g,h=b.xhr();if(h.open(b.type,b.url,b.async,b.username,b.password),b.xhrFields)for(g in b.xhrFields)h[g]=b.xhrFields[g];b.mimeType&&h.overrideMimeType&&h.overrideMimeType(b.mimeType),b.crossDomain||e["X-Requested-With"]||(e["X-Requested-With"]="XMLHttpRequest");for(g in e)h.setRequestHeader(g,e[g]);c=function(a){return function(){c&&(c=d=h.onload=h.onerror=h.onabort=h.onreadystatechange=null,"abort"===a?h.abort():"error"===a?"number"!=typeof h.status?f(0,"error"):f(h.status,h.statusText):f(Ob[h.status]||h.status,h.statusText,"text"!==(h.responseType||"text")||"string"!=typeof h.responseText?{binary:h.response}:{text:h.responseText},h.getAllResponseHeaders()))}},h.onload=c(),d=h.onerror=c("error"),void 0!==h.onabort?h.onabort=d:h.onreadystatechange=function(){4===h.readyState&&a.setTimeout(function(){c&&d()})},c=c("abort");try{h.send(b.hasContent&&b.data||null)}catch(i){if(c)throw i}},abort:function(){c&&c()}}:void 0}),r.ajaxPrefilter(function(a){a.crossDomain&&(a.contents.script=!1)}),r.ajaxSetup({accepts:{script:"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript"},contents:{script:/\b(?:java|ecma)script\b/},converters:{"text script":function(a){return r.globalEval(a),a}}}),r.ajaxPrefilter("script",function(a){void 0===a.cache&&(a.cache=!1),a.crossDomain&&(a.type="GET")}),r.ajaxTransport("script",function(a){if(a.crossDomain){var b,c;return{send:function(e,f){b=r("<script>").prop({charset:a.scriptCharset,src:a.url}).on("load error",c=function(a){b.remove(),c=null,a&&f("error"===a.type?404:200,a.type)}),d.head.appendChild(b[0])},abort:function(){c&&c()}}}});var Qb=[],Rb=/(=)\?(?=&|$)|\?\?/;r.ajaxSetup({jsonp:"callback",jsonpCallback:function(){var a=Qb.pop()||r.expando+"_"+rb++;return this[a]=!0,a}}),r.ajaxPrefilter("json jsonp",function(b,c,d){var e,f,g,h=b.jsonp!==!1&&(Rb.test(b.url)?"url":"string"==typeof b.data&&0===(b.contentType||"").indexOf("application/x-www-form-urlencoded")&&Rb.test(b.data)&&"data");return h||"jsonp"===b.dataTypes[0]?(e=b.jsonpCallback=r.isFunction(b.jsonpCallback)?b.jsonpCallback():b.jsonpCallback,h?b[h]=b[h].replace(Rb,"$1"+e):b.jsonp!==!1&&(b.url+=(sb.test(b.url)?"&":"?")+b.jsonp+"="+e),b.converters["script json"]=function(){return g||r.error(e+" was not called"),g[0]},b.dataTypes[0]="json",f=a[e],a[e]=function(){g=arguments},d.always(function(){void 0===f?r(a).removeProp(e):a[e]=f,b[e]&&(b.jsonpCallback=c.jsonpCallback,Qb.push(e)),g&&r.isFunction(f)&&f(g[0]),g=f=void 0}),"script"):void 0}),o.createHTMLDocument=function(){var a=d.implementation.createHTMLDocument("").body;return a.innerHTML="<form></form><form></form>",2===a.childNodes.length}(),r.parseHTML=function(a,b,c){if("string"!=typeof a)return[];"boolean"==typeof b&&(c=b,b=!1);var e,f,g;return b||(o.createHTMLDocument?(b=d.implementation.createHTMLDocument(""),e=b.createElement("base"),e.href=d.location.href,b.head.appendChild(e)):b=d),f=B.exec(a),g=!c&&[],f?[b.createElement(f[1])]:(f=oa([a],b,g),g&&g.length&&r(g).remove(),r.merge([],f.childNodes))},r.fn.load=function(a,b,c){var d,e,f,g=this,h=a.indexOf(" ");return h>-1&&(d=r.trim(a.slice(h)),a=a.slice(0,h)),r.isFunction(b)?(c=b,b=void 0):b&&"object"==typeof b&&(e="POST"),g.length>0&&r.ajax({url:a,type:e||"GET",dataType:"html",data:b}).done(function(a){f=arguments,g.html(d?r("<div>").append(r.parseHTML(a)).find(d):a)}).always(c&&function(a,b){g.each(function(){c.apply(this,f||[a.responseText,b,a])})}),this},r.each(["ajaxStart","ajaxStop","ajaxComplete","ajaxError","ajaxSuccess","ajaxSend"],function(a,b){r.fn[b]=function(a){return this.on(b,a)}}),r.expr.pseudos.animated=function(a){return r.grep(r.timers,function(b){return a===b.elem}).length};function Sb(a){return r.isWindow(a)?a:9===a.nodeType&&a.defaultView}r.offset={setOffset:function(a,b,c){var d,e,f,g,h,i,j,k=r.css(a,"position"),l=r(a),m={};"static"===k&&(a.style.position="relative"),h=l.offset(),f=r.css(a,"top"),i=r.css(a,"left"),j=("absolute"===k||"fixed"===k)&&(f+i).indexOf("auto")>-1,j?(d=l.position(),g=d.top,e=d.left):(g=parseFloat(f)||0,e=parseFloat(i)||0),r.isFunction(b)&&(b=b.call(a,c,r.extend({},h))),null!=b.top&&(m.top=b.top-h.top+g),null!=b.left&&(m.left=b.left-h.left+e),"using"in b?b.using.call(a,m):l.css(m)}},r.fn.extend({offset:function(a){if(arguments.length)return void 0===a?this:this.each(function(b){r.offset.setOffset(this,a,b)});var b,c,d,e,f=this[0];if(f)return f.getClientRects().length?(d=f.getBoundingClientRect(),d.width||d.height?(e=f.ownerDocument,c=Sb(e),b=e.documentElement,{top:d.top+c.pageYOffset-b.clientTop,left:d.left+c.pageXOffset-b.clientLeft}):d):{top:0,left:0}},position:function(){if(this[0]){var a,b,c=this[0],d={top:0,left:0};return"fixed"===r.css(c,"position")?b=c.getBoundingClientRect():(a=this.offsetParent(),b=this.offset(),r.nodeName(a[0],"html")||(d=a.offset()),d={top:d.top+r.css(a[0],"borderTopWidth",!0),left:d.left+r.css(a[0],"borderLeftWidth",!0)}),{top:b.top-d.top-r.css(c,"marginTop",!0),left:b.left-d.left-r.css(c,"marginLeft",!0)}}},offsetParent:function(){return this.map(function(){var a=this.offsetParent;while(a&&"static"===r.css(a,"position"))a=a.offsetParent;return a||pa})}}),r.each({scrollLeft:"pageXOffset",scrollTop:"pageYOffset"},function(a,b){var c="pageYOffset"===b;r.fn[a]=function(d){return S(this,function(a,d,e){var f=Sb(a);return void 0===e?f?f[b]:a[d]:void(f?f.scrollTo(c?f.pageXOffset:e,c?e:f.pageYOffset):a[d]=e)},a,d,arguments.length)}}),r.each(["top","left"],function(a,b){r.cssHooks[b]=Na(o.pixelPosition,function(a,c){return c?(c=Ma(a,b),Ka.test(c)?r(a).position()[b]+"px":c):void 0})}),r.each({Height:"height",Width:"width"},function(a,b){r.each({padding:"inner"+a,content:b,"":"outer"+a},function(c,d){r.fn[d]=function(e,f){var g=arguments.length&&(c||"boolean"!=typeof e),h=c||(e===!0||f===!0?"margin":"border");return S(this,function(b,c,e){var f;return r.isWindow(b)?0===d.indexOf("outer")?b["inner"+a]:b.document.documentElement["client"+a]:9===b.nodeType?(f=b.documentElement,Math.max(b.body["scroll"+a],f["scroll"+a],b.body["offset"+a],f["offset"+a],f["client"+a])):void 0===e?r.css(b,c,h):r.style(b,c,e,h)},b,g?e:void 0,g)}})}),r.fn.extend({bind:function(a,b,c){return this.on(a,null,b,c)},unbind:function(a,b){return this.off(a,null,b)},delegate:function(a,b,c,d){return this.on(b,a,c,d)},undelegate:function(a,b,c){return 1===arguments.length?this.off(a,"**"):this.off(b,a||"**",c)}}),r.parseJSON=JSON.parse,"function"=="function"&&__webpack_require__(19)&&!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function(){return r}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+}}),hb={set:function(a,b,c){return b===!1?r.removeAttr(a,c):a.setAttribute(c,c),c}},r.each(r.expr.match.bool.source.match(/\w+/g),function(a,b){var c=ib[b]||r.find.attr;ib[b]=function(a,b,d){var e,f,g=b.toLowerCase();return d||(f=ib[g],ib[g]=e,e=null!=c(a,b,d)?g:null,ib[g]=f),e}});var jb=/^(?:input|select|textarea|button)$/i,kb=/^(?:a|area)$/i;r.fn.extend({prop:function(a,b){return S(this,r.prop,a,b,arguments.length>1)},removeProp:function(a){return this.each(function(){delete this[r.propFix[a]||a]})}}),r.extend({prop:function(a,b,c){var d,e,f=a.nodeType;if(3!==f&&8!==f&&2!==f)return 1===f&&r.isXMLDoc(a)||(b=r.propFix[b]||b,e=r.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!==(d=e.get(a,b))?d:a[b]},propHooks:{tabIndex:{get:function(a){var b=r.find.attr(a,"tabindex");return b?parseInt(b,10):jb.test(a.nodeName)||kb.test(a.nodeName)&&a.href?0:-1}}},propFix:{"for":"htmlFor","class":"className"}}),o.optSelected||(r.propHooks.selected={get:function(a){var b=a.parentNode;return b&&b.parentNode&&b.parentNode.selectedIndex,null},set:function(a){var b=a.parentNode;b&&(b.selectedIndex,b.parentNode&&b.parentNode.selectedIndex)}}),r.each(["tabIndex","readOnly","maxLength","cellSpacing","cellPadding","rowSpan","colSpan","useMap","frameBorder","contentEditable"],function(){r.propFix[this.toLowerCase()]=this});var lb=/[\t\r\n\f]/g;function mb(a){return a.getAttribute&&a.getAttribute("class")||""}r.fn.extend({addClass:function(a){var b,c,d,e,f,g,h,i=0;if(r.isFunction(a))return this.each(function(b){r(this).addClass(a.call(this,b,mb(this)))});if("string"==typeof a&&a){b=a.match(K)||[];while(c=this[i++])if(e=mb(c),d=1===c.nodeType&&(" "+e+" ").replace(lb," ")){g=0;while(f=b[g++])d.indexOf(" "+f+" ")<0&&(d+=f+" ");h=r.trim(d),e!==h&&c.setAttribute("class",h)}}return this},removeClass:function(a){var b,c,d,e,f,g,h,i=0;if(r.isFunction(a))return this.each(function(b){r(this).removeClass(a.call(this,b,mb(this)))});if(!arguments.length)return this.attr("class","");if("string"==typeof a&&a){b=a.match(K)||[];while(c=this[i++])if(e=mb(c),d=1===c.nodeType&&(" "+e+" ").replace(lb," ")){g=0;while(f=b[g++])while(d.indexOf(" "+f+" ")>-1)d=d.replace(" "+f+" "," ");h=r.trim(d),e!==h&&c.setAttribute("class",h)}}return this},toggleClass:function(a,b){var c=typeof a;return"boolean"==typeof b&&"string"===c?b?this.addClass(a):this.removeClass(a):r.isFunction(a)?this.each(function(c){r(this).toggleClass(a.call(this,c,mb(this),b),b)}):this.each(function(){var b,d,e,f;if("string"===c){d=0,e=r(this),f=a.match(K)||[];while(b=f[d++])e.hasClass(b)?e.removeClass(b):e.addClass(b)}else void 0!==a&&"boolean"!==c||(b=mb(this),b&&V.set(this,"__className__",b),this.setAttribute&&this.setAttribute("class",b||a===!1?"":V.get(this,"__className__")||""))})},hasClass:function(a){var b,c,d=0;b=" "+a+" ";while(c=this[d++])if(1===c.nodeType&&(" "+mb(c)+" ").replace(lb," ").indexOf(b)>-1)return!0;return!1}});var nb=/\r/g,ob=/[\x20\t\r\n\f]+/g;r.fn.extend({val:function(a){var b,c,d,e=this[0];{if(arguments.length)return d=r.isFunction(a),this.each(function(c){var e;1===this.nodeType&&(e=d?a.call(this,c,r(this).val()):a,null==e?e="":"number"==typeof e?e+="":r.isArray(e)&&(e=r.map(e,function(a){return null==a?"":a+""})),b=r.valHooks[this.type]||r.valHooks[this.nodeName.toLowerCase()],b&&"set"in b&&void 0!==b.set(this,e,"value")||(this.value=e))});if(e)return b=r.valHooks[e.type]||r.valHooks[e.nodeName.toLowerCase()],b&&"get"in b&&void 0!==(c=b.get(e,"value"))?c:(c=e.value,"string"==typeof c?c.replace(nb,""):null==c?"":c)}}}),r.extend({valHooks:{option:{get:function(a){var b=r.find.attr(a,"value");return null!=b?b:r.trim(r.text(a)).replace(ob," ")}},select:{get:function(a){for(var b,c,d=a.options,e=a.selectedIndex,f="select-one"===a.type,g=f?null:[],h=f?e+1:d.length,i=0>e?h:f?e:0;h>i;i++)if(c=d[i],(c.selected||i===e)&&!c.disabled&&(!c.parentNode.disabled||!r.nodeName(c.parentNode,"optgroup"))){if(b=r(c).val(),f)return b;g.push(b)}return g},set:function(a,b){var c,d,e=a.options,f=r.makeArray(b),g=e.length;while(g--)d=e[g],(d.selected=r.inArray(r.valHooks.option.get(d),f)>-1)&&(c=!0);return c||(a.selectedIndex=-1),f}}}}),r.each(["radio","checkbox"],function(){r.valHooks[this]={set:function(a,b){return r.isArray(b)?a.checked=r.inArray(r(a).val(),b)>-1:void 0}},o.checkOn||(r.valHooks[this].get=function(a){return null===a.getAttribute("value")?"on":a.value})});var pb=/^(?:focusinfocus|focusoutblur)$/;r.extend(r.event,{trigger:function(b,c,e,f){var g,h,i,j,k,m,n,o=[e||d],p=l.call(b,"type")?b.type:b,q=l.call(b,"namespace")?b.namespace.split("."):[];if(h=i=e=e||d,3!==e.nodeType&&8!==e.nodeType&&!pb.test(p+r.event.triggered)&&(p.indexOf(".")>-1&&(q=p.split("."),p=q.shift(),q.sort()),k=p.indexOf(":")<0&&"on"+p,b=b[r.expando]?b:new r.Event(p,"object"==typeof b&&b),b.isTrigger=f?2:3,b.namespace=q.join("."),b.rnamespace=b.namespace?new RegExp("(^|\\.)"+q.join("\\.(?:.*\\.|)")+"(\\.|$)"):null,b.result=void 0,b.target||(b.target=e),c=null==c?[b]:r.makeArray(c,[b]),n=r.event.special[p]||{},f||!n.trigger||n.trigger.apply(e,c)!==!1)){if(!f&&!n.noBubble&&!r.isWindow(e)){for(j=n.delegateType||p,pb.test(j+p)||(h=h.parentNode);h;h=h.parentNode)o.push(h),i=h;i===(e.ownerDocument||d)&&o.push(i.defaultView||i.parentWindow||a)}g=0;while((h=o[g++])&&!b.isPropagationStopped())b.type=g>1?j:n.bindType||p,m=(V.get(h,"events")||{})[b.type]&&V.get(h,"handle"),m&&m.apply(h,c),m=k&&h[k],m&&m.apply&&T(h)&&(b.result=m.apply(h,c),b.result===!1&&b.preventDefault());return b.type=p,f||b.isDefaultPrevented()||n._default&&n._default.apply(o.pop(),c)!==!1||!T(e)||k&&r.isFunction(e[p])&&!r.isWindow(e)&&(i=e[k],i&&(e[k]=null),r.event.triggered=p,e[p](),r.event.triggered=void 0,i&&(e[k]=i)),b.result}},simulate:function(a,b,c){var d=r.extend(new r.Event,c,{type:a,isSimulated:!0});r.event.trigger(d,null,b)}}),r.fn.extend({trigger:function(a,b){return this.each(function(){r.event.trigger(a,b,this)})},triggerHandler:function(a,b){var c=this[0];return c?r.event.trigger(a,b,c,!0):void 0}}),r.each("blur focus focusin focusout resize scroll click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup contextmenu".split(" "),function(a,b){r.fn[b]=function(a,c){return arguments.length>0?this.on(b,null,a,c):this.trigger(b)}}),r.fn.extend({hover:function(a,b){return this.mouseenter(a).mouseleave(b||a)}}),o.focusin="onfocusin"in a,o.focusin||r.each({focus:"focusin",blur:"focusout"},function(a,b){var c=function(a){r.event.simulate(b,a.target,r.event.fix(a))};r.event.special[b]={setup:function(){var d=this.ownerDocument||this,e=V.access(d,b);e||d.addEventListener(a,c,!0),V.access(d,b,(e||0)+1)},teardown:function(){var d=this.ownerDocument||this,e=V.access(d,b)-1;e?V.access(d,b,e):(d.removeEventListener(a,c,!0),V.remove(d,b))}}});var qb=a.location,rb=r.now(),sb=/\?/;r.parseXML=function(b){var c;if(!b||"string"!=typeof b)return null;try{c=(new a.DOMParser).parseFromString(b,"text/xml")}catch(d){c=void 0}return c&&!c.getElementsByTagName("parsererror").length||r.error("Invalid XML: "+b),c};var tb=/\[\]$/,ub=/\r?\n/g,vb=/^(?:submit|button|image|reset|file)$/i,wb=/^(?:input|select|textarea|keygen)/i;function xb(a,b,c,d){var e;if(r.isArray(b))r.each(b,function(b,e){c||tb.test(a)?d(a,e):xb(a+"["+("object"==typeof e&&null!=e?b:"")+"]",e,c,d)});else if(c||"object"!==r.type(b))d(a,b);else for(e in b)xb(a+"["+e+"]",b[e],c,d)}r.param=function(a,b){var c,d=[],e=function(a,b){var c=r.isFunction(b)?b():b;d[d.length]=encodeURIComponent(a)+"="+encodeURIComponent(null==c?"":c)};if(r.isArray(a)||a.jquery&&!r.isPlainObject(a))r.each(a,function(){e(this.name,this.value)});else for(c in a)xb(c,a[c],b,e);return d.join("&")},r.fn.extend({serialize:function(){return r.param(this.serializeArray())},serializeArray:function(){return this.map(function(){var a=r.prop(this,"elements");return a?r.makeArray(a):this}).filter(function(){var a=this.type;return this.name&&!r(this).is(":disabled")&&wb.test(this.nodeName)&&!vb.test(a)&&(this.checked||!ha.test(a))}).map(function(a,b){var c=r(this).val();return null==c?null:r.isArray(c)?r.map(c,function(a){return{name:b.name,value:a.replace(ub,"\r\n")}}):{name:b.name,value:c.replace(ub,"\r\n")}}).get()}});var yb=/%20/g,zb=/#.*$/,Ab=/([?&])_=[^&]*/,Bb=/^(.*?):[ \t]*([^\r\n]*)$/gm,Cb=/^(?:about|app|app-storage|.+-extension|file|res|widget):$/,Db=/^(?:GET|HEAD)$/,Eb=/^\/\//,Fb={},Gb={},Hb="*/".concat("*"),Ib=d.createElement("a");Ib.href=qb.href;function Jb(a){return function(b,c){"string"!=typeof b&&(c=b,b="*");var d,e=0,f=b.toLowerCase().match(K)||[];if(r.isFunction(c))while(d=f[e++])"+"===d[0]?(d=d.slice(1)||"*",(a[d]=a[d]||[]).unshift(c)):(a[d]=a[d]||[]).push(c)}}function Kb(a,b,c,d){var e={},f=a===Gb;function g(h){var i;return e[h]=!0,r.each(a[h]||[],function(a,h){var j=h(b,c,d);return"string"!=typeof j||f||e[j]?f?!(i=j):void 0:(b.dataTypes.unshift(j),g(j),!1)}),i}return g(b.dataTypes[0])||!e["*"]&&g("*")}function Lb(a,b){var c,d,e=r.ajaxSettings.flatOptions||{};for(c in b)void 0!==b[c]&&((e[c]?a:d||(d={}))[c]=b[c]);return d&&r.extend(!0,a,d),a}function Mb(a,b,c){var d,e,f,g,h=a.contents,i=a.dataTypes;while("*"===i[0])i.shift(),void 0===d&&(d=a.mimeType||b.getResponseHeader("Content-Type"));if(d)for(e in h)if(h[e]&&h[e].test(d)){i.unshift(e);break}if(i[0]in c)f=i[0];else{for(e in c){if(!i[0]||a.converters[e+" "+i[0]]){f=e;break}g||(g=e)}f=f||g}return f?(f!==i[0]&&i.unshift(f),c[f]):void 0}function Nb(a,b,c,d){var e,f,g,h,i,j={},k=a.dataTypes.slice();if(k[1])for(g in a.converters)j[g.toLowerCase()]=a.converters[g];f=k.shift();while(f)if(a.responseFields[f]&&(c[a.responseFields[f]]=b),!i&&d&&a.dataFilter&&(b=a.dataFilter(b,a.dataType)),i=f,f=k.shift())if("*"===f)f=i;else if("*"!==i&&i!==f){if(g=j[i+" "+f]||j["* "+f],!g)for(e in j)if(h=e.split(" "),h[1]===f&&(g=j[i+" "+h[0]]||j["* "+h[0]])){g===!0?g=j[e]:j[e]!==!0&&(f=h[0],k.unshift(h[1]));break}if(g!==!0)if(g&&a["throws"])b=g(b);else try{b=g(b)}catch(l){return{state:"parsererror",error:g?l:"No conversion from "+i+" to "+f}}}return{state:"success",data:b}}r.extend({active:0,lastModified:{},etag:{},ajaxSettings:{url:qb.href,type:"GET",isLocal:Cb.test(qb.protocol),global:!0,processData:!0,async:!0,contentType:"application/x-www-form-urlencoded; charset=UTF-8",accepts:{"*":Hb,text:"text/plain",html:"text/html",xml:"application/xml, text/xml",json:"application/json, text/javascript"},contents:{xml:/\bxml\b/,html:/\bhtml/,json:/\bjson\b/},responseFields:{xml:"responseXML",text:"responseText",json:"responseJSON"},converters:{"* text":String,"text html":!0,"text json":JSON.parse,"text xml":r.parseXML},flatOptions:{url:!0,context:!0}},ajaxSetup:function(a,b){return b?Lb(Lb(a,r.ajaxSettings),b):Lb(r.ajaxSettings,a)},ajaxPrefilter:Jb(Fb),ajaxTransport:Jb(Gb),ajax:function(b,c){"object"==typeof b&&(c=b,b=void 0),c=c||{};var e,f,g,h,i,j,k,l,m,n,o=r.ajaxSetup({},c),p=o.context||o,q=o.context&&(p.nodeType||p.jquery)?r(p):r.event,s=r.Deferred(),t=r.Callbacks("once memory"),u=o.statusCode||{},v={},w={},x="canceled",y={readyState:0,getResponseHeader:function(a){var b;if(k){if(!h){h={};while(b=Bb.exec(g))h[b[1].toLowerCase()]=b[2]}b=h[a.toLowerCase()]}return null==b?null:b},getAllResponseHeaders:function(){return k?g:null},setRequestHeader:function(a,b){return null==k&&(a=w[a.toLowerCase()]=w[a.toLowerCase()]||a,v[a]=b),this},overrideMimeType:function(a){return null==k&&(o.mimeType=a),this},statusCode:function(a){var b;if(a)if(k)y.always(a[y.status]);else for(b in a)u[b]=[u[b],a[b]];return this},abort:function(a){var b=a||x;return e&&e.abort(b),A(0,b),this}};if(s.promise(y),o.url=((b||o.url||qb.href)+"").replace(Eb,qb.protocol+"//"),o.type=c.method||c.type||o.method||o.type,o.dataTypes=(o.dataType||"*").toLowerCase().match(K)||[""],null==o.crossDomain){j=d.createElement("a");try{j.href=o.url,j.href=j.href,o.crossDomain=Ib.protocol+"//"+Ib.host!=j.protocol+"//"+j.host}catch(z){o.crossDomain=!0}}if(o.data&&o.processData&&"string"!=typeof o.data&&(o.data=r.param(o.data,o.traditional)),Kb(Fb,o,c,y),k)return y;l=r.event&&o.global,l&&0===r.active++&&r.event.trigger("ajaxStart"),o.type=o.type.toUpperCase(),o.hasContent=!Db.test(o.type),f=o.url.replace(zb,""),o.hasContent?o.data&&o.processData&&0===(o.contentType||"").indexOf("application/x-www-form-urlencoded")&&(o.data=o.data.replace(yb,"+")):(n=o.url.slice(f.length),o.data&&(f+=(sb.test(f)?"&":"?")+o.data,delete o.data),o.cache===!1&&(f=f.replace(Ab,""),n=(sb.test(f)?"&":"?")+"_="+rb++ +n),o.url=f+n),o.ifModified&&(r.lastModified[f]&&y.setRequestHeader("If-Modified-Since",r.lastModified[f]),r.etag[f]&&y.setRequestHeader("If-None-Match",r.etag[f])),(o.data&&o.hasContent&&o.contentType!==!1||c.contentType)&&y.setRequestHeader("Content-Type",o.contentType),y.setRequestHeader("Accept",o.dataTypes[0]&&o.accepts[o.dataTypes[0]]?o.accepts[o.dataTypes[0]]+("*"!==o.dataTypes[0]?", "+Hb+"; q=0.01":""):o.accepts["*"]);for(m in o.headers)y.setRequestHeader(m,o.headers[m]);if(o.beforeSend&&(o.beforeSend.call(p,y,o)===!1||k))return y.abort();if(x="abort",t.add(o.complete),y.done(o.success),y.fail(o.error),e=Kb(Gb,o,c,y)){if(y.readyState=1,l&&q.trigger("ajaxSend",[y,o]),k)return y;o.async&&o.timeout>0&&(i=a.setTimeout(function(){y.abort("timeout")},o.timeout));try{k=!1,e.send(v,A)}catch(z){if(k)throw z;A(-1,z)}}else A(-1,"No Transport");function A(b,c,d,h){var j,m,n,v,w,x=c;k||(k=!0,i&&a.clearTimeout(i),e=void 0,g=h||"",y.readyState=b>0?4:0,j=b>=200&&300>b||304===b,d&&(v=Mb(o,y,d)),v=Nb(o,v,y,j),j?(o.ifModified&&(w=y.getResponseHeader("Last-Modified"),w&&(r.lastModified[f]=w),w=y.getResponseHeader("etag"),w&&(r.etag[f]=w)),204===b||"HEAD"===o.type?x="nocontent":304===b?x="notmodified":(x=v.state,m=v.data,n=v.error,j=!n)):(n=x,!b&&x||(x="error",0>b&&(b=0))),y.status=b,y.statusText=(c||x)+"",j?s.resolveWith(p,[m,x,y]):s.rejectWith(p,[y,x,n]),y.statusCode(u),u=void 0,l&&q.trigger(j?"ajaxSuccess":"ajaxError",[y,o,j?m:n]),t.fireWith(p,[y,x]),l&&(q.trigger("ajaxComplete",[y,o]),--r.active||r.event.trigger("ajaxStop")))}return y},getJSON:function(a,b,c){return r.get(a,b,c,"json")},getScript:function(a,b){return r.get(a,void 0,b,"script")}}),r.each(["get","post"],function(a,b){r[b]=function(a,c,d,e){return r.isFunction(c)&&(e=e||d,d=c,c=void 0),r.ajax(r.extend({url:a,type:b,dataType:e,data:c,success:d},r.isPlainObject(a)&&a))}}),r._evalUrl=function(a){return r.ajax({url:a,type:"GET",dataType:"script",cache:!0,async:!1,global:!1,"throws":!0})},r.fn.extend({wrapAll:function(a){var b;return this[0]&&(r.isFunction(a)&&(a=a.call(this[0])),b=r(a,this[0].ownerDocument).eq(0).clone(!0),this[0].parentNode&&b.insertBefore(this[0]),b.map(function(){var a=this;while(a.firstElementChild)a=a.firstElementChild;return a}).append(this)),this},wrapInner:function(a){return r.isFunction(a)?this.each(function(b){r(this).wrapInner(a.call(this,b))}):this.each(function(){var b=r(this),c=b.contents();c.length?c.wrapAll(a):b.append(a)})},wrap:function(a){var b=r.isFunction(a);return this.each(function(c){r(this).wrapAll(b?a.call(this,c):a)})},unwrap:function(a){return this.parent(a).not("body").each(function(){r(this).replaceWith(this.childNodes)}),this}}),r.expr.pseudos.hidden=function(a){return!r.expr.pseudos.visible(a)},r.expr.pseudos.visible=function(a){return!!(a.offsetWidth||a.offsetHeight||a.getClientRects().length)},r.ajaxSettings.xhr=function(){try{return new a.XMLHttpRequest}catch(b){}};var Ob={0:200,1223:204},Pb=r.ajaxSettings.xhr();o.cors=!!Pb&&"withCredentials"in Pb,o.ajax=Pb=!!Pb,r.ajaxTransport(function(b){var c,d;return o.cors||Pb&&!b.crossDomain?{send:function(e,f){var g,h=b.xhr();if(h.open(b.type,b.url,b.async,b.username,b.password),b.xhrFields)for(g in b.xhrFields)h[g]=b.xhrFields[g];b.mimeType&&h.overrideMimeType&&h.overrideMimeType(b.mimeType),b.crossDomain||e["X-Requested-With"]||(e["X-Requested-With"]="XMLHttpRequest");for(g in e)h.setRequestHeader(g,e[g]);c=function(a){return function(){c&&(c=d=h.onload=h.onerror=h.onabort=h.onreadystatechange=null,"abort"===a?h.abort():"error"===a?"number"!=typeof h.status?f(0,"error"):f(h.status,h.statusText):f(Ob[h.status]||h.status,h.statusText,"text"!==(h.responseType||"text")||"string"!=typeof h.responseText?{binary:h.response}:{text:h.responseText},h.getAllResponseHeaders()))}},h.onload=c(),d=h.onerror=c("error"),void 0!==h.onabort?h.onabort=d:h.onreadystatechange=function(){4===h.readyState&&a.setTimeout(function(){c&&d()})},c=c("abort");try{h.send(b.hasContent&&b.data||null)}catch(i){if(c)throw i}},abort:function(){c&&c()}}:void 0}),r.ajaxPrefilter(function(a){a.crossDomain&&(a.contents.script=!1)}),r.ajaxSetup({accepts:{script:"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript"},contents:{script:/\b(?:java|ecma)script\b/},converters:{"text script":function(a){return r.globalEval(a),a}}}),r.ajaxPrefilter("script",function(a){void 0===a.cache&&(a.cache=!1),a.crossDomain&&(a.type="GET")}),r.ajaxTransport("script",function(a){if(a.crossDomain){var b,c;return{send:function(e,f){b=r("<script>").prop({charset:a.scriptCharset,src:a.url}).on("load error",c=function(a){b.remove(),c=null,a&&f("error"===a.type?404:200,a.type)}),d.head.appendChild(b[0])},abort:function(){c&&c()}}}});var Qb=[],Rb=/(=)\?(?=&|$)|\?\?/;r.ajaxSetup({jsonp:"callback",jsonpCallback:function(){var a=Qb.pop()||r.expando+"_"+rb++;return this[a]=!0,a}}),r.ajaxPrefilter("json jsonp",function(b,c,d){var e,f,g,h=b.jsonp!==!1&&(Rb.test(b.url)?"url":"string"==typeof b.data&&0===(b.contentType||"").indexOf("application/x-www-form-urlencoded")&&Rb.test(b.data)&&"data");return h||"jsonp"===b.dataTypes[0]?(e=b.jsonpCallback=r.isFunction(b.jsonpCallback)?b.jsonpCallback():b.jsonpCallback,h?b[h]=b[h].replace(Rb,"$1"+e):b.jsonp!==!1&&(b.url+=(sb.test(b.url)?"&":"?")+b.jsonp+"="+e),b.converters["script json"]=function(){return g||r.error(e+" was not called"),g[0]},b.dataTypes[0]="json",f=a[e],a[e]=function(){g=arguments},d.always(function(){void 0===f?r(a).removeProp(e):a[e]=f,b[e]&&(b.jsonpCallback=c.jsonpCallback,Qb.push(e)),g&&r.isFunction(f)&&f(g[0]),g=f=void 0}),"script"):void 0}),o.createHTMLDocument=function(){var a=d.implementation.createHTMLDocument("").body;return a.innerHTML="<form></form><form></form>",2===a.childNodes.length}(),r.parseHTML=function(a,b,c){if("string"!=typeof a)return[];"boolean"==typeof b&&(c=b,b=!1);var e,f,g;return b||(o.createHTMLDocument?(b=d.implementation.createHTMLDocument(""),e=b.createElement("base"),e.href=d.location.href,b.head.appendChild(e)):b=d),f=B.exec(a),g=!c&&[],f?[b.createElement(f[1])]:(f=oa([a],b,g),g&&g.length&&r(g).remove(),r.merge([],f.childNodes))},r.fn.load=function(a,b,c){var d,e,f,g=this,h=a.indexOf(" ");return h>-1&&(d=r.trim(a.slice(h)),a=a.slice(0,h)),r.isFunction(b)?(c=b,b=void 0):b&&"object"==typeof b&&(e="POST"),g.length>0&&r.ajax({url:a,type:e||"GET",dataType:"html",data:b}).done(function(a){f=arguments,g.html(d?r("<div>").append(r.parseHTML(a)).find(d):a)}).always(c&&function(a,b){g.each(function(){c.apply(this,f||[a.responseText,b,a])})}),this},r.each(["ajaxStart","ajaxStop","ajaxComplete","ajaxError","ajaxSuccess","ajaxSend"],function(a,b){r.fn[b]=function(a){return this.on(b,a)}}),r.expr.pseudos.animated=function(a){return r.grep(r.timers,function(b){return a===b.elem}).length};function Sb(a){return r.isWindow(a)?a:9===a.nodeType&&a.defaultView}r.offset={setOffset:function(a,b,c){var d,e,f,g,h,i,j,k=r.css(a,"position"),l=r(a),m={};"static"===k&&(a.style.position="relative"),h=l.offset(),f=r.css(a,"top"),i=r.css(a,"left"),j=("absolute"===k||"fixed"===k)&&(f+i).indexOf("auto")>-1,j?(d=l.position(),g=d.top,e=d.left):(g=parseFloat(f)||0,e=parseFloat(i)||0),r.isFunction(b)&&(b=b.call(a,c,r.extend({},h))),null!=b.top&&(m.top=b.top-h.top+g),null!=b.left&&(m.left=b.left-h.left+e),"using"in b?b.using.call(a,m):l.css(m)}},r.fn.extend({offset:function(a){if(arguments.length)return void 0===a?this:this.each(function(b){r.offset.setOffset(this,a,b)});var b,c,d,e,f=this[0];if(f)return f.getClientRects().length?(d=f.getBoundingClientRect(),d.width||d.height?(e=f.ownerDocument,c=Sb(e),b=e.documentElement,{top:d.top+c.pageYOffset-b.clientTop,left:d.left+c.pageXOffset-b.clientLeft}):d):{top:0,left:0}},position:function(){if(this[0]){var a,b,c=this[0],d={top:0,left:0};return"fixed"===r.css(c,"position")?b=c.getBoundingClientRect():(a=this.offsetParent(),b=this.offset(),r.nodeName(a[0],"html")||(d=a.offset()),d={top:d.top+r.css(a[0],"borderTopWidth",!0),left:d.left+r.css(a[0],"borderLeftWidth",!0)}),{top:b.top-d.top-r.css(c,"marginTop",!0),left:b.left-d.left-r.css(c,"marginLeft",!0)}}},offsetParent:function(){return this.map(function(){var a=this.offsetParent;while(a&&"static"===r.css(a,"position"))a=a.offsetParent;return a||pa})}}),r.each({scrollLeft:"pageXOffset",scrollTop:"pageYOffset"},function(a,b){var c="pageYOffset"===b;r.fn[a]=function(d){return S(this,function(a,d,e){var f=Sb(a);return void 0===e?f?f[b]:a[d]:void(f?f.scrollTo(c?f.pageXOffset:e,c?e:f.pageYOffset):a[d]=e)},a,d,arguments.length)}}),r.each(["top","left"],function(a,b){r.cssHooks[b]=Na(o.pixelPosition,function(a,c){return c?(c=Ma(a,b),Ka.test(c)?r(a).position()[b]+"px":c):void 0})}),r.each({Height:"height",Width:"width"},function(a,b){r.each({padding:"inner"+a,content:b,"":"outer"+a},function(c,d){r.fn[d]=function(e,f){var g=arguments.length&&(c||"boolean"!=typeof e),h=c||(e===!0||f===!0?"margin":"border");return S(this,function(b,c,e){var f;return r.isWindow(b)?0===d.indexOf("outer")?b["inner"+a]:b.document.documentElement["client"+a]:9===b.nodeType?(f=b.documentElement,Math.max(b.body["scroll"+a],f["scroll"+a],b.body["offset"+a],f["offset"+a],f["client"+a])):void 0===e?r.css(b,c,h):r.style(b,c,e,h)},b,g?e:void 0,g)}})}),r.fn.extend({bind:function(a,b,c){return this.on(a,null,b,c)},unbind:function(a,b){return this.off(a,null,b)},delegate:function(a,b,c,d){return this.on(b,a,c,d)},undelegate:function(a,b,c){return 1===arguments.length?this.off(a,"**"):this.off(b,a||"**",c)}}),r.parseJSON=JSON.parse,"function"=="function"&&__webpack_require__(18)&&!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function(){return r}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));var Tb=a.jQuery,Ub=a.$;return r.noConflict=function(b){return a.$===r&&(a.$=Ub),b&&a.jQuery===r&&(a.jQuery=Tb),r},b||(a.jQuery=a.$=r),r});
 
 
@@ -259,7 +259,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(21);
+var	fixUrls = __webpack_require__(20);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -3611,7 +3611,7 @@ var ProgramOutputBox = /** @class */ (function () {
         this.owner = owner;
         this.domRoot = domRoot;
         var outputsHTML = '<div id="progOutputs">\
-         <div id="printOutputDocs">Print output (drag lower right corner to resize)</div>\n\
+         <div id="printOutputDocs">输出结果 (拖动右下角调整大小)</div>\n\
          <textarea id="pyStdout" cols="40" rows="5" wrap="off" readonly></textarea>\
        </div>';
         this.domRoot.append(outputsHTML);
@@ -4322,7 +4322,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAADwCAMAAADY
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(20);
+var content = __webpack_require__(19);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -4341,8 +4341,8 @@ var update = __webpack_require__(3)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../node_modules/css-loader/index.js!./opt-frontend.css", function() {
-		var newContent = require("!!../node_modules/css-loader/index.js!./opt-frontend.css");
+	module.hot.accept("!!../../node_modules/css-loader/index.js!./opt-frontend.css", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js!./opt-frontend.css");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -4394,6 +4394,2147 @@ module.exports = function escape(url) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+// Python Tutor: https://github.com/pgbovine/OnlinePythonTutor/
+// Copyright (C) Philip Guo (philip@pgbovine.net)
+// LICENSE: https://github.com/pgbovine/OnlinePythonTutor/blob/master/LICENSE.txt
+Object.defineProperty(exports, "__esModule", { value: true });
+/// <reference path="_references.ts" />
+__webpack_require__(33);
+__webpack_require__(34);
+// need to directly import the class for type checking to work
+var pytutor_1 = __webpack_require__(4);
+// the main event!
+//
+// NB: this still relies on global state such as localStorage and the
+// browser URL hash string, so you still can't have more than one of these
+// objects per page; should still be instantiated as a SINGLETON
+var AbstractBaseFrontend = /** @class */ (function () {
+    function AbstractBaseFrontend(params) {
+        if (params === void 0) { params = {}; }
+        var _this = this;
+        this.sessionUUID = generateUUID(); // remains constant throughout one page load ("session")
+        // a cache where each element is a pair:
+        // [appState, cached execution trace]
+        // that way, if you execute the same code with the same settings again and
+        // get a cache hit, then there's no need to make a server call
+        this.traceCache = [];
+        // 'edit' or 'display'. also support 'visualize' for backward
+        // compatibility (same as 'display')
+        this.appMode = 'edit';
+        // inputted by user for raw_input / mouse_input events
+        this.rawInputLst = [];
+        this.isExecutingCode = false;
+        // optional: not all frontends keep track of deltas
+        this.dmp = new diff_match_patch();
+        this.curCode = ''; // for dmp snapshots, kinda kludgy
+        this.deltaObj = undefined;
+        this.num414Tries = 0;
+        // note that we use '2' and '3' instead of 'py2' and 'py3' due to legacy reasons
+        this.langSettingToBackendScript = {
+            // backend scripts to execute (Python 2 and 3 variants, if available)
+            // make two copies of ../web_exec.py and give them the following names,
+            // then change the first line (starting with #!) to the proper version
+            // of the Python interpreter (i.e., Python 2 or Python 3).
+            // Note that your hosting provider might have stringent rules for what
+            // kind of scripts are allowed to execute. For instance, my provider
+            // (Webfaction) seems to let scripts execute only if permissions are
+            // something like:
+            // -rwxr-xr-x 1 pgbovine pgbovine 2.5K Jul  5 22:46 web_exec_py2.py*
+            // (most notably, only the owner of the file should have write
+            //  permissions)
+            '2': 'web_exec_py2.py',
+            '3': 'web_exec_py3.py',
+            // empty dummy scripts just to do logging on Apache server
+            'js': 'web_exec_js.py',
+            'ts': 'web_exec_ts.py',
+            'java': 'web_exec_java.py',
+            'ruby': 'web_exec_ruby.py',
+            'c': 'web_exec_c.py',
+            'cpp': 'web_exec_cpp.py',
+            // experimental!
+            'py3anaconda': 'web_exec_py3anaconda.py',
+        };
+        // these settings are all customized for my own server setup,
+        // so you will need to customize for your server:
+        this.serverRoot = (window.location.protocol === 'https:') ?
+            'https://cokapi.com/' : // my certificate for https is registered via cokapi.com, so use it for now
+            'http://cokapi.com/'; // try cokapi.com so that hopefully it works through firewalls better than directly using IP addr
+        // (but that's just an unsubstantiated hunch)
+        // randomly pick one backup server to load balance:
+        this.backupHttpServerRoot = (Math.random() >= 0.5) ? 'http://45.33.41.179/' : 'http://23.239.12.25/';
+        // see ../../v4-cokapi/cokapi.js for details
+        this.langSettingToJsonpEndpoint = {
+            '2': null,
+            '3': null,
+            'js': this.serverRoot + 'exec_js_jsonp',
+            'ts': this.serverRoot + 'exec_ts_jsonp',
+            'java': this.serverRoot + 'exec_java_jsonp',
+            'ruby': this.serverRoot + 'exec_ruby_jsonp',
+            'c': this.serverRoot + 'exec_c_jsonp',
+            'cpp': this.serverRoot + 'exec_cpp_jsonp',
+            'py3anaconda': this.serverRoot + 'exec_pyanaconda_jsonp',
+        };
+        this.langSettingToJsonpEndpointBackup = {
+            '2': null,
+            '3': null,
+            'js': this.backupHttpServerRoot + 'exec_js_jsonp',
+            'ts': this.backupHttpServerRoot + 'exec_ts_jsonp',
+            'java': this.backupHttpServerRoot + 'exec_java_jsonp',
+            'ruby': this.backupHttpServerRoot + 'exec_ruby_jsonp',
+            'c': this.backupHttpServerRoot + 'exec_c_jsonp',
+            'cpp': this.backupHttpServerRoot + 'exec_cpp_jsonp',
+            'py3anaconda': this.backupHttpServerRoot + 'exec_pyanaconda_jsonp',
+        };
+        if (supports_html5_storage()) {
+            // generate a unique UUID per "user" (as indicated by a single browser
+            // instance on a user's machine, which can be more precise than IP
+            // addresses due to sharing of IP addresses within, say, a school
+            // computer lab)
+            // added on 2015-01-27 for more precise user identification
+            if (!localStorage.getItem('opt_uuid')) {
+                localStorage.setItem('opt_uuid', generateUUID());
+            }
+            this.userUUID = localStorage.getItem('opt_uuid');
+            pytutor_1.assert(this.userUUID);
+        }
+        else {
+            this.userUUID = undefined;
+        }
+        // register a generic AJAX error handler
+        $(document).ajaxError(function (evt, jqxhr, settings, exception) {
+            if (_this.ignoreAjaxError(settings)) {
+                return; // early return!
+            }
+            // On my server ...
+            // This jqxhr.responseText might mean the URL is too long, since the error
+            // message returned by the server is something like this in nginx:
+            //
+            //   <html>
+            //   <head><title>414 Request-URI Too Large</title></head>
+            //   <body bgcolor="white">
+            //   <center><h1>414 Request-URI Too Large</h1></center>
+            //   <hr><center>nginx</center>
+            //   </body>
+            //   </html>
+            //
+            // Note that you'll probably need to customize this check for your server.
+            if (jqxhr && jqxhr.responseText && jqxhr.responseText.indexOf('414') >= 0) {
+                // ok this is an UBER UBER hack. If this happens just once, then
+                // force click the "Visualize Execution" button again and re-try.
+                // why? what's the difference the second time around? the diffs_json
+                // parameter (derived from deltaObj) will be *empty* the second time
+                // around since it gets reset on every execution. if diffs_json is
+                // HUGE, then that might force the URL to be too big without your
+                // code necessarily being too big, so give it a second shot with an
+                // empty diffs_json. if it STILL fails, then display the error
+                // message and give up.
+                if (_this.num414Tries === 0) {
+                    _this.num414Tries++;
+                    $("#executeBtn").click();
+                }
+                else {
+                    _this.setFronendError(["Server error! Your code might be too long for this tool. Shorten your code and re-try. [#CodeTooLong]"]);
+                    _this.num414Tries = 0; // reset this to 0 AFTER setFronendError so that in setFronendError we can know that it's a 414 error (super hacky!)
+                }
+            }
+            else {
+                _this.setFronendError(["Server error! Your code might have an INFINITE LOOP or be running for too long.",
+                    "The server may also be OVERLOADED. Or you're behind a FIREWALL that blocks access.",
+                    "Try again later, or report a bug to philip@pgbovine.net by clicking the 'Generate",
+                    "shortened link' button at the bottom of this page and including a URL in your email."]);
+            }
+            _this.doneExecutingCode();
+        });
+        this.clearFrontendError();
+        $("#embedLinkDiv").hide();
+        $("#executeBtn")
+            .attr('disabled', false)
+            .click(this.executeCodeFromScratch.bind(this));
+    }
+    AbstractBaseFrontend.prototype.ignoreAjaxError = function (settings) { return false; }; // subclasses should override
+    // empty stub so that our code doesn't crash.
+    // TODO: override this with a version in codeopticon-learner.js if needed
+    AbstractBaseFrontend.prototype.logEventCodeopticon = function (obj) { }; // NOP
+    AbstractBaseFrontend.prototype.getAppState = function () { return {}; }; // NOP -- subclasses need to override
+    AbstractBaseFrontend.prototype.setFronendError = function (lines, ignoreLog) {
+        if (ignoreLog === void 0) { ignoreLog = false; }
+        // log it to the server as well (unless ignoreLog is on)
+        if (!ignoreLog) {
+            var errorStr = lines.join();
+            var myArgs = this.getAppState();
+            myArgs.opt_uuid = this.userUUID;
+            myArgs.session_uuid = this.sessionUUID;
+            myArgs.error_msg = errorStr;
+            // very subtle! if you have a 414 error, that means your original
+            // code was too long to fit in the URL, so CLEAR THE FULL CODE from
+            // myArgs, or else it will generate a URL that will give a 414 again
+            // when you run error_log.py!!! this relies on this.num414Tries not
+            // being reset yet at this point:
+            if (this.num414Tries > 0) {
+                myArgs.code = '#CodeTooLong: ' + String(myArgs.code.length) + ' bytes';
+            }
+            $.get('error_log.py', myArgs, function (dat) { }); // added this logging feature on 2018-02-18
+        }
+    };
+    AbstractBaseFrontend.prototype.clearFrontendError = function () {
+        $("#frontendErrorOutput").html('');
+    };
+    // parsing the URL query string hash
+    AbstractBaseFrontend.prototype.getQueryStringOptions = function () {
+        var ril = $.bbq.getState('rawInputLstJSON');
+        var testCasesLstJSON = $.bbq.getState('testCasesJSON');
+        // note that any of these can be 'undefined'
+        return { preseededCode: $.bbq.getState('code'),
+            preseededCurInstr: Number($.bbq.getState('curInstr')),
+            verticalStack: $.bbq.getState('verticalStack'),
+            appMode: $.bbq.getState('mode'),
+            py: $.bbq.getState('py'),
+            cumulative: $.bbq.getState('cumulative'),
+            heapPrimitives: $.bbq.getState('heapPrimitives'),
+            textReferences: $.bbq.getState('textReferences'),
+            rawInputLst: ril ? $.parseJSON(ril) : undefined,
+            demoMode: $.bbq.getState('demo'),
+            codcastFile: $.bbq.getState('codcast'),
+            codeopticonSession: $.bbq.getState('cosession'),
+            codeopticonUsername: $.bbq.getState('couser'),
+            testCasesLst: testCasesLstJSON ? $.parseJSON(testCasesLstJSON) : undefined
+        };
+    };
+    AbstractBaseFrontend.prototype.redrawConnectors = function () {
+        if (this.myVisualizer &&
+            (this.appMode == 'display' ||
+                this.appMode == 'visualize' /* deprecated */)) {
+            this.myVisualizer.redrawConnectors();
+        }
+    };
+    AbstractBaseFrontend.prototype.getBaseBackendOptionsObj = function () {
+        var ret = { cumulative_mode: ($('#cumulativeModeSelector').val() == 'true'),
+            heap_primitives: ($('#heapPrimitivesSelector').val() == 'true'),
+            show_only_outputs: false,
+            origin: this.originFrontendJsFile };
+        return ret;
+    };
+    AbstractBaseFrontend.prototype.getBaseFrontendOptionsObj = function () {
+        var ret = {
+            disableHeapNesting: (($('#heapPrimitivesSelector').val() == 'true') ||
+                ($('#heapPrimitivesSelector').val() == 'nevernest')),
+            textualMemoryLabels: ($('#textualMemoryLabelsSelector').val() == 'true'),
+            executeCodeWithRawInputFunc: this.executeCodeWithRawInput.bind(this),
+            // always use the same visualizer ID for all
+            // instantiated ExecutionVisualizer objects,
+            // so that they can sync properly across
+            // multiple clients using TogetherJS in shared sessions.
+            // this shouldn't lead to problems since only ONE
+            // ExecutionVisualizer will be shown at a time
+            visualizerIdOverride: '1',
+            updateOutputCallback: this.updateOutputCallbackFunc.bind(this),
+            startingInstruction: 0,
+        };
+        return ret;
+    };
+    AbstractBaseFrontend.prototype.updateOutputCallbackFunc = function () {
+        $('#urlOutput,#urlOutputShortened,#embedCodeOutput').val('');
+    };
+    AbstractBaseFrontend.prototype.executeCodeFromScratch = function () {
+        this.rawInputLst = []; // reset!
+        this.executeCode();
+    };
+    AbstractBaseFrontend.prototype.executeCodeWithRawInput = function (rawInputStr, curInstr) {
+        this.rawInputLst.push(rawInputStr);
+        this.executeCode(curInstr);
+    };
+    AbstractBaseFrontend.prototype.startExecutingCode = function (startingInstruction) {
+        if (startingInstruction === void 0) { startingInstruction = 0; }
+        $('#executeBtn').html("Please wait ... executing (takes up to 10 seconds)");
+        $('#executeBtn').attr('disabled', true);
+        this.isExecutingCode = true;
+    };
+    AbstractBaseFrontend.prototype.doneExecutingCode = function () {
+        $('#executeBtn').html("Visualize Execution");
+        $('#executeBtn').attr('disabled', false);
+        this.isExecutingCode = false;
+    };
+    // execute codeToExec and create a new ExecutionVisualizer
+    // object with outputDiv as its DOM parent
+    AbstractBaseFrontend.prototype.executeCodeAndCreateViz = function (codeToExec, pyState, backendOptionsObj, frontendOptionsObj, outputDiv) {
+        var _this = this;
+        var vizCallback = function (dataFromBackend) {
+            var trace = dataFromBackend.trace;
+            // don't enter visualize mode if there are killer errors:
+            if (!trace ||
+                (trace.length == 0) ||
+                (trace[trace.length - 1].event == 'uncaught_exception')) {
+                _this.handleUncaughtException(trace);
+                if (trace.length == 1) {
+                    _this.setFronendError([trace[0].exception_msg]);
+                }
+                else if (trace.length > 0 && trace[trace.length - 1].exception_msg) {
+                    _this.setFronendError([trace[trace.length - 1].exception_msg]);
+                }
+                else {
+                    _this.setFronendError(["Unknown error: The server may be OVERLOADED right now; try again later.",
+                        "Your code may also contain UNSUPPORTED FEATURES that this tool cannot handle.",
+                        "Report a bug to philip@pgbovine.net by clicking the 'Generate shortened link'",
+                        "button at the bottom and including a URL in your email. [#NullTrace]"]);
+                }
+            }
+            else {
+                // fail-soft to prevent running off of the end of trace
+                if (frontendOptionsObj.startingInstruction >= trace.length) {
+                    frontendOptionsObj.startingInstruction = 0;
+                }
+                if (frontendOptionsObj.runTestCaseCallback) {
+                    // hacky! DO NOT actually create a visualization! instead call:
+                    frontendOptionsObj.runTestCaseCallback(trace);
+                }
+                else {
+                    // success!
+                    _this.myVisualizer = new pytutor_1.ExecutionVisualizer(outputDiv, dataFromBackend, frontendOptionsObj);
+                    // SUPER HACK -- slip in backendOptionsObj as an extra field
+                    // NB: why do we do this? for more detailed logging?
+                    _this.myVisualizer.backendOptionsObj = backendOptionsObj;
+                    _this.finishSuccessfulExecution(); // TODO: should we also run this if we're calling runTestCaseCallback?
+                }
+            }
+        };
+        this.executeCodeAndRunCallback(codeToExec, pyState, backendOptionsObj, frontendOptionsObj, vizCallback.bind(this));
+    };
+    // execute code and call the execCallback function when the server
+    // returns data via Ajax
+    AbstractBaseFrontend.prototype.executeCodeAndRunCallback = function (codeToExec, pyState, backendOptionsObj, frontendOptionsObj, execCallback) {
+        var _this = this;
+        var callbackWrapper = function (dataFromBackend) {
+            _this.clearFrontendError(); // clear old errors first; execCallback may put in a new error:
+            execCallback(dataFromBackend); // call the main event first
+            // run this at the VERY END after all the dust has settled
+            _this.doneExecutingCode(); // rain or shine, we're done executing!
+            // tricky hacky reset
+            _this.num414Tries = 0;
+        };
+        var backendScript = this.langSettingToBackendScript[pyState];
+        pytutor_1.assert(backendScript);
+        var jsonp_endpoint = this.langSettingToJsonpEndpoint[pyState]; // maybe null
+        if (!backendScript) {
+            this.setFronendError(["Server configuration error: No backend script",
+                "Report a bug to philip@pgbovine.net by clicking on the 'Generate shortened link'",
+                "button at the bottom and including a URL in your email."]);
+            return;
+        }
+        this.clearFrontendError();
+        this.startExecutingCode(frontendOptionsObj.startingInstruction);
+        frontendOptionsObj.lang = pyState;
+        // kludgy exceptions
+        if (pyState === '2') {
+            frontendOptionsObj.lang = 'py2';
+        }
+        else if (pyState === '3') {
+            frontendOptionsObj.lang = 'py3';
+        }
+        else if (pyState === 'java') {
+            // TODO: should we still keep this exceptional case?
+            frontendOptionsObj.disableHeapNesting = true; // never nest Java objects, seems like a good default
+        }
+        // if we don't have any deltas, then don't bother sending deltaObj:
+        // NB: not all subclasses will initialize this.deltaObj
+        var deltaObjStringified = (this.deltaObj && (this.deltaObj.deltas.length > 0)) ? JSON.stringify(this.deltaObj) : null;
+        if (deltaObjStringified) {
+            // if deltaObjStringified is too long, then that will likely make
+            // the URL way too long. in that case, just make it null and don't
+            // send a delta (NB: actually set it to a canary value "overflow").
+            // we'll lose some info but at least the URL will hopefully not overflow:
+            if (deltaObjStringified.length > 4096) {
+                deltaObjStringified = "overflow"; // set a canary to overflow
+            }
+        }
+        else {
+            // if we got here due to the num414Tries retries hack, set
+            // canary to "overflow"
+            if (this.num414Tries > 0) {
+                deltaObjStringified = "overflow_414";
+            }
+        }
+        // if we can find a matching cache entry, then use it!!!
+        if (this.traceCache) {
+            var appState = this.getAppState();
+            var cachedTrace = this.traceCacheGet(appState);
+            if (cachedTrace) {
+                //console.log("CACHE HIT!", appState);
+                callbackWrapper({ code: appState.code, trace: cachedTrace });
+                return; // return early without going to the server at all!
+            }
+        }
+        // everything below here is an ajax (async) call to the server ...
+        if (jsonp_endpoint) {
+            pytutor_1.assert(pyState !== '2' && pyState !== '3');
+            // 2018-08-19: this is an uncommon use case (only used for https iframe embedding)
+            if (jsonp_endpoint.indexOf('https:') == 0) {
+                this.setFronendError(["Error: https execution of non-Python code is not currently supported. [#nonPythonHttps]"]);
+                this.doneExecutingCode();
+                return;
+            }
+            var retryOnBackupServer = function () {
+                // first log a #TryBackup error entry:
+                _this.setFronendError(["Main server is busy or has errors; re-trying using backup server " + _this.backupHttpServerRoot + " ... [#TryBackup]"]);
+                // now re-try the query using the backup server:
+                var backup_jsonp_endpoint = _this.langSettingToJsonpEndpointBackup[pyState];
+                pytutor_1.assert(backup_jsonp_endpoint);
+                $.ajax({
+                    url: backup_jsonp_endpoint,
+                    // The name of the callback parameter, as specified by the YQL service
+                    jsonp: "callback",
+                    dataType: "jsonp",
+                    data: { user_script: codeToExec,
+                        options_json: JSON.stringify(backendOptionsObj),
+                        raw_input_json: _this.rawInputLst.length > 0 ? JSON.stringify(_this.rawInputLst) : null,
+                    },
+                    success: callbackWrapper
+                });
+            };
+            // for non-python, this should be a dummy script for logging
+            // only, and to check whether there's a 414 error for #CodeTooLong
+            $.get(backendScript, { user_script: codeToExec,
+                options_json: JSON.stringify(backendOptionsObj),
+                user_uuid: this.userUUID,
+                session_uuid: this.sessionUUID,
+                diffs_json: deltaObjStringified }, function (dat) {
+                // this is super important! only if this first call is a
+                // SUCCESS do we actually make the REAL call using JSONP.
+                // the reason why is that we might get a 414 error for
+                // #CodeTooLong if we try to execute this code, in which
+                // case we want to either re-try or bail out. this also
+                // keeps the control flow synchronous. we always try
+                // the original backendScript, and then we try
+                // jsonp_endpoint only if that's successful:
+                // the REAL call uses JSONP
+                // http://learn.jquery.com/ajax/working-with-jsonp/
+                $.ajax({
+                    url: jsonp_endpoint,
+                    // for testing
+                    //url: 'http://cokapi.com/test_failure_jsonp',
+                    //url: 'http://cokapi.com/unknown_url',
+                    // The name of the callback parameter, as specified by the YQL service
+                    jsonp: "callback",
+                    dataType: "jsonp",
+                    data: { user_script: codeToExec,
+                        options_json: JSON.stringify(backendOptionsObj),
+                        raw_input_json: _this.rawInputLst.length > 0 ? JSON.stringify(_this.rawInputLst) : null,
+                    },
+                    success: function (dataFromBackend) {
+                        var trace = dataFromBackend.trace;
+                        var shouldRetry = false;
+                        // the cokapi backend responded successfully, but the
+                        // backend may have issued an error. if so, then
+                        // RETRY with backupHttpServerRoot. otherwise let it
+                        // through to callbackWrapper
+                        if (!trace ||
+                            (trace.length == 0) ||
+                            (trace[trace.length - 1].event == 'uncaught_exception')) {
+                            if (trace.length == 1) {
+                                // we should only retry if there's a legit
+                                // backend error and not just a syntax error:
+                                var msg = trace[0].exception_msg;
+                                if (msg.indexOf('#BackendError') >= 0) {
+                                    shouldRetry = true;
+                                }
+                            }
+                            else {
+                                shouldRetry = true;
+                            }
+                        }
+                        // don't bother re-trying for https since we don't
+                        // currently have an https backup server
+                        if (window.location.protocol === 'https:') {
+                            shouldRetry = false;
+                        }
+                        if (shouldRetry) {
+                            retryOnBackupServer();
+                        }
+                        else {
+                            // accept our fate without retrying
+                            callbackWrapper(dataFromBackend);
+                        }
+                    },
+                    // if there's a server error, then ALWAYS retry:
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        retryOnBackupServer();
+                        // use 'global: false;' below to NOT run the generic ajaxError() function
+                    },
+                    global: false,
+                });
+            }, "text");
+        }
+        else {
+            // for Python 2 or 3, directly execute backendScript
+            pytutor_1.assert(pyState === '2' || pyState === '3');
+            $.get(backendScript, { user_script: codeToExec,
+                raw_input_json: this.rawInputLst.length > 0 ? JSON.stringify(this.rawInputLst) : '',
+                options_json: JSON.stringify(backendOptionsObj),
+                user_uuid: this.userUUID,
+                session_uuid: this.sessionUUID,
+                diffs_json: deltaObjStringified }, callbackWrapper, "json");
+        }
+    };
+    // manage traceCache
+    // return whether two states match, except don't worry about mode or curInstr
+    AbstractBaseFrontend.appStateEqForCache = function (s1, s2) {
+        // NB: this isn't always true if we're recording and replaying
+        // in different frontend files ...
+        //assert(s1.origin == s2.origin); // sanity check!
+        return (s1.code == s2.code &&
+            s1.cumulative == s2.cumulative &&
+            s1.heapPrimitives == s1.heapPrimitives &&
+            s1.textReferences == s2.textReferences &&
+            s1.py == s2.py &&
+            s1.rawInputLstJSON == s2.rawInputLstJSON);
+    };
+    // SILENTLY fail without doing anything if the current app state is
+    // already in the cache
+    AbstractBaseFrontend.prototype.traceCacheAdd = function () {
+        // should only be called if you currently have a working trace;
+        // otherwise it's useless
+        pytutor_1.assert(this.myVisualizer && this.myVisualizer.curTrace);
+        var appState = this.getAppState();
+        // make sure nothing in the cache currently matches appState
+        for (var i = 0; i < this.traceCache.length; i++) {
+            var e = this.traceCache[i];
+            if (AbstractBaseFrontend.appStateEqForCache(e[0], appState)) {
+                console.warn("traceCacheAdd silently failed, entry already in cache");
+                return;
+            }
+        }
+        this.traceCache.push([appState, this.myVisualizer.curTrace]);
+        console.log('traceCacheAdd', this.traceCache);
+    };
+    AbstractBaseFrontend.prototype.traceCacheGet = function (appState) {
+        for (var i = 0; i < this.traceCache.length; i++) {
+            var e = this.traceCache[i];
+            if (AbstractBaseFrontend.appStateEqForCache(e[0], appState)) {
+                return e[1];
+            }
+        }
+        return null;
+    };
+    AbstractBaseFrontend.prototype.traceCacheClear = function () {
+        this.traceCache = [];
+    };
+    AbstractBaseFrontend.prototype.setSurveyHTML = function () {
+        // use ${this.userUUID} within the string ...
+        var survey_v14 = "\n    <p style=\"font-size: 9pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;\">\n\n    Help improve this tool by completing a <a style=\"font-size: 10pt; font-weight: bold;\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSfQJP1ojlv8XzXAvHz0al-J_Hs3GQu4XeblxT8EzS8dIzuaYA/viewform?entry.956368502=" + this.userUUID + "\" target=\"_blank\">short user survey</a>\n    <br/>\n    Keep this tool free by making a <a style=\"font-size: 10pt; font-weight: bold;\" href=\"http://pgbovine.net/support.htm\" target=\"_blank\">small donation</a> (PayPal, Patreon, credit/debit card)\n    </p>";
+        $('#surveyPane').html(survey_v14);
+    };
+    return AbstractBaseFrontend;
+}()); // END class AbstractBaseFrontend
+exports.AbstractBaseFrontend = AbstractBaseFrontend;
+/* For survey questions. Versions of survey wording:
+
+[see ../../v3/js/opt-frontend-common.js for older versions of survey wording - v1 to v7]
+
+v8: (deployed on 2016-06-20) - like v7 except emphasize the main usage survey more, and have the over-60 survey as auxiliary
+const survey_v8 = '\n\
+<p style="font-size: 10pt; margin-top: 10px; margin-bottom: 15px; line-height: 175%;">\n\
+<span>Support our research and keep this tool free by <a href="https://docs.google.com/forms/d/1-aKilu0PECHZVRSIXHv8vJpEuKUO9uG3MrH864uX56U/viewform" target="_blank">filling out this user survey</a>.</span>\n\
+<br/>\n\
+<span style="font-size: 9pt;">If you are <b>at least 60 years old</b>, please also fill out <a href="https://docs.google.com/forms/d/1lrXsE04ghfX9wNzTVwm1Wc6gQ5I-B4uw91ACrbDhJs8/viewform" target="_blank">our survey about learning programming</a>.</span>\n\
+</p>'
+
+v9: (deployed on 2016-08-14, taken down 2016-12-05) - only put up the "older adults" survey except generalize it to ALL ages, take down the OPT usage survey for now
+const survey_v9 = '\n\
+<p style="font-size: 10pt; margin-top: 10px; margin-bottom: 15px; line-height: 175%;">\n\
+<span>Support our research and keep this tool free by <a href="https://docs.google.com/forms/d/1lrXsE04ghfX9wNzTVwm1Wc6gQ5I-B4uw91ACrbDhJs8/viewform" target="_blank"><b>filling out this user survey</b></a>.</span>\n\
+</p>'
+
+v10: (deployed on 2016-12-05) - survey of how native languages affects learning programming
+     (taken down on 2017-07-28)
+[see survey_v10 variable above]
+
+    // use ${this.userUUID} within the string ...
+    var survey_v10 = '\n\
+    <p style="font-size: 11pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;">\n\
+    <span><span style="color: #e93f34;">Support our research and keep this tool free</span> by filling out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSe48NsBZPvu1hrTBwc8-aSic7nPSxpsxFqpUxV5AN4LwnyJWg/viewform?entry.956368502=';
+    survey_v10 += this.userUUID;
+    survey_v10 += '" target="_blank">survey on how your native spoken language affects how you learn programming</a>.</span></p>';
+
+    $('#surveyPane').html(survey_v10);
+
+v11: labinthewild python debugging experiment (deployed on 2017-07-28, taken down on 2017-09-12)
+    var survey_v11 = `<p style="font-size: 10pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;">
+                        <span>
+                          <span style="color: #e93f34;">Support our research and practice Python</span>
+                          by trying our new
+                          <a target="_blank" href="http://www.labinthewild.org/studies/python_tutor/">debugging skill test</a>!`;
+
+v12: simplified demographic survey which is a simplified hybrid of the v8 general usage survey and the v10 native language survey (deployed on 2017-09-12)
+
+    // use ${this.userUUID} within the string ...
+    var survey_v12 = '\n\
+    <p style="font-size: 10pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;">\n\
+    <span>Support our research and keep this tool free by <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQJP1ojlv8XzXAvHz0al-J_Hs3GQu4XeblxT8EzS8dIzuaYA/viewform?entry.956368502=';
+    survey_v12 += this.userUUID;
+    survey_v12 += '" target="_blank"><b>filling out this short user survey</b></a>.</span></p>';
+
+v13: same as v12 except with slightly different wording, and adding a
+call for donations (deployed on 2017-12-27)
+
+    // use ${this.userUUID} within the string ...
+    var survey_v13 = '\n\
+    <p style="font-size: 10pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;">\n\
+    <div style="margin-bottom: 12px;">Keep this tool free for everyone by <a href="http://pgbovine.net/support.htm" target="_blank"><b>making a small donation</b></a> <span style="font-size: 8pt;">(PayPal, Patreon, credit/debit card)</span></div>\
+    <span>Support our research by completing a <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQJP1ojlv8XzXAvHz0al-J_Hs3GQu4XeblxT8EzS8dIzuaYA/viewform?entry.956368502=';
+    survey_v13 += this.userUUID;
+    survey_v13 += '" target="_blank"><b>short user survey</b></a></span></p>';
+
+
+v14: very similar to v13 (deployed on 2018-03-11)
+[see the survey_v14 variable]
+
+*/
+// misc utilities:
+// From http://stackoverflow.com/a/8809472
+function generateUUID() {
+    var d = new Date().getTime();
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        var r = (d + Math.random() * 16) % 16 | 0;
+        d = Math.floor(d / 16);
+        return (c == 'x' ? r : (r & 0x7 | 0x8)).toString(16);
+    });
+    return uuid;
+}
+exports.generateUUID = generateUUID;
+;
+// Adapted from http://diveintohtml5.info/storage.html
+function supports_html5_storage() {
+    try {
+        if ('localStorage' in window && window['localStorage'] !== null) {
+            // From: http://stackoverflow.com/questions/21159301/
+            // Safari before v11, in Private Browsing Mode, looks like it supports localStorage but all calls to
+            // setItem throw QuotaExceededError.  Making these calls in the try block will detect that situation
+            // with the catch below, returning false.
+            localStorage.setItem('_localStorage_test', '1');
+            localStorage.removeItem('_localStorage_test');
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    catch (e) {
+        return false;
+    }
+}
+exports.supports_html5_storage = supports_html5_storage;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+// Python Tutor: https://github.com/pgbovine/OnlinePythonTutor/
+// Copyright (C) Philip Guo (philip@pgbovine.net)
+// LICENSE: https://github.com/pgbovine/OnlinePythonTutor/blob/master/LICENSE.txt
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+__webpack_require__(0);
+// just punt and use global script dependencies
+__webpack_require__(10);
+__webpack_require__(11);
+__webpack_require__(12);
+__webpack_require__(13);
+__webpack_require__(14);
+__webpack_require__(15);
+__webpack_require__(16);
+__webpack_require__(63);
+// need to directly import the class for type checking to work
+var opt_frontend_common_1 = __webpack_require__(8);
+var pytutor_1 = __webpack_require__(4);
+__webpack_require__(6);
+__webpack_require__(65);
+exports.allTabsRE = new RegExp('\t', 'g');
+var JAVA_BLANK_TEMPLATE = "public class YourClassNameHere {\n    public static void main(String[] args) {\n\n    }\n}";
+var CPP_BLANK_TEMPLATE = "int main() {\n\n  return 0;\n}";
+var CODE_SNAPSHOT_DEBOUNCE_MS = 1000;
+var SUBMIT_UPDATE_HISTORY_INTERVAL_MS = 1000 * 60;
+function sanitizeURL(s) {
+    return s.replace(/\(/g, '%28').replace(/\)/g, '%29'); // replace ( with %28 and ) with %29 so that links embed well in Markdown and email clients
+}
+var OptFrontend = /** @class */ (function (_super) {
+    __extends(OptFrontend, _super);
+    function OptFrontend(params) {
+        if (params === void 0) { params = {}; }
+        var _this = _super.call(this, params) || this;
+        _this.originFrontendJsFile = 'opt-frontend.js';
+        _this.pyInputAceEditor = undefined; // Ace editor object that contains the user's code
+        // some subclasses use these, so put them in the superclass
+        _this.activateSyntaxErrorSurvey = true;
+        _this.activateRuntimeErrorSurvey = true;
+        _this.activateEurekaSurvey = true;
+        _this.demoMode = false; // if true, then we're giving a live demo, so hide a bunch of excess stuff on page
+        _this.preseededCurInstr = undefined;
+        $('#genEmbedBtn').bind('click', function () {
+            var mod = _this.appMode;
+            pytutor_1.assert(mod == 'display' || mod == 'visualize' /* deprecated */);
+            var myArgs = _this.getAppState();
+            delete myArgs.mode;
+            myArgs.codeDivWidth = pytutor_1.ExecutionVisualizer.DEFAULT_EMBEDDED_CODE_DIV_WIDTH;
+            myArgs.codeDivHeight = pytutor_1.ExecutionVisualizer.DEFAULT_EMBEDDED_CODE_DIV_HEIGHT;
+            var domain = "http://pythontutor.com/"; // for deployment
+            var embedUrlStr = $.param.fragment(domain + "iframe-embed.html", myArgs, 2 /* clobber all */);
+            embedUrlStr = sanitizeURL(embedUrlStr);
+            var iframeStr = '<iframe width="800" height="500" frameborder="0" src="' + embedUrlStr + '"> </iframe>';
+            $('#embedCodeOutput').val(iframeStr);
+        });
+        _this.initAceEditor(420);
+        // for some weird reason, jQuery doesn't work here:
+        //   $(window).bind("hashchange"
+        window.addEventListener("hashchange", function (e) {
+            // if you've got some preseeded code, then parse the entire query
+            // string from scratch just like a page reload
+            if ($.bbq.getState('code')) {
+                _this.parseQueryString();
+            }
+            else {
+                // otherwise just do an incremental update
+                var newMode = $.bbq.getState('mode');
+                _this.updateAppDisplay(newMode);
+            }
+        });
+        // also fires when you resize the jQuery UI slider, interesting!
+        $(window).resize(_this.redrawConnectors.bind(_this));
+        $('#genUrlBtn').bind('click', function () {
+            var myArgs = _this.getAppState();
+            var urlStr = $.param.fragment(window.location.href, myArgs, 2); // 2 means 'override'
+            urlStr = sanitizeURL(urlStr);
+            $('#urlOutput').val(urlStr);
+        });
+        $('#genUrlShortenedBtn').bind('click', function () {
+            var myArgs = _this.getAppState();
+            var urlStr = $.param.fragment(window.location.href, myArgs, 2); // 2 means 'override'
+            urlStr = sanitizeURL(urlStr);
+            // call goo.gl URL shortener
+            //
+            // to test this API from command-line, first disable the IP restriction on API credentials, then run:
+            // curl https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyCIjtNqfABbRilub1a3Ta7-qKF3bS9_p1M -H 'Content-Type: application/json' -d '{"longUrl": "http://www.google.com/"}'
+            $.ajax('https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyCIjtNqfABbRilub1a3Ta7-qKF3bS9_p1M', { type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ longUrl: urlStr }),
+                success: function (dat) {
+                    $("#urlOutputShortened").val(dat.id);
+                },
+                error: function () {
+                    $("#urlOutputShortened").val("Error in URL shortener :(");
+                }
+            });
+        });
+        $("#instructionsPane").html("Advanced instructions:\n      <a href=\"https://www.youtube.com/watch?v=80ztTXP90Vs&list=PLzV58Zm8FuBL2WxxZKGZ6j1dH8NKb_HYI&index=5\" target=\"_blank\">setting breakpoints</a> |\n      <a href=\"https://www.youtube.com/watch?v=Mxt9HZWgwAM&list=PLzV58Zm8FuBL2WxxZKGZ6j1dH8NKb_HYI&index=6\" target=\"_blank\">hiding variables</a> |\n      <a href=\"https://www.youtube.com/watch?v=JjGt95Te0wo&index=3&list=PLzV58Zm8FuBL2WxxZKGZ6j1dH8NKb_HYI\" target=\"_blank\">live programming</a>");
+        // first initialize options from HTML LocalStorage. very important
+        // that this code runs FIRST so that options get overridden by query
+        // string options and anything else the user wants to override with.
+        if (opt_frontend_common_1.supports_html5_storage() && !params.disableLocalStorageToggles) {
+            var lsKeys = ['cumulative',
+                'heapPrimitives',
+                'py',
+                'textReferences'];
+            // restore toggleState if available
+            var lsOptions = {};
+            $.each(lsKeys, function (i, k) {
+                var v = localStorage.getItem(k);
+                if (v) {
+                    lsOptions[k] = v;
+                }
+            });
+            _this.setToggleOptions(lsOptions);
+            // store in localStorage whenever user explicitly changes any toggle option:
+            $('#cumulativeModeSelector,#heapPrimitivesSelector,#textualMemoryLabelsSelector,#pythonVersionSelector').change(function () {
+                var ts = _this.getToggleState();
+                $.each(ts, function (k, v) {
+                    localStorage.setItem(k, v);
+                });
+            });
+        }
+        // when you leave or reload the page, submit an updateHistoryJSON if you
+        // have one. beforeunload seems to work better than unload(), but it's
+        // still a bit flaky ... TODO: investigate :(
+        $(window).on('beforeunload', function () {
+            _this.submitUpdateHistory('beforeunload');
+            // don't return anything, or a modal dialog box might pop up
+        });
+        // just do this as well, even though it might be hella redundant
+        $(window).on('unload', function () {
+            _this.submitUpdateHistory('unload');
+            // don't return anything, or a modal dialog box might pop up
+        });
+        // periodically do submitUpdateHistory() to handle the case when
+        // someone is simply idle on the page without reloading it or
+        // re-editing code; that way, we can still get some signals rather
+        // than nothing.
+        var lastSubmittedUpdateHistoryLength = 0;
+        setInterval(function () {
+            if (_this.myVisualizer) {
+                var uh = _this.myVisualizer.updateHistory;
+                // don't submit identical entries repeatedly since that's redundant
+                if (uh && (uh.length != lastSubmittedUpdateHistoryLength)) {
+                    lastSubmittedUpdateHistoryLength = uh.length;
+                    _this.submitUpdateHistory('periodic');
+                }
+            }
+        }, SUBMIT_UPDATE_HISTORY_INTERVAL_MS);
+        _this.parseQueryString(); // do this at the end after Ace editor initialized
+        return _this;
+    }
+    // Compress updateHistory before encoding and sending to
+    // the server so that it takes up less room in the URL. Have each
+    // entry except for the first be a delta from the FIRST entry.
+    OptFrontend.prototype.compressUpdateHistoryList = function () {
+        pytutor_1.assert(this.myVisualizer);
+        var uh = this.myVisualizer.updateHistory;
+        var encodedUh = [];
+        if (uh) {
+            encodedUh.push(uh[0]);
+            var firstTs = uh[0][1];
+            for (var i = 1; i < uh.length; i++) {
+                var e = uh[i];
+                encodedUh.push([e[0], e[1] - firstTs]);
+            }
+            // finally push a final entry with the current timestamp delta
+            var curTs = new Date().getTime();
+            encodedUh.push([this.myVisualizer.curInstr, curTs - firstTs]);
+        }
+        return encodedUh;
+    };
+    // this feature was deployed on 2015-09-17, so check logs for
+    // viz_interaction.py
+    OptFrontend.prototype.submitUpdateHistory = function (why) {
+        if (this.myVisualizer) {
+            var encodedUh = this.compressUpdateHistoryList();
+            var encodedUhJSON = JSON.stringify(encodedUh);
+            var myArgs = { session_uuid: this.sessionUUID,
+                user_uuid: this.userUUID,
+                updateHistoryJSON: encodedUhJSON };
+            if (why) {
+                myArgs.why = why;
+            }
+            $.get('viz_interaction.py', myArgs, function (dat) { });
+        }
+    };
+    OptFrontend.prototype.initAceEditor = function (height) {
+        var _this = this;
+        pytutor_1.assert(!this.pyInputAceEditor);
+        this.pyInputAceEditor = ace.edit('codeInputPane');
+        var s = this.pyInputAceEditor.getSession();
+        // tab -> 4 spaces
+        s.setTabSize(4);
+        s.setUseSoftTabs(true);
+        // disable extraneous indicators:
+        s.setFoldStyle('manual'); // no code folding indicators
+        s.getDocument().setNewLineMode('unix'); // canonicalize all newlines to unix format
+        this.pyInputAceEditor.setHighlightActiveLine(false);
+        this.pyInputAceEditor.setShowPrintMargin(false);
+        this.pyInputAceEditor.setBehavioursEnabled(false);
+        this.pyInputAceEditor.$blockScrolling = Infinity; // kludgy to shut up weird warnings
+        // auto-grow height as fit
+        this.pyInputAceEditor.setOptions({ minLines: 18, maxLines: 1000 });
+        $('#codeInputPane').css('width', '700px');
+        $('#codeInputPane').css('height', height + 'px'); // VERY IMPORTANT so that it works on I.E., ugh!
+        this.initDeltaObj();
+        this.pyInputAceEditor.on('change', function (e) {
+            // 2017-11-21: convert all tabs to 4 spaces so that when you paste
+            // in code from somewhere else that contains tabs, instantly
+            // change all those tabs to spaces. note that all uses of 'tab' key
+            // within the Ace editor on this page will result in spaces (i.e.,
+            // "soft tabs")
+            var curVal = _this.pyInputGetValue();
+            if (curVal.indexOf('\t') >= 0) {
+                _this.pyInputSetValue(curVal.replace(exports.allTabsRE, '    '));
+                console.log("Converted all tabs to spaces");
+            }
+            $.doTimeout('pyInputAceEditorChange', CODE_SNAPSHOT_DEBOUNCE_MS, _this.snapshotCodeDiff.bind(_this)); // debounce
+            // starting on 2018-03-14 -- do NOT clear frontend errors and
+            // annotations when you edit the code, since you may still want to
+            // see the old error messages ... commented out these two lines:
+            //this.clearFrontendError();
+            //s.clearAnnotations();
+        });
+        // don't do real-time syntax checks:
+        // https://github.com/ajaxorg/ace/wiki/Syntax-validation
+        s.setOption("useWorker", false);
+        this.setAceMode();
+        this.pyInputAceEditor.focus();
+    };
+    OptFrontend.prototype.setAceMode = function () {
+        var selectorVal = $('#pythonVersionSelector').val();
+        var mod;
+        var tabSize = 2;
+        var editorVal = $.trim(this.pyInputGetValue());
+        if (editorVal === JAVA_BLANK_TEMPLATE || editorVal === CPP_BLANK_TEMPLATE) {
+            editorVal = '';
+            this.pyInputSetValue(editorVal);
+        }
+        if (selectorVal === 'java') {
+            mod = 'java';
+            if (editorVal === '') {
+                this.pyInputSetValue(JAVA_BLANK_TEMPLATE);
+            }
+        }
+        else if (selectorVal === 'js') {
+            mod = 'javascript';
+        }
+        else if (selectorVal === 'ts') {
+            mod = 'typescript';
+        }
+        else if (selectorVal === 'ruby') {
+            mod = 'ruby';
+        }
+        else if (selectorVal === 'c' || selectorVal == 'cpp') {
+            mod = 'c_cpp';
+            if (editorVal === '') {
+                this.pyInputSetValue(CPP_BLANK_TEMPLATE);
+            }
+        }
+        else {
+            pytutor_1.assert(selectorVal === '2' || selectorVal == '3' || selectorVal == 'py3anaconda');
+            mod = 'python';
+            tabSize = 4; // PEP8 style standards
+        }
+        pytutor_1.assert(mod);
+        var s = this.pyInputAceEditor.getSession();
+        s.setMode("ace/mode/" + mod);
+        s.setTabSize(tabSize);
+        s.setUseSoftTabs(true);
+        // clear all error displays when switching modes
+        var s = this.pyInputAceEditor.getSession();
+        s.clearAnnotations();
+        if (selectorVal === 'java') {
+            $("#javaOptionsPane").show();
+        }
+        else {
+            $("#javaOptionsPane").hide();
+        }
+        if (selectorVal === 'js' || selectorVal === '2' || selectorVal === '3') {
+            $("#liveModeBtn").show();
+        }
+        else {
+            $("#liveModeBtn").hide();
+        }
+        this.clearFrontendError();
+    };
+    OptFrontend.prototype.pyInputGetValue = function () {
+        return this.pyInputAceEditor.getValue();
+    };
+    OptFrontend.prototype.pyInputSetValue = function (dat) {
+        this.pyInputAceEditor.setValue(dat.rtrim() /* kill trailing spaces */, -1 /* do NOT select after setting text */);
+        $('#urlOutput,#urlOutputShortened,#embedCodeOutput').val('');
+        this.clearFrontendError();
+        // also scroll to top to make the UI more usable on smaller monitors
+        // TODO: this has a global impact on the document, so breaks modularity?
+        $(document).scrollTop(0);
+    };
+    OptFrontend.prototype.pyInputGetScrollTop = function () {
+        return this.pyInputAceEditor.getSession().getScrollTop();
+    };
+    OptFrontend.prototype.pyInputSetScrollTop = function (st) {
+        this.pyInputAceEditor.getSession().setScrollTop(st);
+    };
+    OptFrontend.prototype.executeCodeFromScratch = function () {
+        // don't execute empty string:
+        if (this.pyInputAceEditor && $.trim(this.pyInputGetValue()) == '') {
+            this.setFronendError(["Type in some code to visualize."], true);
+            return;
+        }
+        _super.prototype.executeCodeFromScratch.call(this);
+    };
+    OptFrontend.prototype.executeCode = function (forceStartingInstr, forceRawInputLst) {
+        if (forceStartingInstr === void 0) { forceStartingInstr = 0; }
+        if (forceRawInputLst === void 0) { forceRawInputLst = undefined; }
+        // if you're in display mode, kick back into edit mode before executing
+        // or else the display might not refresh properly ... ugh krufty
+        if (this.appMode != 'edit') {
+            this.enterEditMode();
+        }
+        if (forceRawInputLst !== undefined && forceRawInputLst !== null) {
+            this.rawInputLst = forceRawInputLst;
+        }
+        var backendOptionsObj = this.getBaseBackendOptionsObj();
+        var frontendOptionsObj = this.getBaseFrontendOptionsObj();
+        frontendOptionsObj.startingInstruction = forceStartingInstr;
+        this.snapshotCodeDiff(); // do ONE MORE snapshot before we execute, or else
+        // we'll miss a diff if the user hits Visualize Execution
+        // very shortly after finishing coding
+        if (this.deltaObj) {
+            this.deltaObj.executeTime = new Date().getTime();
+        }
+        this.executeCodeAndCreateViz(this.pyInputGetValue(), $('#pythonVersionSelector').val(), backendOptionsObj, frontendOptionsObj, 'pyOutputPane');
+        this.initDeltaObj(); // clear deltaObj to start counting over again
+    };
+    OptFrontend.prototype.finishSuccessfulExecution = function () {
+        var _this = this;
+        this.enterDisplayMode(); // do this first!
+        if (this.myVisualizer) {
+            this.myVisualizer.add_pytutor_hook("end_updateOutput", function (args) {
+                // TODO: implement for codeopticon
+                // debounce to compress a bit ... 250ms feels "right"
+                $.doTimeout('updateOutputLogEvent', 250, function () {
+                    var obj = { type: 'updateOutput', step: args.myViz.curInstr,
+                        curline: args.myViz.curLineNumber,
+                        prevline: args.myViz.prevLineNumber };
+                    // optional fields
+                    if (args.myViz.curLineExceptionMsg) {
+                        obj.exception = args.myViz.curLineExceptionMsg;
+                    }
+                    if (args.myViz.curLineIsReturn) {
+                        obj.curLineIsReturn = true;
+                    }
+                    if (args.myViz.prevLineIsReturn) {
+                        obj.prevLineIsReturn = true;
+                    }
+                    _this.logEventCodeopticon(obj);
+                });
+                // 2014-05-25: implemented more detailed tracing for surveys
+                if (args.myViz.creationTime) {
+                    var curTs = new Date().getTime();
+                    var uh = args.myViz.updateHistory;
+                    pytutor_1.assert(uh.length > 0); // should already be seeded with an initial value
+                    if (uh.length > 1) { // don't try to "compress" the very first entry
+                        var lastTs = uh[uh.length - 1][1];
+                        // (debounce entries that are less than 1 second apart to
+                        // compress the logs a bit when there's rapid scrubbing or scrolling)
+                        if ((curTs - lastTs) < 1000) {
+                            uh.pop(); // get rid of last entry before pushing a new entry
+                        }
+                    }
+                    uh.push([args.myViz.curInstr, curTs]);
+                }
+                return [false]; // pass through to let other hooks keep handling
+            });
+        }
+        // 2014-05-25: implemented more detailed tracing for surveys
+        this.myVisualizer.creationTime = new Date().getTime();
+        // each element will be a two-element list consisting of:
+        // [step number, timestamp]
+        // (debounce entries that are less than 1 second apart to
+        // compress the logs a bit when there's rapid scrubbing or scrolling)
+        //
+        // the first entry has a THIRD field:
+        // [step number, timestamp, total # steps]
+        //
+        // subsequent entries don't need it since it will always be the same.
+        // the invariant is that step number < total # steps (since it's
+        // zero-indexed
+        this.myVisualizer.updateHistory = [];
+        this.myVisualizer.updateHistory.push([this.myVisualizer.curInstr,
+            this.myVisualizer.creationTime,
+            this.myVisualizer.curTrace.length]);
+    };
+    OptFrontend.prototype.handleUncaughtException = function (trace) {
+        if (trace.length == 1 && trace[0].line) {
+            var errorLineNo = trace[0].line - 1; /* Ace lines are zero-indexed */
+            if (errorLineNo !== undefined && errorLineNo != NaN) {
+                // highlight the faulting line
+                var s = this.pyInputAceEditor.getSession();
+                s.setAnnotations([{ row: errorLineNo,
+                        column: null,
+                        type: 'error',
+                        text: trace[0].exception_msg }]);
+                this.pyInputAceEditor.gotoLine(errorLineNo + 1 /* one-indexed */);
+                // if we have both a line and column number, then move over to
+                // that column. (going to the line first prevents weird
+                // highlighting bugs)
+                if (trace[0].col !== undefined) {
+                    this.pyInputAceEditor.moveCursorTo(errorLineNo, trace[0].col);
+                }
+                this.pyInputAceEditor.focus();
+            }
+        }
+    };
+    OptFrontend.prototype.ignoreAjaxError = function (settings) {
+        // other idiosyncratic errors to ignore
+        if ((settings.url.indexOf('syntax_err_survey.py') > -1) ||
+            (settings.url.indexOf('runtime_err_survey.py') > -1) ||
+            (settings.url.indexOf('eureka_survey.py') > -1) ||
+            (settings.url.indexOf('error_log.py') > -1) ||
+            (settings.url.indexOf('viz_interaction.py') > -1)) {
+            return true;
+        }
+        return false;
+    };
+    OptFrontend.prototype.initDeltaObj = function () {
+        pytutor_1.assert(this.pyInputAceEditor);
+        // v is the version number
+        //   1 (version 1 was released on 2014-11-05)
+        //   2 (version 2 was released on 2015-09-16, added a startTime field)
+        this.deltaObj = { start: this.pyInputGetValue(), deltas: [], v: 2,
+            startTime: new Date().getTime() };
+    };
+    OptFrontend.prototype.snapshotCodeDiff = function () {
+        pytutor_1.assert(this.deltaObj);
+        var newCode = this.pyInputGetValue();
+        var timestamp = new Date().getTime();
+        if (this.curCode != newCode) {
+            var diff = this.dmp.diff_toDelta(this.dmp.diff_main(this.curCode, newCode));
+            //var patch = this.dmp.patch_toText(this.dmp.patch_make(this.curCode, newCode));
+            var delta = { t: timestamp, d: diff };
+            this.deltaObj.deltas.push(delta);
+            this.curCode = newCode;
+            this.logEditDelta(delta);
+        }
+    };
+    OptFrontend.prototype.logEditDelta = function (delta) {
+        this.logEventCodeopticon({ type: 'editCode', delta: delta });
+    };
+    OptFrontend.prototype.enterDisplayMode = function () {
+        this.updateAppDisplay('display');
+    };
+    OptFrontend.prototype.enterEditMode = function () {
+        this.updateAppDisplay('edit');
+    };
+    // try to make this function as idempotent as possible, so that
+    // repeated calls with same params don't do anything bad
+    OptFrontend.prototype.updateAppDisplay = function (newAppMode) {
+        var _this = this;
+        this.appMode = newAppMode;
+        if (this.appMode === undefined || this.appMode == 'edit' ||
+            !this.myVisualizer /* subtle -- if no visualizer, default to edit mode */) {
+            this.appMode = 'edit'; // canonicalize
+            $("#pyInputPane").show();
+            $("#pyOutputPane,#embedLinkDiv").hide();
+            // Potentially controversial: when you enter edit mode, DESTROY any
+            // existing visualizer object. note that this simplifies the app's
+            // conceptual model but breaks the browser's expected Forward and
+            // Back button flow
+            $("#pyOutputPane").empty();
+            // right before destroying, submit the visualizer's updateHistory
+            this.submitUpdateHistory('editMode');
+            this.myVisualizer = null; // yikes!
+            $(document).scrollTop(0); // scroll to top to make UX better on small monitors
+            // *after* the editor is shown, force it to refresh its contents
+            // (using the misleadingly-named resize(true) method)
+            this.pyInputAceEditor.resize(true);
+            var s = { mode: 'edit' };
+            // keep these persistent so that they survive page reloads
+            // keep these persistent so that they survive page reloads
+            if (typeof codeopticonSession !== "undefined") {
+                s.cosession = codeopticonSession;
+            }
+            if (typeof codeopticonUsername !== "undefined") {
+                s.couser = codeopticonUsername;
+            }
+            $.bbq.pushState(s, 2 /* completely override other hash strings to keep URL clean */);
+        }
+        else if (this.appMode == 'display' || this.appMode == 'visualize' /* 'visualize' is deprecated */) {
+            pytutor_1.assert(this.myVisualizer);
+            this.appMode = 'display'; // canonicalize
+            $("#pyInputPane").hide();
+            $("#pyOutputPane,#embedLinkDiv").show();
+            this.doneExecutingCode();
+            // do this AFTER making #pyOutputPane visible, or else
+            // jsPlumb connectors won't render properly
+            this.myVisualizer.updateOutput();
+            // use .off() to remove all handlers first, to prevent accidental
+            // multiple attaches ...
+            // customize edit button click functionality AFTER rendering myVisualizer
+            $('#pyOutputPane #editCodeLinkDiv').show();
+            $('#pyOutputPane #editBtn').off().click(function () {
+                _this.enterEditMode();
+            });
+            var v = $('#pythonVersionSelector').val();
+            // 2018-03-15 - removed "Live programming" link from
+            // visualization mode to simplify the UI, even if it drives
+            // fewer people to live programming mode; they can always click
+            // the "Live Programming Mode" button in the code editor:
+            /*
+            if (v === 'js' || v === '2' || v === '3') {
+              var myArgs = this.getAppState();
+              var urlStr = $.param.fragment('live.html', myArgs, 2); // clobber all
+              $("#pyOutputPane #liveModeSpan").show();
+              $('#pyOutputPane #editLiveModeBtn').off().click(this.openLiveModeUrl.bind(this));
+            } else {
+              $("#pyOutputPane #liveModeSpan").hide();
+            }
+            */
+            $(document).scrollTop(0); // scroll to top to make UX better on small monitors
+            var s = { mode: 'display' };
+            // keep these persistent so that they survive page reloads
+            if (typeof codeopticonSession !== "undefined") {
+                s.cosession = codeopticonSession;
+            }
+            if (typeof codeopticonUsername !== "undefined") {
+                s.couser = codeopticonUsername;
+            }
+            $.bbq.pushState(s, 2 /* completely override other hash strings to keep URL clean */);
+        }
+        else {
+            pytutor_1.assert(false);
+        }
+        $('#urlOutput,#urlOutputShortened,#embedCodeOutput').val(''); // clear to avoid stale values
+        // log at the end after appMode gets canonicalized
+        this.logEventCodeopticon({ type: 'updateAppDisplay', mode: this.appMode, appState: this.getAppState() });
+        pytutor_1.assert(this.appMode === 'edit' || this.appMode === 'display'); // postcondition
+    };
+    OptFrontend.prototype.openLiveModeUrl = function () {
+        var myArgs = this.getAppState();
+        var urlStr = $.param.fragment('live.html', myArgs, 2 /* clobber all */);
+        window.open(urlStr); // open in new tab
+        return false; // to prevent default "a href" click action
+    };
+    OptFrontend.prototype.appStateAugmenter = function (x) { };
+    ; // NOP
+    // get the ENTIRE current state of the app
+    OptFrontend.prototype.getAppState = function () {
+        pytutor_1.assert(this.originFrontendJsFile);
+        var ret = { code: this.pyInputGetValue(),
+            mode: this.appMode,
+            origin: this.originFrontendJsFile,
+            cumulative: $('#cumulativeModeSelector').val(),
+            heapPrimitives: $('#heapPrimitivesSelector').val(),
+            textReferences: $('#textualMemoryLabelsSelector').val(),
+            py: $('#pythonVersionSelector').val(),
+            /* ALWAYS JSON serialize rawInputLst, even if it's empty! */
+            rawInputLstJSON: JSON.stringify(this.rawInputLst),
+            curInstr: this.myVisualizer ? this.myVisualizer.curInstr : undefined };
+        // keep this really clean by avoiding undefined values
+        if (ret.cumulative === undefined)
+            delete ret.cumulative;
+        if (ret.heapPrimitives === undefined)
+            delete ret.heapPrimitives;
+        if (ret.textReferences === undefined)
+            delete ret.textReferences;
+        if (ret.py === undefined)
+            delete ret.py;
+        if (ret.rawInputLstJSON === undefined)
+            delete ret.rawInputLstJSON;
+        if (ret.curInstr === undefined)
+            delete ret.curInstr;
+        // frontends can optionally AUGMENT the app state with custom fields
+        this.appStateAugmenter(ret);
+        return ret;
+    };
+    // strip it down to the bare minimum
+    OptFrontend.prototype.getToggleState = function () {
+        var x = this.getAppState();
+        delete x.code;
+        delete x.mode;
+        delete x.rawInputLstJSON;
+        delete x.curInstr;
+        return x;
+    };
+    OptFrontend.prototype.setToggleOptions = function (dat) {
+        // ugh, ugly tristate due to the possibility of each being undefined
+        if (dat.py !== undefined) {
+            $('#pythonVersionSelector').val(dat.py);
+        }
+        if (dat.cumulative !== undefined) {
+            $('#cumulativeModeSelector').val(dat.cumulative);
+        }
+        if (dat.heapPrimitives !== undefined) {
+            $('#heapPrimitivesSelector').val(dat.heapPrimitives);
+        }
+        if (dat.textReferences !== undefined) {
+            $('#textualMemoryLabelsSelector').val(dat.textReferences);
+        }
+    };
+    OptFrontend.prototype.demoModeChanged = function () { };
+    ; // NOP; subclasses need to override
+    OptFrontend.prototype.loadCodcastFile = function () { };
+    ; // NOP; subclasses need to override
+    OptFrontend.prototype.parseQueryString = function () {
+        var queryStrOptions = this.getQueryStringOptions();
+        this.setToggleOptions(queryStrOptions);
+        if (queryStrOptions.preseededCode) {
+            this.pyInputSetValue(queryStrOptions.preseededCode);
+        }
+        this.rawInputLst = queryStrOptions.rawInputLst ? queryStrOptions.rawInputLst : [];
+        this.preseededCurInstr = queryStrOptions.preseededCurInstr;
+        if (isNaN(this.preseededCurInstr)) {
+            this.preseededCurInstr = undefined;
+        }
+        if (queryStrOptions.demoMode) {
+            this.demoMode = true;
+            this.demoModeChanged();
+        }
+        if (queryStrOptions.codcastFile) {
+            this.codcastFile = queryStrOptions.codcastFile;
+            this.loadCodcastFile();
+        }
+        if (queryStrOptions.codeopticonSession) {
+            pytutor_1.assert(false); // TODO: this won't currently work with Webpack, so fix it later
+            codeopticonSession = queryStrOptions.codeopticonSession; // GLOBAL defined in codeopticon-learner.js
+            codeopticonUsername = queryStrOptions.codeopticonUsername; // GLOBAL defined in codeopticon-learner.js
+        }
+        if ((queryStrOptions.appMode == 'display' ||
+            queryStrOptions.appMode == 'visualize' /* deprecated */) &&
+            queryStrOptions.preseededCode /* jump to 'display' mode only with preseeded code */) {
+            this.executeCode(this.preseededCurInstr); // will switch to 'display' mode
+        }
+        $.bbq.removeState(); // clean up the URL no matter what
+    };
+    return OptFrontend;
+}(opt_frontend_common_1.AbstractBaseFrontend)); // END class OptFrontend
+exports.OptFrontend = OptFrontend;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(1)(__webpack_require__(56))
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(1)(__webpack_require__(57))
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(1)(__webpack_require__(58))
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(1)(__webpack_require__(59))
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(1)(__webpack_require__(60))
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(1)(__webpack_require__(61))
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(1)(__webpack_require__(62))
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+__webpack_require__(6);
+__webpack_require__(21);
+// need to directly import the class for type checking to work
+var opt_shared_sessions_1 = __webpack_require__(26);
+var pytutor_1 = __webpack_require__(4);
+var opt_frontend_1 = __webpack_require__(9);
+// just punt and use global script dependencies
+__webpack_require__(10);
+__webpack_require__(11);
+__webpack_require__(12);
+__webpack_require__(13);
+__webpack_require__(14);
+__webpack_require__(15);
+__webpack_require__(16);
+var optLiveFrontend;
+var OptLiveFrontend = /** @class */ (function (_super) {
+    __extends(OptLiveFrontend, _super);
+    function OptLiveFrontend(params) {
+        var _this = _super.call(this, params) || this;
+        _this.originFrontendJsFile = 'opt-live.js';
+        _this.prevVisualizer = null; // the visualizer object from the previous execution
+        _this.disableRowScrolling = false;
+        _this.hasSyntaxError = false;
+        _this.allMarkerIds = [];
+        // override
+        _this.langSettingToBackendScript = {
+            '2': 'LIVE_exec_py2.py',
+            '3': 'LIVE_exec_py3.py',
+            // empty dummy scripts just to do logging on Apache server
+            'js': 'LIVE_exec_js.py',
+            'ts': 'LIVE_exec_ts.py',
+            'java': 'LIVE_exec_java.py',
+            'ruby': 'LIVE_exec_ruby.py',
+            'c': 'LIVE_exec_c.py',
+            'cpp': 'LIVE_exec_cpp.py',
+            'py3anaconda': 'LIVE_exec_py3anaconda.py',
+        };
+        $('#legendDiv')
+            .append('<svg id="prevLegendArrowSVG"/> 执行完成')
+            .append('<p style="margin-top: 4px"><svg id="curLegendArrowSVG"/> 即将执行</p>');
+        d3.select('svg#prevLegendArrowSVG')
+            .append('polygon')
+            .attr('points', pytutor_1.SVG_ARROW_POLYGON)
+            .attr('fill', pytutor_1.lightArrowColor);
+        d3.select('svg#curLegendArrowSVG')
+            .append('polygon')
+            .attr('points', pytutor_1.SVG_ARROW_POLYGON)
+            .attr('fill', pytutor_1.darkArrowColor);
+        $('#cumulativeModeSelector,#heapPrimitivesSelector,#textualMemoryLabelsSelector,#pythonVersionSelector').change(function () {
+            _this.setAceMode();
+            // force a re-execute on a toggle switch
+            _this.executeCodeFromScratch();
+        });
+        _this.setAceMode(); // set syntax highlighting at the end
+        $("#pyOutputPane").show();
+        // TODO: eliminate redundancies with pytutor.ts
+        $("#jmpFirstInstr").click(function () {
+            if (_this.myVisualizer) {
+                _this.myVisualizer.renderStep(0);
+            }
+        });
+        $("#jmpLastInstr").click(function () {
+            if (_this.myVisualizer) {
+                _this.myVisualizer.renderStep(_this.myVisualizer.curTrace.length - 1);
+            }
+        });
+        $("#jmpStepBack").click(function () {
+            if (_this.myVisualizer) {
+                _this.myVisualizer.stepBack();
+            }
+        });
+        $("#jmpStepFwd").click(function () {
+            if (_this.myVisualizer) {
+                _this.myVisualizer.stepForward();
+            }
+        });
+        return _this;
+        // // put eureka_survey into #eurekaSurveyPane so that it's highly visib
+    }
+    // override verison in opt-frontend.ts
+    OptLiveFrontend.prototype.setAceMode = function () {
+        var v = $('#pythonVersionSelector').val();
+        if (v !== '2' && v !== '3') {
+            // 默认使用python2模式
+            $('#pythonVersionSelector').val('2');
+        }
+        _super.prototype.setAceMode.call(this);
+    };
+    OptLiveFrontend.prototype.toggleSyntaxError = function (x) {
+        if (x) {
+            this.hasSyntaxError = true;
+            $("#dataViz,#curInstr").addClass('dimmed'); // dim the visualization until we fix the error
+        }
+        else {
+            this.hasSyntaxError = false;
+            $("#dataViz,#curInstr").removeClass('dimmed'); // un-dim the visualization
+            var s = this.pyInputAceEditor.getSession();
+            s.clearAnnotations(); // remove any lingering syntax error labels in gutter
+        }
+    };
+    OptLiveFrontend.prototype.removeAllGutterDecorations = function () {
+        var s = this.pyInputAceEditor.getSession();
+        var d = s.getDocument();
+        for (var i = 0; i < d.getLength(); i++) {
+            s.removeGutterDecoration(i, 'curLineStepGutter');
+            s.removeGutterDecoration(i, 'prevLineStepGutter');
+            s.removeGutterDecoration(i, 'curPrevOverlapLineStepGutter');
+        }
+    };
+    OptLiveFrontend.prototype.updateStepLabels = function () {
+        var _this = this;
+        var myVisualizer = this.myVisualizer;
+        pytutor_1.assert(myVisualizer);
+        myVisualizer.updateLineAndExceptionInfo(); // do this first to update the right fields
+        $('#urlOutput,#urlOutputShortened').val(''); // prevent stale URLs
+        var s = this.pyInputAceEditor.getSession();
+        this.allMarkerIds.forEach(function (e) {
+            s.removeMarker(e);
+        });
+        this.allMarkerIds = [];
+        // TODO: prevent copy and paste with pytutor.ts
+        var totalInstrs = myVisualizer.curTrace.length;
+        var isLastInstr = myVisualizer.curInstr === (totalInstrs - 1);
+        if (isLastInstr) {
+            if (myVisualizer.promptForUserInput || myVisualizer.promptForMouseInput) {
+                $("#curInstr").html('<b><font color="' + pytutor_1.brightRed + '">Enter user input below:</font></b>');
+            }
+            else if (myVisualizer.instrLimitReached) {
+                $("#curInstr").html("Instruction limit reached");
+            }
+            else {
+                $("#curInstr").html("运行结束 共" + String(totalInstrs - 1) + "步");
+            }
+        }
+        else {
+            $("#curInstr").html("\u7B2C " + String(myVisualizer.curInstr) + " \u6B65\uFF0C\u5171 " + String(totalInstrs - 1) + "\u6B65");
+            // $("#curInstr").html("Step " + String(myVisualizer.curInstr + 1) + " of " + String(totalInstrs-1));
+        }
+        // handle raw user input
+        // copied from pytutor.js -- TODO: integrate this code better
+        var ruiDiv = $('#rawUserInputDiv');
+        if (isLastInstr && myVisualizer.params.executeCodeWithRawInputFunc &&
+            myVisualizer.promptForUserInput) {
+            ruiDiv.show();
+            ruiDiv.find('#userInputPromptStr').html(myVisualizer.userInputPromptStr);
+            ruiDiv.find('#raw_input_textbox').val('');
+            // first UNBIND handler so that we don't build up multiple click events
+            ruiDiv.find('#raw_input_submit_btn')
+                .unbind('click')
+                .click(function () {
+                // issue a warning since it's really hard to get rawInputLst
+                // stuff sync'ed when TogetherJS is running for various reasons:
+                if (opt_shared_sessions_1.TogetherJS.running) {
+                    alert("Warning: user inputs do NOT work well in live help/chat mode. We suggest you use the regular Python Tutor visualizer instead.");
+                }
+                var userInput = ruiDiv.find('#raw_input_textbox').val();
+                var myVisualizer = _this.myVisualizer;
+                // advance instruction count by 1 to get to the NEXT instruction
+                myVisualizer.params.executeCodeWithRawInputFunc(userInput, myVisualizer.curInstr + 1);
+            });
+        }
+        else {
+            ruiDiv.hide(); // hide by default
+        }
+        // render error (if applicable):
+        var curEntry = myVisualizer.curTrace[myVisualizer.curInstr];
+        if (curEntry.event === 'exception' ||
+            curEntry.event === 'uncaught_exception') {
+            pytutor_1.assert(curEntry.exception_msg);
+            if (curEntry.exception_msg == "Unknown error") {
+                $("#frontendErrorOutput").html('Unknown error: Please email a bug report to philip@pgbovine.net');
+            }
+            else {
+                $("#frontendErrorOutput").html(pytutor_1.htmlspecialchars(curEntry.exception_msg));
+            }
+            if (myVisualizer.curLineNumber) {
+                var Range = ace.require('ace/range').Range;
+                var markerId = s.addMarker(new Range(myVisualizer.curLineNumber - 1, 0, myVisualizer.curLineNumber - 1, 1), "errorLine", "fullLine");
+                this.allMarkerIds.push(markerId);
+            }
+        }
+        else if (myVisualizer.instrLimitReached) {
+            $("#frontendErrorOutput").html(pytutor_1.htmlspecialchars(myVisualizer.instrLimitReachedWarningMsg));
+        }
+        else {
+            $("#frontendErrorOutput").html(''); // clear it
+        }
+        this.removeAllGutterDecorations();
+        // special case if both arrows overlap
+        if (myVisualizer.curLineNumber &&
+            (myVisualizer.curLineNumber === myVisualizer.prevLineNumber)) {
+            s.addGutterDecoration(myVisualizer.curLineNumber - 1, 'curPrevOverlapLineStepGutter');
+        }
+        else {
+            // render separately
+            if (myVisualizer.curLineNumber) {
+                s.addGutterDecoration(myVisualizer.curLineNumber - 1, 'curLineStepGutter');
+            }
+            if (myVisualizer.prevLineNumber) {
+                s.addGutterDecoration(myVisualizer.prevLineNumber - 1, 'prevLineStepGutter');
+            }
+        }
+        var lineToScrollTo = null;
+        if (myVisualizer.curLineNumber) {
+            lineToScrollTo = myVisualizer.curLineNumber;
+        }
+        else if (myVisualizer.prevLineNumber) {
+            lineToScrollTo = myVisualizer.prevLineNumber;
+        }
+        // scroll the Ace editor to try to center the current line, but make
+        // sure not to appear jarring, so apply some heuristics here
+        // such as disableRowScrolling and checking to see if the current line
+        // is visible
+        if (lineToScrollTo && !this.disableRowScrolling) {
+            var firstVisible = this.pyInputAceEditor.getFirstVisibleRow() + 1; // +1 to be more accurate
+            var lastVisible = this.pyInputAceEditor.getLastVisibleRow();
+            if (lineToScrollTo < firstVisible ||
+                lineToScrollTo > lastVisible) {
+                this.pyInputAceEditor.scrollToLine(lineToScrollTo, true /* try to center */);
+            }
+        }
+    };
+    // see getAppState to see where it calls out to this function:
+    OptLiveFrontend.prototype.appStateAugmenter = function (appState) {
+        // super hack so that when you generate URLs, it will say 'display' mode
+        // since we want to jump to curInstr and that happens only in 'display' mode
+        appState.mode = 'display';
+    };
+    OptLiveFrontend.prototype.finishSuccessfulExecution = function () {
+        var _this = this;
+        var myVisualizer = this.myVisualizer;
+        var prevVisualizer = this.prevVisualizer;
+        pytutor_1.assert(myVisualizer);
+        $("#pyOutputPane,#vcrControls").show();
+        this.doneExecutingCode();
+        this.toggleSyntaxError(false);
+        // set up execution slider, code inspired by pytutor.js:
+        // TODO: eventually unify this code with pytutor.js to avoid duplication
+        var sliderDiv = $('#executionSlider');
+        sliderDiv.slider({ min: 0, max: myVisualizer.curTrace.length - 1, step: 1 });
+        //disable keyboard actions on the slider itself (to prevent double-firing of events)
+        sliderDiv.find(".ui-slider-handle").unbind('keydown');
+        // make skinnier and taller
+        sliderDiv.find(".ui-slider-handle").css('width', '0.8em');
+        sliderDiv.find(".ui-slider-handle").css('height', '1.4em');
+        $(".ui-widget-content").css('font-size', '0.9em');
+        // unbind first to prevent multiple bindings
+        sliderDiv.unbind('slide').bind('slide', function (evt, ui) {
+            // this is SUPER subtle. if this value was changed programmatically,
+            // then evt.originalEvent will be undefined. however, if this value
+            // was changed by a user-initiated event, then this code should be
+            // executed ...
+            if (evt.originalEvent) {
+                _this.myVisualizer.renderStep(ui.value);
+            }
+        });
+        // do this AFTER making #pyOutputPane visible, or else
+        // jsPlumb connectors won't render properly
+        // try to "match" the same position as the previous visualizer so that
+        // the display isn't jerky
+        if (prevVisualizer) {
+            var prevVizInstr = prevVisualizer.curInstr;
+            var prevVizIsFinalInstr = (prevVisualizer.curInstr === (prevVisualizer.curTrace.length - 1));
+            // match the previous step if it we weren't on the last one, and the new
+            // trace is at least as long
+            if (!prevVizIsFinalInstr &&
+                (myVisualizer.curTrace.length >= prevVisualizer.curTrace.length)) {
+                myVisualizer.renderStep(prevVizInstr);
+            }
+            else {
+                myVisualizer.updateOutput();
+            }
+        }
+        else {
+            myVisualizer.updateOutput();
+        }
+        this.updateStepLabels(); // do it once
+        // initialize this at the VERY END after jumping to the proper initial step
+        // above, perhaps using renderStep()
+        // copied from opt-frontend.ts, TODO: remove redundancy
+        myVisualizer.creationTime = new Date().getTime();
+        // each element will be a two-element list consisting of:
+        // [step number, timestamp]
+        // (debounce entries that are less than 1 second apart to
+        // compress the logs a bit when there's rapid scrubbing or scrolling)
+        //
+        // the first entry has a THIRD field:
+        // [step number, timestamp, total # steps]
+        //
+        // subsequent entries don't need it since it will always be the same.
+        // the invariant is that step number < total # steps (since it's
+        // zero-indexed
+        myVisualizer.updateHistory = [];
+        myVisualizer.updateHistory.push([myVisualizer.curInstr,
+            myVisualizer.creationTime,
+            myVisualizer.curTrace.length]);
+        // TODO: check that this logging works properly ...
+        // add this hook at the VERY END after jumping to the proper initial step
+        // above, perhaps using renderStep()
+        myVisualizer.add_pytutor_hook("end_updateOutput", function (args) {
+            // adapted from opt-shared-sessions.ts to handle TogetherJS
+            if (_this.updateOutputSignalFromRemote) {
+                return [true]; // die early; no more hooks should run after this one!
+            }
+            if (opt_shared_sessions_1.TogetherJS.running) {
+                opt_shared_sessions_1.TogetherJS.send({ type: "updateOutput", step: args.myViz.curInstr });
+            }
+            // copied from opt-frontend-common.js
+            if (args.myViz.creationTime) {
+                var curTs = new Date().getTime();
+                var uh = args.myViz.updateHistory;
+                pytutor_1.assert(uh.length > 0); // should already be seeded with an initial value
+                if (uh.length > 1) { // don't try to "compress" the very first entry
+                    var lastTs = uh[uh.length - 1][1];
+                    // (debounce entries that are less than 1 second apart to
+                    // compress the logs a bit when there's rapid scrubbing or scrolling)
+                    if ((curTs - lastTs) < 1000) {
+                        uh.pop(); // get rid of last entry before pushing a new entry
+                    }
+                }
+                uh.push([args.myViz.curInstr, curTs]);
+            }
+            $('#executionSlider').slider('value', _this.myVisualizer.curInstr); // update slider
+            _this.updateStepLabels();
+            return [false];
+        });
+        $('#executionSlider').slider('value', myVisualizer.curInstr); // update slider
+        this.myVisualizer.redrawConnectors(); // to get everything aligned well
+    };
+    // a syntax-/compile-time error, rather than a runtime error
+    OptLiveFrontend.prototype.handleUncaughtException = function (trace) {
+        if (trace.length == 1 && trace[0].line) {
+            var errorLineNo = trace[0].line - 1; /* Ace lines are zero-indexed */
+            if (errorLineNo !== undefined && errorLineNo != NaN) {
+                this.removeAllGutterDecorations();
+                if (this.myVisualizer) {
+                    this.toggleSyntaxError(true);
+                    this.myVisualizer.redrawConnectors();
+                }
+                var s = this.pyInputAceEditor.getSession();
+                s.setAnnotations([{ row: errorLineNo,
+                        type: 'error',
+                        text: trace[0].exception_msg }]);
+            }
+        }
+    };
+    // need to override the version in opt-frontend-common.ts
+    OptLiveFrontend.prototype.redrawConnectors = function () {
+        if (this.myVisualizer) {
+            this.myVisualizer.redrawConnectors();
+        }
+    };
+    // override with NOP to disable diff snapshots in live mode
+    OptLiveFrontend.prototype.snapshotCodeDiff = function () { };
+    OptLiveFrontend.prototype.initAceEditor = function (height) {
+        var _this = this;
+        pytutor_1.assert(!this.pyInputAceEditor);
+        this.pyInputAceEditor = ace.edit('codeInputPane');
+        var s = this.pyInputAceEditor.getSession();
+        // disable extraneous indicators:
+        s.setFoldStyle('manual'); // no code folding indicators
+        s.getDocument().setNewLineMode('unix'); // canonicalize all newlines to unix format
+        this.pyInputAceEditor.setHighlightActiveLine(false);
+        this.pyInputAceEditor.setShowPrintMargin(false);
+        this.pyInputAceEditor.setBehavioursEnabled(false);
+        this.pyInputAceEditor.setHighlightGutterLine(false); // to avoid gray highlight over gutter of active line
+        this.pyInputAceEditor.setDisplayIndentGuides(false); // to avoid annoying gray vertical lines
+        this.pyInputAceEditor.setOptions({
+            enableBasicAutocompletion: true,
+            enableSnippets: true,
+            enableLiveAutocompletion: true,
+        });
+        this.pyInputAceEditor.$blockScrolling = Infinity; // kludgy to shut up weird warnings
+        $("#pyInputPane,#codeInputPane")
+            .css('width', '550px')
+            .css('min-width', '250px')
+            .css('max-width', '700px'); // don't let it get too ridiculously wide
+        $('#codeInputPane').css('height', height + 'px'); // VERY IMPORTANT so that it works on I.E., ugh!
+        // make it resizable!
+        $("#codeInputPane").resizable({
+            resize: function (evt, ui) {
+                _this.pyInputAceEditor.resize(); // to keep Ace internals happy
+                $("#pyInputPane").width($("#codeInputPane").width()); // to keep parent happy
+                if (_this.myVisualizer) {
+                    _this.myVisualizer.redrawConnectors(); // to keep visualizations happy
+                }
+            }
+        });
+        this.pyInputAceEditor.on('change', function (e) {
+            // 2017-11-21: convert all tabs to 4 spaces so that when you paste
+            // in code from somewhere else that contains tabs, instantly
+            // change all those tabs to spaces. note that all uses of 'tab' key
+            // within the Ace editor on this page will result in spaces (i.e.,
+            // "soft tabs")
+            var curVal = _this.pyInputGetValue();
+            if (curVal.indexOf('\t') >= 0) {
+                _this.pyInputSetValue(curVal.replace(opt_frontend_1.allTabsRE, '    '));
+                console.log("Converted all tabs to spaces");
+            }
+            $.doTimeout('pyInputAceEditorChange', 500, /* go a bit faster than CODE_SNAPSHOT_DEBOUNCE_MS to feel more snappy */ function () {
+                if (_this.preseededCurInstr) {
+                    _this.executeCode(_this.preseededCurInstr);
+                    _this.preseededCurInstr = undefined; // do this only once, then unset it
+                }
+                else {
+                    // if you're trying to execute an empty text
+                    // buffer, highlight the code display with a
+                    // warning as though you got a syntax error:
+                    if (_this.pyInputAceEditor && $.trim(_this.pyInputGetValue()) == '') {
+                        _this.toggleSyntaxError(true);
+                        _this.myVisualizer.redrawConnectors();
+                    }
+                    _this.executeCodeFromScratch();
+                }
+            }); // debounce
+            _this.clearFrontendError();
+            s.clearAnnotations();
+        });
+        // don't do real-time syntax checks:
+        // https://github.com/ajaxorg/ace/wiki/Syntax-validation
+        s.setOption("useWorker", false);
+        this.pyInputAceEditor.focus();
+        // custom gutter renderer, make it wider to accomodate arrows on left
+        // http://stackoverflow.com/a/28404331
+        s.gutterRenderer = {
+            getWidth: function (session, lastLineNumber, config) {
+                return (lastLineNumber.toString().length * config.characterWidth) + 6;
+            },
+            getText: function (session, row) {
+                return (row + 1);
+            }
+        };
+    };
+    OptLiveFrontend.prototype.executeCodeFromScratch = function () {
+        this.disableRowScrolling = true;
+        _super.prototype.executeCodeFromScratch.call(this);
+    };
+    // TODO: maybe prevent so much copy-and-paste with the version in
+    // opt-frontend-common.ts?
+    OptLiveFrontend.prototype.executeCodeAndCreateViz = function (codeToExec, pyState, backendOptionsObj, frontendOptionsObj, outputDiv) {
+        var _this = this;
+        var execCallback = function (dataFromBackend) {
+            var trace = dataFromBackend.trace;
+            if (!trace ||
+                (trace.length === 0) ||
+                (trace[trace.length - 1].event === 'uncaught_exception')) {
+                _this.handleUncaughtException(trace);
+                if (trace.length === 1) {
+                    _this.setFronendError([trace[0].exception_msg]);
+                }
+                else if (trace.length > 0 && trace[trace.length - 1].exception_msg) {
+                    _this.setFronendError([trace[trace.length - 1].exception_msg]);
+                }
+                else {
+                    _this.setFronendError(["Unknown error: The server may be OVERLOADED right now; try again later.",
+                        "Your code may also contain UNSUPPORTED FEATURES that this tool cannot handle.",
+                        "Report a bug to philip@pgbovine.net by clicking the 'Generate shortened link'",
+                        "button at the bottom and including a URL in your email. [#NullTrace]"]);
+                }
+            }
+            else {
+                _this.prevVisualizer = _this.myVisualizer;
+                _this.myVisualizer = new pytutor_1.ExecutionVisualizer(outputDiv, dataFromBackend, frontendOptionsObj);
+                _this.finishSuccessfulExecution();
+            }
+            // run this all at the VERY END after all the dust has settled
+            _this.doneExecutingCode(); // rain or shine, we're done executing!
+            _this.disableRowScrolling = false;
+        };
+        this.clearFrontendError();
+        this.startExecutingCode();
+        this.setFronendError(['Running your code ...'], true);
+        var backendScript = this.langSettingToBackendScript[pyState];
+        pytutor_1.assert(backendScript);
+        var jsonp_endpoint = null;
+        if (pyState === '2') {
+            frontendOptionsObj.lang = 'py2';
+        }
+        else if (pyState === '3') {
+            frontendOptionsObj.lang = 'py3';
+        }
+        else if (pyState === 'js') {
+            frontendOptionsObj.lang = 'js';
+            // only set the remote endpoint if you're *not* on localhost:
+            if (window.location.href.indexOf('localhost') < 0) {
+                jsonp_endpoint = this.langSettingToJsonpEndpoint[pyState]; // maybe null
+            }
+        }
+        else {
+            pytutor_1.assert(false);
+        }
+        // submit update history of the "previous" visualizer whenever you
+        // run the code and hopefully get a new visualizer back
+        //
+        // don't bother if we're currently on a syntax error since the
+        // displayed visualization is no longer relevant
+        var prevUpdateHistoryJSON = undefined;
+        if (this.hasSyntaxError) {
+            prevUpdateHistoryJSON = 'hasSyntaxError'; // hacky
+        }
+        else if (this.myVisualizer) {
+            var encodedUh = this.compressUpdateHistoryList();
+            prevUpdateHistoryJSON = JSON.stringify(encodedUh);
+        }
+        if (jsonp_endpoint) {
+            pytutor_1.assert(pyState !== '2' && pyState !== '3');
+            // hack! should just be a dummy script for logging only
+            $.get(backendScript, { user_script: codeToExec,
+                options_json: JSON.stringify(backendOptionsObj),
+                user_uuid: this.userUUID,
+                session_uuid: this.sessionUUID,
+                prevUpdateHistoryJSON: prevUpdateHistoryJSON,
+                exeTime: new Date().getTime() }, function (dat) { }, "text"); // NOP handler since it's a dummy
+            // the REAL call uses JSONP
+            // http://learn.jquery.com/ajax/working-with-jsonp/
+            $.ajax({
+                url: jsonp_endpoint,
+                // The name of the callback parameter, as specified by the YQL service
+                jsonp: "callback",
+                dataType: "jsonp",
+                data: { user_script: codeToExec,
+                    options_json: JSON.stringify(backendOptionsObj) },
+                success: execCallback,
+            });
+            // TODO: we currently don't use backupHttpServerRoot like we do in opt-frontend-common.ts
+            // maybe we should add support for it here too
+        }
+        else {
+            if (pyState === '2' || pyState === '3') {
+                $.get(backendScript, { user_script: codeToExec,
+                    raw_input_json: this.rawInputLst.length > 0 ? JSON.stringify(this.rawInputLst) : '',
+                    options_json: JSON.stringify(backendOptionsObj),
+                    user_uuid: this.userUUID,
+                    session_uuid: this.sessionUUID,
+                    prevUpdateHistoryJSON: prevUpdateHistoryJSON,
+                    exeTime: new Date().getTime() }, execCallback, "json");
+            }
+            else if (pyState === 'js') {
+                if (window.location.href.indexOf('localhost') >= 0) {
+                    // use /exec_js_native if you're running on localhost:
+                    // (need to first run 'make local' from ../../v4-cokapi/Makefile)
+                    $.get('http://localhost:3000/exec_js_native', { user_script: codeToExec,
+                        raw_input_json: this.rawInputLst.length > 0 ? JSON.stringify(this.rawInputLst) : '',
+                        options_json: JSON.stringify(backendOptionsObj),
+                        user_uuid: this.userUUID,
+                        session_uuid: this.sessionUUID,
+                        prevUpdateHistoryJSON: prevUpdateHistoryJSON,
+                        exeTime: new Date().getTime() }, execCallback, "json");
+                }
+                else {
+                    pytutor_1.assert(false);
+                }
+            }
+            else {
+                pytutor_1.assert(false);
+            }
+        }
+    };
+    OptLiveFrontend.prototype.getBaseFrontendOptionsObj = function () {
+        var ret = _super.prototype.getBaseFrontendOptionsObj.call(this);
+        ret.hideCode = true;
+        ret.jumpToEnd = true;
+        return ret;
+    };
+    OptLiveFrontend.prototype.updateOutputTogetherJsHandler = function (msg) {
+        _super.prototype.updateOutputTogetherJsHandler.call(this, msg); // do this first
+        // then update slider at the end
+        $('#executionSlider').slider('value', this.myVisualizer.curInstr); // update slider
+        this.updateStepLabels();
+    };
+    return OptLiveFrontend;
+}(opt_shared_sessions_1.OptFrontendSharedSessions)); // END class OptLiveFrontend
+exports.OptLiveFrontend = OptLiveFrontend;
+$(document).ready(function () {
+    optLiveFrontend = new OptLiveFrontend({});
+    optLiveFrontend.setSurveyHTML();
+});
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
+module.exports = __webpack_amd_options__;
+
+/* WEBPACK VAR INJECTION */}.call(exports, {}))
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/* CSS accompanying ../visualize.html */\n\nh1 {\n  font-weight: normal;\n  font-size: 20pt;\n  font-family: georgia, serif;\n  line-height: 1em;  /* enforce single spacing so that Georgia works */\n\n  margin-top: 0px;\n  margin-bottom: 8px;\n}\n\nh2 {\n  font-size: 12pt;\n  font-weight: normal;\n  font-family: georgia, serif;\n  line-height: 1.1em; /* enforce single spacing so that Georgia works */\n\n  margin-top: 2px;\n  margin-bottom: 20px;\n}\n\n\nbody {\n  background-color: white;\n  font-family: verdana, arial, helvetica, sans-serif;\n  font-size: 10pt;\n}\n\na,\na:visited,\na:hover {\n  color: #3D58A2;\n}\n\nspan {\n  padding: 0px;\n}\n\n#optionsPane {\n  margin-top: 15px;\n  margin-bottom: 20px;\n  line-height: 150%;\n}\n\ntable#pyOutputPane {\n  padding: 10px;\n}\n\n#pyInputPane, #loadingPane {\n  margin-top: 10px;\n  margin-bottom: 20px;\n\n  max-width: 700px;\n  /* center align */\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#loadingPane {\n  margin-bottom: 5px;\n}\n\n#codeInputPane {\n  margin-top: 5px;\n  font-size: 12pt;\n  border: 1px solid #ddd;\n}\n\n#codeInputWarnings {\n  margin-bottom: 8px;\n}\n\nbutton.smallBtn {\n  font-size: 10pt;\n  padding: 3px;\n}\n\nbutton.bigBtn {\n  font-size: 12pt;\n  padding: 6px;\n  margin-top: 0px;\n}\n\nbutton.surveyBtn {\n  font-size: 8pt;\n  margin-top: 8px;\n}\n\nbutton.surveyBtnBig {\n  font-size: 11pt;\n  padding: 5px;\n  margin-top: 0px;\n}\n\n#footer {\n  color: #999;\n  font-size: 9pt;\n  border-top: 1px solid #bbbbbb;\n  padding-top: 5px;\n  margin-top: 5px;\n\n  max-width: 700px;\n  /* center align */\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#frontendErrorOutput {\n  color: #e93f34; /* should match brightRed JavaScript variable */\n  font-size: 12pt;\n  line-height: 1.5em;\n  margin-top: 8px;\n}\n\n.togetherjsBtn {\n  /*color: #b80000;*/\n  color: #e93f34;\n  font-size: 9pt;\n  padding: 4px;\n  margin-top: 3px;\n}\n\n/* make this a fixed size with scrollbars for overflow so that the UI doesn't jitter up and down */\n#publicHelpQueue {\n  overflow: auto;\n  height: 95px;\n  margin-bottom: 15px;\n  margin-left: 10px;\n}\n\n.helpQueueSmallText {\n  color: #777;\n  font-size: 8pt;\n}\n\n.redBold {\n  font-weight: bold;\n  color: #e93f34;\n}\n\n#stopRequestHelpBtn {\n  font-size: 9pt;\n  padding: 2px;\n}\n\n#moderationPanel {\n  font-size: 11pt;\n  margin-bottom: 5pt;\n  min-height: 16pt; /* just so things don't jiggle around vertically too much */\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 6px;\n  padding-right: 6px;\n  border: 1px solid #e93f34;\n}\n\n.kickLink {\n  font-size: 10pt;\n  margin-right: 4px;\n}\n\n\n#syncBtn {\n font-size: 8pt;\n margin-left: 0px;\n}\n\n#experimentalHeader {\n}\n\n#surveyHeader {\n  margin-left: 100px;\n}\n\n.surveyQ {\n  font-size: 9pt;\n  padding: 2px;\n}\n\n/* necessary for CodeMirror error line highlighting to work! */\n.CodeMirror .errorLine { background: #ffff3f !important; }\n\n\n/* from http://rog.ie/blog/css-star-rater */\n.star-rating {\n  font-size: 0;\n  white-space: nowrap;\n  display: inline-block;\n  /* pgbovine - scale this appropriately with a 5:1 ratio */\n  width: 100px;\n  height: 20px;\n  overflow: hidden;\n  position: relative;\n  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');\n  background-size: contain;\n}\n.star-rating i {\n  opacity: 0;\n  position: absolute;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 20%;\n  z-index: 1;\n  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');\n  background-size: contain;\n}\n.star-rating input {\n  -moz-appearance: none;\n  -webkit-appearance: none;\n  opacity: 0;\n  display: inline-block;\n  width: 20%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  z-index: 2;\n  position: relative;\n}\n.star-rating input:hover + i,\n.star-rating input:checked + i {\n  opacity: 1;\n}\n.star-rating i ~ i {\n  width: 40%;\n}\n.star-rating i ~ i ~ i {\n  width: 60%;\n}\n.star-rating i ~ i ~ i ~ i {\n  width: 80%;\n}\n.star-rating i ~ i ~ i ~ i ~ i {\n  width: 100%;\n}\n\n\n#syntaxErrBubbleContents {\n  font-size: 9.5pt;\n  cursor: default;\n}\n\n#syntaxErrHeader {\n  margin-bottom: 3pt;\n}\n\n#syntaxErrCodeDisplay {\n  border: 1px solid #ddd;\n}\n\n#syntaxErrMsg {\n  color: #e93f34; /* should match brightRed JavaScript variable */\n  font-size: 10pt;\n  margin-top: 3pt;\n  margin-bottom: 2pt;\n}\n\n#syntaxErrQuestion {\n  margin-top: 12px;\n}\n\n#syntaxErrTxtInput {\n  margin-top: 3px;\n  margin-bottom: 6px;\n  padding: 2px;\n}\n\n#syntaxErrSubmitBtn, #syntaxErrCloseBtn {\n  margin-right: 8px;\n}\n\n#syntaxErrHideAllLink {\n  font-size: 8pt;\n}\n\n#testCasesPane {\n margin-top: 5px;\n padding-bottom: 5px;\n}\n\n#exampleSnippets {\n border-top: 1px solid #ccc;\n margin-top: 15px;\n}\n\n#showExampleLink {\n  margin-top: 15px;\n}\n\n#instructionsPane {\n margin-bottom: 10px;\n}\n\n/* for SyntaxErrorSurveyBubble */\n\ntextarea.bubbleInputText {\n  font-family: verdana, arial, helvetica, sans-serif;\n\tfont-size: 9pt;\n\tline-height: 1.3em;\n}\n\n.qtip-content {\n\tcolor: #333;\n\tbackground-color: #ffffff;\n\n\tmax-width: 390px;\n\twidth: 390px;\n\n\tborder: 2px solid #e93f34;\n\n  cursor: pointer;\n\n\t*border-right-width: 2px;\n\t*border-bottom-width: 2px;\n\n\t-webkit-border-radius: 5px;\n\t-moz-border-radius: 5px;\n\tborder-radius: 5px;\n\n\t-webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);\n\t-moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);\n\tbox-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);\n\n\t-webkit-background-clip: padding-box;\n\t-moz-background-clip: padding;\n\tbackground-clip: padding-box;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(22);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(3)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../node_modules/css-loader/index.js!./opt-live.css", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js!./opt-live.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(7);
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".curLineStepGutter {\n  background-image: url(" + escape(__webpack_require__(23)) + ");\n}\n\n.prevLineStepGutter {\n  background-image: url(" + escape(__webpack_require__(24)) + ");\n}\n\n.curPrevOverlapLineStepGutter {\n  background-image: url(" + escape(__webpack_require__(25)) + ");\n}\n\n.errorLine {\n  position: absolute;\n  z-index: 20;\n  border-top: 1px solid #e93f34;\n  border-bottom: 1px solid #e93f34;\n  /*background: rgba(200, 0, 0, 0.15);*/\n}\n\n#sliderStuff {\n  padding-top: 3px;\n}\n\n/* copied from pytutor.css - TODO: integrate and merge together */\n/* VCR control buttons for stepping through execution */\n#vcrControls {\n  margin: 15px auto;\n  /*width: 100%;*/\n  text-align: center;\n}\n\n#vcrControls button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n\n#curInstr {\n  margin-left: 4px;\n  margin-right: 4px;\n}\n\ndiv#rawUserInputDiv {\n  padding: 5px;\n  width: 95%;\n  margin: 5px auto;\n  text-align: center;\n  border: 1px #e93f34 solid;\n}\n\n\nbutton.surveyBtn {\n  font-size: 8pt;\n  margin-top: 8px;\n}\n\nbutton.surveyBtnBig {\n  font-size: 11pt;\n  padding: 5px;\n  margin-top: 0px;\n}\n\n\n/* keep it a fixed min height so that footer below it doesn't jiggle up\n   and down */\n#frontendErrorOutput {\n  min-height: 20pt;\n}\n\n#liveModeHeader {\n  margin-left: 3px;\n  margin-bottom: 12px;\n  margin-top: 10px;\n  color: #888;\n  /*width: 600px;*/\n}\n\n/* copied from pytutor.css */\ndiv#legendDiv {\n  margin-top: 8px;\n  padding: 0px;\n  text-align: left;\n  color: #666;\n  font-size: 9pt;\n  width: 500px;\n}\n\n#prevLegendArrowSVG, #curLegendArrowSVG {\n  width: 18px;\n  height: 10px;\n}\n\n\n/* translucent dimmed div: http://stackoverflow.com/a/21457838 */\n.dimmed {\n  position: relative;\n}\n\n.dimmed:after {\n  content: \" \";\n  z-index: 10;\n  display: block;\n  position: absolute;\n  height: 100%;\n  top: 0;\n  left: 0;\n  right: 0;\n  background: rgba(200, 0, 0, 0.12);\n}\n\n/* augment */\ndiv.ExecutionVisualizer #dataViz {\n  padding-right: 20px;\n}\n\n/* override Ace defaults */\n.ace_gutter {\n}\n\n.ace_gutter-cell {\n}\n\n.ace_gutter-layer {\n  background-color: white;\n  margin-right: 2px;\n  color: #aaa;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAYJ2lDQ1BJQ0MgUHJvZmlsZQAAWIWVeQk4Vd/X/z733MnlmudZZjLPJPM8z0Mq1zzTNUWRkAyVZEghhUSKRlNChpRkylCKFEKpVIZMeQ+q7+//ff/v8z7vfp597ueuvdban7332nufdS8AHKykkJAAFC0AgUFhZGsDbV5HJ2de3DiAACUgAlVAQXIPDdGytDQF/2NZGkK0kfJCYsvX/6z3/y10Hp6h7gBAlgh28wh1D0TwPQDQ7O4h5DAAML2InD8yLGQLLyCYkYwQBACL38LeO5hzC7vtYOltHVtrHQTrAoCnIpHI3gBQb/nnjXD3RvxQhyBt9EEevkGIaiKC97r7kDwAYG9DdHYHBgZv4XkEi7j9hx/v/8en21+fJJL3X7wzlu2C1/UNDQkgRf0fp+N/L4EB4X/62IVUKh+yofXWmJF5K/MPNtnCVAhuCHIzt0AwPYKf+Hps62/hEZ9wQ7vf+nPuoTrInAFmAFDAg6RrgmBkLlHM4f52Wr+xLIm8bYvoo8x9w4xsf2M3crD1b/+oCM9QPZs/2MfTyPS3z+SgAPM/+JKXr74RgpFIQ92L9rF12OGJaovwtTdHMDWCe0P9bUx+649F++iY/9Ehh1tvcRZA8IIXWd96RwdmDQz9My5Y0p20zYEVwZphPraGO7awo2eoo+kfbh6euno7HGAPzyC735xhJLq0rX/bJoUEWP7Why95BhhY78wzfCs0wuaPbX8YEmA78wC/9yMZW+7wh5dCwixtd7ih0cAU6ABdwAvCkeoGgoEf8O2eq5lDvu206AMSIANv4Akkfkv+WDhstwQhTxsQDT4jyBOE/rXT3m71BBGIfOOvdOcpAby2WyO2LfzBBwQHotnRe9FqaFPkqYlUWbQyWuWPHS/Nn16xelhdrCFWHyv6l4c7wjoAqWTg+99l/1hiPmD6MO8xg5hxzCtggrR6ImPeYhj0d2T2YHLby+/vB33jyf9izgvMwDhip/97dG6I9ewfHbQQwloBrY1WR/gj3NHMaHYggZZHRqKF1kDGpoBI/5Nh+F8W/8zlv/vb4vefY/wtpxajVvjNwu0vf52/Wv/2ovMfc+SBfJr8WxNOhu/CHfAj+CncANcAXrgJroW74Idb+G8kTG5Hwp/erLe5+SN+fP/oSFdIz0qv/7feSb8ZkLfXG4R5Hg7b2hA6wSFRZF9vnzBeLeRE9uQ1CnKX3M0rKy2jCMDW+b5zfPyw3j63Ieaef2Qk5PxWlgWAoP2PLBg5ByqzkbC+8I9MCNmbbCoA3LF2DydH7MjQWw8MIAAaZGewAW7AD0SQMckCRaAGNIEeMAYWwBY4gQPIrPuAQIR1JDgKjoMkkAbOgmxwERSCYlAGboI7oAY0gEfgMXgGesEgeI3ExhT4BObBEliDIAgHESEGiA3igQQhcUgWUob2QnqQKWQNOUGukDcUBIVDR6EEKA06B12ErkDl0G2oDnoEPYX6oFfQO2gW+g6tomAUFYoRxYUSQkmhlFFaKBOULWo/yht1CBWNSkSdQeWiilA3UNWoR6hnqEHUOOoTahEGMCXMDPPBErAyrANbwM6wF0yGY+FUOAcugivhemStX8Dj8By8gsaiGdC8aAkkPg3Rdmh39CF0LPoU+iK6DF2NbkO/QL9Dz6N/YYgYTow4RhVjhHHEeGMiMUmYHEwp5j6mHdlRU5glLBbLjBXGKiF70wnrhz2CPYUtwFZhm7F92AnsIg6HY8OJ49RxFjgSLgyXhLuAu4FrwvXjpnA/8ZR4HrwsXh/vjA/Cx+Nz8Nfxjfh+/DR+jYKWQpBClcKCwoMiiiKdooSinqKHYopijUBHECaoE2wJfoTjhFxCJaGd8Ibwg5KSchelCqUVpS9lHGUu5S3KJ5TvKFeo6KnEqHSoXKjCqc5QXaNqpnpF9YNIJAoRNYnOxDDiGWI5sZU4RvxJzUAtSW1E7UF9jDqPupq6n/oLDQWNII0WzQGaaJocmrs0PTRztBS0QrQ6tCTaWNo82jraYdpFOgY6GToLukC6U3TX6Z7SzdDj6IXo9eg96BPpi+lb6ScYYAZ+Bh0Gd4YEhhKGdoYpRiyjMKMRox9jGuNNxm7GeSZ6Jnkme6bDTHlMD5nGmWFmIWYj5gDmdOY7zEPMqyxcLFosniwpLJUs/SzLrBysmqyerKmsVayDrKtsvGx6bP5sGWw1bKPsaHYxdiv2SPZL7O3scxyMHGoc7hypHHc4RjhRnGKc1pxHOIs5uzgXubi5DLhCuC5wtXLNcTNza3L7cWdxN3LP8jDw7OXx5cniaeL5yMvEq8UbwJvL28Y7z8fJZ8gXzneFr5tvbZfwLrtd8buqdo3yE/iV+b34s/hb+OcFeATMBI4KVAiMCFIIKgv6CJ4X7BBcFhIWchA6KVQjNCPMKmwkHC1cIfxGhCiiIXJIpEhkQBQrqizqL1og2iuGElMQ8xHLE+sRR4krivuKF4j37cbsVtkdtLto97AElYSWRIREhcQ7SWZJU8l4yRrJL1ICUs5SGVIdUr+kFaQDpEukX8vQyxjLxMvUy3yXFZN1l82THZAjyunLHZOrlfsmLy7vKX9J/qUCg4KZwkmFFoUNRSVFsmKl4qySgJKrUr7SsDKjsqXyKeUnKhgVbZVjKg0qK6qKqmGqd1S/qkmo+atdV5vZI7zHc0/Jngn1Xeok9Svq43t597ruvbx3XINPg6RRpPFek1/TQ7NUc1pLVMtP64bWF21pbbL2fe1lHVWdGJ1mXVjXQDdVt1uPXs9O76LemP4ufW/9Cv15AwWDIwbNhhhDE8MMw2EjLiN3o3KjeWMl4xjjNhMqExuTiybvTcVMyab1ZigzY7NMszfmguZB5jUWwMLIItNi1FLY8pDlAyuslaVVntUHaxnro9YdNgw2B22u2yzZatum2762E7ELt2uxp7F3sS+3X3bQdTjnMO4o5Rjj+MyJ3cnXqdYZ52zvXOq8uE9vX/a+KRcFlySXof3C+w/vf3qA/UDAgYcHaQ6SDt51xbg6uF53XSdZkIpIi25Gbvlu8+467ufdP3loemR5zHqqe57znPZS9zrnNeOt7p3pPeuj4ZPjM+er43vR95ufoV+h37K/hf81/80Ah4CqQHyga2BdEH2Qf1BbMHfw4eC+EPGQpJDxQ6qHsg/Nk03IpaFQ6P7Q2jBG5FWnK1wk/ET4u4i9EXkRPyPtI+8epjscdLgrSiwqJWo6Wj/66hH0EfcjLUf5jh4/+i5GK+ZKLBTrFttyjP9Y4rGpOIO4suOE4/7Hn8dLx5+LX0hwSKhP5EqMS5w4YXCiIok6iZw0fFLtZGEyOtk3uTtFLuVCyq9Uj9TONOm0nLT1U+6nOk/LnM49vXnG60x3umL6pbPYs0FnhzI0MsrO0Z2LPjeRaZZZncWblZq1kH0w+2mOfE7hecL58PPjuaa5tRcELpy9sH7R5+JgnnZeVT5nfkr+coFHQf8lzUuVhVyFaYWrl30vv7xicKW6SKgopxhbHFH8ocS+pOOq8tXyUvbStNKNa0HXxsusy9rKlcrLr3NeT69AVYRXzN5wudF7U/dmbaVE5ZUq5qq0W+BW+K2Pt11vD90xudNyV/lu5T3Be/n3Ge6nVkPVUdXzNT4147VOtX11xnUt9Wr19x9IPrjWwNeQ95DpYXojoTGxcbMpummxOaR57pH3o4mWgy2vWx1bB9qs2rrbTdqfPNZ/3Nqh1dH0RP1Jw1PVp3Wdyp01zxSfVXcpdN1/rvD8frdid3WPUk9tr0pvfd+evsZ+jf5HL3RfPB4wGng2aD7YN2Q39HLYZXj8pcfLmVcBr76NRIysvY57g3mTOko7mjPGOVb0VvRt1bji+MN3uu+63tu8fz3hPvFpMnRyfSrxA/FDzjTPdPmM7EzDrP5s78d9H6c+hXxam0v6TPc5/4vIl3tfNb92zTvOT30jf9v8fuoH249rC/ILLYuWi2NLgUtry6k/2X6WrSivdKw6rE6vRa7j1nM3RDfqf5n8erMZuLkZQiKTtl8FYKSivLwA+H4NAKITAAxIHkeg3sm/fhcY2ko7ALCHJKFPqDY4AW2D0cQK49jxrBQ8BHVKcyp/4lnqOpo5Ogl6T4ZixglmMZYo1iZ2Gg4HzhKuHzx7eBP5nvPTCVgLnhZ6JgJE5cS8xM/v7pRYlhKRtpKJk62QG1RAKcoo7VdOValWfbeHqK6811UjRfO21hsdvK6inrv+WYNawzFjyETA1MDMzzzd4p7lS6ufNsy2cnYW9oEOpx0rnZ45v9s377K8f+0gcCWQ2Nwk3LU8rD0Penl6k3xsfPf48fpD/uMBTYGXgxKCfUIsDymTeUPxoV/DhsIbI8oiMw/HRgVEOx0xOqoeoxSreEwlTuu4SbxDgmdi2IkTSVknS5LvpjSndqUNnXp7evrM5/TvZxczls4tZi5mreagzzPl7r5gcNE971h+bkHlpabCZ5cHrowUjRfPliyUwteYysTKta+7VETeyLp5p7Kv6tttujtyd23uhd4/W11eU1/7qK61vvnBg4b7D6say5uKmwseZbekth5t82u3eazYwdqx8mT8aU/n42etXY+eN3RX9eT2hvbp9BP7X7zIG/AaVBjCDA0Pl72MeKU5gh3pQOJL4c30aMaY2tjE29PjauOf3hW+t56AJ6om7SZXprI+7P7QNG09PTlzYlZqdvJj2aegObm5xc9VX9y/0n29P285/+Hb0e8s3x//SF8IWiQteSFxNLnaviG5ubm9/vzQLZQfLAvPoG9j4rCOOHW8BIUwQZhyF5U0UZXaisadNpaukL6RYZaJllmZhcSazHaPfYyTkkuOex9PHO8VvqZdr/kXBSmFeIQVRIxEXcWixDN335bokpyRRsvwye6Rc5YPU0hTLFGqU36u8l51YQ9WnWOvjIaZZoBWuvYtnV7dz/p4Ay5DWSM9YzsTd9Mgs8PmsRYJlieskqyTbVJtT9ml2ic6RDn6ONk66+7TcNHf73wg8mC26y1Si1une7vHfc98ryPeDj7SvlS+c369/vUB5YF5QenB8SHkQy5kzVCe0LWwwfCbEUmRbof1oqSjBY5wHWWLYYqlPYY9thT3/nhn/O2E7MTIE/uTjE/qJpumkFKPp1099fj02Jkv6YtnlzMWz/3InM/6nD2X8+X8zwu0F1XygvJLC7ovTRTOXp668rboVXFfyZOrjaUN1zrLPl/nq9h/I//mqyrGW+a3k5HTa+W+ZLVHTV5tfz3mgXzDwYcnGkubGpobH11vOdsa0xbZHvc4vaPgSfHTS51nnoV32TyX6EZ3j/Tc6U3r8+u3eqE3oDdoNeQ2HP4y8dXJkZjXXm90RtlH58bq3p4cd3wn8R7//sNE62TB1KEPmtNU0wMzxbPHPvp+8pjz+Rz4JeRryHzIN/L3iB9RC5GLvksGyzTLd3/q/Xy24rzyebV3nWpjZHv9xUEbZAK9RHnCWDgdLY7uwURjpbCzuKt4HwopihVCJ2UhVSTRmlqWhppmifYVXTN9OUMmYwyTN7M1izqrKBsT2zr7DEc/ZyNXJXcxTx5vDl/WrnT+JIEIQZKQnjCv8E+RLtFCsVBxw918EiiJWclhqSfS9TLXZXPl4uRdFVQUsYo9StnKjipsKq9UC9Q89siqY9XH9lZrpGv6aOlqC+nQ6gLdH3rT+kMGDwxzjDyNBY3HTXJNLcxwZq3mCRZGlqyWH60arTNtfGzV7Ih2Y/Y3HY46GjsxOb11LtsXjNz/K/sfHog7qOOKd+0j5bv5u+/xoPIY8bzmdchb2Xvdp8k3zk/TH/g3BxwP1AlCB7UHnwjRCvl5qILshNzZ5WEWYQvhuRF7IsYi4w5zHX4Y5RrNHD1ypOJoQoxjrEjs0rHWuMzj3vG6CWKJrCcok0DSwsmJ5OcpVamn0kin5E/jTo+cuZWeetY/w+Ac/bnHmfsy57Kis7VytM8nX8BfTM2bLGC7JFuoclnlikKRVLFICd9VtlK6a4QyinIaJJLUb7jePFl5s+rFrfU7Ined752731fDWOtUl18/3IB5KNpo0OTWfOzRpZbG1rdtm4/5OnSeeD891Xn72VDXRrdoz77e831jL2QHTg9+GbZ5WTfC9zp7VOot9bvIybSZqM/m35dWrLbWf+d3uK2CRbLTTCTPtD+N1FkAMmqQPPMBACwEACyJANiqANTJSoAyqASQ/4m/9weEJJ54JOdkBjxAFMgjmaYpcEYy58MgBckob4BG0A8+gHWIHhKFNJH8MBQ6jeSD7dAECkLxobRRHqiTSJbXj1qF+WEzOBoug4fReLQqOhBdjH6FoceYIBlZKxbCamLjsC04DM4Ydxb3Es+HD8DXUeAoHCjKKFYJZoQrhGVKc8oyKjSVG1UrUZCYQvxCbUvdgGQ6GbSA9hDtJJ0TXQ+9Pv1DBmWGakZVxlYma6YJ5nAWLEsOqxBrLZs52wx7MocMxwRnIZcbtzj3T57HvNl8Hrvk+bH8rwXuCqYLBQibiIiLEkXnxQbFH+y+JBEr6SKlIs0oPS/zXPa6XIq8j4KxoqQSk9Km8meVMdV+tc497eptezs0ujVHtGa0l3SBHhY55/CGeCMKYyoTRlM+M3lzc4sgyyyrBuspW6KdvL2TQ4zjZac252kXyv3SB+wPHnUtIXW7/fQQ8LTxOuHd4LPqp+N/IWAlyD24/5A+uSFMPrwqUuLw7eg9R3pjgo9xxg3FZyWanlg6mZWyO7X9lOcZpvS3Gc8zR7M3c3kvquSbXjp4OarocsnINYnyyzekK8dvX7l3oIayrrJhf5N4C0+7/pOiLqoekb6lgYxhkVd9by69Pf++/4Pr7Mpn+q83voMF6SWV5c2V1NXatYH1BxvFv0I2lbbPD2j7Nwd6wAGEgCzQAGbABQSCWJABSkAd6AFTYANihqQgY8gLSoCKoEfQexQaJYwyRZFRF1GtqK8wJ2wCH4Wr4Ek0O9oanYZux0AYdcwRzAPMOlYDm4B9iqPFOeGu4r7jtfCZ+A8UahSZFHMEfWTN1ykdKe8hmTCZaoCoQrxMTUl9mHqaxommm1aftpluL10TvQ59J4MNwyiSma4ypTOLMT9jOcTKzFrNZsX2gT2Kg8hRwqnJOcmVwW3MQ80zynuX78wuX35tAVaBT4IPhc4Ke4loiwqK0Yvjd2Mk8JLUUvTSdDJ4mRXZGblh+U6FR4qPlDqVX6t8V6PeI61utddXI0yTrOWj7ahjoKuiJ6+vbGBgeNAo1viKSYfpvDmHhZ6lP3KnZdmct822y7K/7NDk+M1ZYV+cy/MD3AfDXHvc+N29PLI973t1e0/6rPkx+8sF2AZGBF0Mbg75SGYJ1Q+LCL8WMXKYNsosOv3Iyxih2JhjE8e9E2gTO5PCkrEpJ9PQp5LPcKS3ZsRnOmbrnFe7oJanVqBSKHoFXfS4JKKU49rDcrcKphujle23eu4s3pepOVr3rIGmUbeZ3FLaNtuh/fROl0x3fu9o/8LAt6HplxMjM28W3kLvCBOMUwLThrM5c0pfU3+ULgesdK8lrrduLPxa2V5/FLL76QA3kAB7gRXwAjEgB9wCXeAjRAGJQ2YQGcqFmqGPKGaULioMVYoagelgIzgRboY30GroaHQ9eh2jhUnFDGNFscexo7i9uCI8Hh+MH6BQoSggoAh+hEFKXcoHVCpUj4iWxA/U8TR8NM20LrRLdGfpJeifMwQxEhnLmLSZ3jBHsXCzdLOeYXNj1+YQ42TkXOMa5a7lOccbyGe6S5qfVQArsCL4Teir8A+RDTFqcYHdmhKuknFSBdK1Mi9kf8izKxgpxiu1qlCpuqjdUsch76qNWru0M3WZ9SoNnI3ojPtML5oHW9pZy9qM2DnbdzkaOr3Y5+Xy80CCK0QKcRv0UPLM96bwOe5H8C8ONAsGITXk4DDu8NbI8CiPI19iS+Kijg/FryeiTuCTaE/KJYemDKTZnZo9k3xWMuNVZnK2Ws633PKLB/IJBdcKlS4/LNIobr6qW9pZZlk+UGF7o7dSv6rutsid8/fw92Oq12tT6oUe9D6Mb1Jsnm3Jb7N4jO548DT0mXjXZPelXsd+xhf9g+nDxi83R268sRideRs+vvE+fhKeip9GzSR8RH86Nvfli/7XqPmCb6e/h//Q/bG8cH3RfPH1ks/S0nLE8uxPl589KzorFavE1ZDV/jWFtdy1b+tG60Xraxu2Gzd/wb8cf93YhDbtNq9vrX+ol5zs9vUBUWkDgBnb3PwhBADuHAAbGZuba0WbmxvFSLLxBoDmgJ3/drbvGloA8t9uoU6xwbh//8fyX26NzGClppCgAAAB1WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOkNvbXByZXNzaW9uPjE8L3RpZmY6Q29tcHJlc3Npb24+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgICAgIDx0aWZmOlBob3RvbWV0cmljSW50ZXJwcmV0YXRpb24+MjwvdGlmZjpQaG90b21ldHJpY0ludGVycHJldGF0aW9uPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KAtiABQAAASZJREFUOBFj/A8EDDQATDQwE2zkCDL43of7eEOR7KB48/0Nw/W3Nxj+/v+L1QKyDQaZ9vnXZ4brb24wfPvzDcNwRlhyO/X8NIYksQLMjMwMakKqDLxsvHAtFLkYZgooOEDBAgoeGKCKwTDDkGmyDRaZvhBuDigoNIU1GEQ4ReBiDKAwJge8tDf5/zAz6v+V+yf+f/39FcMIsl0MchrHtVsMki2TGNgePEa4FMqCp4pXDqYYksQKMPLwMAg09zCwGhrDtVDkYpgp/798YXhfmMHwY/tmmBADVQyGm4bEYEFik81k5OZmEGjpRQkKeBiTaiosTliUVRn4KusZWFTUUYygyMWs+kYMAq09DIw8iKwMNx0jARIp8LGtHq9KsoMC7jIcDJqlCgDEU/SMpzjGBgAAAABJRU5ErkJggg=="
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(jQuery, $) {
 // Python Tutor: https://github.com/pgbovine/OnlinePythonTutor/
 // Copyright (C) Philip Guo (philip@pgbovine.net)
@@ -4436,9 +6577,9 @@ __webpack_require__(27);
 __webpack_require__(29); // https://momentjs.com/
 __webpack_require__(31); // http://hgoebl.github.io/mobile-detect.js/ https://github.com/hgoebl/mobile-detect.js
 exports.TogetherJS = window.TogetherJS;
-var opt_frontend_common_1 = __webpack_require__(9);
-var opt_frontend_1 = __webpack_require__(10);
-var demovideo_1 = __webpack_require__(67);
+var opt_frontend_common_1 = __webpack_require__(8);
+var opt_frontend_1 = __webpack_require__(9);
+// import {OptDemoVideo} from './demovideo';
 var pytutor_1 = __webpack_require__(4);
 // copypasta from pytutor.ts
 // https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet#RULE_.231_-_HTML_Escape_Before_Inserting_Untrusted_Data_into_HTML_Element_Content
@@ -4838,24 +6979,6 @@ var OptFrontendSharedSessions = /** @class */ (function (_super) {
             $("td#headerTdLeft,td#headerTdRight").show();
             this.disableSharedSessions = false;
         }
-    };
-    OptFrontendSharedSessions.prototype.loadCodcastFile = function () {
-        var _this = this;
-        pytutor_1.assert(this.codcastFile);
-        console.log('loadCodcastFile', this.codcastFile);
-        this.disableSharedSessions = true;
-        this.activateSyntaxErrorSurvey = false;
-        this.activateRuntimeErrorSurvey = false;
-        this.activateEurekaSurvey = false;
-        // TODO: also disable undo/redo feature since that can get annoying
-        // when replaying demo "videos"
-        $("td#headerTdLeft").html(''); // clobber the existing contents
-        $.get(this.codcastFile, {}, function (dat) {
-            // create an OptDemoVideo object from the serialized JSON data contained
-            // in that file
-            _this.demoVideo = new demovideo_1.OptDemoVideo(_this, dat);
-            _this.startPlayback();
-        }, 'text' /* grab data as plain text */);
     };
     // for A/B testing -- store this information PER USER in localStorage,
     // so that it can last throughout all sessions where this user
@@ -5739,7 +7862,7 @@ var OptFrontendSharedSessions = /** @class */ (function (_super) {
     // TogetherJS is ready to rock and roll, so do real initiatlization all here:
     OptFrontendSharedSessions.prototype.TogetherjsReadyHandler = function () {
         if (this.isPlayingDemo) {
-            this.demoVideo.playbackTogetherJsReady();
+            // this.demoVideo.playbackTogetherJsReady();
             exports.TogetherJS.send({ type: "startPlayingDemo" }); // so that we can tell in the TogetherJS logs which sessions are demo plays; we can filter those out later
             return; // GET OUT EARLY!!! don't do the rest if you're playing a demo
         }
@@ -5821,7 +7944,7 @@ var OptFrontendSharedSessions = /** @class */ (function (_super) {
         this.wantsPublicHelp = false; // explicitly reset it
         this.iMadeAPublicHelpRequest = false; // explicitly reset it
         if (this.isPlayingDemo) {
-            this.demoVideo.stopPlayback();
+            // this.demoVideo.stopPlayback();
             pytutor_1.assert(!this.isPlayingDemo);
         }
     };
@@ -6212,2294 +8335,11 @@ var OptFrontendSharedSessions = /** @class */ (function (_super) {
             peer: p.Self,
             notify: false });
     };
-    // for codcasts:
-    OptFrontendSharedSessions.prototype.setPlayPauseButton = function (state) {
-        pytutor_1.assert(this.demoVideo);
-        var me = $("#demoPlayBtn");
-        if (state == 'playing') {
-            me.data('status', 'playing');
-            me.html('Pause');
-            this.demoVideo.playFromCurrentFrame();
-        }
-        else {
-            pytutor_1.assert(state == 'paused');
-            me.data('status', 'paused');
-            me.html('Play');
-            this.demoVideo.pause();
-        }
-    };
-    OptFrontendSharedSessions.prototype.startPlayback = function () {
-        var _this = this;
-        $("#ssDiv,#surveyHeader").hide(); // hide ASAP!
-        $("#togetherjsStatus").html("<div><button id=\"demoPlayBtn\">Play</button></div>\n                                  <div style=\"margin-top: 10px;\" id=\"timeSlider\"/>");
-        pytutor_1.assert(this.demoVideo);
-        $("#demoPlayBtn").data('status', 'paused');
-        $("#demoPlayBtn").click(function () {
-            var me = $("#demoPlayBtn");
-            if (me.data('status') == 'paused') {
-                _this.setPlayPauseButton('playing');
-            }
-            else {
-                pytutor_1.assert(me.data('status') == 'playing');
-                _this.setPlayPauseButton('paused');
-            }
-        });
-        var timeSliderDiv = $('#timeSlider');
-        timeSliderDiv.css('width', '700px');
-        var interruptedPlaying = false; // did we yank the slider while the video was playing?
-        var totalNumFrames = this.demoVideo.getTotalNumFrames();
-        timeSliderDiv.slider({
-            min: 0,
-            max: totalNumFrames,
-            step: 1,
-            // triggers only when the user *manually* slides, *not* when the
-            // value has been changed programmatically
-            slide: function (evt, ui) {
-                if (_this.demoVideo.rafTimerId) {
-                    // emulate YouTube by 'jumping' to the given frame and
-                    // pausing, then resuming playback when you let go (see
-                    // 'change' event handler)
-                    _this.demoVideo.pause();
-                    interruptedPlaying = true;
-                }
-                _this.demoVideo.jumpToFrame(ui.value);
-            },
-            // triggers both when user manually finishes sliding, and also
-            // when the slider's value is set programmatically
-            change: function (evt, ui) {
-                // this is SUPER subtle. if this value was changed programmatically,
-                // then evt.originalEvent will be undefined. however, if this value
-                // was changed by a user-initiated event, then this code should be
-                // executed ...
-                if (evt.originalEvent) {
-                    // slider value was changed by a user interaction; only do
-                    // something special if interruptedPlaying is on, in which
-                    // case resume playback. this happens AFTER a user-initiated
-                    // 'slide' event is done:
-                    if (interruptedPlaying) {
-                        // literally an edge case -- if we've slid to the VERY END,
-                        // don't resume playing since that will wrap back around to
-                        // the beginning
-                        if (ui.value < totalNumFrames) {
-                            _this.demoVideo.playFromCurrentFrame();
-                        }
-                        else {
-                            // if we've slide the slider to the very end, pause it!
-                            _this.setPlayPauseButton('paused');
-                        }
-                        interruptedPlaying = false;
-                    }
-                }
-                else {
-                    // slider value was changed programmatically, so we're
-                    // assuming that requestAnimationFrame has been used to schedule
-                    // periodic changes to the slider
-                    _this.demoVideo.jumpToFrame(ui.value);
-                }
-            }
-        });
-        // disable keyboard actions on the slider itself (to prevent double-firing
-        // of events), and make skinnier and taller
-        timeSliderDiv
-            .find(".ui-slider-handle")
-            .unbind('keydown')
-            .css('width', '0.6em')
-            .css('height', '1.5em');
-        this.demoVideo.startPlayback(); // do this last
-    };
     return OptFrontendSharedSessions;
 }(opt_frontend_1.OptFrontend)); // END class OptFrontendSharedSessions
 exports.OptFrontendSharedSessions = OptFrontendSharedSessions;
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(0)))
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-// Python Tutor: https://github.com/pgbovine/OnlinePythonTutor/
-// Copyright (C) Philip Guo (philip@pgbovine.net)
-// LICENSE: https://github.com/pgbovine/OnlinePythonTutor/blob/master/LICENSE.txt
-Object.defineProperty(exports, "__esModule", { value: true });
-/// <reference path="_references.ts" />
-__webpack_require__(33);
-__webpack_require__(34);
-// need to directly import the class for type checking to work
-var pytutor_1 = __webpack_require__(4);
-// the main event!
-//
-// NB: this still relies on global state such as localStorage and the
-// browser URL hash string, so you still can't have more than one of these
-// objects per page; should still be instantiated as a SINGLETON
-var AbstractBaseFrontend = /** @class */ (function () {
-    function AbstractBaseFrontend(params) {
-        if (params === void 0) { params = {}; }
-        var _this = this;
-        this.sessionUUID = generateUUID(); // remains constant throughout one page load ("session")
-        // a cache where each element is a pair:
-        // [appState, cached execution trace]
-        // that way, if you execute the same code with the same settings again and
-        // get a cache hit, then there's no need to make a server call
-        this.traceCache = [];
-        // 'edit' or 'display'. also support 'visualize' for backward
-        // compatibility (same as 'display')
-        this.appMode = 'edit';
-        // inputted by user for raw_input / mouse_input events
-        this.rawInputLst = [];
-        this.isExecutingCode = false;
-        // optional: not all frontends keep track of deltas
-        this.dmp = new diff_match_patch();
-        this.curCode = ''; // for dmp snapshots, kinda kludgy
-        this.deltaObj = undefined;
-        this.num414Tries = 0;
-        // note that we use '2' and '3' instead of 'py2' and 'py3' due to legacy reasons
-        this.langSettingToBackendScript = {
-            // backend scripts to execute (Python 2 and 3 variants, if available)
-            // make two copies of ../web_exec.py and give them the following names,
-            // then change the first line (starting with #!) to the proper version
-            // of the Python interpreter (i.e., Python 2 or Python 3).
-            // Note that your hosting provider might have stringent rules for what
-            // kind of scripts are allowed to execute. For instance, my provider
-            // (Webfaction) seems to let scripts execute only if permissions are
-            // something like:
-            // -rwxr-xr-x 1 pgbovine pgbovine 2.5K Jul  5 22:46 web_exec_py2.py*
-            // (most notably, only the owner of the file should have write
-            //  permissions)
-            '2': 'web_exec_py2.py',
-            '3': 'web_exec_py3.py',
-            // empty dummy scripts just to do logging on Apache server
-            'js': 'web_exec_js.py',
-            'ts': 'web_exec_ts.py',
-            'java': 'web_exec_java.py',
-            'ruby': 'web_exec_ruby.py',
-            'c': 'web_exec_c.py',
-            'cpp': 'web_exec_cpp.py',
-            // experimental!
-            'py3anaconda': 'web_exec_py3anaconda.py',
-        };
-        // these settings are all customized for my own server setup,
-        // so you will need to customize for your server:
-        this.serverRoot = (window.location.protocol === 'https:') ?
-            'https://cokapi.com/' : // my certificate for https is registered via cokapi.com, so use it for now
-            'http://cokapi.com/'; // try cokapi.com so that hopefully it works through firewalls better than directly using IP addr
-        // (but that's just an unsubstantiated hunch)
-        // randomly pick one backup server to load balance:
-        this.backupHttpServerRoot = (Math.random() >= 0.5) ? 'http://45.33.41.179/' : 'http://23.239.12.25/';
-        // see ../../v4-cokapi/cokapi.js for details
-        this.langSettingToJsonpEndpoint = {
-            '2': null,
-            '3': null,
-            'js': this.serverRoot + 'exec_js_jsonp',
-            'ts': this.serverRoot + 'exec_ts_jsonp',
-            'java': this.serverRoot + 'exec_java_jsonp',
-            'ruby': this.serverRoot + 'exec_ruby_jsonp',
-            'c': this.serverRoot + 'exec_c_jsonp',
-            'cpp': this.serverRoot + 'exec_cpp_jsonp',
-            'py3anaconda': this.serverRoot + 'exec_pyanaconda_jsonp',
-        };
-        this.langSettingToJsonpEndpointBackup = {
-            '2': null,
-            '3': null,
-            'js': this.backupHttpServerRoot + 'exec_js_jsonp',
-            'ts': this.backupHttpServerRoot + 'exec_ts_jsonp',
-            'java': this.backupHttpServerRoot + 'exec_java_jsonp',
-            'ruby': this.backupHttpServerRoot + 'exec_ruby_jsonp',
-            'c': this.backupHttpServerRoot + 'exec_c_jsonp',
-            'cpp': this.backupHttpServerRoot + 'exec_cpp_jsonp',
-            'py3anaconda': this.backupHttpServerRoot + 'exec_pyanaconda_jsonp',
-        };
-        if (supports_html5_storage()) {
-            // generate a unique UUID per "user" (as indicated by a single browser
-            // instance on a user's machine, which can be more precise than IP
-            // addresses due to sharing of IP addresses within, say, a school
-            // computer lab)
-            // added on 2015-01-27 for more precise user identification
-            if (!localStorage.getItem('opt_uuid')) {
-                localStorage.setItem('opt_uuid', generateUUID());
-            }
-            this.userUUID = localStorage.getItem('opt_uuid');
-            pytutor_1.assert(this.userUUID);
-        }
-        else {
-            this.userUUID = undefined;
-        }
-        // register a generic AJAX error handler
-        $(document).ajaxError(function (evt, jqxhr, settings, exception) {
-            if (_this.ignoreAjaxError(settings)) {
-                return; // early return!
-            }
-            // On my server ...
-            // This jqxhr.responseText might mean the URL is too long, since the error
-            // message returned by the server is something like this in nginx:
-            //
-            //   <html>
-            //   <head><title>414 Request-URI Too Large</title></head>
-            //   <body bgcolor="white">
-            //   <center><h1>414 Request-URI Too Large</h1></center>
-            //   <hr><center>nginx</center>
-            //   </body>
-            //   </html>
-            //
-            // Note that you'll probably need to customize this check for your server.
-            if (jqxhr && jqxhr.responseText && jqxhr.responseText.indexOf('414') >= 0) {
-                // ok this is an UBER UBER hack. If this happens just once, then
-                // force click the "Visualize Execution" button again and re-try.
-                // why? what's the difference the second time around? the diffs_json
-                // parameter (derived from deltaObj) will be *empty* the second time
-                // around since it gets reset on every execution. if diffs_json is
-                // HUGE, then that might force the URL to be too big without your
-                // code necessarily being too big, so give it a second shot with an
-                // empty diffs_json. if it STILL fails, then display the error
-                // message and give up.
-                if (_this.num414Tries === 0) {
-                    _this.num414Tries++;
-                    $("#executeBtn").click();
-                }
-                else {
-                    _this.setFronendError(["Server error! Your code might be too long for this tool. Shorten your code and re-try. [#CodeTooLong]"]);
-                    _this.num414Tries = 0; // reset this to 0 AFTER setFronendError so that in setFronendError we can know that it's a 414 error (super hacky!)
-                }
-            }
-            else {
-                _this.setFronendError(["Server error! Your code might have an INFINITE LOOP or be running for too long.",
-                    "The server may also be OVERLOADED. Or you're behind a FIREWALL that blocks access.",
-                    "Try again later, or report a bug to philip@pgbovine.net by clicking the 'Generate",
-                    "shortened link' button at the bottom of this page and including a URL in your email."]);
-            }
-            _this.doneExecutingCode();
-        });
-        this.clearFrontendError();
-        $("#embedLinkDiv").hide();
-        $("#executeBtn")
-            .attr('disabled', false)
-            .click(this.executeCodeFromScratch.bind(this));
-    }
-    AbstractBaseFrontend.prototype.ignoreAjaxError = function (settings) { return false; }; // subclasses should override
-    // empty stub so that our code doesn't crash.
-    // TODO: override this with a version in codeopticon-learner.js if needed
-    AbstractBaseFrontend.prototype.logEventCodeopticon = function (obj) { }; // NOP
-    AbstractBaseFrontend.prototype.getAppState = function () { return {}; }; // NOP -- subclasses need to override
-    AbstractBaseFrontend.prototype.setFronendError = function (lines, ignoreLog) {
-        if (ignoreLog === void 0) { ignoreLog = false; }
-        $("#frontendErrorOutput").html(lines.map(pytutor_1.htmlspecialchars).join('<br/>') +
-            (ignoreLog ? '' : '<p/>Here is a list of <a target="_blank" href="https://github.com/pgbovine/OnlinePythonTutor/blob/master/unsupported-features.md">UNSUPPORTED FEATURES</a>'));
-        // log it to the server as well (unless ignoreLog is on)
-        if (!ignoreLog) {
-            var errorStr = lines.join();
-            var myArgs = this.getAppState();
-            myArgs.opt_uuid = this.userUUID;
-            myArgs.session_uuid = this.sessionUUID;
-            myArgs.error_msg = errorStr;
-            // very subtle! if you have a 414 error, that means your original
-            // code was too long to fit in the URL, so CLEAR THE FULL CODE from
-            // myArgs, or else it will generate a URL that will give a 414 again
-            // when you run error_log.py!!! this relies on this.num414Tries not
-            // being reset yet at this point:
-            if (this.num414Tries > 0) {
-                myArgs.code = '#CodeTooLong: ' + String(myArgs.code.length) + ' bytes';
-            }
-            $.get('error_log.py', myArgs, function (dat) { }); // added this logging feature on 2018-02-18
-        }
-    };
-    AbstractBaseFrontend.prototype.clearFrontendError = function () {
-        $("#frontendErrorOutput").html('');
-    };
-    // parsing the URL query string hash
-    AbstractBaseFrontend.prototype.getQueryStringOptions = function () {
-        var ril = $.bbq.getState('rawInputLstJSON');
-        var testCasesLstJSON = $.bbq.getState('testCasesJSON');
-        // note that any of these can be 'undefined'
-        return { preseededCode: $.bbq.getState('code'),
-            preseededCurInstr: Number($.bbq.getState('curInstr')),
-            verticalStack: $.bbq.getState('verticalStack'),
-            appMode: $.bbq.getState('mode'),
-            py: $.bbq.getState('py'),
-            cumulative: $.bbq.getState('cumulative'),
-            heapPrimitives: $.bbq.getState('heapPrimitives'),
-            textReferences: $.bbq.getState('textReferences'),
-            rawInputLst: ril ? $.parseJSON(ril) : undefined,
-            demoMode: $.bbq.getState('demo'),
-            codcastFile: $.bbq.getState('codcast'),
-            codeopticonSession: $.bbq.getState('cosession'),
-            codeopticonUsername: $.bbq.getState('couser'),
-            testCasesLst: testCasesLstJSON ? $.parseJSON(testCasesLstJSON) : undefined
-        };
-    };
-    AbstractBaseFrontend.prototype.redrawConnectors = function () {
-        if (this.myVisualizer &&
-            (this.appMode == 'display' ||
-                this.appMode == 'visualize' /* deprecated */)) {
-            this.myVisualizer.redrawConnectors();
-        }
-    };
-    AbstractBaseFrontend.prototype.getBaseBackendOptionsObj = function () {
-        var ret = { cumulative_mode: ($('#cumulativeModeSelector').val() == 'true'),
-            heap_primitives: ($('#heapPrimitivesSelector').val() == 'true'),
-            show_only_outputs: false,
-            origin: this.originFrontendJsFile };
-        return ret;
-    };
-    AbstractBaseFrontend.prototype.getBaseFrontendOptionsObj = function () {
-        var ret = {
-            disableHeapNesting: (($('#heapPrimitivesSelector').val() == 'true') ||
-                ($('#heapPrimitivesSelector').val() == 'nevernest')),
-            textualMemoryLabels: ($('#textualMemoryLabelsSelector').val() == 'true'),
-            executeCodeWithRawInputFunc: this.executeCodeWithRawInput.bind(this),
-            // always use the same visualizer ID for all
-            // instantiated ExecutionVisualizer objects,
-            // so that they can sync properly across
-            // multiple clients using TogetherJS in shared sessions.
-            // this shouldn't lead to problems since only ONE
-            // ExecutionVisualizer will be shown at a time
-            visualizerIdOverride: '1',
-            updateOutputCallback: this.updateOutputCallbackFunc.bind(this),
-            startingInstruction: 0,
-        };
-        return ret;
-    };
-    AbstractBaseFrontend.prototype.updateOutputCallbackFunc = function () {
-        $('#urlOutput,#urlOutputShortened,#embedCodeOutput').val('');
-    };
-    AbstractBaseFrontend.prototype.executeCodeFromScratch = function () {
-        this.rawInputLst = []; // reset!
-        this.executeCode();
-    };
-    AbstractBaseFrontend.prototype.executeCodeWithRawInput = function (rawInputStr, curInstr) {
-        this.rawInputLst.push(rawInputStr);
-        this.executeCode(curInstr);
-    };
-    AbstractBaseFrontend.prototype.startExecutingCode = function (startingInstruction) {
-        if (startingInstruction === void 0) { startingInstruction = 0; }
-        $('#executeBtn').html("Please wait ... executing (takes up to 10 seconds)");
-        $('#executeBtn').attr('disabled', true);
-        this.isExecutingCode = true;
-    };
-    AbstractBaseFrontend.prototype.doneExecutingCode = function () {
-        $('#executeBtn').html("Visualize Execution");
-        $('#executeBtn').attr('disabled', false);
-        this.isExecutingCode = false;
-    };
-    // execute codeToExec and create a new ExecutionVisualizer
-    // object with outputDiv as its DOM parent
-    AbstractBaseFrontend.prototype.executeCodeAndCreateViz = function (codeToExec, pyState, backendOptionsObj, frontendOptionsObj, outputDiv) {
-        var _this = this;
-        var vizCallback = function (dataFromBackend) {
-            var trace = dataFromBackend.trace;
-            // don't enter visualize mode if there are killer errors:
-            if (!trace ||
-                (trace.length == 0) ||
-                (trace[trace.length - 1].event == 'uncaught_exception')) {
-                _this.handleUncaughtException(trace);
-                if (trace.length == 1) {
-                    _this.setFronendError([trace[0].exception_msg]);
-                }
-                else if (trace.length > 0 && trace[trace.length - 1].exception_msg) {
-                    _this.setFronendError([trace[trace.length - 1].exception_msg]);
-                }
-                else {
-                    _this.setFronendError(["Unknown error: The server may be OVERLOADED right now; try again later.",
-                        "Your code may also contain UNSUPPORTED FEATURES that this tool cannot handle.",
-                        "Report a bug to philip@pgbovine.net by clicking the 'Generate shortened link'",
-                        "button at the bottom and including a URL in your email. [#NullTrace]"]);
-                }
-            }
-            else {
-                // fail-soft to prevent running off of the end of trace
-                if (frontendOptionsObj.startingInstruction >= trace.length) {
-                    frontendOptionsObj.startingInstruction = 0;
-                }
-                if (frontendOptionsObj.runTestCaseCallback) {
-                    // hacky! DO NOT actually create a visualization! instead call:
-                    frontendOptionsObj.runTestCaseCallback(trace);
-                }
-                else {
-                    // success!
-                    _this.myVisualizer = new pytutor_1.ExecutionVisualizer(outputDiv, dataFromBackend, frontendOptionsObj);
-                    // SUPER HACK -- slip in backendOptionsObj as an extra field
-                    // NB: why do we do this? for more detailed logging?
-                    _this.myVisualizer.backendOptionsObj = backendOptionsObj;
-                    _this.finishSuccessfulExecution(); // TODO: should we also run this if we're calling runTestCaseCallback?
-                }
-            }
-        };
-        this.executeCodeAndRunCallback(codeToExec, pyState, backendOptionsObj, frontendOptionsObj, vizCallback.bind(this));
-    };
-    // execute code and call the execCallback function when the server
-    // returns data via Ajax
-    AbstractBaseFrontend.prototype.executeCodeAndRunCallback = function (codeToExec, pyState, backendOptionsObj, frontendOptionsObj, execCallback) {
-        var _this = this;
-        var callbackWrapper = function (dataFromBackend) {
-            _this.clearFrontendError(); // clear old errors first; execCallback may put in a new error:
-            execCallback(dataFromBackend); // call the main event first
-            // run this at the VERY END after all the dust has settled
-            _this.doneExecutingCode(); // rain or shine, we're done executing!
-            // tricky hacky reset
-            _this.num414Tries = 0;
-        };
-        var backendScript = this.langSettingToBackendScript[pyState];
-        pytutor_1.assert(backendScript);
-        var jsonp_endpoint = this.langSettingToJsonpEndpoint[pyState]; // maybe null
-        if (!backendScript) {
-            this.setFronendError(["Server configuration error: No backend script",
-                "Report a bug to philip@pgbovine.net by clicking on the 'Generate shortened link'",
-                "button at the bottom and including a URL in your email."]);
-            return;
-        }
-        this.clearFrontendError();
-        this.startExecutingCode(frontendOptionsObj.startingInstruction);
-        frontendOptionsObj.lang = pyState;
-        // kludgy exceptions
-        if (pyState === '2') {
-            frontendOptionsObj.lang = 'py2';
-        }
-        else if (pyState === '3') {
-            frontendOptionsObj.lang = 'py3';
-        }
-        else if (pyState === 'java') {
-            // TODO: should we still keep this exceptional case?
-            frontendOptionsObj.disableHeapNesting = true; // never nest Java objects, seems like a good default
-        }
-        // if we don't have any deltas, then don't bother sending deltaObj:
-        // NB: not all subclasses will initialize this.deltaObj
-        var deltaObjStringified = (this.deltaObj && (this.deltaObj.deltas.length > 0)) ? JSON.stringify(this.deltaObj) : null;
-        if (deltaObjStringified) {
-            // if deltaObjStringified is too long, then that will likely make
-            // the URL way too long. in that case, just make it null and don't
-            // send a delta (NB: actually set it to a canary value "overflow").
-            // we'll lose some info but at least the URL will hopefully not overflow:
-            if (deltaObjStringified.length > 4096) {
-                deltaObjStringified = "overflow"; // set a canary to overflow
-            }
-        }
-        else {
-            // if we got here due to the num414Tries retries hack, set
-            // canary to "overflow"
-            if (this.num414Tries > 0) {
-                deltaObjStringified = "overflow_414";
-            }
-        }
-        // if we can find a matching cache entry, then use it!!!
-        if (this.traceCache) {
-            var appState = this.getAppState();
-            var cachedTrace = this.traceCacheGet(appState);
-            if (cachedTrace) {
-                //console.log("CACHE HIT!", appState);
-                callbackWrapper({ code: appState.code, trace: cachedTrace });
-                return; // return early without going to the server at all!
-            }
-        }
-        // everything below here is an ajax (async) call to the server ...
-        if (jsonp_endpoint) {
-            pytutor_1.assert(pyState !== '2' && pyState !== '3');
-            // 2018-08-19: this is an uncommon use case (only used for https iframe embedding)
-            if (jsonp_endpoint.indexOf('https:') == 0) {
-                this.setFronendError(["Error: https execution of non-Python code is not currently supported. [#nonPythonHttps]"]);
-                this.doneExecutingCode();
-                return;
-            }
-            var retryOnBackupServer = function () {
-                // first log a #TryBackup error entry:
-                _this.setFronendError(["Main server is busy or has errors; re-trying using backup server " + _this.backupHttpServerRoot + " ... [#TryBackup]"]);
-                // now re-try the query using the backup server:
-                var backup_jsonp_endpoint = _this.langSettingToJsonpEndpointBackup[pyState];
-                pytutor_1.assert(backup_jsonp_endpoint);
-                $.ajax({
-                    url: backup_jsonp_endpoint,
-                    // The name of the callback parameter, as specified by the YQL service
-                    jsonp: "callback",
-                    dataType: "jsonp",
-                    data: { user_script: codeToExec,
-                        options_json: JSON.stringify(backendOptionsObj),
-                        raw_input_json: _this.rawInputLst.length > 0 ? JSON.stringify(_this.rawInputLst) : null,
-                    },
-                    success: callbackWrapper
-                });
-            };
-            // for non-python, this should be a dummy script for logging
-            // only, and to check whether there's a 414 error for #CodeTooLong
-            $.get(backendScript, { user_script: codeToExec,
-                options_json: JSON.stringify(backendOptionsObj),
-                user_uuid: this.userUUID,
-                session_uuid: this.sessionUUID,
-                diffs_json: deltaObjStringified }, function (dat) {
-                // this is super important! only if this first call is a
-                // SUCCESS do we actually make the REAL call using JSONP.
-                // the reason why is that we might get a 414 error for
-                // #CodeTooLong if we try to execute this code, in which
-                // case we want to either re-try or bail out. this also
-                // keeps the control flow synchronous. we always try
-                // the original backendScript, and then we try
-                // jsonp_endpoint only if that's successful:
-                // the REAL call uses JSONP
-                // http://learn.jquery.com/ajax/working-with-jsonp/
-                $.ajax({
-                    url: jsonp_endpoint,
-                    // for testing
-                    //url: 'http://cokapi.com/test_failure_jsonp',
-                    //url: 'http://cokapi.com/unknown_url',
-                    // The name of the callback parameter, as specified by the YQL service
-                    jsonp: "callback",
-                    dataType: "jsonp",
-                    data: { user_script: codeToExec,
-                        options_json: JSON.stringify(backendOptionsObj),
-                        raw_input_json: _this.rawInputLst.length > 0 ? JSON.stringify(_this.rawInputLst) : null,
-                    },
-                    success: function (dataFromBackend) {
-                        var trace = dataFromBackend.trace;
-                        var shouldRetry = false;
-                        // the cokapi backend responded successfully, but the
-                        // backend may have issued an error. if so, then
-                        // RETRY with backupHttpServerRoot. otherwise let it
-                        // through to callbackWrapper
-                        if (!trace ||
-                            (trace.length == 0) ||
-                            (trace[trace.length - 1].event == 'uncaught_exception')) {
-                            if (trace.length == 1) {
-                                // we should only retry if there's a legit
-                                // backend error and not just a syntax error:
-                                var msg = trace[0].exception_msg;
-                                if (msg.indexOf('#BackendError') >= 0) {
-                                    shouldRetry = true;
-                                }
-                            }
-                            else {
-                                shouldRetry = true;
-                            }
-                        }
-                        // don't bother re-trying for https since we don't
-                        // currently have an https backup server
-                        if (window.location.protocol === 'https:') {
-                            shouldRetry = false;
-                        }
-                        if (shouldRetry) {
-                            retryOnBackupServer();
-                        }
-                        else {
-                            // accept our fate without retrying
-                            callbackWrapper(dataFromBackend);
-                        }
-                    },
-                    // if there's a server error, then ALWAYS retry:
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        retryOnBackupServer();
-                        // use 'global: false;' below to NOT run the generic ajaxError() function
-                    },
-                    global: false,
-                });
-            }, "text");
-        }
-        else {
-            // for Python 2 or 3, directly execute backendScript
-            pytutor_1.assert(pyState === '2' || pyState === '3');
-            $.get(backendScript, { user_script: codeToExec,
-                raw_input_json: this.rawInputLst.length > 0 ? JSON.stringify(this.rawInputLst) : '',
-                options_json: JSON.stringify(backendOptionsObj),
-                user_uuid: this.userUUID,
-                session_uuid: this.sessionUUID,
-                diffs_json: deltaObjStringified }, callbackWrapper, "json");
-        }
-    };
-    // manage traceCache
-    // return whether two states match, except don't worry about mode or curInstr
-    AbstractBaseFrontend.appStateEqForCache = function (s1, s2) {
-        // NB: this isn't always true if we're recording and replaying
-        // in different frontend files ...
-        //assert(s1.origin == s2.origin); // sanity check!
-        return (s1.code == s2.code &&
-            s1.cumulative == s2.cumulative &&
-            s1.heapPrimitives == s1.heapPrimitives &&
-            s1.textReferences == s2.textReferences &&
-            s1.py == s2.py &&
-            s1.rawInputLstJSON == s2.rawInputLstJSON);
-    };
-    // SILENTLY fail without doing anything if the current app state is
-    // already in the cache
-    AbstractBaseFrontend.prototype.traceCacheAdd = function () {
-        // should only be called if you currently have a working trace;
-        // otherwise it's useless
-        pytutor_1.assert(this.myVisualizer && this.myVisualizer.curTrace);
-        var appState = this.getAppState();
-        // make sure nothing in the cache currently matches appState
-        for (var i = 0; i < this.traceCache.length; i++) {
-            var e = this.traceCache[i];
-            if (AbstractBaseFrontend.appStateEqForCache(e[0], appState)) {
-                console.warn("traceCacheAdd silently failed, entry already in cache");
-                return;
-            }
-        }
-        this.traceCache.push([appState, this.myVisualizer.curTrace]);
-        console.log('traceCacheAdd', this.traceCache);
-    };
-    AbstractBaseFrontend.prototype.traceCacheGet = function (appState) {
-        for (var i = 0; i < this.traceCache.length; i++) {
-            var e = this.traceCache[i];
-            if (AbstractBaseFrontend.appStateEqForCache(e[0], appState)) {
-                return e[1];
-            }
-        }
-        return null;
-    };
-    AbstractBaseFrontend.prototype.traceCacheClear = function () {
-        this.traceCache = [];
-    };
-    AbstractBaseFrontend.prototype.setSurveyHTML = function () {
-        // use ${this.userUUID} within the string ...
-        var survey_v14 = "\n    <p style=\"font-size: 9pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;\">\n\n    Help improve this tool by completing a <a style=\"font-size: 10pt; font-weight: bold;\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSfQJP1ojlv8XzXAvHz0al-J_Hs3GQu4XeblxT8EzS8dIzuaYA/viewform?entry.956368502=" + this.userUUID + "\" target=\"_blank\">short user survey</a>\n    <br/>\n    Keep this tool free by making a <a style=\"font-size: 10pt; font-weight: bold;\" href=\"http://pgbovine.net/support.htm\" target=\"_blank\">small donation</a> (PayPal, Patreon, credit/debit card)\n    </p>";
-        $('#surveyPane').html(survey_v14);
-    };
-    return AbstractBaseFrontend;
-}()); // END class AbstractBaseFrontend
-exports.AbstractBaseFrontend = AbstractBaseFrontend;
-/* For survey questions. Versions of survey wording:
-
-[see ../../v3/js/opt-frontend-common.js for older versions of survey wording - v1 to v7]
-
-v8: (deployed on 2016-06-20) - like v7 except emphasize the main usage survey more, and have the over-60 survey as auxiliary
-const survey_v8 = '\n\
-<p style="font-size: 10pt; margin-top: 10px; margin-bottom: 15px; line-height: 175%;">\n\
-<span>Support our research and keep this tool free by <a href="https://docs.google.com/forms/d/1-aKilu0PECHZVRSIXHv8vJpEuKUO9uG3MrH864uX56U/viewform" target="_blank">filling out this user survey</a>.</span>\n\
-<br/>\n\
-<span style="font-size: 9pt;">If you are <b>at least 60 years old</b>, please also fill out <a href="https://docs.google.com/forms/d/1lrXsE04ghfX9wNzTVwm1Wc6gQ5I-B4uw91ACrbDhJs8/viewform" target="_blank">our survey about learning programming</a>.</span>\n\
-</p>'
-
-v9: (deployed on 2016-08-14, taken down 2016-12-05) - only put up the "older adults" survey except generalize it to ALL ages, take down the OPT usage survey for now
-const survey_v9 = '\n\
-<p style="font-size: 10pt; margin-top: 10px; margin-bottom: 15px; line-height: 175%;">\n\
-<span>Support our research and keep this tool free by <a href="https://docs.google.com/forms/d/1lrXsE04ghfX9wNzTVwm1Wc6gQ5I-B4uw91ACrbDhJs8/viewform" target="_blank"><b>filling out this user survey</b></a>.</span>\n\
-</p>'
-
-v10: (deployed on 2016-12-05) - survey of how native languages affects learning programming
-     (taken down on 2017-07-28)
-[see survey_v10 variable above]
-
-    // use ${this.userUUID} within the string ...
-    var survey_v10 = '\n\
-    <p style="font-size: 11pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;">\n\
-    <span><span style="color: #e93f34;">Support our research and keep this tool free</span> by filling out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSe48NsBZPvu1hrTBwc8-aSic7nPSxpsxFqpUxV5AN4LwnyJWg/viewform?entry.956368502=';
-    survey_v10 += this.userUUID;
-    survey_v10 += '" target="_blank">survey on how your native spoken language affects how you learn programming</a>.</span></p>';
-
-    $('#surveyPane').html(survey_v10);
-
-v11: labinthewild python debugging experiment (deployed on 2017-07-28, taken down on 2017-09-12)
-    var survey_v11 = `<p style="font-size: 10pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;">
-                        <span>
-                          <span style="color: #e93f34;">Support our research and practice Python</span>
-                          by trying our new
-                          <a target="_blank" href="http://www.labinthewild.org/studies/python_tutor/">debugging skill test</a>!`;
-
-v12: simplified demographic survey which is a simplified hybrid of the v8 general usage survey and the v10 native language survey (deployed on 2017-09-12)
-
-    // use ${this.userUUID} within the string ...
-    var survey_v12 = '\n\
-    <p style="font-size: 10pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;">\n\
-    <span>Support our research and keep this tool free by <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQJP1ojlv8XzXAvHz0al-J_Hs3GQu4XeblxT8EzS8dIzuaYA/viewform?entry.956368502=';
-    survey_v12 += this.userUUID;
-    survey_v12 += '" target="_blank"><b>filling out this short user survey</b></a>.</span></p>';
-
-v13: same as v12 except with slightly different wording, and adding a
-call for donations (deployed on 2017-12-27)
-
-    // use ${this.userUUID} within the string ...
-    var survey_v13 = '\n\
-    <p style="font-size: 10pt; margin-top: 12px; margin-bottom: 15px; line-height: 150%;">\n\
-    <div style="margin-bottom: 12px;">Keep this tool free for everyone by <a href="http://pgbovine.net/support.htm" target="_blank"><b>making a small donation</b></a> <span style="font-size: 8pt;">(PayPal, Patreon, credit/debit card)</span></div>\
-    <span>Support our research by completing a <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQJP1ojlv8XzXAvHz0al-J_Hs3GQu4XeblxT8EzS8dIzuaYA/viewform?entry.956368502=';
-    survey_v13 += this.userUUID;
-    survey_v13 += '" target="_blank"><b>short user survey</b></a></span></p>';
-
-
-v14: very similar to v13 (deployed on 2018-03-11)
-[see the survey_v14 variable]
-
-*/
-// misc utilities:
-// From http://stackoverflow.com/a/8809472
-function generateUUID() {
-    var d = new Date().getTime();
-    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-        var r = (d + Math.random() * 16) % 16 | 0;
-        d = Math.floor(d / 16);
-        return (c == 'x' ? r : (r & 0x7 | 0x8)).toString(16);
-    });
-    return uuid;
-}
-exports.generateUUID = generateUUID;
-;
-// Adapted from http://diveintohtml5.info/storage.html
-function supports_html5_storage() {
-    try {
-        if ('localStorage' in window && window['localStorage'] !== null) {
-            // From: http://stackoverflow.com/questions/21159301/
-            // Safari before v11, in Private Browsing Mode, looks like it supports localStorage but all calls to
-            // setItem throw QuotaExceededError.  Making these calls in the try block will detect that situation
-            // with the catch below, returning false.
-            localStorage.setItem('_localStorage_test', '1');
-            localStorage.removeItem('_localStorage_test');
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-    catch (e) {
-        return false;
-    }
-}
-exports.supports_html5_storage = supports_html5_storage;
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-// Python Tutor: https://github.com/pgbovine/OnlinePythonTutor/
-// Copyright (C) Philip Guo (philip@pgbovine.net)
-// LICENSE: https://github.com/pgbovine/OnlinePythonTutor/blob/master/LICENSE.txt
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    }
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-__webpack_require__(0);
-// just punt and use global script dependencies
-__webpack_require__(11);
-__webpack_require__(12);
-__webpack_require__(13);
-__webpack_require__(14);
-__webpack_require__(15);
-__webpack_require__(16);
-__webpack_require__(17);
-__webpack_require__(63);
-// need to directly import the class for type checking to work
-var opt_frontend_common_1 = __webpack_require__(9);
-var pytutor_1 = __webpack_require__(4);
-__webpack_require__(6);
-__webpack_require__(65);
-exports.allTabsRE = new RegExp('\t', 'g');
-var JAVA_BLANK_TEMPLATE = "public class YourClassNameHere {\n    public static void main(String[] args) {\n\n    }\n}";
-var CPP_BLANK_TEMPLATE = "int main() {\n\n  return 0;\n}";
-var CODE_SNAPSHOT_DEBOUNCE_MS = 1000;
-var SUBMIT_UPDATE_HISTORY_INTERVAL_MS = 1000 * 60;
-function sanitizeURL(s) {
-    return s.replace(/\(/g, '%28').replace(/\)/g, '%29'); // replace ( with %28 and ) with %29 so that links embed well in Markdown and email clients
-}
-var OptFrontend = /** @class */ (function (_super) {
-    __extends(OptFrontend, _super);
-    function OptFrontend(params) {
-        if (params === void 0) { params = {}; }
-        var _this = _super.call(this, params) || this;
-        _this.originFrontendJsFile = 'opt-frontend.js';
-        _this.pyInputAceEditor = undefined; // Ace editor object that contains the user's code
-        // some subclasses use these, so put them in the superclass
-        _this.activateSyntaxErrorSurvey = true;
-        _this.activateRuntimeErrorSurvey = true;
-        _this.activateEurekaSurvey = true;
-        _this.demoMode = false; // if true, then we're giving a live demo, so hide a bunch of excess stuff on page
-        _this.preseededCurInstr = undefined;
-        $('#genEmbedBtn').bind('click', function () {
-            var mod = _this.appMode;
-            pytutor_1.assert(mod == 'display' || mod == 'visualize' /* deprecated */);
-            var myArgs = _this.getAppState();
-            delete myArgs.mode;
-            myArgs.codeDivWidth = pytutor_1.ExecutionVisualizer.DEFAULT_EMBEDDED_CODE_DIV_WIDTH;
-            myArgs.codeDivHeight = pytutor_1.ExecutionVisualizer.DEFAULT_EMBEDDED_CODE_DIV_HEIGHT;
-            var domain = "http://pythontutor.com/"; // for deployment
-            var embedUrlStr = $.param.fragment(domain + "iframe-embed.html", myArgs, 2 /* clobber all */);
-            embedUrlStr = sanitizeURL(embedUrlStr);
-            var iframeStr = '<iframe width="800" height="500" frameborder="0" src="' + embedUrlStr + '"> </iframe>';
-            $('#embedCodeOutput').val(iframeStr);
-        });
-        _this.initAceEditor(420);
-        // for some weird reason, jQuery doesn't work here:
-        //   $(window).bind("hashchange"
-        window.addEventListener("hashchange", function (e) {
-            // if you've got some preseeded code, then parse the entire query
-            // string from scratch just like a page reload
-            if ($.bbq.getState('code')) {
-                _this.parseQueryString();
-            }
-            else {
-                // otherwise just do an incremental update
-                var newMode = $.bbq.getState('mode');
-                _this.updateAppDisplay(newMode);
-            }
-        });
-        // also fires when you resize the jQuery UI slider, interesting!
-        $(window).resize(_this.redrawConnectors.bind(_this));
-        $('#genUrlBtn').bind('click', function () {
-            var myArgs = _this.getAppState();
-            var urlStr = $.param.fragment(window.location.href, myArgs, 2); // 2 means 'override'
-            urlStr = sanitizeURL(urlStr);
-            $('#urlOutput').val(urlStr);
-        });
-        $('#genUrlShortenedBtn').bind('click', function () {
-            var myArgs = _this.getAppState();
-            var urlStr = $.param.fragment(window.location.href, myArgs, 2); // 2 means 'override'
-            urlStr = sanitizeURL(urlStr);
-            // call goo.gl URL shortener
-            //
-            // to test this API from command-line, first disable the IP restriction on API credentials, then run:
-            // curl https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyCIjtNqfABbRilub1a3Ta7-qKF3bS9_p1M -H 'Content-Type: application/json' -d '{"longUrl": "http://www.google.com/"}'
-            $.ajax('https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyCIjtNqfABbRilub1a3Ta7-qKF3bS9_p1M', { type: 'POST',
-                contentType: 'application/json',
-                data: JSON.stringify({ longUrl: urlStr }),
-                success: function (dat) {
-                    $("#urlOutputShortened").val(dat.id);
-                },
-                error: function () {
-                    $("#urlOutputShortened").val("Error in URL shortener :(");
-                }
-            });
-        });
-        $("#instructionsPane").html("Advanced instructions:\n      <a href=\"https://www.youtube.com/watch?v=80ztTXP90Vs&list=PLzV58Zm8FuBL2WxxZKGZ6j1dH8NKb_HYI&index=5\" target=\"_blank\">setting breakpoints</a> |\n      <a href=\"https://www.youtube.com/watch?v=Mxt9HZWgwAM&list=PLzV58Zm8FuBL2WxxZKGZ6j1dH8NKb_HYI&index=6\" target=\"_blank\">hiding variables</a> |\n      <a href=\"https://www.youtube.com/watch?v=JjGt95Te0wo&index=3&list=PLzV58Zm8FuBL2WxxZKGZ6j1dH8NKb_HYI\" target=\"_blank\">live programming</a>");
-        // first initialize options from HTML LocalStorage. very important
-        // that this code runs FIRST so that options get overridden by query
-        // string options and anything else the user wants to override with.
-        if (opt_frontend_common_1.supports_html5_storage() && !params.disableLocalStorageToggles) {
-            var lsKeys = ['cumulative',
-                'heapPrimitives',
-                'py',
-                'textReferences'];
-            // restore toggleState if available
-            var lsOptions = {};
-            $.each(lsKeys, function (i, k) {
-                var v = localStorage.getItem(k);
-                if (v) {
-                    lsOptions[k] = v;
-                }
-            });
-            _this.setToggleOptions(lsOptions);
-            // store in localStorage whenever user explicitly changes any toggle option:
-            $('#cumulativeModeSelector,#heapPrimitivesSelector,#textualMemoryLabelsSelector,#pythonVersionSelector').change(function () {
-                var ts = _this.getToggleState();
-                $.each(ts, function (k, v) {
-                    localStorage.setItem(k, v);
-                });
-            });
-        }
-        // when you leave or reload the page, submit an updateHistoryJSON if you
-        // have one. beforeunload seems to work better than unload(), but it's
-        // still a bit flaky ... TODO: investigate :(
-        $(window).on('beforeunload', function () {
-            _this.submitUpdateHistory('beforeunload');
-            // don't return anything, or a modal dialog box might pop up
-        });
-        // just do this as well, even though it might be hella redundant
-        $(window).on('unload', function () {
-            _this.submitUpdateHistory('unload');
-            // don't return anything, or a modal dialog box might pop up
-        });
-        // periodically do submitUpdateHistory() to handle the case when
-        // someone is simply idle on the page without reloading it or
-        // re-editing code; that way, we can still get some signals rather
-        // than nothing.
-        var lastSubmittedUpdateHistoryLength = 0;
-        setInterval(function () {
-            if (_this.myVisualizer) {
-                var uh = _this.myVisualizer.updateHistory;
-                // don't submit identical entries repeatedly since that's redundant
-                if (uh && (uh.length != lastSubmittedUpdateHistoryLength)) {
-                    lastSubmittedUpdateHistoryLength = uh.length;
-                    _this.submitUpdateHistory('periodic');
-                }
-            }
-        }, SUBMIT_UPDATE_HISTORY_INTERVAL_MS);
-        _this.parseQueryString(); // do this at the end after Ace editor initialized
-        return _this;
-    }
-    // Compress updateHistory before encoding and sending to
-    // the server so that it takes up less room in the URL. Have each
-    // entry except for the first be a delta from the FIRST entry.
-    OptFrontend.prototype.compressUpdateHistoryList = function () {
-        pytutor_1.assert(this.myVisualizer);
-        var uh = this.myVisualizer.updateHistory;
-        var encodedUh = [];
-        if (uh) {
-            encodedUh.push(uh[0]);
-            var firstTs = uh[0][1];
-            for (var i = 1; i < uh.length; i++) {
-                var e = uh[i];
-                encodedUh.push([e[0], e[1] - firstTs]);
-            }
-            // finally push a final entry with the current timestamp delta
-            var curTs = new Date().getTime();
-            encodedUh.push([this.myVisualizer.curInstr, curTs - firstTs]);
-        }
-        return encodedUh;
-    };
-    // this feature was deployed on 2015-09-17, so check logs for
-    // viz_interaction.py
-    OptFrontend.prototype.submitUpdateHistory = function (why) {
-        if (this.myVisualizer) {
-            var encodedUh = this.compressUpdateHistoryList();
-            var encodedUhJSON = JSON.stringify(encodedUh);
-            var myArgs = { session_uuid: this.sessionUUID,
-                user_uuid: this.userUUID,
-                updateHistoryJSON: encodedUhJSON };
-            if (why) {
-                myArgs.why = why;
-            }
-            $.get('viz_interaction.py', myArgs, function (dat) { });
-        }
-    };
-    OptFrontend.prototype.initAceEditor = function (height) {
-        var _this = this;
-        pytutor_1.assert(!this.pyInputAceEditor);
-        this.pyInputAceEditor = ace.edit('codeInputPane');
-        var s = this.pyInputAceEditor.getSession();
-        // tab -> 4 spaces
-        s.setTabSize(4);
-        s.setUseSoftTabs(true);
-        // disable extraneous indicators:
-        s.setFoldStyle('manual'); // no code folding indicators
-        s.getDocument().setNewLineMode('unix'); // canonicalize all newlines to unix format
-        this.pyInputAceEditor.setHighlightActiveLine(false);
-        this.pyInputAceEditor.setShowPrintMargin(false);
-        this.pyInputAceEditor.setBehavioursEnabled(false);
-        this.pyInputAceEditor.$blockScrolling = Infinity; // kludgy to shut up weird warnings
-        // auto-grow height as fit
-        this.pyInputAceEditor.setOptions({ minLines: 18, maxLines: 1000 });
-        $('#codeInputPane').css('width', '700px');
-        $('#codeInputPane').css('height', height + 'px'); // VERY IMPORTANT so that it works on I.E., ugh!
-        this.initDeltaObj();
-        this.pyInputAceEditor.on('change', function (e) {
-            // 2017-11-21: convert all tabs to 4 spaces so that when you paste
-            // in code from somewhere else that contains tabs, instantly
-            // change all those tabs to spaces. note that all uses of 'tab' key
-            // within the Ace editor on this page will result in spaces (i.e.,
-            // "soft tabs")
-            var curVal = _this.pyInputGetValue();
-            if (curVal.indexOf('\t') >= 0) {
-                _this.pyInputSetValue(curVal.replace(exports.allTabsRE, '    '));
-                console.log("Converted all tabs to spaces");
-            }
-            $.doTimeout('pyInputAceEditorChange', CODE_SNAPSHOT_DEBOUNCE_MS, _this.snapshotCodeDiff.bind(_this)); // debounce
-            // starting on 2018-03-14 -- do NOT clear frontend errors and
-            // annotations when you edit the code, since you may still want to
-            // see the old error messages ... commented out these two lines:
-            //this.clearFrontendError();
-            //s.clearAnnotations();
-        });
-        // don't do real-time syntax checks:
-        // https://github.com/ajaxorg/ace/wiki/Syntax-validation
-        s.setOption("useWorker", false);
-        this.setAceMode();
-        this.pyInputAceEditor.focus();
-    };
-    OptFrontend.prototype.setAceMode = function () {
-        var selectorVal = $('#pythonVersionSelector').val();
-        var mod;
-        var tabSize = 2;
-        var editorVal = $.trim(this.pyInputGetValue());
-        if (editorVal === JAVA_BLANK_TEMPLATE || editorVal === CPP_BLANK_TEMPLATE) {
-            editorVal = '';
-            this.pyInputSetValue(editorVal);
-        }
-        if (selectorVal === 'java') {
-            mod = 'java';
-            if (editorVal === '') {
-                this.pyInputSetValue(JAVA_BLANK_TEMPLATE);
-            }
-        }
-        else if (selectorVal === 'js') {
-            mod = 'javascript';
-        }
-        else if (selectorVal === 'ts') {
-            mod = 'typescript';
-        }
-        else if (selectorVal === 'ruby') {
-            mod = 'ruby';
-        }
-        else if (selectorVal === 'c' || selectorVal == 'cpp') {
-            mod = 'c_cpp';
-            if (editorVal === '') {
-                this.pyInputSetValue(CPP_BLANK_TEMPLATE);
-            }
-        }
-        else {
-            pytutor_1.assert(selectorVal === '2' || selectorVal == '3' || selectorVal == 'py3anaconda');
-            mod = 'python';
-            tabSize = 4; // PEP8 style standards
-        }
-        pytutor_1.assert(mod);
-        var s = this.pyInputAceEditor.getSession();
-        s.setMode("ace/mode/" + mod);
-        s.setTabSize(tabSize);
-        s.setUseSoftTabs(true);
-        // clear all error displays when switching modes
-        var s = this.pyInputAceEditor.getSession();
-        s.clearAnnotations();
-        if (selectorVal === 'java') {
-            $("#javaOptionsPane").show();
-        }
-        else {
-            $("#javaOptionsPane").hide();
-        }
-        if (selectorVal === 'js' || selectorVal === '2' || selectorVal === '3') {
-            $("#liveModeBtn").show();
-        }
-        else {
-            $("#liveModeBtn").hide();
-        }
-        this.clearFrontendError();
-    };
-    OptFrontend.prototype.pyInputGetValue = function () {
-        return this.pyInputAceEditor.getValue();
-    };
-    OptFrontend.prototype.pyInputSetValue = function (dat) {
-        this.pyInputAceEditor.setValue(dat.rtrim() /* kill trailing spaces */, -1 /* do NOT select after setting text */);
-        $('#urlOutput,#urlOutputShortened,#embedCodeOutput').val('');
-        this.clearFrontendError();
-        // also scroll to top to make the UI more usable on smaller monitors
-        // TODO: this has a global impact on the document, so breaks modularity?
-        $(document).scrollTop(0);
-    };
-    OptFrontend.prototype.pyInputGetScrollTop = function () {
-        return this.pyInputAceEditor.getSession().getScrollTop();
-    };
-    OptFrontend.prototype.pyInputSetScrollTop = function (st) {
-        this.pyInputAceEditor.getSession().setScrollTop(st);
-    };
-    OptFrontend.prototype.executeCodeFromScratch = function () {
-        // don't execute empty string:
-        if (this.pyInputAceEditor && $.trim(this.pyInputGetValue()) == '') {
-            this.setFronendError(["Type in some code to visualize."], true);
-            return;
-        }
-        _super.prototype.executeCodeFromScratch.call(this);
-    };
-    OptFrontend.prototype.executeCode = function (forceStartingInstr, forceRawInputLst) {
-        if (forceStartingInstr === void 0) { forceStartingInstr = 0; }
-        if (forceRawInputLst === void 0) { forceRawInputLst = undefined; }
-        // if you're in display mode, kick back into edit mode before executing
-        // or else the display might not refresh properly ... ugh krufty
-        if (this.appMode != 'edit') {
-            this.enterEditMode();
-        }
-        if (forceRawInputLst !== undefined && forceRawInputLst !== null) {
-            this.rawInputLst = forceRawInputLst;
-        }
-        var backendOptionsObj = this.getBaseBackendOptionsObj();
-        var frontendOptionsObj = this.getBaseFrontendOptionsObj();
-        frontendOptionsObj.startingInstruction = forceStartingInstr;
-        this.snapshotCodeDiff(); // do ONE MORE snapshot before we execute, or else
-        // we'll miss a diff if the user hits Visualize Execution
-        // very shortly after finishing coding
-        if (this.deltaObj) {
-            this.deltaObj.executeTime = new Date().getTime();
-        }
-        this.executeCodeAndCreateViz(this.pyInputGetValue(), $('#pythonVersionSelector').val(), backendOptionsObj, frontendOptionsObj, 'pyOutputPane');
-        this.initDeltaObj(); // clear deltaObj to start counting over again
-    };
-    OptFrontend.prototype.finishSuccessfulExecution = function () {
-        var _this = this;
-        this.enterDisplayMode(); // do this first!
-        if (this.myVisualizer) {
-            this.myVisualizer.add_pytutor_hook("end_updateOutput", function (args) {
-                // TODO: implement for codeopticon
-                // debounce to compress a bit ... 250ms feels "right"
-                $.doTimeout('updateOutputLogEvent', 250, function () {
-                    var obj = { type: 'updateOutput', step: args.myViz.curInstr,
-                        curline: args.myViz.curLineNumber,
-                        prevline: args.myViz.prevLineNumber };
-                    // optional fields
-                    if (args.myViz.curLineExceptionMsg) {
-                        obj.exception = args.myViz.curLineExceptionMsg;
-                    }
-                    if (args.myViz.curLineIsReturn) {
-                        obj.curLineIsReturn = true;
-                    }
-                    if (args.myViz.prevLineIsReturn) {
-                        obj.prevLineIsReturn = true;
-                    }
-                    _this.logEventCodeopticon(obj);
-                });
-                // 2014-05-25: implemented more detailed tracing for surveys
-                if (args.myViz.creationTime) {
-                    var curTs = new Date().getTime();
-                    var uh = args.myViz.updateHistory;
-                    pytutor_1.assert(uh.length > 0); // should already be seeded with an initial value
-                    if (uh.length > 1) { // don't try to "compress" the very first entry
-                        var lastTs = uh[uh.length - 1][1];
-                        // (debounce entries that are less than 1 second apart to
-                        // compress the logs a bit when there's rapid scrubbing or scrolling)
-                        if ((curTs - lastTs) < 1000) {
-                            uh.pop(); // get rid of last entry before pushing a new entry
-                        }
-                    }
-                    uh.push([args.myViz.curInstr, curTs]);
-                }
-                return [false]; // pass through to let other hooks keep handling
-            });
-        }
-        // 2014-05-25: implemented more detailed tracing for surveys
-        this.myVisualizer.creationTime = new Date().getTime();
-        // each element will be a two-element list consisting of:
-        // [step number, timestamp]
-        // (debounce entries that are less than 1 second apart to
-        // compress the logs a bit when there's rapid scrubbing or scrolling)
-        //
-        // the first entry has a THIRD field:
-        // [step number, timestamp, total # steps]
-        //
-        // subsequent entries don't need it since it will always be the same.
-        // the invariant is that step number < total # steps (since it's
-        // zero-indexed
-        this.myVisualizer.updateHistory = [];
-        this.myVisualizer.updateHistory.push([this.myVisualizer.curInstr,
-            this.myVisualizer.creationTime,
-            this.myVisualizer.curTrace.length]);
-    };
-    OptFrontend.prototype.handleUncaughtException = function (trace) {
-        if (trace.length == 1 && trace[0].line) {
-            var errorLineNo = trace[0].line - 1; /* Ace lines are zero-indexed */
-            if (errorLineNo !== undefined && errorLineNo != NaN) {
-                // highlight the faulting line
-                var s = this.pyInputAceEditor.getSession();
-                s.setAnnotations([{ row: errorLineNo,
-                        column: null,
-                        type: 'error',
-                        text: trace[0].exception_msg }]);
-                this.pyInputAceEditor.gotoLine(errorLineNo + 1 /* one-indexed */);
-                // if we have both a line and column number, then move over to
-                // that column. (going to the line first prevents weird
-                // highlighting bugs)
-                if (trace[0].col !== undefined) {
-                    this.pyInputAceEditor.moveCursorTo(errorLineNo, trace[0].col);
-                }
-                this.pyInputAceEditor.focus();
-            }
-        }
-    };
-    OptFrontend.prototype.ignoreAjaxError = function (settings) {
-        // other idiosyncratic errors to ignore
-        if ((settings.url.indexOf('syntax_err_survey.py') > -1) ||
-            (settings.url.indexOf('runtime_err_survey.py') > -1) ||
-            (settings.url.indexOf('eureka_survey.py') > -1) ||
-            (settings.url.indexOf('error_log.py') > -1) ||
-            (settings.url.indexOf('viz_interaction.py') > -1)) {
-            return true;
-        }
-        return false;
-    };
-    OptFrontend.prototype.initDeltaObj = function () {
-        pytutor_1.assert(this.pyInputAceEditor);
-        // v is the version number
-        //   1 (version 1 was released on 2014-11-05)
-        //   2 (version 2 was released on 2015-09-16, added a startTime field)
-        this.deltaObj = { start: this.pyInputGetValue(), deltas: [], v: 2,
-            startTime: new Date().getTime() };
-    };
-    OptFrontend.prototype.snapshotCodeDiff = function () {
-        pytutor_1.assert(this.deltaObj);
-        var newCode = this.pyInputGetValue();
-        var timestamp = new Date().getTime();
-        if (this.curCode != newCode) {
-            var diff = this.dmp.diff_toDelta(this.dmp.diff_main(this.curCode, newCode));
-            //var patch = this.dmp.patch_toText(this.dmp.patch_make(this.curCode, newCode));
-            var delta = { t: timestamp, d: diff };
-            this.deltaObj.deltas.push(delta);
-            this.curCode = newCode;
-            this.logEditDelta(delta);
-        }
-    };
-    OptFrontend.prototype.logEditDelta = function (delta) {
-        this.logEventCodeopticon({ type: 'editCode', delta: delta });
-    };
-    OptFrontend.prototype.enterDisplayMode = function () {
-        this.updateAppDisplay('display');
-    };
-    OptFrontend.prototype.enterEditMode = function () {
-        this.updateAppDisplay('edit');
-    };
-    // try to make this function as idempotent as possible, so that
-    // repeated calls with same params don't do anything bad
-    OptFrontend.prototype.updateAppDisplay = function (newAppMode) {
-        var _this = this;
-        this.appMode = newAppMode;
-        if (this.appMode === undefined || this.appMode == 'edit' ||
-            !this.myVisualizer /* subtle -- if no visualizer, default to edit mode */) {
-            this.appMode = 'edit'; // canonicalize
-            $("#pyInputPane").show();
-            $("#pyOutputPane,#embedLinkDiv").hide();
-            // Potentially controversial: when you enter edit mode, DESTROY any
-            // existing visualizer object. note that this simplifies the app's
-            // conceptual model but breaks the browser's expected Forward and
-            // Back button flow
-            $("#pyOutputPane").empty();
-            // right before destroying, submit the visualizer's updateHistory
-            this.submitUpdateHistory('editMode');
-            this.myVisualizer = null; // yikes!
-            $(document).scrollTop(0); // scroll to top to make UX better on small monitors
-            // *after* the editor is shown, force it to refresh its contents
-            // (using the misleadingly-named resize(true) method)
-            this.pyInputAceEditor.resize(true);
-            var s = { mode: 'edit' };
-            // keep these persistent so that they survive page reloads
-            // keep these persistent so that they survive page reloads
-            if (typeof codeopticonSession !== "undefined") {
-                s.cosession = codeopticonSession;
-            }
-            if (typeof codeopticonUsername !== "undefined") {
-                s.couser = codeopticonUsername;
-            }
-            $.bbq.pushState(s, 2 /* completely override other hash strings to keep URL clean */);
-        }
-        else if (this.appMode == 'display' || this.appMode == 'visualize' /* 'visualize' is deprecated */) {
-            pytutor_1.assert(this.myVisualizer);
-            this.appMode = 'display'; // canonicalize
-            $("#pyInputPane").hide();
-            $("#pyOutputPane,#embedLinkDiv").show();
-            this.doneExecutingCode();
-            // do this AFTER making #pyOutputPane visible, or else
-            // jsPlumb connectors won't render properly
-            this.myVisualizer.updateOutput();
-            // use .off() to remove all handlers first, to prevent accidental
-            // multiple attaches ...
-            // customize edit button click functionality AFTER rendering myVisualizer
-            $('#pyOutputPane #editCodeLinkDiv').show();
-            $('#pyOutputPane #editBtn').off().click(function () {
-                _this.enterEditMode();
-            });
-            var v = $('#pythonVersionSelector').val();
-            // 2018-03-15 - removed "Live programming" link from
-            // visualization mode to simplify the UI, even if it drives
-            // fewer people to live programming mode; they can always click
-            // the "Live Programming Mode" button in the code editor:
-            /*
-            if (v === 'js' || v === '2' || v === '3') {
-              var myArgs = this.getAppState();
-              var urlStr = $.param.fragment('live.html', myArgs, 2); // clobber all
-              $("#pyOutputPane #liveModeSpan").show();
-              $('#pyOutputPane #editLiveModeBtn').off().click(this.openLiveModeUrl.bind(this));
-            } else {
-              $("#pyOutputPane #liveModeSpan").hide();
-            }
-            */
-            $(document).scrollTop(0); // scroll to top to make UX better on small monitors
-            var s = { mode: 'display' };
-            // keep these persistent so that they survive page reloads
-            if (typeof codeopticonSession !== "undefined") {
-                s.cosession = codeopticonSession;
-            }
-            if (typeof codeopticonUsername !== "undefined") {
-                s.couser = codeopticonUsername;
-            }
-            $.bbq.pushState(s, 2 /* completely override other hash strings to keep URL clean */);
-        }
-        else {
-            pytutor_1.assert(false);
-        }
-        $('#urlOutput,#urlOutputShortened,#embedCodeOutput').val(''); // clear to avoid stale values
-        // log at the end after appMode gets canonicalized
-        this.logEventCodeopticon({ type: 'updateAppDisplay', mode: this.appMode, appState: this.getAppState() });
-        pytutor_1.assert(this.appMode === 'edit' || this.appMode === 'display'); // postcondition
-    };
-    OptFrontend.prototype.openLiveModeUrl = function () {
-        var myArgs = this.getAppState();
-        var urlStr = $.param.fragment('live.html', myArgs, 2 /* clobber all */);
-        window.open(urlStr); // open in new tab
-        return false; // to prevent default "a href" click action
-    };
-    OptFrontend.prototype.appStateAugmenter = function (x) { };
-    ; // NOP
-    // get the ENTIRE current state of the app
-    OptFrontend.prototype.getAppState = function () {
-        pytutor_1.assert(this.originFrontendJsFile);
-        var ret = { code: this.pyInputGetValue(),
-            mode: this.appMode,
-            origin: this.originFrontendJsFile,
-            cumulative: $('#cumulativeModeSelector').val(),
-            heapPrimitives: $('#heapPrimitivesSelector').val(),
-            textReferences: $('#textualMemoryLabelsSelector').val(),
-            py: $('#pythonVersionSelector').val(),
-            /* ALWAYS JSON serialize rawInputLst, even if it's empty! */
-            rawInputLstJSON: JSON.stringify(this.rawInputLst),
-            curInstr: this.myVisualizer ? this.myVisualizer.curInstr : undefined };
-        // keep this really clean by avoiding undefined values
-        if (ret.cumulative === undefined)
-            delete ret.cumulative;
-        if (ret.heapPrimitives === undefined)
-            delete ret.heapPrimitives;
-        if (ret.textReferences === undefined)
-            delete ret.textReferences;
-        if (ret.py === undefined)
-            delete ret.py;
-        if (ret.rawInputLstJSON === undefined)
-            delete ret.rawInputLstJSON;
-        if (ret.curInstr === undefined)
-            delete ret.curInstr;
-        // frontends can optionally AUGMENT the app state with custom fields
-        this.appStateAugmenter(ret);
-        return ret;
-    };
-    // strip it down to the bare minimum
-    OptFrontend.prototype.getToggleState = function () {
-        var x = this.getAppState();
-        delete x.code;
-        delete x.mode;
-        delete x.rawInputLstJSON;
-        delete x.curInstr;
-        return x;
-    };
-    OptFrontend.prototype.setToggleOptions = function (dat) {
-        // ugh, ugly tristate due to the possibility of each being undefined
-        if (dat.py !== undefined) {
-            $('#pythonVersionSelector').val(dat.py);
-        }
-        if (dat.cumulative !== undefined) {
-            $('#cumulativeModeSelector').val(dat.cumulative);
-        }
-        if (dat.heapPrimitives !== undefined) {
-            $('#heapPrimitivesSelector').val(dat.heapPrimitives);
-        }
-        if (dat.textReferences !== undefined) {
-            $('#textualMemoryLabelsSelector').val(dat.textReferences);
-        }
-    };
-    OptFrontend.prototype.demoModeChanged = function () { };
-    ; // NOP; subclasses need to override
-    OptFrontend.prototype.loadCodcastFile = function () { };
-    ; // NOP; subclasses need to override
-    OptFrontend.prototype.parseQueryString = function () {
-        var queryStrOptions = this.getQueryStringOptions();
-        this.setToggleOptions(queryStrOptions);
-        if (queryStrOptions.preseededCode) {
-            this.pyInputSetValue(queryStrOptions.preseededCode);
-        }
-        this.rawInputLst = queryStrOptions.rawInputLst ? queryStrOptions.rawInputLst : [];
-        this.preseededCurInstr = queryStrOptions.preseededCurInstr;
-        if (isNaN(this.preseededCurInstr)) {
-            this.preseededCurInstr = undefined;
-        }
-        if (queryStrOptions.demoMode) {
-            this.demoMode = true;
-            this.demoModeChanged();
-        }
-        if (queryStrOptions.codcastFile) {
-            this.codcastFile = queryStrOptions.codcastFile;
-            this.loadCodcastFile();
-        }
-        if (queryStrOptions.codeopticonSession) {
-            pytutor_1.assert(false); // TODO: this won't currently work with Webpack, so fix it later
-            codeopticonSession = queryStrOptions.codeopticonSession; // GLOBAL defined in codeopticon-learner.js
-            codeopticonUsername = queryStrOptions.codeopticonUsername; // GLOBAL defined in codeopticon-learner.js
-        }
-        if ((queryStrOptions.appMode == 'display' ||
-            queryStrOptions.appMode == 'visualize' /* deprecated */) &&
-            queryStrOptions.preseededCode /* jump to 'display' mode only with preseeded code */) {
-            this.executeCode(this.preseededCurInstr); // will switch to 'display' mode
-        }
-        $.bbq.removeState(); // clean up the URL no matter what
-    };
-    return OptFrontend;
-}(opt_frontend_common_1.AbstractBaseFrontend)); // END class OptFrontend
-exports.OptFrontend = OptFrontend;
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(1)(__webpack_require__(56))
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(1)(__webpack_require__(57))
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(1)(__webpack_require__(58))
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(1)(__webpack_require__(59))
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(1)(__webpack_require__(60))
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(1)(__webpack_require__(61))
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(1)(__webpack_require__(62))
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-// Python Tutor: https://github.com/pgbovine/OnlinePythonTutor/
-// Copyright (C) Philip Guo (philip@pgbovine.net)
-// LICENSE: https://github.com/pgbovine/OnlinePythonTutor/blob/master/LICENSE.txt
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    }
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-// OPT live programming prototype started on 2016-05-30
-// first launched as a "Live Programming Mode" button on main OPT site
-// on 2016-06-08, working for Python 2/3 and JavaScript for starters
-//
-// ... inspired by my explorations with IPython shell + OPT for REPL
-// visualizations in August 2013 (opt-ipy.py), and Irene Chen's holistic
-// visualizations (2013-2014 UROP), inspired by Bret Victor's stuff
-/* TODOs:
-
-- use a backup execution server for JS (via backupHttpServerRoot) just
-  like we do in opt-frontend-common.ts
-
-- abstract out components within pytutor.js to prevent ugly code
-  duplication with stuff in this file
-
-- if these Ace enhancements look good, then I can also use them for
-  Codeopticon as well!
-
-- [later] add a codeopticon-style history slider of the user's past
-  edits (but that might be confusing)
-  - NB: now we kind of already have this if you're in a shared session
-    with 'undo' and 'redo' buttons
-
-- [later] detect exact position of syntax error and put a squiggly line below
-  it with something like:
-
-  File "<string>", line 1
-    x~=1
-     ^
-
-  (do this for the OPT classic editor too. and for other language backends)
-
-*/
-__webpack_require__(6);
-__webpack_require__(22);
-// need to directly import the class for type checking to work
-var opt_shared_sessions_1 = __webpack_require__(8);
-var pytutor_1 = __webpack_require__(4);
-var opt_frontend_1 = __webpack_require__(10);
-// just punt and use global script dependencies
-__webpack_require__(11);
-__webpack_require__(12);
-__webpack_require__(13);
-__webpack_require__(14);
-__webpack_require__(15);
-__webpack_require__(16);
-__webpack_require__(17);
-var optLiveFrontend;
-var OptLiveFrontend = /** @class */ (function (_super) {
-    __extends(OptLiveFrontend, _super);
-    function OptLiveFrontend(params) {
-        var _this = _super.call(this, params) || this;
-        _this.originFrontendJsFile = 'opt-live.js';
-        _this.prevVisualizer = null; // the visualizer object from the previous execution
-        _this.disableRowScrolling = false;
-        _this.hasSyntaxError = false;
-        _this.allMarkerIds = [];
-        // override
-        _this.langSettingToBackendScript = {
-            '2': 'LIVE_exec_py2.py',
-            '3': 'LIVE_exec_py3.py',
-            // empty dummy scripts just to do logging on Apache server
-            'js': 'LIVE_exec_js.py',
-            'ts': 'LIVE_exec_ts.py',
-            'java': 'LIVE_exec_java.py',
-            'ruby': 'LIVE_exec_ruby.py',
-            'c': 'LIVE_exec_c.py',
-            'cpp': 'LIVE_exec_cpp.py',
-            'py3anaconda': 'LIVE_exec_py3anaconda.py',
-        };
-        $('#legendDiv')
-            .append('<svg id="prevLegendArrowSVG"/> line that has just executed')
-            .append('<p style="margin-top: 4px"><svg id="curLegendArrowSVG"/> next line to execute</p>');
-        d3.select('svg#prevLegendArrowSVG')
-            .append('polygon')
-            .attr('points', pytutor_1.SVG_ARROW_POLYGON)
-            .attr('fill', pytutor_1.lightArrowColor);
-        d3.select('svg#curLegendArrowSVG')
-            .append('polygon')
-            .attr('points', pytutor_1.SVG_ARROW_POLYGON)
-            .attr('fill', pytutor_1.darkArrowColor);
-        $('#cumulativeModeSelector,#heapPrimitivesSelector,#textualMemoryLabelsSelector,#pythonVersionSelector').change(function () {
-            _this.setAceMode();
-            // force a re-execute on a toggle switch
-            _this.executeCodeFromScratch();
-        });
-        _this.setAceMode(); // set syntax highlighting at the end
-        $("#pyOutputPane").show();
-        // TODO: eliminate redundancies with pytutor.ts
-        $("#jmpFirstInstr").click(function () {
-            if (_this.myVisualizer) {
-                _this.myVisualizer.renderStep(0);
-            }
-        });
-        $("#jmpLastInstr").click(function () {
-            if (_this.myVisualizer) {
-                _this.myVisualizer.renderStep(_this.myVisualizer.curTrace.length - 1);
-            }
-        });
-        $("#jmpStepBack").click(function () {
-            if (_this.myVisualizer) {
-                _this.myVisualizer.stepBack();
-            }
-        });
-        $("#jmpStepFwd").click(function () {
-            if (_this.myVisualizer) {
-                _this.myVisualizer.stepForward();
-            }
-        });
-        return _this;
-        // // put eureka_survey into #eurekaSurveyPane so that it's highly visib
-    }
-    OptLiveFrontend.prototype.demoModeChanged = function () {
-        _super.prototype.demoModeChanged.call(this); // call first
-        if (this.demoMode) {
-            $("#eurekaSurveyPane,#surveyPane,#liveModeHeader").hide();
-        }
-    };
-    // override verison in opt-frontend.ts
-    OptLiveFrontend.prototype.setAceMode = function () {
-        var v = $('#pythonVersionSelector').val();
-        if (v !== '2' && v !== '3') {
-            // 默认使用python2模式
-            $('#pythonVersionSelector').val('2');
-        }
-        _super.prototype.setAceMode.call(this);
-    };
-    OptLiveFrontend.prototype.toggleSyntaxError = function (x) {
-        if (x) {
-            this.hasSyntaxError = true;
-            $("#dataViz,#curInstr").addClass('dimmed'); // dim the visualization until we fix the error
-        }
-        else {
-            this.hasSyntaxError = false;
-            $("#dataViz,#curInstr").removeClass('dimmed'); // un-dim the visualization
-            var s = this.pyInputAceEditor.getSession();
-            s.clearAnnotations(); // remove any lingering syntax error labels in gutter
-        }
-    };
-    OptLiveFrontend.prototype.removeAllGutterDecorations = function () {
-        var s = this.pyInputAceEditor.getSession();
-        var d = s.getDocument();
-        for (var i = 0; i < d.getLength(); i++) {
-            s.removeGutterDecoration(i, 'curLineStepGutter');
-            s.removeGutterDecoration(i, 'prevLineStepGutter');
-            s.removeGutterDecoration(i, 'curPrevOverlapLineStepGutter');
-        }
-    };
-    OptLiveFrontend.prototype.updateStepLabels = function () {
-        var _this = this;
-        var myVisualizer = this.myVisualizer;
-        pytutor_1.assert(myVisualizer);
-        myVisualizer.updateLineAndExceptionInfo(); // do this first to update the right fields
-        $('#urlOutput,#urlOutputShortened').val(''); // prevent stale URLs
-        var s = this.pyInputAceEditor.getSession();
-        this.allMarkerIds.forEach(function (e) {
-            s.removeMarker(e);
-        });
-        this.allMarkerIds = [];
-        // TODO: prevent copy and paste with pytutor.ts
-        var totalInstrs = myVisualizer.curTrace.length;
-        var isLastInstr = myVisualizer.curInstr === (totalInstrs - 1);
-        if (isLastInstr) {
-            if (myVisualizer.promptForUserInput || myVisualizer.promptForMouseInput) {
-                $("#curInstr").html('<b><font color="' + pytutor_1.brightRed + '">Enter user input below:</font></b>');
-            }
-            else if (myVisualizer.instrLimitReached) {
-                $("#curInstr").html("Instruction limit reached");
-            }
-            else {
-                $("#curInstr").html("Done running (" + String(totalInstrs - 1) + " steps)");
-            }
-        }
-        else {
-            $("#curInstr").html("Step " + String(myVisualizer.curInstr + 1) + " of " + String(totalInstrs - 1));
-        }
-        // handle raw user input
-        // copied from pytutor.js -- TODO: integrate this code better
-        var ruiDiv = $('#rawUserInputDiv');
-        if (isLastInstr && myVisualizer.params.executeCodeWithRawInputFunc &&
-            myVisualizer.promptForUserInput) {
-            ruiDiv.show();
-            ruiDiv.find('#userInputPromptStr').html(myVisualizer.userInputPromptStr);
-            ruiDiv.find('#raw_input_textbox').val('');
-            // first UNBIND handler so that we don't build up multiple click events
-            ruiDiv.find('#raw_input_submit_btn')
-                .unbind('click')
-                .click(function () {
-                // issue a warning since it's really hard to get rawInputLst
-                // stuff sync'ed when TogetherJS is running for various reasons:
-                if (opt_shared_sessions_1.TogetherJS.running) {
-                    alert("Warning: user inputs do NOT work well in live help/chat mode. We suggest you use the regular Python Tutor visualizer instead.");
-                }
-                var userInput = ruiDiv.find('#raw_input_textbox').val();
-                var myVisualizer = _this.myVisualizer;
-                // advance instruction count by 1 to get to the NEXT instruction
-                myVisualizer.params.executeCodeWithRawInputFunc(userInput, myVisualizer.curInstr + 1);
-            });
-        }
-        else {
-            ruiDiv.hide(); // hide by default
-        }
-        // render error (if applicable):
-        var curEntry = myVisualizer.curTrace[myVisualizer.curInstr];
-        if (curEntry.event === 'exception' ||
-            curEntry.event === 'uncaught_exception') {
-            pytutor_1.assert(curEntry.exception_msg);
-            if (curEntry.exception_msg == "Unknown error") {
-                $("#frontendErrorOutput").html('Unknown error: Please email a bug report to philip@pgbovine.net');
-            }
-            else {
-                $("#frontendErrorOutput").html(pytutor_1.htmlspecialchars(curEntry.exception_msg));
-            }
-            if (myVisualizer.curLineNumber) {
-                var Range = ace.require('ace/range').Range;
-                var markerId = s.addMarker(new Range(myVisualizer.curLineNumber - 1, 0, myVisualizer.curLineNumber - 1, 1), "errorLine", "fullLine");
-                this.allMarkerIds.push(markerId);
-            }
-        }
-        else if (myVisualizer.instrLimitReached) {
-            $("#frontendErrorOutput").html(pytutor_1.htmlspecialchars(myVisualizer.instrLimitReachedWarningMsg));
-        }
-        else {
-            $("#frontendErrorOutput").html(''); // clear it
-        }
-        this.removeAllGutterDecorations();
-        // special case if both arrows overlap
-        if (myVisualizer.curLineNumber &&
-            (myVisualizer.curLineNumber === myVisualizer.prevLineNumber)) {
-            s.addGutterDecoration(myVisualizer.curLineNumber - 1, 'curPrevOverlapLineStepGutter');
-        }
-        else {
-            // render separately
-            if (myVisualizer.curLineNumber) {
-                s.addGutterDecoration(myVisualizer.curLineNumber - 1, 'curLineStepGutter');
-            }
-            if (myVisualizer.prevLineNumber) {
-                s.addGutterDecoration(myVisualizer.prevLineNumber - 1, 'prevLineStepGutter');
-            }
-        }
-        var lineToScrollTo = null;
-        if (myVisualizer.curLineNumber) {
-            lineToScrollTo = myVisualizer.curLineNumber;
-        }
-        else if (myVisualizer.prevLineNumber) {
-            lineToScrollTo = myVisualizer.prevLineNumber;
-        }
-        // scroll the Ace editor to try to center the current line, but make
-        // sure not to appear jarring, so apply some heuristics here
-        // such as disableRowScrolling and checking to see if the current line
-        // is visible
-        if (lineToScrollTo && !this.disableRowScrolling) {
-            var firstVisible = this.pyInputAceEditor.getFirstVisibleRow() + 1; // +1 to be more accurate
-            var lastVisible = this.pyInputAceEditor.getLastVisibleRow();
-            if (lineToScrollTo < firstVisible ||
-                lineToScrollTo > lastVisible) {
-                this.pyInputAceEditor.scrollToLine(lineToScrollTo, true /* try to center */);
-            }
-        }
-    };
-    // see getAppState to see where it calls out to this function:
-    OptLiveFrontend.prototype.appStateAugmenter = function (appState) {
-        // super hack so that when you generate URLs, it will say 'display' mode
-        // since we want to jump to curInstr and that happens only in 'display' mode
-        appState.mode = 'display';
-    };
-    OptLiveFrontend.prototype.finishSuccessfulExecution = function () {
-        var _this = this;
-        var myVisualizer = this.myVisualizer;
-        var prevVisualizer = this.prevVisualizer;
-        pytutor_1.assert(myVisualizer);
-        $("#pyOutputPane,#vcrControls").show();
-        this.doneExecutingCode();
-        this.toggleSyntaxError(false);
-        // set up execution slider, code inspired by pytutor.js:
-        // TODO: eventually unify this code with pytutor.js to avoid duplication
-        var sliderDiv = $('#executionSlider');
-        sliderDiv.slider({ min: 0, max: myVisualizer.curTrace.length - 1, step: 1 });
-        //disable keyboard actions on the slider itself (to prevent double-firing of events)
-        sliderDiv.find(".ui-slider-handle").unbind('keydown');
-        // make skinnier and taller
-        sliderDiv.find(".ui-slider-handle").css('width', '0.8em');
-        sliderDiv.find(".ui-slider-handle").css('height', '1.4em');
-        $(".ui-widget-content").css('font-size', '0.9em');
-        // unbind first to prevent multiple bindings
-        sliderDiv.unbind('slide').bind('slide', function (evt, ui) {
-            // this is SUPER subtle. if this value was changed programmatically,
-            // then evt.originalEvent will be undefined. however, if this value
-            // was changed by a user-initiated event, then this code should be
-            // executed ...
-            if (evt.originalEvent) {
-                _this.myVisualizer.renderStep(ui.value);
-            }
-        });
-        // do this AFTER making #pyOutputPane visible, or else
-        // jsPlumb connectors won't render properly
-        // try to "match" the same position as the previous visualizer so that
-        // the display isn't jerky
-        if (prevVisualizer) {
-            var prevVizInstr = prevVisualizer.curInstr;
-            var prevVizIsFinalInstr = (prevVisualizer.curInstr === (prevVisualizer.curTrace.length - 1));
-            // match the previous step if it we weren't on the last one, and the new
-            // trace is at least as long
-            if (!prevVizIsFinalInstr &&
-                (myVisualizer.curTrace.length >= prevVisualizer.curTrace.length)) {
-                myVisualizer.renderStep(prevVizInstr);
-            }
-            else {
-                myVisualizer.updateOutput();
-            }
-        }
-        else {
-            myVisualizer.updateOutput();
-        }
-        this.updateStepLabels(); // do it once
-        // initialize this at the VERY END after jumping to the proper initial step
-        // above, perhaps using renderStep()
-        // copied from opt-frontend.ts, TODO: remove redundancy
-        myVisualizer.creationTime = new Date().getTime();
-        // each element will be a two-element list consisting of:
-        // [step number, timestamp]
-        // (debounce entries that are less than 1 second apart to
-        // compress the logs a bit when there's rapid scrubbing or scrolling)
-        //
-        // the first entry has a THIRD field:
-        // [step number, timestamp, total # steps]
-        //
-        // subsequent entries don't need it since it will always be the same.
-        // the invariant is that step number < total # steps (since it's
-        // zero-indexed
-        myVisualizer.updateHistory = [];
-        myVisualizer.updateHistory.push([myVisualizer.curInstr,
-            myVisualizer.creationTime,
-            myVisualizer.curTrace.length]);
-        // TODO: check that this logging works properly ...
-        // add this hook at the VERY END after jumping to the proper initial step
-        // above, perhaps using renderStep()
-        myVisualizer.add_pytutor_hook("end_updateOutput", function (args) {
-            // adapted from opt-shared-sessions.ts to handle TogetherJS
-            if (_this.updateOutputSignalFromRemote) {
-                return [true]; // die early; no more hooks should run after this one!
-            }
-            if (opt_shared_sessions_1.TogetherJS.running) {
-                opt_shared_sessions_1.TogetherJS.send({ type: "updateOutput", step: args.myViz.curInstr });
-            }
-            // copied from opt-frontend-common.js
-            if (args.myViz.creationTime) {
-                var curTs = new Date().getTime();
-                var uh = args.myViz.updateHistory;
-                pytutor_1.assert(uh.length > 0); // should already be seeded with an initial value
-                if (uh.length > 1) { // don't try to "compress" the very first entry
-                    var lastTs = uh[uh.length - 1][1];
-                    // (debounce entries that are less than 1 second apart to
-                    // compress the logs a bit when there's rapid scrubbing or scrolling)
-                    if ((curTs - lastTs) < 1000) {
-                        uh.pop(); // get rid of last entry before pushing a new entry
-                    }
-                }
-                uh.push([args.myViz.curInstr, curTs]);
-            }
-            $('#executionSlider').slider('value', _this.myVisualizer.curInstr); // update slider
-            _this.updateStepLabels();
-            return [false];
-        });
-        $('#executionSlider').slider('value', myVisualizer.curInstr); // update slider
-        this.myVisualizer.redrawConnectors(); // to get everything aligned well
-    };
-    // a syntax-/compile-time error, rather than a runtime error
-    OptLiveFrontend.prototype.handleUncaughtException = function (trace) {
-        if (trace.length == 1 && trace[0].line) {
-            var errorLineNo = trace[0].line - 1; /* Ace lines are zero-indexed */
-            if (errorLineNo !== undefined && errorLineNo != NaN) {
-                this.removeAllGutterDecorations();
-                if (this.myVisualizer) {
-                    this.toggleSyntaxError(true);
-                    this.myVisualizer.redrawConnectors();
-                }
-                var s = this.pyInputAceEditor.getSession();
-                s.setAnnotations([{ row: errorLineNo,
-                        type: 'error',
-                        text: trace[0].exception_msg }]);
-            }
-        }
-    };
-    // need to override the version in opt-frontend-common.ts
-    OptLiveFrontend.prototype.redrawConnectors = function () {
-        if (this.myVisualizer) {
-            this.myVisualizer.redrawConnectors();
-        }
-    };
-    // override with NOP to disable diff snapshots in live mode
-    OptLiveFrontend.prototype.snapshotCodeDiff = function () { };
-    OptLiveFrontend.prototype.initAceEditor = function (height) {
-        var _this = this;
-        pytutor_1.assert(!this.pyInputAceEditor);
-        this.pyInputAceEditor = ace.edit('codeInputPane');
-        var s = this.pyInputAceEditor.getSession();
-        // disable extraneous indicators:
-        s.setFoldStyle('manual'); // no code folding indicators
-        s.getDocument().setNewLineMode('unix'); // canonicalize all newlines to unix format
-        this.pyInputAceEditor.setHighlightActiveLine(false);
-        this.pyInputAceEditor.setShowPrintMargin(false);
-        this.pyInputAceEditor.setBehavioursEnabled(false);
-        this.pyInputAceEditor.setHighlightGutterLine(false); // to avoid gray highlight over gutter of active line
-        this.pyInputAceEditor.setDisplayIndentGuides(false); // to avoid annoying gray vertical lines
-        this.pyInputAceEditor.$blockScrolling = Infinity; // kludgy to shut up weird warnings
-        $("#pyInputPane,#codeInputPane")
-            .css('width', '550px')
-            .css('min-width', '250px')
-            .css('max-width', '700px'); // don't let it get too ridiculously wide
-        $('#codeInputPane').css('height', height + 'px'); // VERY IMPORTANT so that it works on I.E., ugh!
-        // make it resizable!
-        $("#codeInputPane").resizable({
-            resize: function (evt, ui) {
-                _this.pyInputAceEditor.resize(); // to keep Ace internals happy
-                $("#pyInputPane").width($("#codeInputPane").width()); // to keep parent happy
-                if (_this.myVisualizer) {
-                    _this.myVisualizer.redrawConnectors(); // to keep visualizations happy
-                }
-            }
-        });
-        this.pyInputAceEditor.on('change', function (e) {
-            // 2017-11-21: convert all tabs to 4 spaces so that when you paste
-            // in code from somewhere else that contains tabs, instantly
-            // change all those tabs to spaces. note that all uses of 'tab' key
-            // within the Ace editor on this page will result in spaces (i.e.,
-            // "soft tabs")
-            var curVal = _this.pyInputGetValue();
-            if (curVal.indexOf('\t') >= 0) {
-                _this.pyInputSetValue(curVal.replace(opt_frontend_1.allTabsRE, '    '));
-                console.log("Converted all tabs to spaces");
-            }
-            $.doTimeout('pyInputAceEditorChange', 500, /* go a bit faster than CODE_SNAPSHOT_DEBOUNCE_MS to feel more snappy */ function () {
-                if (_this.preseededCurInstr) {
-                    _this.executeCode(_this.preseededCurInstr);
-                    _this.preseededCurInstr = undefined; // do this only once, then unset it
-                }
-                else {
-                    // if you're trying to execute an empty text
-                    // buffer, highlight the code display with a
-                    // warning as though you got a syntax error:
-                    if (_this.pyInputAceEditor && $.trim(_this.pyInputGetValue()) == '') {
-                        _this.toggleSyntaxError(true);
-                        _this.myVisualizer.redrawConnectors();
-                    }
-                    _this.executeCodeFromScratch();
-                }
-            }); // debounce
-            _this.clearFrontendError();
-            s.clearAnnotations();
-        });
-        // don't do real-time syntax checks:
-        // https://github.com/ajaxorg/ace/wiki/Syntax-validation
-        s.setOption("useWorker", false);
-        this.pyInputAceEditor.focus();
-        // custom gutter renderer, make it wider to accomodate arrows on left
-        // http://stackoverflow.com/a/28404331
-        s.gutterRenderer = {
-            getWidth: function (session, lastLineNumber, config) {
-                return (lastLineNumber.toString().length * config.characterWidth) + 6;
-            },
-            getText: function (session, row) {
-                return (row + 1);
-            }
-        };
-    };
-    OptLiveFrontend.prototype.executeCodeFromScratch = function () {
-        this.disableRowScrolling = true;
-        _super.prototype.executeCodeFromScratch.call(this);
-    };
-    // TODO: maybe prevent so much copy-and-paste with the version in
-    // opt-frontend-common.ts?
-    OptLiveFrontend.prototype.executeCodeAndCreateViz = function (codeToExec, pyState, backendOptionsObj, frontendOptionsObj, outputDiv) {
-        var _this = this;
-        var execCallback = function (dataFromBackend) {
-            var trace = dataFromBackend.trace;
-            if (!trace ||
-                (trace.length === 0) ||
-                (trace[trace.length - 1].event === 'uncaught_exception')) {
-                _this.handleUncaughtException(trace);
-                if (trace.length === 1) {
-                    _this.setFronendError([trace[0].exception_msg]);
-                }
-                else if (trace.length > 0 && trace[trace.length - 1].exception_msg) {
-                    _this.setFronendError([trace[trace.length - 1].exception_msg]);
-                }
-                else {
-                    _this.setFronendError(["Unknown error: The server may be OVERLOADED right now; try again later.",
-                        "Your code may also contain UNSUPPORTED FEATURES that this tool cannot handle.",
-                        "Report a bug to philip@pgbovine.net by clicking the 'Generate shortened link'",
-                        "button at the bottom and including a URL in your email. [#NullTrace]"]);
-                }
-            }
-            else {
-                _this.prevVisualizer = _this.myVisualizer;
-                _this.myVisualizer = new pytutor_1.ExecutionVisualizer(outputDiv, dataFromBackend, frontendOptionsObj);
-                _this.finishSuccessfulExecution();
-            }
-            // run this all at the VERY END after all the dust has settled
-            _this.doneExecutingCode(); // rain or shine, we're done executing!
-            _this.disableRowScrolling = false;
-        };
-        this.clearFrontendError();
-        this.startExecutingCode();
-        this.setFronendError(['Running your code ...'], true);
-        var backendScript = this.langSettingToBackendScript[pyState];
-        pytutor_1.assert(backendScript);
-        var jsonp_endpoint = null;
-        if (pyState === '2') {
-            frontendOptionsObj.lang = 'py2';
-        }
-        else if (pyState === '3') {
-            frontendOptionsObj.lang = 'py3';
-        }
-        else if (pyState === 'js') {
-            frontendOptionsObj.lang = 'js';
-            // only set the remote endpoint if you're *not* on localhost:
-            if (window.location.href.indexOf('localhost') < 0) {
-                jsonp_endpoint = this.langSettingToJsonpEndpoint[pyState]; // maybe null
-            }
-        }
-        else {
-            pytutor_1.assert(false);
-        }
-        // submit update history of the "previous" visualizer whenever you
-        // run the code and hopefully get a new visualizer back
-        //
-        // don't bother if we're currently on a syntax error since the
-        // displayed visualization is no longer relevant
-        var prevUpdateHistoryJSON = undefined;
-        if (this.hasSyntaxError) {
-            prevUpdateHistoryJSON = 'hasSyntaxError'; // hacky
-        }
-        else if (this.myVisualizer) {
-            var encodedUh = this.compressUpdateHistoryList();
-            prevUpdateHistoryJSON = JSON.stringify(encodedUh);
-        }
-        if (jsonp_endpoint) {
-            pytutor_1.assert(pyState !== '2' && pyState !== '3');
-            // hack! should just be a dummy script for logging only
-            $.get(backendScript, { user_script: codeToExec,
-                options_json: JSON.stringify(backendOptionsObj),
-                user_uuid: this.userUUID,
-                session_uuid: this.sessionUUID,
-                prevUpdateHistoryJSON: prevUpdateHistoryJSON,
-                exeTime: new Date().getTime() }, function (dat) { }, "text"); // NOP handler since it's a dummy
-            // the REAL call uses JSONP
-            // http://learn.jquery.com/ajax/working-with-jsonp/
-            $.ajax({
-                url: jsonp_endpoint,
-                // The name of the callback parameter, as specified by the YQL service
-                jsonp: "callback",
-                dataType: "jsonp",
-                data: { user_script: codeToExec,
-                    options_json: JSON.stringify(backendOptionsObj) },
-                success: execCallback,
-            });
-            // TODO: we currently don't use backupHttpServerRoot like we do in opt-frontend-common.ts
-            // maybe we should add support for it here too
-        }
-        else {
-            if (pyState === '2' || pyState === '3') {
-                $.get(backendScript, { user_script: codeToExec,
-                    raw_input_json: this.rawInputLst.length > 0 ? JSON.stringify(this.rawInputLst) : '',
-                    options_json: JSON.stringify(backendOptionsObj),
-                    user_uuid: this.userUUID,
-                    session_uuid: this.sessionUUID,
-                    prevUpdateHistoryJSON: prevUpdateHistoryJSON,
-                    exeTime: new Date().getTime() }, execCallback, "json");
-            }
-            else if (pyState === 'js') {
-                if (window.location.href.indexOf('localhost') >= 0) {
-                    // use /exec_js_native if you're running on localhost:
-                    // (need to first run 'make local' from ../../v4-cokapi/Makefile)
-                    $.get('http://localhost:3000/exec_js_native', { user_script: codeToExec,
-                        raw_input_json: this.rawInputLst.length > 0 ? JSON.stringify(this.rawInputLst) : '',
-                        options_json: JSON.stringify(backendOptionsObj),
-                        user_uuid: this.userUUID,
-                        session_uuid: this.sessionUUID,
-                        prevUpdateHistoryJSON: prevUpdateHistoryJSON,
-                        exeTime: new Date().getTime() }, execCallback, "json");
-                }
-                else {
-                    pytutor_1.assert(false);
-                }
-            }
-            else {
-                pytutor_1.assert(false);
-            }
-        }
-    };
-    OptLiveFrontend.prototype.getBaseFrontendOptionsObj = function () {
-        var ret = _super.prototype.getBaseFrontendOptionsObj.call(this);
-        ret.hideCode = true;
-        ret.jumpToEnd = true;
-        return ret;
-    };
-    // for shared sessions
-    OptLiveFrontend.prototype.TogetherjsReadyHandler = function () {
-        $("#liveModeHeader").hide();
-        _super.prototype.TogetherjsReadyHandler.call(this);
-    };
-    OptLiveFrontend.prototype.TogetherjsCloseHandler = function () {
-        $("#liveModeHeader").show();
-        _super.prototype.TogetherjsCloseHandler.call(this);
-    };
-    OptLiveFrontend.prototype.updateOutputTogetherJsHandler = function (msg) {
-        _super.prototype.updateOutputTogetherJsHandler.call(this, msg); // do this first
-        // then update slider at the end
-        $('#executionSlider').slider('value', this.myVisualizer.curInstr); // update slider
-        this.updateStepLabels();
-    };
-    return OptLiveFrontend;
-}(opt_shared_sessions_1.OptFrontendSharedSessions)); // END class OptLiveFrontend
-exports.OptLiveFrontend = OptLiveFrontend;
-$(document).ready(function () {
-    optLiveFrontend = new OptLiveFrontend({});
-    optLiveFrontend.setSurveyHTML();
-});
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports) {
-
-/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
-module.exports = __webpack_amd_options__;
-
-/* WEBPACK VAR INJECTION */}.call(exports, {}))
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "/* CSS accompanying ../visualize.html */\n\nh1 {\n  font-weight: normal;\n  font-size: 20pt;\n  font-family: georgia, serif;\n  line-height: 1em;  /* enforce single spacing so that Georgia works */\n\n  margin-top: 0px;\n  margin-bottom: 8px;\n}\n\nh2 {\n  font-size: 12pt;\n  font-weight: normal;\n  font-family: georgia, serif;\n  line-height: 1.1em; /* enforce single spacing so that Georgia works */\n\n  margin-top: 2px;\n  margin-bottom: 20px;\n}\n\n\nbody {\n  background-color: white;\n  font-family: verdana, arial, helvetica, sans-serif;\n  font-size: 10pt;\n}\n\na,\na:visited,\na:hover {\n  color: #3D58A2;\n}\n\nspan {\n  padding: 0px;\n}\n\n#optionsPane {\n  margin-top: 15px;\n  margin-bottom: 20px;\n  line-height: 150%;\n}\n\ntable#pyOutputPane {\n  padding: 10px;\n}\n\n#pyInputPane, #loadingPane {\n  margin-top: 10px;\n  margin-bottom: 20px;\n\n  max-width: 700px;\n  /* center align */\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#loadingPane {\n  margin-bottom: 5px;\n}\n\n#codeInputPane {\n  margin-top: 5px;\n  font-size: 12pt;\n  border: 1px solid #ddd;\n}\n\n#codeInputWarnings {\n  margin-bottom: 8px;\n}\n\nbutton.smallBtn {\n  font-size: 10pt;\n  padding: 3px;\n}\n\nbutton.bigBtn {\n  font-size: 12pt;\n  padding: 6px;\n  margin-top: 0px;\n}\n\nbutton.surveyBtn {\n  font-size: 8pt;\n  margin-top: 8px;\n}\n\nbutton.surveyBtnBig {\n  font-size: 11pt;\n  padding: 5px;\n  margin-top: 0px;\n}\n\n#footer {\n  color: #999;\n  font-size: 9pt;\n  border-top: 1px solid #bbbbbb;\n  padding-top: 5px;\n  margin-top: 5px;\n\n  max-width: 700px;\n  /* center align */\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#frontendErrorOutput {\n  color: #e93f34; /* should match brightRed JavaScript variable */\n  font-size: 12pt;\n  line-height: 1.5em;\n  margin-top: 8px;\n}\n\n.togetherjsBtn {\n  /*color: #b80000;*/\n  color: #e93f34;\n  font-size: 9pt;\n  padding: 4px;\n  margin-top: 3px;\n}\n\n/* make this a fixed size with scrollbars for overflow so that the UI doesn't jitter up and down */\n#publicHelpQueue {\n  overflow: auto;\n  height: 95px;\n  margin-bottom: 15px;\n  margin-left: 10px;\n}\n\n.helpQueueSmallText {\n  color: #777;\n  font-size: 8pt;\n}\n\n.redBold {\n  font-weight: bold;\n  color: #e93f34;\n}\n\n#stopRequestHelpBtn {\n  font-size: 9pt;\n  padding: 2px;\n}\n\n#moderationPanel {\n  font-size: 11pt;\n  margin-bottom: 5pt;\n  min-height: 16pt; /* just so things don't jiggle around vertically too much */\n  padding-top: 6px;\n  padding-bottom: 6px;\n  padding-left: 6px;\n  padding-right: 6px;\n  border: 1px solid #e93f34;\n}\n\n.kickLink {\n  font-size: 10pt;\n  margin-right: 4px;\n}\n\n\n#syncBtn {\n font-size: 8pt;\n margin-left: 0px;\n}\n\n#experimentalHeader {\n}\n\n#surveyHeader {\n  margin-left: 100px;\n}\n\n.surveyQ {\n  font-size: 9pt;\n  padding: 2px;\n}\n\n/* necessary for CodeMirror error line highlighting to work! */\n.CodeMirror .errorLine { background: #ffff3f !important; }\n\n\n/* from http://rog.ie/blog/css-star-rater */\n.star-rating {\n  font-size: 0;\n  white-space: nowrap;\n  display: inline-block;\n  /* pgbovine - scale this appropriately with a 5:1 ratio */\n  width: 100px;\n  height: 20px;\n  overflow: hidden;\n  position: relative;\n  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');\n  background-size: contain;\n}\n.star-rating i {\n  opacity: 0;\n  position: absolute;\n  left: 0;\n  top: 0;\n  height: 100%;\n  width: 20%;\n  z-index: 1;\n  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');\n  background-size: contain;\n}\n.star-rating input {\n  -moz-appearance: none;\n  -webkit-appearance: none;\n  opacity: 0;\n  display: inline-block;\n  width: 20%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  z-index: 2;\n  position: relative;\n}\n.star-rating input:hover + i,\n.star-rating input:checked + i {\n  opacity: 1;\n}\n.star-rating i ~ i {\n  width: 40%;\n}\n.star-rating i ~ i ~ i {\n  width: 60%;\n}\n.star-rating i ~ i ~ i ~ i {\n  width: 80%;\n}\n.star-rating i ~ i ~ i ~ i ~ i {\n  width: 100%;\n}\n\n\n#syntaxErrBubbleContents {\n  font-size: 9.5pt;\n  cursor: default;\n}\n\n#syntaxErrHeader {\n  margin-bottom: 3pt;\n}\n\n#syntaxErrCodeDisplay {\n  border: 1px solid #ddd;\n}\n\n#syntaxErrMsg {\n  color: #e93f34; /* should match brightRed JavaScript variable */\n  font-size: 10pt;\n  margin-top: 3pt;\n  margin-bottom: 2pt;\n}\n\n#syntaxErrQuestion {\n  margin-top: 12px;\n}\n\n#syntaxErrTxtInput {\n  margin-top: 3px;\n  margin-bottom: 6px;\n  padding: 2px;\n}\n\n#syntaxErrSubmitBtn, #syntaxErrCloseBtn {\n  margin-right: 8px;\n}\n\n#syntaxErrHideAllLink {\n  font-size: 8pt;\n}\n\n#testCasesPane {\n margin-top: 5px;\n padding-bottom: 5px;\n}\n\n#exampleSnippets {\n border-top: 1px solid #ccc;\n margin-top: 15px;\n}\n\n#showExampleLink {\n  margin-top: 15px;\n}\n\n#instructionsPane {\n margin-bottom: 10px;\n}\n\n/* for SyntaxErrorSurveyBubble */\n\ntextarea.bubbleInputText {\n  font-family: verdana, arial, helvetica, sans-serif;\n\tfont-size: 9pt;\n\tline-height: 1.3em;\n}\n\n.qtip-content {\n\tcolor: #333;\n\tbackground-color: #ffffff;\n\n\tmax-width: 390px;\n\twidth: 390px;\n\n\tborder: 2px solid #e93f34;\n\n  cursor: pointer;\n\n\t*border-right-width: 2px;\n\t*border-bottom-width: 2px;\n\n\t-webkit-border-radius: 5px;\n\t-moz-border-radius: 5px;\n\tborder-radius: 5px;\n\n\t-webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);\n\t-moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);\n\tbox-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);\n\n\t-webkit-background-clip: padding-box;\n\t-moz-background-clip: padding;\n\tbackground-clip: padding-box;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports) {
-
-
-/**
- * When source maps are enabled, `style-loader` uses a link element with a data-uri to
- * embed the css on the page. This breaks all relative urls because now they are relative to a
- * bundle instead of the current page.
- *
- * One solution is to only use full urls, but that may be impossible.
- *
- * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
- *
- * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
- *
- */
-
-module.exports = function (css) {
-  // get current location
-  var location = typeof window !== "undefined" && window.location;
-
-  if (!location) {
-    throw new Error("fixUrls requires window.location");
-  }
-
-	// blank or null?
-	if (!css || typeof css !== "string") {
-	  return css;
-  }
-
-  var baseUrl = location.protocol + "//" + location.host;
-  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
-
-	// convert each url(...)
-	/*
-	This regular expression is just a way to recursively match brackets within
-	a string.
-
-	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
-	   (  = Start a capturing group
-	     (?:  = Start a non-capturing group
-	         [^)(]  = Match anything that isn't a parentheses
-	         |  = OR
-	         \(  = Match a start parentheses
-	             (?:  = Start another non-capturing groups
-	                 [^)(]+  = Match anything that isn't a parentheses
-	                 |  = OR
-	                 \(  = Match a start parentheses
-	                     [^)(]*  = Match anything that isn't a parentheses
-	                 \)  = Match a end parentheses
-	             )  = End Group
-              *\) = Match anything and then a close parens
-          )  = Close non-capturing group
-          *  = Match anything
-       )  = Close capturing group
-	 \)  = Match a close parens
-
-	 /gi  = Get all matches, not the first.  Be case insensitive.
-	 */
-	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
-		// strip quotes (if they exist)
-		var unquotedOrigUrl = origUrl
-			.trim()
-			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
-			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
-
-		// already a full url? no change
-		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
-		  return fullMatch;
-		}
-
-		// convert the url to a full url
-		var newUrl;
-
-		if (unquotedOrigUrl.indexOf("//") === 0) {
-		  	//TODO: should we add protocol?
-			newUrl = unquotedOrigUrl;
-		} else if (unquotedOrigUrl.indexOf("/") === 0) {
-			// path should be relative to the base url
-			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
-		} else {
-			// path should be relative to current directory
-			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
-		}
-
-		// send back the fixed url(...)
-		return "url(" + JSON.stringify(newUrl) + ")";
-	});
-
-	// send back the fixed css
-	return fixedCss;
-};
-
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(23);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(3)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {
-	module.hot.accept("!!../node_modules/css-loader/index.js!./opt-live.css", function() {
-		var newContent = require("!!../node_modules/css-loader/index.js!./opt-live.css");
-
-		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-
-		var locals = (function(a, b) {
-			var key, idx = 0;
-
-			for(key in a) {
-				if(!b || a[key] !== b[key]) return false;
-				idx++;
-			}
-
-			for(key in b) idx--;
-
-			return idx === 0;
-		}(content.locals, newContent.locals));
-
-		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
-
-		update(newContent);
-	});
-
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var escape = __webpack_require__(7);
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".curLineStepGutter {\n  background-image: url(" + escape(__webpack_require__(24)) + ");\n}\n\n.prevLineStepGutter {\n  background-image: url(" + escape(__webpack_require__(25)) + ");\n}\n\n.curPrevOverlapLineStepGutter {\n  background-image: url(" + escape(__webpack_require__(26)) + ");\n}\n\n.errorLine {\n  position: absolute;\n  z-index: 20;\n  border-top: 1px solid #e93f34;\n  border-bottom: 1px solid #e93f34;\n  /*background: rgba(200, 0, 0, 0.15);*/\n}\n\n#sliderStuff {\n  padding-top: 3px;\n}\n\n/* copied from pytutor.css - TODO: integrate and merge together */\n/* VCR control buttons for stepping through execution */\n#vcrControls {\n  margin: 15px auto;\n  /*width: 100%;*/\n  text-align: center;\n}\n\n#vcrControls button {\n  margin-left: 2px;\n  margin-right: 2px;\n}\n\n#curInstr {\n  margin-left: 4px;\n  margin-right: 4px;\n}\n\ndiv#rawUserInputDiv {\n  padding: 5px;\n  width: 95%;\n  margin: 5px auto;\n  text-align: center;\n  border: 1px #e93f34 solid;\n}\n\n\nbutton.surveyBtn {\n  font-size: 8pt;\n  margin-top: 8px;\n}\n\nbutton.surveyBtnBig {\n  font-size: 11pt;\n  padding: 5px;\n  margin-top: 0px;\n}\n\n\n/* keep it a fixed min height so that footer below it doesn't jiggle up\n   and down */\n#frontendErrorOutput {\n  min-height: 20pt;\n}\n\n#liveModeHeader {\n  margin-left: 3px;\n  margin-bottom: 12px;\n  margin-top: 10px;\n  color: #888;\n  /*width: 600px;*/\n}\n\n/* copied from pytutor.css */\ndiv#legendDiv {\n  margin-top: 8px;\n  padding: 0px;\n  text-align: left;\n  color: #666;\n  font-size: 9pt;\n  width: 500px;\n}\n\n#prevLegendArrowSVG, #curLegendArrowSVG {\n  width: 18px;\n  height: 10px;\n}\n\n\n/* translucent dimmed div: http://stackoverflow.com/a/21457838 */\n.dimmed {\n  position: relative;\n}\n\n.dimmed:after {\n  content: \" \";\n  z-index: 10;\n  display: block;\n  position: absolute;\n  height: 100%;\n  top: 0;\n  left: 0;\n  right: 0;\n  background: rgba(200, 0, 0, 0.12);\n}\n\n/* augment */\ndiv.ExecutionVisualizer #dataViz {\n  padding-right: 20px;\n}\n\n/* override Ace defaults */\n.ace_gutter {\n}\n\n.ace_gutter-cell {\n}\n\n.ace_gutter-layer {\n  background-color: white;\n  margin-right: 2px;\n  color: #aaa;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,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"
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,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"
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,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"
 
 /***/ }),
 /* 27 */
@@ -26719,8 +26559,8 @@ var update = __webpack_require__(3)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../node_modules/css-loader/index.js!./pytutor.css", function() {
-		var newContent = require("!!../node_modules/css-loader/index.js!./pytutor.css");
+	module.hot.accept("!!../../node_modules/css-loader/index.js!./pytutor.css", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js!./pytutor.css");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -26837,8 +26677,8 @@ var update = __webpack_require__(3)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../node_modules/css-loader/index.js!./opt-testcases.css", function() {
-		var newContent = require("!!../node_modules/css-loader/index.js!./opt-testcases.css");
+	module.hot.accept("!!../../node_modules/css-loader/index.js!./opt-testcases.css", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js!./opt-testcases.css");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -26876,380 +26716,6 @@ exports.push([module.i, ".testCaseEditor {\n  width: 300px;\n  height: 90px; /* 
 
 // exports
 
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-Object.defineProperty(exports, "__esModule", { value: true });
-var opt_shared_sessions_1 = __webpack_require__(8);
-var pytutor_1 = __webpack_require__(4);
-// represents a list of TogetherJS events that can be replayed, paused, etc.
-// within the context of the current app, along with audio
-var OptDemoVideo = /** @class */ (function () {
-    function OptDemoVideo(frontend, serializedJsonStr) {
-        if (serializedJsonStr === void 0) { serializedJsonStr = null; }
-        this.events = [];
-        this.isFrozen = false; // set to true after you finish recording to 'freeze'
-        this.fps = 30; // frames per second for setInterval-based playback
-        this.currentFrame = 0; // for play/pause
-        this.currentStep = 0; // a 'step' is an index into events, whereas a 'frame' is an animation frame
-        this.isPaused = false; // is playback currently paused?
-        this.rafTimerId = undefined;
-        this.mp3AudioRecording = null; // a data URL representing the contents of the mp3 audio (if available)
-        this.audioElt = null; // HTML5 Audio() object
-        this.frontend = frontend;
-        // initialize from an existing JSON string created with serializeToJSON()
-        if (serializedJsonStr) {
-            var obj = JSON.parse(serializedJsonStr);
-            this.initialAppState = obj.initialAppState;
-            this.events = obj.events;
-            this.traceCache = obj.traceCache;
-            this.mp3AudioRecording = obj.mp3AudioRecording;
-            // VERY IMPORTANT -- set the traceCache entry of the frontend so
-            // that it can actually be used. #tricky!
-            // TODO: this is kind of a gross abstraction violation, eergh
-            this.frontend.traceCache = this.traceCache;
-            this.isFrozen = true; // freeze it!
-            this.addFrameNumbers();
-        }
-    }
-    // only record certain kinds of events in the recorder
-    // see ../../v3/opt_togetherjs/server.js around line 460 for all
-    OptDemoVideo.shouldRecordEvent = function (e) {
-        // do NOT record cursor-click since that's too much noise
-        return ((e.type == 'form-update') ||
-            (e.type == 'cursor-update') ||
-            (e.type == 'app.executeCode') ||
-            (e.type == 'app.updateOutput') ||
-            (e.type == 'app.startRecordingDemo') ||
-            (e.type == 'app.stopRecordingDemo') ||
-            (e.type == 'app.aceChangeCursor') ||
-            (e.type == 'app.aceChangeSelection') ||
-            (e.type == 'pyCodeOutputDivScroll') ||
-            (e.type == 'app.hashchange'));
-    };
-    OptDemoVideo.prototype.addEvent = function (msg) {
-        pytutor_1.assert(!this.isFrozen);
-        msg.ts = new Date().getTime(); // augment with timestamp
-        msg.peer = { color: "#8d549f" }; // fake just enough of a peer object for downstream functions to work
-        msg.sameUrl = true;
-        if (OptDemoVideo.shouldRecordEvent(msg)) {
-            this.events.push(msg);
-        }
-    };
-    // do this BEFORE TogetherJS gets initialized
-    OptDemoVideo.prototype.startRecording = function () {
-        pytutor_1.assert(!this.isFrozen);
-        pytutor_1.assert(!opt_shared_sessions_1.TogetherJS.running);
-        this.frontend.traceCacheClear();
-        this.initialAppState = this.frontend.getAppState();
-        // cache the current trace if we're in display mode
-        if (this.initialAppState.mode == "display") {
-            this.frontend.traceCacheAdd();
-        }
-        this.frontend.isRecordingDemo = true;
-        opt_shared_sessions_1.TogetherJS.config('isDemoSession', true);
-        opt_shared_sessions_1.TogetherJS(); // activate TogetherJS as the last step to start the recording
-    };
-    // this is run as soon as TogetherJS is ready in recording mode
-    OptDemoVideo.prototype.recordTogetherJsReady = function () {
-        pytutor_1.assert(opt_shared_sessions_1.TogetherJS.running && this.frontend.isRecordingDemo && !this.frontend.isPlayingDemo);
-        // set the TogetherJS eventRecorderFunc to this.demoVideo.addEvent
-        // (don't forget to bind it as 'this', ergh!)
-        opt_shared_sessions_1.TogetherJS.config('eventRecorderFunc', this.addEvent.bind(this));
-    };
-    OptDemoVideo.prototype.stopRecording = function () {
-        pytutor_1.assert(!this.isFrozen);
-        this.traceCache = this.frontend.traceCache;
-        this.isFrozen = true; // freeze it!
-        this.addFrameNumbers();
-        this.frontend.isRecordingDemo = false;
-        opt_shared_sessions_1.TogetherJS.config('isDemoSession', false);
-        opt_shared_sessions_1.TogetherJS.config('eventRecorderFunc', null);
-    };
-    OptDemoVideo.prototype.setInitialAppState = function () {
-        pytutor_1.assert(this.initialAppState);
-        this.frontend.pyInputSetValue(this.initialAppState.code);
-        this.frontend.setToggleOptions(this.initialAppState);
-        if (this.initialAppState.mode == 'display') {
-            // we *should* get a cache hit in traceCache so this won't go to the server
-            this.frontend.executeCode(this.initialAppState.curInstr);
-        }
-        else {
-            pytutor_1.assert(this.initialAppState.mode == 'edit');
-            this.frontend.enterEditMode();
-        }
-        this.currentFrame = 0;
-        this.currentStep = 0;
-        // OK this is super subtle but important. you want to call setInit
-        // defined deep in the bowels of lib/togetherjs/togetherjs/togetherjsPackage.js
-        // why are we calling it right now? because we need to clear the
-        // edit history that TogetherJS captures to start us over with a
-        // clean slate so that we can start replaying events from the start
-        // of the trace. otherwise form-update events in the Ace editor
-        // won't work. we need setInit since it's *synchronous* and executes
-        // instantly rather than waiting on an async event queue.
-        var setInit = opt_shared_sessions_1.TogetherJS.config.get('setInit');
-        setInit();
-    };
-    OptDemoVideo.prototype.startPlayback = function () {
-        pytutor_1.assert(this.isFrozen);
-        pytutor_1.assert(!opt_shared_sessions_1.TogetherJS.running); // do this before TogetherJS is initialized
-        pytutor_1.assert(this.mp3AudioRecording); // audio must be initialized before you start playing
-        // save the original value of ignoreForms
-        this.origIgnoreForms = opt_shared_sessions_1.TogetherJS.config.get('ignoreForms');
-        // set this to true, which will have TogetherJS ignore ALL FORM
-        // EVENTS, which means that it will ignore events fired on the Ace
-        // editor (which are form-update events or somethin') ... if we
-        // don't do that, then spurious events will get fired durin playback
-        // and weird stuff will happen
-        opt_shared_sessions_1.TogetherJS.config('ignoreForms', true);
-        this.frontend.isPlayingDemo = true;
-        opt_shared_sessions_1.TogetherJS.config('isDemoSession', true);
-        opt_shared_sessions_1.TogetherJS(); // activate TogetherJS as the last step to start playback mode
-    };
-    // set a timer to play in real time starting at this.currentFrame
-    OptDemoVideo.prototype.playFromCurrentFrame = function () {
-        var _this = this;
-        pytutor_1.assert(opt_shared_sessions_1.TogetherJS.running && this.frontend.isPlayingDemo);
-        var totalFrames = this.getTotalNumFrames();
-        // if we're at the VERY end, then loop back to the very beginning
-        if (this.currentFrame >= totalFrames) {
-            this.setInitialAppState();
-        }
-        var startingFrame = this.currentFrame;
-        // play the first N steps to get up to right before this.currentFrame
-        // TODO: it's kinda klunky to convert "video" frames to steps, which
-        // which are actually indices into this.events
-        if (startingFrame > 0) {
-            var step = this.frameToStepNumber(startingFrame);
-            this.playFirstNSteps(step);
-        }
-        // handle audio
-        pytutor_1.assert(this.mp3AudioRecording);
-        // always create a new element each time to avoid stale old ones
-        // being stuck at weird seek positions
-        this.audioElt = new Audio();
-        this.audioElt.src = this.mp3AudioRecording;
-        this.audioElt.currentTime = this.frameToSeconds(startingFrame);
-        this.audioElt.play();
-        console.log('playFromCurrentFrame', startingFrame, 'totalFrames', totalFrames, 'currentTime:', this.audioElt.currentTime, this.audioElt.ended);
-        var starttime = -1;
-        var rafHelper = function (timestamp) {
-            pytutor_1.assert(_this.audioElt); // we will always synchronize with the audio, so if you don't have audio, it's a dealbreaker
-            if (_this.isPaused) {
-                return;
-            }
-            // keep going until your audio dies:
-            if (!_this.audioElt.ended) {
-                _this.rafTimerId = requestAnimationFrame(rafHelper);
-                // always use the latest values of this.audioElt.currentTime to
-                // calculate the current frame so that we can try to keep the
-                // audio and animation in sync as much as possible:
-                var frameNum = _this.secondsToFrames(_this.audioElt.currentTime);
-                _this.currentFrame = frameNum;
-                //console.log('audioElt.currentTime:', this.audioElt.currentTime, frameNum, totalFrames, this.audioElt.ended);
-                // TODO: this is an abstraction violation since OptDemoVideo
-                // shouldn't know about #timeSlider, which is part of the GUI!
-                // (maybe tunnel this through a callback?)
-                $("#timeSlider").slider("value", frameNum); // triggers slider 'change' event
-            }
-            else {
-                // set currentFrame and slider to the very end for consistency
-                _this.currentFrame = totalFrames;
-                $("#timeSlider").slider("value", totalFrames);
-                _this.frontend.setPlayPauseButton('paused');
-            }
-        };
-        // kick it off!
-        this.isPaused = false; // unpause me!
-        this.rafTimerId = requestAnimationFrame(function (timestamp) {
-            starttime = timestamp;
-            rafHelper(timestamp);
-        });
-        this.frontend.pyInputAceEditor.setReadOnly(true); // don't let the user edit code when demo is playing
-    };
-    OptDemoVideo.prototype.pause = function () {
-        pytutor_1.assert(opt_shared_sessions_1.TogetherJS.running && this.frontend.isPlayingDemo);
-        this.isPaused = true;
-        console.log('pause: currentFrame:', this.currentFrame);
-        if (this.rafTimerId) {
-            cancelAnimationFrame(this.rafTimerId);
-            this.rafTimerId = undefined;
-        }
-        if (this.audioElt) {
-            this.audioElt.pause();
-            // kill it and start afresh each time to (hopefully) avoid out of sync issues
-            this.audioElt.src = '';
-            this.audioElt = null;
-        }
-        this.frontend.pyInputAceEditor.setReadOnly(false); // let the user edit code when paused
-    };
-    // this is run as soon as TogetherJS is ready in playback mode
-    OptDemoVideo.prototype.playbackTogetherJsReady = function () {
-        pytutor_1.assert(opt_shared_sessions_1.TogetherJS.running && this.frontend.isPlayingDemo && !this.frontend.isRecordingDemo);
-        // initialize the session here
-        this.sess = opt_shared_sessions_1.TogetherJS.require("session");
-        // STENT for debugging only
-        window.demoVideo = this;
-        this.setInitialAppState(); // reset app state to the initial one
-    };
-    OptDemoVideo.prototype.playEvent = function (msg) {
-        pytutor_1.assert(this.sess && this.frontend.isPlayingDemo);
-        //this.frontend.pyInputAceEditor.resize(true);
-        // seems weird but we need both session.hub.emit() and
-        // TogetherJS._onmessage() in order to gracefully handle
-        // both built-in TogetherJS events and custom OPT app events:
-        // copied-pasted from lib/togetherjs/togetherjs/togetherjsPackage.js
-        // around line 1870
-        try {
-            this.sess.hub.emit(msg.type, msg);
-        }
-        catch (e) {
-            console.warn(e);
-            // let it go! let it go!
-        }
-        try {
-            opt_shared_sessions_1.TogetherJS._onmessage(msg);
-        }
-        catch (e) {
-            console.warn(e);
-            // let it go! let it go!
-        }
-        // however, TogetherJS._onmessage mangles up the type fields
-        // (UGH!), so we need to restore them back to their original
-        // form to ensure idempotence. copied from session.appSend()
-        var type = msg.type;
-        if (type.search(/^togetherjs\./) === 0) {
-            type = type.substr("togetherjs.".length);
-        }
-        else if (type.search(/^app\./) === -1) {
-            type = "app." + type;
-        }
-        msg.type = type;
-    };
-    OptDemoVideo.prototype.playStep = function (i) {
-        pytutor_1.assert(i >= 0 && i < this.events.length);
-        this.playEvent(this.events[i]);
-        this.currentStep = i; // very important!!!
-    };
-    // play all steps from [lower, upper], inclusive
-    OptDemoVideo.prototype.playStepRange = function (lower, upper) {
-        //console.log('playStepRange', lower, upper, 'curStep:', this.currentStep);
-        pytutor_1.assert(lower <= upper);
-        for (var i = lower; i <= upper; i++) {
-            this.playStep(i);
-        }
-    };
-    // this method *instantaneously* plays all steps from 0 to n
-    // (so everything it calls should work SYNCHRONOUSLY ...
-    //  if there's async code in its callee chain, something will probably break)
-    OptDemoVideo.prototype.playFirstNSteps = function (n) {
-        //console.log('playFirstNSteps', n, 'curStep', this.currentStep, 'curFrame', this.currentFrame);
-        pytutor_1.assert(this.isFrozen);
-        pytutor_1.assert(opt_shared_sessions_1.TogetherJS.running && this.frontend.isPlayingDemo);
-        pytutor_1.assert(n >= 0 && n < this.events.length);
-        this.setInitialAppState(); // reset app state to the initial one
-        // go up to n, inclusive!
-        for (var i = 0; i <= n; i++) {
-            this.playStep(i);
-        }
-    };
-    // given a frame number, convert it to the step number (i.e., index in
-    // this.events) that takes place right BEFORE that given frame.
-    OptDemoVideo.prototype.frameToStepNumber = function (n) {
-        pytutor_1.assert(this.isFrozen && this.events[0].frameNum);
-        var foundIndex = -1;
-        for (var i = 0; i < this.events.length; i++) {
-            if (n < this.events[i].frameNum) {
-                foundIndex = i;
-                break;
-            }
-        }
-        if (foundIndex < 0) {
-            return this.events.length - 1;
-        }
-        else if (foundIndex == 0) {
-            return 0; // TODO: kinda weird that we return 0 for foundIndex being 0 or 1
-        }
-        else {
-            return foundIndex - 1; // subtract 1 to get the step right BEFORE the found one
-        }
-    };
-    OptDemoVideo.prototype.jumpToFrame = function (frame) {
-        pytutor_1.assert(this.currentStep >= 0);
-        var step = this.frameToStepNumber(frame);
-        // avoid unnecessary calls
-        if (step == this.currentStep) {
-            // do nothing! pass thru
-        }
-        else if (step > this.currentStep) {
-            // as an optimization, simply play ahead from the current step
-            // rather than playing all steps from 0 to step again from scratch
-            this.playStepRange(this.currentStep + 1, step);
-        }
-        else {
-            // if we're stepping backwards, then we have no choice but to
-            // play everything from scratch because we can't "undo" actions
-            pytutor_1.assert(step >= 0 && step < this.currentStep);
-            this.playFirstNSteps(step);
-        }
-        this.currentFrame = frame; // do this at the VERY END after all the dust clears
-    };
-    OptDemoVideo.prototype.stopPlayback = function () {
-        this.sess = null;
-        this.frontend.isPlayingDemo = false;
-        opt_shared_sessions_1.TogetherJS.config('ignoreForms', this.origIgnoreForms); // restore its original value
-        opt_shared_sessions_1.TogetherJS.config('isDemoSession', false);
-        opt_shared_sessions_1.TogetherJS.config('eventRecorderFunc', null);
-    };
-    // serialize the current state to JSON:
-    OptDemoVideo.prototype.serializeToJSON = function () {
-        pytutor_1.assert(this.isFrozen);
-        var ret = { initialAppState: this.initialAppState,
-            events: this.events,
-            traceCache: this.traceCache,
-            mp3AudioRecording: this.mp3AudioRecording };
-        return JSON.stringify(ret);
-    };
-    OptDemoVideo.prototype.getFrameDiff = function (a, b) {
-        pytutor_1.assert(a <= b);
-        return Math.floor(((b - a) / 1000) * this.fps);
-    };
-    // add a frameNum field for each entry in this.events
-    OptDemoVideo.prototype.addFrameNumbers = function () {
-        pytutor_1.assert(this.isFrozen && this.events.length > 0);
-        var firstTs = this.events[0].ts;
-        for (var i = 0; i < this.events.length; i++) {
-            var elt = this.events[i];
-            // add 1 so that the first frameNum starts at 1 instead of 0
-            elt.frameNum = this.getFrameDiff(firstTs, elt.ts) + 1;
-        }
-    };
-    // how many frames should there be in the animation?
-    OptDemoVideo.prototype.getTotalNumFrames = function () {
-        pytutor_1.assert(this.isFrozen && this.events.length > 0);
-        var firstTs = this.events[0].ts;
-        var lastTs = this.events[this.events.length - 1].ts;
-        return this.getFrameDiff(firstTs, lastTs);
-        // add 1 at the end for extra padding
-        // NIX THIS!!!
-        //return this.getFrameDiff(firstTs, lastTs) + 1;
-    };
-    OptDemoVideo.prototype.secondsToFrames = function (secs) {
-        return Math.floor(secs * this.fps);
-    };
-    OptDemoVideo.prototype.frameToSeconds = function (frame) {
-        return frame / this.fps;
-    };
-    return OptDemoVideo;
-}());
-exports.OptDemoVideo = OptDemoVideo;
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ })
 /******/ ]);

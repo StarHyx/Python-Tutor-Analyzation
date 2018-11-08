@@ -32,7 +32,7 @@ require("./lib/jquery.jsPlumb-1.3.10-all-min.js"); // DO NOT UPGRADE ABOVE 1.3.1
 require("./lib/jquery-ui-1.11.4/jquery-ui.js");
 require("./lib/jquery-ui-1.11.4/jquery-ui.css");
 require("./lib/jquery.ba-bbq.js"); // contains slight pgbovine modifications
-require("../css/pytutor");
+require("../public/css/pytutor");
 
 // for TypeScript
 declare var jQuery: JQueryStatic;
@@ -3601,7 +3601,7 @@ class ProgramOutputBox {
 
 		var outputsHTML =
 			'<div id="progOutputs">\
-         <div id="printOutputDocs">Print output (drag lower right corner to resize)</div>\n\
+         <div id="printOutputDocs">输出结果 (拖动右下角调整大小)</div>\n\
          <textarea id="pyStdout" cols="40" rows="5" wrap="off" readonly></textarea>\
        </div>';
 

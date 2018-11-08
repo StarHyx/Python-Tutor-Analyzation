@@ -25,7 +25,7 @@ import pg_logger
 @route('/LIVE_exec_<name:re:.+>.py')
 @route('/<filepath:path>')
 def index(filepath):
-    return static_file(filepath, root='.')
+    return static_file(filepath, root='../src')
 
 
 # Note that this will run either Python 2 or 3, depending on which
