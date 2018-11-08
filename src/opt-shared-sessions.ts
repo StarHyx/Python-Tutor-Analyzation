@@ -265,18 +265,7 @@ var liveHelpSurvey = {
 //             since Chrome seems to handle prompt() weirdly now
 //             (it seems to have done so for quite a while);
 //             [it still seems fine when someone is *volunteering* to help]
-var liveHelpSurvey = {
-  requestHelp:   [ {prompt: 'You are now on the help queue. Please wait for help to arrive.\n\nSupport our research by letting us know:\nWhy did you decide to ask for help at this time?',
-                    v: 'r5a'},
-                   {prompt: 'You are now on the help queue. Please wait for help to arrive.\n\nSupport our research by letting us know:\nWhy did you ask for help anonymously on this website rather than getting help from someone you know?',
-                    v: 'r5b'},
-                 ],
-  volunteerHelp: [ {prompt: "Thanks for volunteering! You are about to join a live chat.\n\nSupport our research by letting us know:\nWhy did you decide to volunteer at this time? What motivated you to click on this particular help link?",
-                    v: 'h5a'},
-                   {prompt: "Thanks for volunteering! You are about to join a live chat.\n\nSupport our research by letting us know:\nWhat is your current job or profession?",
-                    v: 'h5b'},
-                 ]
-};
+
 
 
 
@@ -286,47 +275,6 @@ var liveHelpSurvey = {
 //
 // 2018-06-24: if noRepeats is true, then don't ask this user repeated
 // questions; simply return null if all questions have already been asked
-function randomlyPickSurveyItem(key, noRepeats=false) {
-  var lst = liveHelpSurvey[key];
-  var filteredLst = [];
-
-  // filter lst down to filteredLst to find all elements whose version
-  // numbers 'v' does NOT already exist in localStorage
-  if (supports_html5_storage()) {
-    lst.forEach((e) => {
-      if (!localStorage.getItem(e.v)) {
-        filteredLst.push(e);
-      }
-    });
-  } else {
-    filteredLst = lst;
-  }
-
-  // if ALL entries have been filtered out, then reset everything and
-  // start from scratch:
-  if (filteredLst.length == 0) {
-    if (noRepeats) {
-      return null; // punt early if noRepeats=true!!!
-    }
-
-    if (supports_html5_storage()) {
-      lst.forEach((e) => {
-        localStorage.removeItem(e.v);
-      });
-    }
-    filteredLst = lst;
-  }
-
-  // now randomly pick an entry and show it:
-  // random number in [0, filteredLst.length)
-  var randInt = Math.floor(Math.random() * filteredLst.length);
-  var randomEntry = filteredLst[randInt];
-  if (supports_html5_storage()) {
-    localStorage.setItem(randomEntry.v, '1');
-  }
-  return randomEntry;
-}
-
 
 export class OptFrontendSharedSessions extends OptFrontend {
   executeCodeSignalFromRemote = false;
@@ -716,29 +664,6 @@ Get live help!
 
             // add these handlers AFTER the respective DOM nodes have been added above:
 
-            $(".gotoHelpLink").click(function() {
-              // 2018-06-24: don't show the user repeated questions (noRepeats=true)
-              var surveyItem = randomlyPickSurveyItem('volunteerHelp', true);
-              if (!surveyItem) {
-                // punt early!
-                return true; // ALWAYS cause the link to be clicked
-              }
-              var miniSurveyResponse = prompt(surveyItem.prompt);
-
-              // always log every impression, even if miniSurveyResponse is blank,
-              // since we can know how many times that survey question was ever seen:
-              var idToJoin = $(this).attr('data-id');
-              var surveyUrl = TogetherJS.config.get("hubBase").replace(/\/*$/, "") + "/survey";
-              $.ajax({
-                url: surveyUrl,
-                dataType: "json",
-                data: {id: idToJoin, user_uuid: me.userUUID, kind: 'volunteerHelp', v: surveyItem.v, response: miniSurveyResponse},
-                success: function() {}, // NOP
-                error: function() {},   // NOP
-              });
-
-              return true; // ALWAYS cause the link to be clicked
-            });
           } else {
             displayEmptyQueueMsg = true;
           }

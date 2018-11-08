@@ -1,20 +1,7 @@
-// Python Tutor: https://github.com/pgbovine/OnlinePythonTutor/
-// Copyright (C) Philip Guo (philip@pgbovine.net)
-// LICENSE: https://github.com/pgbovine/OnlinePythonTutor/blob/master/LICENSE.txt
-
-/* TODO
-
-- we're always referring to top-level CSS selectors on the page; maybe
-  use a this.domRoot pattern like in pytutor.ts?
-
-*/
-
 /// <reference path="_references.ts" />
 
 // for TypeScript
-declare var diff_match_patch: any;
-
-require('./lib/diff_match_patch.js');
+let diff_match_patch = require('diff-match-patch');
 require('./lib/jquery.ba-dotimeout.min.js');
 
 // need to directly import the class for type checking to work

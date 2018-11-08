@@ -6,20 +6,22 @@
   "repository": "https://github.com/StarHyx/Python-Tutor-Analyzation",
   "license": "BSD-3-Clause",
   "scripts": {
-    "start": "python3 server/bottle_server.py",
+    "start": "cd server && python3 bottle_server.py",
     "webpack": "webpack --devtool sourcemap --progress --colors --watch",
     "build": "rm -f build/* && webpack"
   },
   "dependencies": {
-    "fs-extra": "^6.0.1",
-    "json-stable-stringify": "^1.0.1",
-    "script-loader": "^0.7.2",
-    "ts-loader": "^3.5.0",
-    "typescript": "^3.1.6"
+    "ace-builds": "^1.4.1",
+    "diff-match-patch": "^1.0.4",
+    "jquery": "^3.3.1",
+    "qtip": "0.0.4"
   },
   "devDependencies": {
     "css-loader": "^1.0.1",
+    "script-loader": "^0.7.2",
     "style-loader": "^0.23.1",
+    "ts-loader": "^3.5.0",
+    "typescript": "^3.1.6",
     "url-loader": "^1.1.2",
     "webpack": "^3.11.0",
     "webpack-cli": "^3.1.2",

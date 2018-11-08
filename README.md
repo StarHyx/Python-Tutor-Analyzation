@@ -30,3 +30,8 @@ live-programming-mode下:
 `pg_logger` 执行python代码的核心
 
 在`generate_json_trace.py`中设置options.usercode值即可编译出所需json轨迹,交给前端渲染
+
+有require的
+opt-live.ts
+opt-frontend-common.ts
+opt-shared-sessions.ts

@@ -1,14 +1,3 @@
-// Python Tutor: https://github.com/pgbovine/OnlinePythonTutor/
-// Copyright (C) Philip Guo (philip@pgbovine.net)
-// LICENSE: https://github.com/pgbovine/OnlinePythonTutor/blob/master/LICENSE.txt
-
-/* TODO:
-
-- substitute in a non-live version of the live editor from opt-live.js
-  in addition to the janky current version of the editor
-
-*/
-
 /* pytutor coding gotchas:
 
 - *NEVER* use raw $(__) or d3.select(__) statements to select DOM elements.
@@ -25,15 +14,14 @@
 
 */
 
-
+// require("./lib/d3.v2.min.js");
+require("jquery")
 require("./lib/d3.v2.min.js");
-require("./lib/jquery-3.0.0.min.js");
 require("./lib/jquery.jsPlumb-1.3.10-all-min.js"); // DO NOT UPGRADE ABOVE 1.3.10 OR ELSE BREAKAGE WILL OCCUR
 require("./lib/jquery-ui-1.11.4/jquery-ui.js");
 require("./lib/jquery-ui-1.11.4/jquery-ui.css");
 require("./lib/jquery.ba-bbq.js"); // contains slight pgbovine modifications
 require("../public/css/pytutor");
-
 // for TypeScript
 declare var jQuery: JQueryStatic;
 declare var jsPlumb: any;
